@@ -3,15 +3,18 @@
 import React from "react"
 import ReactDOM from "react-dom"
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom"
+import "bootstrap/dist/css/bootstrap.min.css"
+import "./styles/styles.css"
 import Home from "./pages/Home"
 import NotFound from "./pages/404"
-import "./styles/styles.css"
+import ContactUs from "./pages/ContactUs"
 import * as serviceWorker from "./serviceWorker"
 
 ReactDOM.render(
     <Router>
         <Switch>
             <Route path="/" exact component={Home} />
+            <Route path="/contact-us" component={ContactUs} />
             <Route path="/404" component={NotFound} />
             <Route path="*" component={NotFound} />
             <Route component={NotFound} />
