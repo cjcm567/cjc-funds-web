@@ -68,6 +68,9 @@ yarn-error.log
 # Yarn Integrity file
 .yarn-integrity
 
+# Visual Studio
+/.vs
+
 # VS Code
 /.vscode
 node_modules
