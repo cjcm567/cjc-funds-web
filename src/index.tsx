@@ -8,17 +8,20 @@ import "./styles/styles.css"
 import Home from "./pages/Home"
 import NotFound from "./pages/404"
 import ContactUs from "./pages/ContactUs"
+import ScrollToTop from "./components/ScrollToTop"
 import * as serviceWorker from "./serviceWorker"
 
 ReactDOM.render(
     <Router>
-        <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/contact-us" component={ContactUs} />
-            <Route path="/404" component={NotFound} />
-            <Route path="*" component={NotFound} />
-            <Route component={NotFound} />
-        </Switch>
+        <ScrollToTop>
+            <Switch>
+                <Route path="/" exact component={Home} />
+                <Route path="/contact-us" component={ContactUs} />
+                <Route path="/404" component={NotFound} />
+                <Route path="*" component={NotFound} />
+                <Route component={NotFound} />
+            </Switch>
+        </ScrollToTop>
     </Router>,
     document.getElementById("root")
 )
