@@ -1,8 +1,8 @@
 /** @format */
 
-import React from "react"
+import React, {lazy, Suspense} from "react"
 import ReactDOM from "react-dom"
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom"
+import {BrowserRouter as Router, Route, Switch, useParams, match} from "react-router-dom"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "./styles/styles.css"
 import Home from "./pages/Home"
@@ -10,11 +10,41 @@ import NotFound from "./pages/404"
 import ContactUs from "./pages/ContactUs"
 import * as serviceWorker from "./serviceWorker"
 
+const AboutUsComponent = lazy(() => import("./pages/AboutUs"))
+const AboutUs = () => {
+    return (
+        <Suspense fallback={null}>
+            <AboutUsComponent />
+        </Suspense>
+    )
+}
+
+const NewsComponent = lazy(() => import("./pages/News"))
+const News = () => {
+    return (
+        <Suspense fallback={null}>
+            <NewsComponent />
+        </Suspense>
+    )
+}
+
+const NewsSingleComponent = lazy(() => import("./pages/NewsSingle"))
+const NewsSingle = (props: any) => {
+    return (
+        <Suspense fallback={null}>
+            <NewsSingleComponent {...props}></NewsSingleComponent>
+        </Suspense>
+    )
+}
+
 ReactDOM.render(
     <Router>
         <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/contact-us" component={ContactUs} />
+            <Route path="/about-us" component={AboutUs} />
+            <Route path="/news" exact component={News} />
+            <Route path="/news/:props" exact component={NewsSingle} />
             <Route path="/404" component={NotFound} />
             <Route path="*" component={NotFound} />
             <Route component={NotFound} />
