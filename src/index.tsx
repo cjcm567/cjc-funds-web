@@ -11,6 +11,15 @@ import NotFound from "./pages/404"
 import ContactUs from "./pages/ContactUs"
 import * as serviceWorker from "./serviceWorker"
 
+const FundsComponent = lazy(() => import("./pages/Funds.jsx"))
+const Funds = () => {
+    return (
+        <Suspense fallback={null}>
+            <FundsComponent />
+        </Suspense>
+    )
+}
+
 const AboutUsComponent = lazy(() => import("./pages/AboutUs"))
 const AboutUs = () => {
     return (
@@ -43,13 +52,11 @@ ReactDOM.render(
         <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/contact-us" component={ContactUs} />
-<<<<<<< HEAD
+            <Route path="/funds" component={Funds} />
             <Route path="/about-us" component={AboutUs} />
             <Route path="/news" exact component={News} />
             <Route path="/news/:props" exact component={NewsSingle} />
-=======
             <Route path="/login-or-join" component={LoginOrJoin} />
->>>>>>> feature/pages/login-or-join
             <Route path="/404" component={NotFound} />
             <Route path="*" component={NotFound} />
             <Route component={NotFound} />
