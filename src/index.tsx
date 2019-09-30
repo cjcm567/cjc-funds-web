@@ -6,6 +6,7 @@ import {BrowserRouter as Router, Route, Switch, useParams, match} from "react-ro
 import "bootstrap/dist/css/bootstrap.min.css"
 import "./styles/styles.css"
 import Home from "./pages/Home"
+import LoginOrJoin from "./pages/LoginOrJoin"
 import NotFound from "./pages/404"
 import ContactUs from "./pages/ContactUs"
 import * as serviceWorker from "./serviceWorker"
@@ -42,9 +43,13 @@ ReactDOM.render(
         <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/contact-us" component={ContactUs} />
+<<<<<<< HEAD
             <Route path="/about-us" component={AboutUs} />
             <Route path="/news" exact component={News} />
             <Route path="/news/:props" exact component={NewsSingle} />
+=======
+            <Route path="/login-or-join" component={LoginOrJoin} />
+>>>>>>> feature/pages/login-or-join
             <Route path="/404" component={NotFound} />
             <Route path="*" component={NotFound} />
             <Route component={NotFound} />
