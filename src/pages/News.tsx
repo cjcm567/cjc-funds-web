@@ -61,7 +61,7 @@ export default function News() {
                                                 <Link
                                                     to="/news/insights-our-corporate-health"
                                                     className="h4 font-primary text-dark">
-                                                    洞察新西兰的企业健康？
+                                                    洞察新西兰的企业健康
                                                 </Link>
                                                 <p>by Carrick Asset Editorial</p>
                                             </div>

@@ -4,6 +4,7 @@ import React, {Component} from "react"
 import SliderItem from "./SliderItem/SliderItem"
 import SliderDots from "./SliderDots/SliderDots"
 import SliderArrows from "./SliderArrows/SliderArrows"
+
 require("./Slider.scss")
 export default class Slider extends Component {
     constructor(props) {

@@ -2,15 +2,13 @@
 import * as React from "react"
 import Layout from "../components/layout"
 import "../styles/Industry.css"
-import IndustryImg01 from "../images/Industry/01.png"
-import IndustryImg02 from "../images/Industry/02.png"
-import IndustryImg03 from "../images/Industry/03.png"
-import IndustryImg00 from "../images/Industry/Industry.png"
+import IndustryImg01 from "../images/industry/01.png"
+import IndustryImg02 from "../images/industry/02.png"
+import IndustryImg03 from "../images/industry/03.png"
 
-
-function Industry() {
-    const style={
-        height:100
+export default function IndustryDevelopment() {
+    const style = {
+        height: 100,
     }
     return (
         <Layout>
@@ -20,11 +18,8 @@ function Industry() {
                         <div className="col-lg-12 text-center">
                             <h2 className="section-heading text-uppercase">行业发展</h2>
                         </div>
-                        <div>
-                            {/* <img src={IndustryImg00}></img> */}
-                        </div>
                     </div>
-                    <div style={style}></div>
+                    <div style={style}/>
                     <div className="row">
                         <div className="col-lg-12">
                             <ul className="timeline">
@@ -32,7 +27,7 @@ function Industry() {
                                     <div className="timeline-image">
                                         <img className="rounded-circle img-fluid" src={IndustryImg01} alt="" />
                                     </div>
-                                    
+
                                     <div className="timeline-panel">
                                         <div className="timeline-heading">
                                             <p>
@@ -40,7 +35,6 @@ function Industry() {
                                                 FOF以降低投资门槛。第一只证券类FOF由先锋基金(Vanguard)于1985年推出(图1)，该只共同基金FOF70%的资产投资于股票类基金，30%投资于债权类基金，投资标的均为公司旗下的基金。基金推出后大受欢迎，同时也带动了先锋基金旗下其他基金的销售，1986年末，先锋公司旗下基金规模增长44.23%。
                                             </p>
                                             <p>
-                                                {" "}
                                                 1987年，美股经历了2年的疯狂后，遭遇了一次惨重的股灾，这促使投资者开始思考如何根据市场的不同情况配置不同种类的基金。公募基金在股灾中也不断开发新的产品，基金类型在此时期快速增多。市场多变性与基金的多样性促使投资者产生了基金筛选需求，自此FOF的发展有了其客观驱动因素。
                                                 同一时期，美国开启了401(K)计划，该计划主要使用雇员与雇主共同缴纳养老金的模式，为之后养老金规模扩大以及入市都打下了基础。养老金资金对风险敏感度极高，FOF分散风险、追求稳健收益的属性与其需求不谋而合。401(K)计划无疑刺激了FOF基金的发展，FOF基金真正开始走上了发展之路。
                                             </p>
@@ -87,5 +81,3 @@ function Industry() {
         </Layout>
     )
 }
-
-export default Industry

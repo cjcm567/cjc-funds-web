@@ -1,17 +1,17 @@
 /** @format */
 
 import React, {Suspense} from "react"
+import {Link} from "react-router-dom"
 import Layout from "../components/layout"
-import "../styles/Home.css"
-import Slider from "../Slider/Slider"
+import Slider from "../components/Slider/Slider"
+import Carousel from "../components/Carousel"
 import serviceImage01 from "../images/service/service-1.jpg"
 import serviceImage02 from "../images/service/service-2.jpg"
 import serviceImage03 from "../images/service/service-3.jpg"
 import serviceImage04 from "../images/service/service-4.jpg"
 import AboutUsImage from "../images/background/about-bg.jpg"
-import BlogImage01 from "../images/blog/blog-1.jpg"
-import BlogImage02 from "../images/blog/blog-2.jpg"
-import {Link} from "react-router-dom"
+import imageCapitalMarkets from "../images/news/what-does-future-hold-our-capital-markets.jpg"
+import imageCorporateHealth from "../images/news/insights-our-corporate-health.jpg"
 
 const IMAGE_DATA = [
     {
@@ -27,7 +27,7 @@ const IMAGE_DATA = [
         alt: "banner-3",
     },
 ]
-var sectionStyle = {
+const sectionStyle = {
     backgroundImage: `url(${AboutUsImage})`,
 }
 
@@ -36,15 +36,21 @@ function Home() {
         <>
             <Layout>
                 <div className="App">
-                    <Slider
-                        items={IMAGE_DATA}
-                        speed={1}
-                        delay={2.1}
-                        pause={true}
-                        autoplay={true}
-                        dots={true}
-                        arrows={true}
-                    />
+                    <div className="mb-50">
+                        <Slider
+                            items={IMAGE_DATA}
+                            speed={1}
+                            delay={2.1}
+                            pause={true}
+                            autoplay={true}
+                            dots={true}
+                            arrows={true}
+                        />
+                    </div>
+
+                    <div className="mb-50">
+                        <Carousel/>
+                    </div>
 
                     {/* service  */}
                     <div>
@@ -63,7 +69,8 @@ function Home() {
                                                 <img
                                                     className="card-img-top rounded-0"
                                                     src={serviceImage01}
-                                                    alt="service-image"></img>
+                                                    alt="service-image"
+                                                />
                                             </div>
                                             <div className="card-body p-0">
                                                 <br />
@@ -85,7 +92,8 @@ function Home() {
                                                 <img
                                                     className="card-img-top rounded-0"
                                                     src={serviceImage02}
-                                                    alt="service-image"></img>
+                                                    alt="service-image"
+                                                />
                                             </div>
                                             <div className="card-body p-0">
                                                 <br />
@@ -111,7 +119,8 @@ function Home() {
                                                 <img
                                                     className="card-img-top rounded-0"
                                                     src={serviceImage03}
-                                                    alt="service-image"></img>
+                                                    alt="service-image"
+                                                />
                                             </div>
                                             <div className="card-body p-0">
                                                 <br />
@@ -125,7 +134,6 @@ function Home() {
                                                     3. 多品种、多策略、多周期的量化策略投资配置思路
                                                 </p>
                                                 <Link to="/about-us/" className="btn btn-secondary translateY-25">
-                                                  
                                                     更多
                                                 </Link>
                                             </div>
@@ -150,34 +158,34 @@ function Home() {
                                         <div>
                                             <ul className="d-inline-block pl-0">
                                                 <li className="font-secondary mb-10 text-white float-sm-left mr-sm-5">
-                                                    <i className="text-primary mr-2 ti-arrow-circle-right"></i>Business
-                                                    Services
+                                                    <i className="text-primary mr-2 ti-arrow-circle-right"/>
+                                                    Business Services
                                                 </li>
                                                 <li className="font-secondary mb-10 text-white">
-                                                    <i className="text-primary mr-2 ti-arrow-circle-right"></i>Audit
-                                                    &amp; Assurance
+                                                    <i className="text-primary mr-2 ti-arrow-circle-right"/>
+                                                    Audit &amp; Assurance
                                                 </li>
                                                 <li className="font-secondary mb-10 text-white">
-                                                    <i className="text-primary mr-2 ti-arrow-circle-right"></i>IT
-                                                    Control Solutions
+                                                    <i className="text-primary mr-2 ti-arrow-circle-right"/>
+                                                    IT Control Solutions
                                                 </li>
                                             </ul>
                                             <ul className="d-inline-block pl-0">
                                                 <li className="font-secondary mb-10 text-white">
-                                                    <i className="text-primary mr-2 ti-arrow-circle-right"></i>Business
-                                                    Services
+                                                    <i className="text-primary mr-2 ti-arrow-circle-right"/>
+                                                    Business Services
                                                 </li>
                                                 <li className="font-secondary mb-10 text-white">
-                                                    <i className="text-primary mr-2 ti-arrow-circle-right"></i>Audit
-                                                    &amp; Assurance
+                                                    <i className="text-primary mr-2 ti-arrow-circle-right"/>
+                                                    Audit &amp; Assurance
                                                 </li>
                                                 <li className="font-secondary mb-10 text-white">
-                                                    <i className="text-primary mr-2 ti-arrow-circle-right"></i>IT
-                                                    Control Solutions
+                                                    <i className="text-primary mr-2 ti-arrow-circle-right"/>
+                                                    IT Control Solutions
                                                 </li>
                                             </ul>
                                         </div>
-                                        <a href="/about-us/" className="btn btn-primary mt-4">
+                                        <a href="/about-us" className="btn btn-primary mt-4">
                                             更多
                                         </a>
                                     </div>
@@ -209,66 +217,80 @@ function Home() {
                                 </div> */}
 
                                 <div className="col-lg-6 offset-lg-1">
-                                <img src={serviceImage04} width="100%" className="img-fluid mb-60 rounded-top" />
+                                    <img src={serviceImage04} width="100%" className="img-fluid mb-60 rounded-top"/>
                                 </div>
                             </div>
                         </div>
                     </section>
                     {/* blog  */}
-                    <section className="section bg-gray">
+                    <section className="section bg-gray border-bottom">
                         <div className="container">
                             <div className="row justify-content-center">
                                 <div className="col-lg-12 text-center">
                                     <h5 className="section-title-sm">最新新闻</h5>
-                                    <h2 className="section-title section-title-border-gray">公司时讯</h2>
+                                    <Link to="/news">
+                                        <h2 className="section-title section-title-border-gray">公司时讯</h2>
+                                    </Link>
                                 </div>
                                 {/* blog-item */}
                                 <div className="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                                    <div className="card">
-                                        <div className="card-img-wrapper overlay-rounded-top">
-                                            <img className="card-img-top" src={BlogImage01} alt="blog-thumbnail"></img>
-                                        </div>
-                                        <div className="card-body p-0">
-                                            <div className="d-flex">
-                                                <div className="py-3 px-4 border-right text-center">
-                                                    <h3 className="text-primary mb-0">6</h3>
-                                                    <p className="mb-0">Jun</p>
-                                                </div>
-                                                <div className="p-3">
-                                                    <Link
-                                                        to="/news/mixed-ownership-model-has-been-win-win"
-                                                        className="h4 font-primary text-dark">
-                                                        混合所有制模式开创双赢局面
-                                                    </Link>
-                                                    <p>Carrick Asset Editorial</p>
+                                    <Link to="/news/insights-our-corporate-health">
+                                        <div className="card">
+                                            <div className="card-img-wrapper overlay-rounded-top">
+                                                <img
+                                                    className="card-img-top"
+                                                    height="200px"
+                                                    src={imageCorporateHealth}
+                                                    alt="image of Capital Markets"
+                                                />
+                                                {/*<img className="card-img-top" src={BlogImage01} alt="blog-thumbnail" />*/}
+                                            </div>
+                                            <div className="card-body p-0">
+                                                <div className="d-flex">
+                                                    <div className="py-3 px-4 border-right text-center">
+                                                        <h3 className="text-primary mb-0">1</h3>
+                                                        <p className="mb-0">Oct</p>
+                                                    </div>
+                                                    <div className="p-3">
+                                                        <a className="h4 font-primary text-dark">
+                                                            洞察新西兰的企业健康
+                                                        </a>
+                                                        <p>Carrick Asset Editorial</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </Link>
                                 </div>
                                 {/* blog-item  */}
                                 <div className="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                                    <div className="card">
-                                        <div className="card-img-wrapper overlay-rounded-top">
-                                            <img className="card-img-top" src={BlogImage02} alt="blog-thumbnail"></img>
-                                        </div>
-                                        <div className="card-body p-0">
-                                            <div className="d-flex">
-                                                <div className="py-3 px-4 border-right text-center">
-                                                    <h3 className="text-primary mb-0">5</h3>
-                                                    <p className="mb-0">Nov</p>
-                                                </div>
-                                                <div className="p-3">
-                                                    <Link
-                                                        to="/news/will-interest-rates-support-share-markets-again"
-                                                        className="h4 font-primary text-dark">
-                                                        疑问：利率会再次对股市起积极作用吗？
-                                                    </Link>
-                                                    <p>by Admin</p>
+                                    <Link to="/news/what-does-future-hold-our-capital-markets">
+                                        <div className="card">
+                                            <div className="card-img-wrapper overlay-rounded-top">
+                                                <img
+                                                    className="card-img-top"
+                                                    height="200px"
+                                                    src={imageCapitalMarkets}
+                                                    alt="image of Capital Markets"
+                                                />
+                                                {/*<img className="card-img-top" src={BlogImage02} alt="blog-thumbnail" />*/}
+                                            </div>
+                                            <div className="card-body p-0">
+                                                <div className="d-flex">
+                                                    <div className="py-3 px-4 border-right text-center">
+                                                        <h3 className="text-primary mb-0">9</h3>
+                                                        <p className="mb-0">Sep</p>
+                                                    </div>
+                                                    <div className="p-3">
+                                                        <a className="h4 font-primary text-dark">
+                                                            资本市场未来将如何发展？
+                                                        </a>
+                                                        <p>Carrick Asset Editorial</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </Link>
                                 </div>
                                 {/* blog-list */}
                                 <div className="col-lg-4 col-12">
@@ -330,7 +352,7 @@ function Home() {
 export default function HomeComponent() {
     return (
         <Suspense fallback="loading...">
-            <Home />
+            <Home/>
         </Suspense>
     )
 }

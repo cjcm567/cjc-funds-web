@@ -955,7 +955,6 @@ button {
     background: #fff !important;
     position: relative;
     margin-top: 30px;
-   
 }
 
 .navigation .navbar-brand {
@@ -982,14 +981,13 @@ button {
     .navigation .navbar-brand img {
         height: 50px;
         width: auto;
-
     }
 }
 
 .navigation .navbar-brand img {
     position: relative;
     top: 50%;
-    
+
     transform: translateY(-50%);
 }
 
@@ -1214,7 +1212,7 @@ button {
 .hero-slider-item {
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;    
+    background-size: cover;
     outline: 0;
 }
 
@@ -1529,7 +1527,7 @@ button {
 /* card */
 .card-img-wrapper {
     position: relative;
-    height: 30vh;
+    /*height: 30vh;*/
 }
 
 .card-img-wrapper::before {
@@ -2649,7 +2647,8 @@ ul.tag-list li a:hover {
 .back-to-top:focus {
     outline: 0;
 }
-.serviceJ{
+
+.serviceJ {
     width: 50vw;
     border: 10px chartreuse;
 }
