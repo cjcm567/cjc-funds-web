@@ -2,7 +2,7 @@
 
 import React, {lazy, Suspense} from "react"
 import ReactDOM from "react-dom"
-import {BrowserRouter as Router, Route, Switch, useParams, match} from "react-router-dom"
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "./styles/styles.css"
 import Home from "./pages/Home"
