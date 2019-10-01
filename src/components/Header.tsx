@@ -1,228 +1,130 @@
 /** @format */
 
-import React, {Suspense} from "react"
+import React, {Suspense, useState} from "react"
 import {Link} from "react-router-dom"
+import logoImage from "../images/logo.png"
 
-function Header() {
+function HeaderComponent() {
+    const [collapseStatus, setCollapseStatus] = useState("collapse navbar-collapse")
+    const [dropdownMenuStatus, setDropdownMenuStatus] = useState("dropdown-menu")
+    const [loginChooserStatus, setLoginChooserStatus] = useState("login-chooser")
+    const [ariaExpanded, setAriaExpanded] = useState(false)
+
+    const handleNavCollapse = () => {
+        if (collapseStatus.includes("show")) {
+            setCollapseStatus("collapse navbar-collapse")
+            setAriaExpanded(false)
+        } else {
+            setCollapseStatus("collapse navbar-collapse show")
+            setAriaExpanded(true)
+        }
+    }
+
+    const handleDropdownCollapse = () => {
+        if (dropdownMenuStatus.includes("show")) {
+            setDropdownMenuStatus("dropdown-menu")
+            setAriaExpanded(false)
+        } else {
+            setDropdownMenuStatus("dropdown-menu show")
+            setAriaExpanded(true)
+        }
+    }
+    const handleLoginChooser = () => {
+        if (loginChooserStatus.includes("open")) {
+            setLoginChooserStatus("login-chooser")
+        } else {
+            setLoginChooserStatus("login-chooser open")
+        }
+    }
+
     return (
         <>
-            {/* navigation  */}
-            <header>
-                {/* top header  */}
-                <div className="top-header">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12">
-                                <ul className="list-inline text-lg-right text-center">
-                                    <li className="list-inline-item">
-                                        <a href="mailto:info@companyname.com">info@companyname.com</a>
-                                    </li>
-                                    <li className="list-inline-item">
-                                        <a href="callto:1234565523">
-                                            Call Us Now:
-                                            <span className="ml-2"> 123 456 5523</span>
-                                        </a>
-                                    </li>
-                                    <li className="list-inline-item">
-                                        <a href="#" id="searchOpen">
-                                            <i className="ti-search"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+            <header className="box-shadow">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-12">
+                            <ul className="list-inline text-lg-right text-center"></ul>
                         </div>
                     </div>
                 </div>
-                {/* nav bar  */}
                 <div className="navigation">
                     <div className="container">
                         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                            <Link to="/" className="navbar-brand">
-                                <img src="images/logo.png" alt="logo"></img>
-                            </Link>
+                            <a className="navbar-brand" href="index.html">
+                                <Link to="/">
+                                    <img className="navbar-brand img" src={logoImage} alt="logo" />
+                                </Link>
+                            </a>
                             <button
                                 className="navbar-toggler"
                                 type="button"
                                 data-toggle="collapse"
                                 data-target="#navbarSupportedContent"
                                 aria-controls="navbarSupportedContent"
-                                aria-expanded="false"
+                                aria-expanded={ariaExpanded}
                                 aria-label="Toggle navigation">
-                                <span className="navbar-toggler-icon"></span>
+                                <span className="navbar-toggler-icon" onClick={handleNavCollapse}></span>
                             </button>
 
-                            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                            <div className={collapseStatus} id="navbarSupportedContent">
                                 <ul className="navbar-nav ml-auto">
-                                    <li className="nav-item dropdown active">
-                                        <a
-                                            className="nav-link dropdown-toggle"
-                                            href="#"
-                                            role="button"
-                                            data-toggle="dropdown"
-                                            aria-haspopup="true"
-                                            aria-expanded="false">
-                                            Home
-                                        </a>
-                                        <div className="dropdown-menu">
-                                            <a className="dropdown-item" href="index.html">
-                                                Home Page 1
-                                            </a>
-                                            <a className="dropdown-item" href="homepage-2.html">
-                                                Home Page 2
-                                            </a>
-                                            <a className="dropdown-item" href="homepage-3.html">
-                                                Home Page 3
-                                            </a>
-                                        </div>
-                                    </li>
-                                    <li className="nav-item dropdown">
-                                        <a
-                                            className="nav-link dropdown-toggle"
-                                            href="#"
-                                            role="button"
-                                            data-toggle="dropdown"
-                                            aria-haspopup="true"
-                                            aria-expanded="false">
-                                            About Us
-                                        </a>
-                                        <div className="dropdown-menu">
-                                            <a className="dropdown-item" href="about.html">
-                                                About page
-                                            </a>
-                                            <a className="dropdown-item" href="about-2.html">
-                                                About page-2
-                                            </a>
-                                        </div>
-                                    </li>
-                                    <li className="nav-item dropdown">
-                                        <a
-                                            className="nav-link dropdown-toggle"
-                                            href="#"
-                                            role="button"
-                                            data-toggle="dropdown"
-                                            aria-haspopup="true"
-                                            aria-expanded="false">
-                                            Service
-                                        </a>
-                                        <div className="dropdown-menu">
-                                            <a className="dropdown-item" href="service.html">
-                                                Service page
-                                            </a>
-                                            <a className="dropdown-item" href="service-2.html">
-                                                Service page-2
-                                            </a>
-                                            <a className="dropdown-item" href="service-single.html">
-                                                Service Single
-                                            </a>
-                                        </div>
-                                    </li>
-                                    <li className="nav-item dropdown">
-                                        <a
-                                            className="nav-link dropdown-toggle"
-                                            href="#"
-                                            role="button"
-                                            data-toggle="dropdown"
-                                            aria-haspopup="true"
-                                            aria-expanded="false">
-                                            Pages
-                                        </a>
-                                        <div className="dropdown-menu">
-                                            <a className="dropdown-item" href="team.html">
-                                                Team Page
-                                            </a>
-                                            <a className="dropdown-item" href="pricing.html">
-                                                Pricing Page
-                                            </a>
-                                            <a className="dropdown-item" href="project.html">
-                                                project Page
-                                            </a>
-                                            <a className="dropdown-item" href="faqs.html">
-                                                FAQs Page
-                                            </a>
-                                            <a className="dropdown-item" href="project-single.html">
-                                                Project Single
-                                            </a>
-                                            <a className="dropdown-item" href="team-single.html">
-                                                Team Single
-                                            </a>
-                                            <a className="dropdown-item" href="404.html">
-                                                404 Page
-                                            </a>
-                                            <a className="dropdown-item" href="signup.html">
-                                                Sign Up Page
-                                            </a>
-                                            <a className="dropdown-item" href="login.html">
-                                                Login Page
-                                            </a>
-                                            <a className="dropdown-item" href="comming-soon.html">
-                                                Comming Soon Page
-                                            </a>
-                                        </div>
-                                    </li>
-                                    <li className="nav-item dropdown">
-                                        <a
-                                            className="nav-link dropdown-toggle"
-                                            href="#"
-                                            role="button"
-                                            data-toggle="dropdown"
-                                            aria-haspopup="true"
-                                            aria-expanded="false">
-                                            Blog
-                                        </a>
-                                        <div className="dropdown-menu">
-                                            <a className="dropdown-item" href="blog.html">
-                                                Blog Page
-                                            </a>
-                                            <a className="dropdown-item" href="blog-sidebar.html">
-                                                Blog with Sidebar
-                                            </a>
-                                            <a className="dropdown-item" href="blog-single.html">
-                                                Blog Single
-                                            </a>
-                                        </div>
-                                    </li>
-                                    <li className="nav-item dropdown">
-                                        <a
-                                            className="nav-link dropdown-toggle"
-                                            href="#"
-                                            role="button"
-                                            data-toggle="dropdown"
-                                            aria-haspopup="true"
-                                            aria-expanded="false">
-                                            Elements
-                                        </a>
-                                        <div className="dropdown-menu">
-                                            <a className="dropdown-item" href="components/buttons.html">
-                                                Buttons
-                                            </a>
-                                            <a className="dropdown-item" href="components/icons.html">
-                                                Icons
-                                            </a>
-                                            <a className="dropdown-item" href="components/headings.html">
-                                                Headings
-                                            </a>
-                                            <a className="dropdown-item" href="components/accordions.html">
-                                                Accordions
-                                            </a>
-                                            <a className="dropdown-item" href="components/blog-contents.html">
-                                                Blog Contents
-                                            </a>
-                                            <a className="dropdown-item" href="components/service-contents.html">
-                                                Service Contents
-                                            </a>
-                                            <a className="dropdown-item" href="components/team-contents.html">
-                                                Team Contents
-                                            </a>
-                                        </div>
-                                    </li>
                                     <li className="nav-item">
-                                        <Link to="/contact-us" className="nav-link">
-                                            Contact
+                                        <Link to="/" className="nav-link">
+                                            主页
                                         </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link btn btn-primary btn-sm" href="#">
-                                            get a quote
+                                        {/* URL for content01 */}
+                                        <Link to="/about-us" className="nav-link">
+                                            关于我们
+                                        </Link>
+                                    </li>
+                                    <li className="nav-item dropdown">
+                                        <Link to="/funds">
+                                       
+                                            <a
+                                                className="nav-link dropdown-toggle"
+                                                role="button"
+                                                data-toggle="dropdown"
+                                                aria-haspopup="true"
+                                                aria-expanded="false"
+                                                onClick={handleDropdownCollapse}>
+                                                基金
+                                            </a>
+                                        </Link>
+
+                                        {/* <div className={dropdownMenuStatus}>
+                                            <Link to="/funds/" className="dropdown-item">
+                                                FUNDS_item01
+                                            </Link>
+                                            <Link to="/products-and-services/hedge" className="dropdown-item">
+                                                FUNDS_item02
+                                            </Link>
+                                            <Link
+                                                to="/products-and-services/introducing-brokers"
+                                                className="dropdown-item">
+                                                FUNDS_item03
+                                            </Link>
+                                            <Link
+                                                to="/products-and-services/multi-account-manager-solution"
+                                                className="dropdown-item">
+                                                FUNDS_item04
+                                            </Link>
+                                        </div> */}
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link to="/news" className="nav-link">
+                                            新闻
+                                        </Link>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link to="/industry" className="nav-link">
+                                            行业发展
+                                        </Link>
+                                    </li>
+                                    <li className="nav-item">
+                                        <a className="nav-link btn btn-primary btn-sm" href="" style={{color: "white"}}>
+                                            Register
                                         </a>
                                     </li>
                                 </ul>
@@ -231,44 +133,16 @@ function Header() {
                     </div>
                 </div>
             </header>
-
-            {/* Search Form  */}
-            <div className="search-form">
-                <a href="#" className="close" id="searchClose">
-                    <i className="ti-close"></i>
-                </a>
-                <div className="container">
-                    <form action="#" className="row">
-                        <div className="col-lg-10 mx-auto">
-                            <h3>Search Here</h3>
-                            <div className="input-wrapper">
-                                <input
-                                    type="text"
-                                    className="form-control"
-                                    name="search"
-                                    id="search"
-                                    placeholder="Enter Keywords..."
-                                    required
-                                />
-                                <button>
-                                    <i className="ti-search"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            {/* /navigation  */}
         </>
     )
 }
 
-function HeaderComponent() {
+function Header() {
     return (
-        <Suspense fallback="loading...">
-            <Header />
+        <Suspense fallback="loading">
+            <HeaderComponent />
         </Suspense>
     )
 }
 
-export default HeaderComponent
+export default Header

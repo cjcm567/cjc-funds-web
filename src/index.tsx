@@ -9,12 +9,14 @@ import Home from "./pages/Home"
 import NotFound from "./pages/404"
 import ContactUs from "./pages/ContactUs"
 import * as serviceWorker from "./serviceWorker"
+import Industry from "./pages/Industrydevelopment"
 
 ReactDOM.render(
     <Router>
         <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/contact-us" component={ContactUs} />
+            <Route path="/Industry" component={Industry} />
             <Route path="/404" component={NotFound} />
             <Route path="*" component={NotFound} />
             <Route component={NotFound} />
