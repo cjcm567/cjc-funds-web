@@ -2,7 +2,7 @@
 
 import React, {lazy, Suspense} from "react"
 import ReactDOM from "react-dom"
-import {BrowserRouter as Router, Route, Switch, useParams, match} from "react-router-dom"
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "./styles/styles.css"
 import Home from "./pages/Home"
@@ -43,13 +43,10 @@ ReactDOM.render(
         <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/contact-us" component={ContactUs} />
-<<<<<<< HEAD
             <Route path="/about-us" component={AboutUs} />
             <Route path="/news" exact component={News} />
             <Route path="/news/:props" exact component={NewsSingle} />
-=======
             <Route path="/login-or-join" component={LoginOrJoin} />
->>>>>>> feature/pages/login-or-join
             <Route path="/404" component={NotFound} />
             <Route path="*" component={NotFound} />
             <Route component={NotFound} />

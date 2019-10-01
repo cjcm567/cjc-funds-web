@@ -3,14 +3,25 @@
 import React from "react"
 import {Link} from "react-router-dom"
 import Layout from "../components/layout"
+import imageNzShares from "../images/news/celebrating-new-zealand-shares.jpg"
+import imageBullMarket from "../images/news/end-bull-market-or-opportunity-to-buy.jpg"
+import imageMixedOwnership from "../images/news/mixed-ownership-model-has-been-win-win.jpg"
+import imageHousing from "../images/news/nz-housing-market-correction-or-crash.jpg"
+import imageCapitalMarkets from "../images/news/what-does-future-hold-our-capital-markets.jpg"
+import imageInterestRates from "../images/news/will-interest-rates-support-share-markets-again.jpg"
+import imageBackground from "../images/news/background.jpg"
+import imageElection from "../images/news/what-does-election-mean-local-markets.jpg"
+import imageCorporateHealth from "../images/news/insights-our-corporate-health.jpg"
+import imageLookIntoNzMarkets from "../images/news/a-look-into-nz-markets.jpg"
 
 export default function News() {
+    const sectionStyle = {
+        backgroundImage: `url(${imageBackground})`,
+    }
     return (
         <>
             <Layout>
-                <section
-                    className="page-title overlay"
-                    style={{backgroundImage: "url(images/background/page-title.jpg);"}}>
+                <section className="page-title overlay" style={sectionStyle}>
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center">
@@ -19,13 +30,14 @@ export default function News() {
                                     <li>
                                         <Link to="/">Home</Link>
                                     </li>
-                                    <li>News Overview</li>
+                                    <li>
+                                        <Link to="/news">News Overview</Link>
+                                    </li>
                                 </ol>
                             </div>
                         </div>
                     </div>
                 </section>
-
                 <section className="section">
                     <div className="container">
                         <div className="row">
@@ -34,8 +46,121 @@ export default function News() {
                                     <div className="card-img-wrapper overlay-rounded-top">
                                         <img
                                             className="card-img-top"
-                                            src="images/blog/blog-1.jpg"
-                                            alt="blog-thumbnail"
+                                            height="200px"
+                                            src={imageCorporateHealth}
+                                            alt="image of Capital Markets"
+                                        />
+                                    </div>
+                                    <div className="card-body p-0">
+                                        <div className="d-flex">
+                                            <div className="py-3 px-4 border-right text-center">
+                                                <h3 className="text-primary mb-0">1</h3>
+                                                <p className="mb-0">Oct</p>
+                                            </div>
+                                            <div className="p-3">
+                                                <Link
+                                                    to="/news/insights-our-corporate-health"
+                                                    className="h4 font-primary text-dark">
+                                                    洞察新西兰的企业健康？
+                                                </Link>
+                                                <p>by Carrick Asset Editorial</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-4 col-sm-6 mb-4">
+                                <div className="card">
+                                    <div className="card-img-wrapper overlay-rounded-top">
+                                        <img
+                                            className="card-img-top"
+                                            height="200px"
+                                            src={imageCapitalMarkets}
+                                            alt="image of Capital Markets"
+                                        />
+                                    </div>
+                                    <div className="card-body p-0">
+                                        <div className="d-flex">
+                                            <div className="py-3 px-4 border-right text-center">
+                                                <h3 className="text-primary mb-0">9</h3>
+                                                <p className="mb-0">Sep</p>
+                                            </div>
+                                            <div className="p-3">
+                                                <Link
+                                                    to="/news/what-does-future-hold-our-capital-markets"
+                                                    className="h4 font-primary text-dark">
+                                                    资本市场的未来将如何发展？
+                                                </Link>
+                                                <p>by Carrick Asset Editorial</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-4 col-sm-6 mb-4">
+                                <div className="card">
+                                    <div className="card-img-wrapper overlay-rounded-top">
+                                        <img
+                                            className="card-img-top"
+                                            height="200px"
+                                            src={imageElection}
+                                            alt="image of Capital Markets"
+                                        />
+                                    </div>
+                                    <div className="card-body p-0">
+                                        <div className="d-flex">
+                                            <div className="py-3 px-4 border-right text-center">
+                                                <h3 className="text-primary mb-0">8</h3>
+                                                <p className="mb-0">Aug</p>
+                                            </div>
+                                            <div className="p-3">
+                                                <Link
+                                                    to="/news/what-does-election-mean-local-markets"
+                                                    className="h4 font-primary text-dark">
+                                                    选举对当地市场意味着什么？
+                                                </Link>
+                                                <p>by Carrick Asset Editorial</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-4 col-sm-6 mb-4">
+                                <div className="card">
+                                    <div className="card-img-wrapper overlay-rounded-top">
+                                        <img
+                                            className="card-img-top"
+                                            height="200px"
+                                            src={imageLookIntoNzMarkets}
+                                            alt="image of Capital Markets"
+                                        />
+                                    </div>
+                                    <div className="card-body p-0">
+                                        <div className="d-flex">
+                                            <div className="py-3 px-4 border-right text-center">
+                                                <h3 className="text-primary mb-0">11</h3>
+                                                <p className="mb-0">Jul</p>
+                                            </div>
+                                            <div className="p-3">
+                                                <Link
+                                                    to="/news/a-look-into-nz-markets"
+                                                    className="h4 font-primary text-dark">
+                                                    关于新西兰本地市场
+                                                </Link>
+                                                <p>by Carrick Asset Editorial</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-4 col-sm-6 mb-4">
+                                <div className="card">
+                                    <div className="card-img-wrapper overlay-rounded-top">
+                                        <img
+                                            className="card-img-top"
+                                            height="200px"
+                                            src={imageNzShares}
+                                            alt="image of Nz Shares"
                                         />
                                     </div>
                                     <div className="card-body p-0">
@@ -56,14 +181,14 @@ export default function News() {
                                     </div>
                                 </div>
                             </div>
-
                             <div className="col-lg-4 col-sm-6 mb-4">
                                 <div className="card">
                                     <div className="card-img-wrapper overlay-rounded-top">
                                         <img
                                             className="card-img-top"
-                                            src="images/blog/blog-2.jpg"
-                                            alt="blog-thumbnail"
+                                            height="200px"
+                                            src={imageInterestRates}
+                                            alt="image of Interest Rates"
                                         />
                                     </div>
                                     <div className="card-body p-0">
@@ -89,8 +214,37 @@ export default function News() {
                                     <div className="card-img-wrapper overlay-rounded-top">
                                         <img
                                             className="card-img-top"
-                                            src="images/blog/blog-3.jpg"
-                                            alt="blog-thumbnail"
+                                            height="200px"
+                                            src={imageHousing}
+                                            alt="image of Housing"
+                                        />
+                                    </div>
+                                    <div className="card-body p-0">
+                                        <div className="d-flex">
+                                            <div className="py-3 px-4 border-right text-center">
+                                                <h3 className="text-primary mb-0">29</h3>
+                                                <p className="mb-0">Oct</p>
+                                            </div>
+                                            <div className="p-3">
+                                                <Link
+                                                    to="/news/nz-housing-market-correction-or-crash"
+                                                    className="h4 font-primary text-dark">
+                                                    新西兰住房市场：回春或崩溃
+                                                </Link>
+                                                <p>by Carrick Asset Editorial</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-4 col-sm-6 mb-4">
+                                <div className="card">
+                                    <div className="card-img-wrapper overlay-rounded-top">
+                                        <img
+                                            className="card-img-top"
+                                            height="200px"
+                                            src={imageMixedOwnership}
+                                            alt="image of Mixed Ownership"
                                         />
                                     </div>
                                     <div className="card-body p-0">
@@ -105,7 +259,34 @@ export default function News() {
                                                     className="h4 font-primary text-dark">
                                                     混合所有制模式开创双赢局面
                                                 </Link>
-
+                                                <p>by Carrick Asset Editorial</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-4 col-sm-6 mb-4">
+                                <div className="card">
+                                    <div className="card-img-wrapper overlay-rounded-top">
+                                        <img
+                                            className="card-img-top"
+                                            height="200px"
+                                            src={imageBullMarket}
+                                            alt="image of Bull Market"
+                                        />
+                                    </div>
+                                    <div className="card-body p-0">
+                                        <div className="d-flex">
+                                            <div className="py-3 px-4 border-right text-center">
+                                                <h3 className="text-primary mb-0">20</h3>
+                                                <p className="mb-0">Dec</p>
+                                            </div>
+                                            <div className="p-3">
+                                                <Link
+                                                    to="/news/end-bull-market-or-opportunity-to-buy"
+                                                    className="h4 font-primary text-dark">
+                                                    牛市的终结还是买入的机会？
+                                                </Link>
                                                 <p>by Carrick Asset Editorial</p>
                                             </div>
                                         </div>
