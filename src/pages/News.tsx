@@ -10,6 +10,9 @@ import imageHousing from "../images/news/nz-housing-market-correction-or-crash.j
 import imageCapitalMarkets from "../images/news/what-does-future-hold-our-capital-markets.jpg"
 import imageInterestRates from "../images/news/will-interest-rates-support-share-markets-again.jpg"
 import imageBackground from "../images/news/background.jpg"
+import imageElection from "../images/news/what-does-election-mean-local-markets.jpg"
+import imageCorporateHealth from "../images/news/insights-our-corporate-health.jpg"
+import imageLookIntoNzMarkets from "../images/news/a-look-into-nz-markets.jpg"
 
 export default function News() {
     const sectionStyle = {
@@ -44,6 +47,34 @@ export default function News() {
                                         <img
                                             className="card-img-top"
                                             height="200px"
+                                            src={imageCorporateHealth}
+                                            alt="image of Capital Markets"
+                                        />
+                                    </div>
+                                    <div className="card-body p-0">
+                                        <div className="d-flex">
+                                            <div className="py-3 px-4 border-right text-center">
+                                                <h3 className="text-primary mb-0">1</h3>
+                                                <p className="mb-0">Oct</p>
+                                            </div>
+                                            <div className="p-3">
+                                                <Link
+                                                    to="/news/insights-our-corporate-health"
+                                                    className="h4 font-primary text-dark">
+                                                    洞察新西兰的企业健康？
+                                                </Link>
+                                                <p>by Carrick Asset Editorial</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-4 col-sm-6 mb-4">
+                                <div className="card">
+                                    <div className="card-img-wrapper overlay-rounded-top">
+                                        <img
+                                            className="card-img-top"
+                                            height="200px"
                                             src={imageCapitalMarkets}
                                             alt="image of Capital Markets"
                                         />
@@ -59,6 +90,62 @@ export default function News() {
                                                     to="/news/what-does-future-hold-our-capital-markets"
                                                     className="h4 font-primary text-dark">
                                                     资本市场的未来将如何发展？
+                                                </Link>
+                                                <p>by Carrick Asset Editorial</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-4 col-sm-6 mb-4">
+                                <div className="card">
+                                    <div className="card-img-wrapper overlay-rounded-top">
+                                        <img
+                                            className="card-img-top"
+                                            height="200px"
+                                            src={imageElection}
+                                            alt="image of Capital Markets"
+                                        />
+                                    </div>
+                                    <div className="card-body p-0">
+                                        <div className="d-flex">
+                                            <div className="py-3 px-4 border-right text-center">
+                                                <h3 className="text-primary mb-0">8</h3>
+                                                <p className="mb-0">Aug</p>
+                                            </div>
+                                            <div className="p-3">
+                                                <Link
+                                                    to="/news/what-does-election-mean-local-markets"
+                                                    className="h4 font-primary text-dark">
+                                                    选举对当地市场意味着什么？
+                                                </Link>
+                                                <p>by Carrick Asset Editorial</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-4 col-sm-6 mb-4">
+                                <div className="card">
+                                    <div className="card-img-wrapper overlay-rounded-top">
+                                        <img
+                                            className="card-img-top"
+                                            height="200px"
+                                            src={imageLookIntoNzMarkets}
+                                            alt="image of Capital Markets"
+                                        />
+                                    </div>
+                                    <div className="card-body p-0">
+                                        <div className="d-flex">
+                                            <div className="py-3 px-4 border-right text-center">
+                                                <h3 className="text-primary mb-0">11</h3>
+                                                <p className="mb-0">Jul</p>
+                                            </div>
+                                            <div className="p-3">
+                                                <Link
+                                                    to="/news/a-look-into-nz-markets"
+                                                    className="h4 font-primary text-dark">
+                                                    关于新西兰本地市场
                                                 </Link>
                                                 <p>by Carrick Asset Editorial</p>
                                             </div>
@@ -128,34 +215,6 @@ export default function News() {
                                         <img
                                             className="card-img-top"
                                             height="200px"
-                                            src={imageMixedOwnership}
-                                            alt="image of Mixed Ownership"
-                                        />
-                                    </div>
-                                    <div className="card-body p-0">
-                                        <div className="d-flex">
-                                            <div className="py-3 px-4 border-right text-center">
-                                                <h3 className="text-primary mb-0">6</h3>
-                                                <p className="mb-0">Jun</p>
-                                            </div>
-                                            <div className="p-3">
-                                                <Link
-                                                    to="/news/mixed-ownership-model-has-been-win-win"
-                                                    className="h4 font-primary text-dark">
-                                                    混合所有制模式开创双赢局面
-                                                </Link>
-                                                <p>by Carrick Asset Editorial</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-sm-6 mb-4">
-                                <div className="card">
-                                    <div className="card-img-wrapper overlay-rounded-top">
-                                        <img
-                                            className="card-img-top"
-                                            height="200px"
                                             src={imageHousing}
                                             alt="image of Housing"
                                         />
@@ -171,6 +230,34 @@ export default function News() {
                                                     to="/news/nz-housing-market-correction-or-crash"
                                                     className="h4 font-primary text-dark">
                                                     新西兰住房市场：回春或崩溃
+                                                </Link>
+                                                <p>by Carrick Asset Editorial</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-4 col-sm-6 mb-4">
+                                <div className="card">
+                                    <div className="card-img-wrapper overlay-rounded-top">
+                                        <img
+                                            className="card-img-top"
+                                            height="200px"
+                                            src={imageMixedOwnership}
+                                            alt="image of Mixed Ownership"
+                                        />
+                                    </div>
+                                    <div className="card-body p-0">
+                                        <div className="d-flex">
+                                            <div className="py-3 px-4 border-right text-center">
+                                                <h3 className="text-primary mb-0">6</h3>
+                                                <p className="mb-0">Jun</p>
+                                            </div>
+                                            <div className="p-3">
+                                                <Link
+                                                    to="/news/mixed-ownership-model-has-been-win-win"
+                                                    className="h4 font-primary text-dark">
+                                                    混合所有制模式开创双赢局面
                                                 </Link>
                                                 <p>by Carrick Asset Editorial</p>
                                             </div>
