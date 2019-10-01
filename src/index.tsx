@@ -11,7 +11,7 @@ import NotFound from "./pages/404"
 import ContactUs from "./pages/ContactUs"
 import * as serviceWorker from "./serviceWorker"
 
-const FundsComponent = lazy(() => import("./pages/Funds.jsx"))
+const FundsComponent = lazy(() => import("./pages/Funds"))
 const Funds = () => {
     return (
         <Suspense fallback={null}>
