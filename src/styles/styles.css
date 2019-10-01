@@ -954,17 +954,19 @@ button {
     padding: 0;
     background: #fff !important;
     position: relative;
+    margin-top: 30px;
+   
 }
 
 .navigation .navbar-brand {
     position: absolute;
     left: 0;
-    top: -46px;
-    height: 165px;
-    width: 220px;
+    top: 0;
+    height: 100px;
+    width: 250px;
     background: #fff;
     text-align: center;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 10px 0px rgba(255, 254, 254, 0.1);
     z-index: 9;
 }
 
@@ -980,12 +982,14 @@ button {
     .navigation .navbar-brand img {
         height: 50px;
         width: auto;
+
     }
 }
 
 .navigation .navbar-brand img {
     position: relative;
     top: 50%;
+    
     transform: translateY(-50%);
 }
 
@@ -1210,7 +1214,7 @@ button {
 .hero-slider-item {
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
+    background-size: cover;    
     outline: 0;
 }
 
@@ -1525,6 +1529,7 @@ button {
 /* card */
 .card-img-wrapper {
     position: relative;
+    height: 30vh;
 }
 
 .card-img-wrapper::before {
@@ -2644,5 +2649,10 @@ ul.tag-list li a:hover {
 .back-to-top:focus {
     outline: 0;
 }
+.serviceJ{
+    width: 50vw;
+    border: 10px chartreuse;
+}
 
 /*# sourceMappingURL=maps/style.css.map */
+/* This css is for Slider.tsx */
