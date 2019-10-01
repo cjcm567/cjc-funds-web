@@ -9,6 +9,7 @@ import Home from "./pages/Home"
 import LoginOrJoin from "./pages/LoginOrJoin"
 import NotFound from "./pages/404"
 import ContactUs from "./pages/ContactUs"
+import ScrollToTop from "./components/ScrollToTop"
 import * as serviceWorker from "./serviceWorker"
 import Industry from "./pages/Industrydevelopment"
 
@@ -50,19 +51,21 @@ const NewsSingle = (props: any) => {
 
 ReactDOM.render(
     <Router>
-        <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/contact-us" component={ContactUs} />
-            <Route path="/Industry" component={Industry} />
-            <Route path="/funds" component={Funds} />
-            <Route path="/about-us" component={AboutUs} />
-            <Route path="/news" exact component={News} />
-            <Route path="/news/:props" exact component={NewsSingle} />
-            <Route path="/login-or-join" component={LoginOrJoin} />
-            <Route path="/404" component={NotFound} />
-            <Route path="*" component={NotFound} />
-            <Route component={NotFound} />
-        </Switch>
+        <ScrollToTop>
+            <Switch>
+                <Route path="/" exact component={Home} />
+                <Route path="/contact-us" component={ContactUs} />          
+                <Route path="/Industry" component={Industry} />
+                <Route path="/funds" component={Funds} />
+                <Route path="/about-us" component={AboutUs} />
+                <Route path="/news" exact component={News} />
+                <Route path="/news/:props" exact component={NewsSingle} />
+                <Route path="/login-or-join" component={LoginOrJoin} />
+                <Route path="/404" component={NotFound} />
+                <Route path="*" component={NotFound} />
+                <Route component={NotFound} />
+            </Switch>
+        </ScrollToTop>
     </Router>,
     document.getElementById("root")
 )
