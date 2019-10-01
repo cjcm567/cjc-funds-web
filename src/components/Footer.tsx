@@ -3,7 +3,7 @@
 import React, {Suspense} from "react"
 
 function Footer() {
-    return <>THIS IS FOOTER</>
+    return <></>
 }
 
 function FooterComponent() {

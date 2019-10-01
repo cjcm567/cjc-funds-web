@@ -10,6 +10,7 @@ import LoginOrJoin from "./pages/LoginOrJoin"
 import NotFound from "./pages/404"
 import ContactUs from "./pages/ContactUs"
 import * as serviceWorker from "./serviceWorker"
+import Industry from "./pages/Industrydevelopment"
 
 const FundsComponent = lazy(() => import("./pages/Funds"))
 const Funds = () => {
@@ -52,6 +53,7 @@ ReactDOM.render(
         <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/contact-us" component={ContactUs} />
+            <Route path="/Industry" component={Industry} />
             <Route path="/funds" component={Funds} />
             <Route path="/about-us" component={AboutUs} />
             <Route path="/news" exact component={News} />
