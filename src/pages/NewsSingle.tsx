@@ -1,22 +1,23 @@
 /** @format */
 
 import React from "react"
-import {Link} from "react-router-dom"
+import {Link, RouteComponentProps} from "react-router-dom"
 import Layout from "../components/layout"
 import imageBackground from "../images/news/background.jpg"
+import newsData from "../data/newsData.json"
 
-export default function NewsSingle(props: any) {
+type TParams = {props: string}
+
+export default function NewsSingle(props: RouteComponentProps<TParams>) {
     const newsTitle = props.match.params.props
-    // eslint-disable-next-line @typescript-eslint/no-var-requires
-    const newsObject = require("../data/newsData.json")
     const newsRender = {title: "", content: "", author: "", date: "", imageUri: ""}
-    for (let index = 0; index < newsObject.length; index++) {
-        if (newsTitle === newsObject[index]["props"]) {
-            newsRender["title"] = newsObject[index]["title"]
-            newsRender["content"] = newsObject[index]["content"]
-            newsRender["date"] = newsObject[index]["date"]
-            newsRender["author"] = newsObject[index]["author"]
-            newsRender["imageUri"] = "../images/news/" + newsObject[index]["props"].toString() + ".jpg"
+    for (let index = 0; index < newsData.length; index++) {
+        if (newsTitle === newsData[index]["props"]) {
+            newsRender["title"] = newsData[index]["title"]
+            newsRender["content"] = newsData[index]["content"]
+            newsRender["date"] = newsData[index]["date"]
+            newsRender["author"] = newsData[index]["author"]
+            newsRender["imageUri"] = newsData[index]["props"]
         }
     }
     const sectionStyle = {
@@ -47,8 +48,11 @@ export default function NewsSingle(props: any) {
                         <div className="row">
                             <div className="col-lg-8 py-100">
                                 <div className="border rounded bg-white">
-                                    {/* TODO: img */}
-                                    {/* <img className="img-fluid w-100 rounded-top" src={users} alt="news image" /> */}
+                                    <img
+                                        className="img-fluid w-100 rounded-top"
+                                        src={require(`../images/news/${newsRender.imageUri}.jpg`)}
+                                        alt="news image"
+                                    />
                                     <div className="p-4">
                                         <h3>{newsRender.title}</h3>
                                         <ul className="list-inline d-block pb-4 border-bottom mb-3">

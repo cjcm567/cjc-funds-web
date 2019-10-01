@@ -49,7 +49,7 @@ function Home() {
                     </div>
 
                     <div className="mb-50">
-                        <Carousel/>
+                        <Carousel />
                     </div>
 
                     {/* service  */}
@@ -158,29 +158,29 @@ function Home() {
                                         <div>
                                             <ul className="d-inline-block pl-0">
                                                 <li className="font-secondary mb-10 text-white float-sm-left mr-sm-5">
-                                                    <i className="text-primary mr-2 ti-arrow-circle-right"/>
+                                                    <i className="text-primary mr-2 ti-arrow-circle-right" />
                                                     Business Services
                                                 </li>
                                                 <li className="font-secondary mb-10 text-white">
-                                                    <i className="text-primary mr-2 ti-arrow-circle-right"/>
+                                                    <i className="text-primary mr-2 ti-arrow-circle-right" />
                                                     Audit &amp; Assurance
                                                 </li>
                                                 <li className="font-secondary mb-10 text-white">
-                                                    <i className="text-primary mr-2 ti-arrow-circle-right"/>
+                                                    <i className="text-primary mr-2 ti-arrow-circle-right" />
                                                     IT Control Solutions
                                                 </li>
                                             </ul>
                                             <ul className="d-inline-block pl-0">
                                                 <li className="font-secondary mb-10 text-white">
-                                                    <i className="text-primary mr-2 ti-arrow-circle-right"/>
+                                                    <i className="text-primary mr-2 ti-arrow-circle-right" />
                                                     Business Services
                                                 </li>
                                                 <li className="font-secondary mb-10 text-white">
-                                                    <i className="text-primary mr-2 ti-arrow-circle-right"/>
+                                                    <i className="text-primary mr-2 ti-arrow-circle-right" />
                                                     Audit &amp; Assurance
                                                 </li>
                                                 <li className="font-secondary mb-10 text-white">
-                                                    <i className="text-primary mr-2 ti-arrow-circle-right"/>
+                                                    <i className="text-primary mr-2 ti-arrow-circle-right" />
                                                     IT Control Solutions
                                                 </li>
                                             </ul>
@@ -217,7 +217,7 @@ function Home() {
                                 </div> */}
 
                                 <div className="col-lg-6 offset-lg-1">
-                                    <img src={serviceImage04} width="100%" className="img-fluid mb-60 rounded-top"/>
+                                    <img src={serviceImage04} width="100%" className="img-fluid mb-60 rounded-top" />
                                 </div>
                             </div>
                         </div>
@@ -352,7 +352,7 @@ function Home() {
 export default function HomeComponent() {
     return (
         <Suspense fallback="loading...">
-            <Home/>
+            <Home />
         </Suspense>
     )
 }

@@ -43,7 +43,7 @@ function HeaderComponent() {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
-                            <ul className="list-inline text-lg-right text-center"/>
+                            <ul className="list-inline text-lg-right text-center" />
                         </div>
                     </div>
                 </div>
@@ -63,7 +63,7 @@ function HeaderComponent() {
                                 aria-controls="navbarSupportedContent"
                                 aria-expanded={ariaExpanded}
                                 aria-label="Toggle navigation">
-                                <span className="navbar-toggler-icon" onClick={handleNavCollapse}/>
+                                <span className="navbar-toggler-icon" onClick={handleNavCollapse} />
                             </button>
 
                             <div className={collapseStatus} id="navbarSupportedContent">

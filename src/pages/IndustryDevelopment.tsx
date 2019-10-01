@@ -19,7 +19,7 @@ export default function IndustryDevelopment() {
                             <h2 className="section-heading text-uppercase">行业发展</h2>
                         </div>
                     </div>
-                    <div style={style}/>
+                    <div style={style} />
                     <div className="row">
                         <div className="col-lg-12">
                             <ul className="timeline">

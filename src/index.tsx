@@ -2,7 +2,7 @@
 
 import React, {lazy, Suspense} from "react"
 import ReactDOM from "react-dom"
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom"
+import {BrowserRouter as Router, Route, Switch, RouteComponentProps} from "react-router-dom"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "./styles/styles.css"
 import Home from "./pages/Home"
@@ -12,7 +12,7 @@ import ContactUs from "./pages/ContactUs"
 import ScrollToTop from "./components/ScrollToTop"
 import * as serviceWorker from "./serviceWorker"
 import Industry from "./pages/IndustryDevelopment"
-
+type TParams = {props: string}
 const FundsComponent = lazy(() => import("./pages/Funds"))
 const Funds = () => {
     return (
@@ -41,7 +41,7 @@ const News = () => {
 }
 
 const NewsSingleComponent = lazy(() => import("./pages/NewsSingle"))
-const NewsSingle = (props: any) => {
+const NewsSingle = (props: RouteComponentProps<TParams>) => {
     return (
         <Suspense fallback={null}>
             <NewsSingleComponent {...props} />
@@ -54,8 +54,8 @@ ReactDOM.render(
         <ScrollToTop>
             <Switch>
                 <Route path="/" exact component={Home} />
-                <Route path="/contact-us" component={ContactUs}/>
-                <Route path="/industry" component={Industry}/>
+                <Route path="/contact-us" component={ContactUs} />
+                <Route path="/industry" component={Industry} />
                 <Route path="/funds" component={Funds} />
                 <Route path="/about-us" component={AboutUs} />
                 <Route path="/news" exact component={News} />
