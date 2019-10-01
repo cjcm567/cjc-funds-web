@@ -1,15 +1,52 @@
 /** @format */
 
-import React from "react"
+import React, {lazy, Suspense} from "react"
 import ReactDOM from "react-dom"
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "./styles/styles.css"
 import Home from "./pages/Home"
+import LoginOrJoin from "./pages/LoginOrJoin"
 import NotFound from "./pages/404"
 import ContactUs from "./pages/ContactUs"
 import * as serviceWorker from "./serviceWorker"
 import Industry from "./pages/Industrydevelopment"
+
+const FundsComponent = lazy(() => import("./pages/Funds"))
+const Funds = () => {
+    return (
+        <Suspense fallback={null}>
+            <FundsComponent />
+        </Suspense>
+    )
+}
+
+const AboutUsComponent = lazy(() => import("./pages/AboutUs"))
+const AboutUs = () => {
+    return (
+        <Suspense fallback={null}>
+            <AboutUsComponent />
+        </Suspense>
+    )
+}
+
+const NewsComponent = lazy(() => import("./pages/News"))
+const News = () => {
+    return (
+        <Suspense fallback={null}>
+            <NewsComponent />
+        </Suspense>
+    )
+}
+
+const NewsSingleComponent = lazy(() => import("./pages/NewsSingle"))
+const NewsSingle = (props: any) => {
+    return (
+        <Suspense fallback={null}>
+            <NewsSingleComponent {...props}></NewsSingleComponent>
+        </Suspense>
+    )
+}
 
 ReactDOM.render(
     <Router>
@@ -17,6 +54,11 @@ ReactDOM.render(
             <Route path="/" exact component={Home} />
             <Route path="/contact-us" component={ContactUs} />
             <Route path="/Industry" component={Industry} />
+            <Route path="/funds" component={Funds} />
+            <Route path="/about-us" component={AboutUs} />
+            <Route path="/news" exact component={News} />
+            <Route path="/news/:props" exact component={NewsSingle} />
+            <Route path="/login-or-join" component={LoginOrJoin} />
             <Route path="/404" component={NotFound} />
             <Route path="*" component={NotFound} />
             <Route component={NotFound} />
