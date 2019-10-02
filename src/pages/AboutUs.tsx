@@ -1,8 +1,10 @@
 /** @format */
 
 import React from "react"
+import {Link} from "react-router-dom"
 import Layout from "../components/layout"
-import logo from "../images/logo.svg"
+import imageBackground from "../images/news/background.jpg"
+import newsObject from "../data/newsData.json"
 
 export default function AboutUs() {
     return (
@@ -13,20 +15,25 @@ export default function AboutUs() {
                         <div className="row">
                             <div className="col-lg-7 order-2 order-lg-1">
                                 <h5 className="section-title-sm">Know About</h5>
-                                <h2 className="section-title section-title-border-half">Our Philosophy</h2>
+                                <h2 className="section-title section-title-border-half">我们的历史</h2>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor didunt
-                                    laboris nisi ut aliquip ex commodo consequat. duis aute irure dolor in
-                                    reprehenderivoluptate velit esse cillum dolore fugiat nulla pariatur.Excepteur sint
-                                    ocaecat cupidatat noproident sunt culpa qui officia deserunt mollit anim id est
-                                    laborum.
+                                    Carrick Just Asset Management Limited
+                                    是一家被基金经理授权提供管理投资计划的基金公司。公司成立于2017年，总部位于新西兰奥克兰。本公司积极管理该计划下的资金，并致力于确保其客户实现其投资目标。
+                                    我们在此管理投资计划下提供了一系列资金，以适应不同的投资者需求，并帮助我们的客户实现他们的投资目标。
+                                    我们有能力投资各种资产类别，我们的目标是使投资人获得高于适当基准的回报。
+                                    我们通过运用我们的投资方法，专业知识和理念积极管理资金。
                                 </p>
                                 <p>
-                                    Sed perspiciatis unde omnisiste natus error sit voluptatem accusantium.doloremque
-                                    ladantium totam rem aperieaque ipsa quae ab illo inventore.veritatis. et quasi
-                                    architecto beatae vitae dicta sunt explicabo.
+                                    单位信托基金是由Carrick管理的合并投资。 您的资金与其他投资者的资金合计并由我们投资。
+                                    我们将为其提供的服务收取费用。 每个基金分为多个单位，您可以通过购买单位进行投资。
+                                    您可以通过出售单位退出投资。
+                                    每个单位的价格可能会波动，您的投资价值取决于Carrick的投资决策。
                                 </p>
-                                <a href="#" className="btn btn-primary">
+                                <p>
+                                    每个基金都是一个证券投资实体（“ PIE”）。
+                                    有关PIE的税收信息，点击按钮访问ird官方网站查询。
+                                </p>
+                                <a href="http://www.ird.govt.nz" className="btn btn-primary">
                                     Explore More
                                 </a>
                             </div>
@@ -55,19 +62,20 @@ export default function AboutUs() {
                                 {/* ceo content */}
                                 <div className="p-5">
                                     <h2 className="section-title section-title-border-half-white text-white">
-                                        We are efficient to
-                                        <br /> make your business rise{" "}
+                                        Carrick Investment Fund
+                                        <br /> 投资理念{" "}
                                     </h2>
                                     <p className="text-white">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor
-                                        didunt laboris nisi ut aliquip ex commodo consequat. duis aute irure dolor in
-                                        reprehenderit voluptate velit esse cillum dolore fugiat nulla pariatur.Excepteur
-                                        sint ocaecat cupidatat non proident sunt culpa qui officia deserunt mollit anim
-                                        id est laborum.
+                                        •长期投资<br/> 
+                                        •积极管理基金以获得最佳回报<br/> 
+                                        •每次投资前都要进行详尽详尽的研究和分析<br/>
+                                        •关于风险管理的纪律立场<br/> 
+                                        •灵活的投资方法 <br/> 
+                                        •进行适当的投资组合多元化<br/>
                                     </p>
                                     <img src="images/about/ceo-signature.png" alt="ceo-signature" />
-                                    <h5 className="text-white">John Doe</h5>
-                                    <h6 className="text-white">CEO</h6>
+                                    {/* <h5 className="text-white">John Doe</h5>
+                                    <h6 className="text-white">CEO</h6> */}
                                 </div>
                             </div>
                         </div>
@@ -81,7 +89,7 @@ export default function AboutUs() {
                         <div className="row">
                             <div className="col-lg-12">
                                 <h5 className="section-title-sm">Best Reason</h5>
-                                <h2 className="section-title section-title-border-half">Why Choose Us</h2>
+                                <h2 className="section-title section-title-border-half">选择我们</h2>
                             </div>
                             {/* accordion */}
                             <div className="col-lg-6">
@@ -92,14 +100,12 @@ export default function AboutUs() {
                                                 className="card-link h5 d-block tex-dark mb-0 py-10 px-4"
                                                 data-toggle="collapse"
                                                 href="#collapseOne">
-                                                <i className="ti-minus text-primary mr-2"></i> Our Company Mission
+                                                <i className="ti-minus text-primary mr-2"></i> 投资思路
                                             </a>
                                         </div>
                                         <div id="collapseOne" className="collapse show" data-parent="#accordion">
                                             <div className="card-body font-secondary text-color pl-0 pb-0">
-                                                Duis aute irure dolor in reprehenderit voluptate velit esse cillum
-                                                dolore fugiat nulla pariatur.Excepteur sint ocaecat cupidatat non
-                                                proident sunt culpa qui officia deserunt mollit anim id est laborum.
+                                            投资过程的第一阶段涉及投资理念的产生。 我们的投资经理人提出的想法是什么产品在许多可投资的产品中是我们可以投资的，以实现基金的目标之间的产品。
                                             </div>
                                         </div>
                                     </div>
@@ -109,14 +115,12 @@ export default function AboutUs() {
                                                 className="collapsed card-link h5 d-block tex-dark mb-0 py-10 px-4"
                                                 data-toggle="collapse"
                                                 href="#collapseTwo">
-                                                <i className="ti-plus text-primary mr-2"></i> Our Company Mission
+                                                <i className="ti-plus text-primary mr-2"></i> 研究与分析
                                             </a>
                                         </div>
-                                        <div id="collapseTwo" className="collapse" data-parent="#accordion">
+                                        <div id="collapseTwo" className="collapse show" data-parent="#accordion">
                                             <div className="card-body font-secondary text-color pl-0 pb-0">
-                                                Duis aute irure dolor in reprehenderit voluptate velit esse cillum
-                                                dolore fugiat nulla pariatur.Excepteur sint ocaecat cupidatat non
-                                                proident sunt culpa qui officia deserunt mollit anim id est laborum.
+                                            然后，我们会对要投资的证券进行详细分析。该分析可能包括价格预测，技术分析，定量分析，行业和公司特定的研究与分析。
                                             </div>
                                         </div>
                                     </div>
@@ -126,50 +130,43 @@ export default function AboutUs() {
                                                 className="collapsed card-link h5 d-block tex-dark mb-0 py-10 px-4"
                                                 data-toggle="collapse"
                                                 href="#collapseThree">
-                                                <i className="ti-plus text-primary mr-2"></i> Our Company Mission
+                                                <i className="ti-plus text-primary mr-2"></i> 投资组合建设
                                             </a>
                                         </div>
-                                        <div id="collapseThree" className="collapse" data-parent="#accordion">
+                                        <div id="collapseThree" className="collapse show" data-parent="#accordion">
                                             <div className="card-body font-secondary text-color pl-0 pb-0">
-                                                Duis aute irure dolor in reprehenderit voluptate velit esse cillum
-                                                dolore fugiat nulla pariatur.Excepteur sint ocaecat cupidatat non
-                                                proident sunt culpa qui officia deserunt mollit anim id est laborum.
+                                            决定要投资的证券后，我们会考虑资产分配和限额要求，将证券添加到投资组合中。
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            {/* progressbar */}
-                            <div className="col-lg-6">
-                                <div className="progressbar">
-                                    <h5 className="progressbar-title">Branding</h5>
-                                    <div className="progress" data-percent="85%">
-                                        <div className="progress-bar progress-bar-striped" style={{width: "85%;"}}>
-                                            <div className="progress-bar-value">85%</div>
+                                    <div className="card border-0 mb-4">
+                                        <div className="card-header bg-gray border p-0">
+                                            <a
+                                                className="collapsed card-link h5 d-block tex-dark mb-0 py-10 px-4"
+                                                data-toggle="collapse"
+                                                href="#collapseThree">
+                                                <i className="ti-plus text-primary mr-2"></i> 投资组合监控
+                                            </a>
+                                        </div>
+                                        <div id="collapseThree" className="collapse show" data-parent="#accordion">
+                                            <div className="card-body font-secondary text-color pl-0 pb-0">
+                                            持续监控建筑组合的绩效，以使我们能够评估其绩效，并确保投资符合SIPO的要求。
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div className="progressbar">
-                                    <h5 className="progressbar-title">Branding</h5>
-                                    <div className="progress" data-percent="75%">
-                                        <div className="progress-bar progress-bar-striped" style={{width: "75%;"}}>
-                                            <div className="progress-bar-value">75%</div>
+                                    <div className="card border-0 mb-4">
+                                        <div className="card-header bg-gray border p-0">
+                                            <a
+                                                className="collapsed card-link h5 d-block tex-dark mb-0 py-10 px-4"
+                                                data-toggle="collapse"
+                                                href="#collapseThree">
+                                                <i className="ti-plus text-primary mr-2"></i> 战术分配和平衡
+                                            </a>
                                         </div>
-                                    </div>
-                                </div>
-                                <div className="progressbar">
-                                    <h5 className="progressbar-title">Consulting</h5>
-                                    <div className="progress" data-percent="90%">
-                                        <div className="progress-bar progress-bar-striped" style={{width: "90%;"}}>
-                                            <div className="progress-bar-value">90%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="progressbar">
-                                    <h5 className="progressbar-title">Business</h5>
-                                    <div className="progress" data-percent="75%">
-                                        <div className="progress-bar progress-bar-striped" style={{width: "75%;"}}>
-                                            <div className="progress-bar-value">75%</div>
+                                        <div id="collapseThree" className="collapse show" data-parent="#accordion">
+                                            <div className="card-body font-secondary text-color pl-0 pb-0">
+                                            我们积极管理投资。 我们致力于调整和平衡投资组合中的成分的策略，以为我们的客户实现最佳结果并遵守资产分配限制。
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -179,7 +176,7 @@ export default function AboutUs() {
                 </section>
                 {/* skill  */}
 
-                <section
+                {/* <section
                     className="fun-facts overlay-dark section-sm"
                     style={{backgroundImage: "url(images/background/cta.jpg);"}}>
                     <div className="container">
@@ -230,10 +227,10 @@ export default function AboutUs() {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
 
                 {/* testimonial */}
-                <section className="section pb-0">
+                {/* <section className="section pb-0">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center">
@@ -246,7 +243,7 @@ export default function AboutUs() {
                             <div className="col-lg-7 col-md-7 align-self-center pl-0">
                                 <div className="testimonial-slider p-5">
                                     {/* slider item */}
-                                    <div className="outline-0">
+                                    {/* <div className="outline-0">
                                         <i className="testimonial-icon ti-quote-left"></i>
                                         <p className="text-dark">
                                             Lorem ipsum dolor sit amet constur adipisicing elit sed eiusmtempor incid
@@ -257,7 +254,7 @@ export default function AboutUs() {
                                         <h6 className="font-secondary text-color">Happy Clients</h6>
                                     </div>
                                     {/* slider item */}
-                                    <div className="outline-0">
+                                    {/* <div className="outline-0">
                                         <i className="testimonial-icon ti-quote-left"></i>
                                         <p className="text-dark">
                                             Lorem ipsum dolor sit amet constur adipisicing elit sed eiusmtempor incid
@@ -266,9 +263,9 @@ export default function AboutUs() {
                                         </p>
                                         <h4 className="font-weight-normal">Julia Robertson</h4>
                                         <h6 className="font-secondary text-color">Happy Clients</h6>
-                                    </div>
+                                    </div> */}
                                     {/* slider item */}
-                                    <div className="outline-0">
+                                    {/* <div className="outline-0">
                                         <i className="testimonial-icon ti-quote-left"></i>
                                         <p className="text-dark">
                                             Lorem ipsum dolor sit amet constur adipisicing elit sed eiusmtempor incid
@@ -282,7 +279,7 @@ export default function AboutUs() {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section>  */}
             </Layout>
         </>
     )
