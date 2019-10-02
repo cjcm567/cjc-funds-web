@@ -50,11 +50,9 @@ function HeaderComponent() {
                 <div className="navigation">
                     <div className="container">
                         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                            <a className="navbar-brand" href="index.html">
-                                <Link to="/">
-                                    <img className="navbar-brand img" src={logoImage} alt="logo" />
-                                </Link>
-                            </a>
+                            <Link to="/">
+                                <img className="navbar-brand img" src={logoImage} alt="logo" />
+                            </Link>
                             <button
                                 className="navbar-toggler"
                                 type="button"
@@ -74,7 +72,6 @@ function HeaderComponent() {
                                         </Link>
                                     </li>
                                     <li className="nav-item">
-                                        {/* URL for content01 */}
                                         <Link to="/about-us" className="nav-link">
                                             关于我们
                                         </Link>
@@ -111,10 +108,7 @@ function HeaderComponent() {
                                         </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link
-                                            to="/login-or-join"
-                                            className="nav-link btn btn-primary btn-sm"
-                                            style={{color: "white"}}>
+                                        <Link to="/login-or-join" className="btn btn-primary btn-sm text-white">
                                             Join Us
                                         </Link>
                                     </li>

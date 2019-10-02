@@ -4,8 +4,8 @@ import React from "react"
 import {Link} from "react-router-dom"
 import Layout from "../components/layout"
 import imageBackground from "../images/news/background.jpg"
-
 import newsObject from "../data/newsData.json"
+
 export default function News() {
     const sectionStyle = {
         backgroundImage: `url(${imageBackground})`,
@@ -25,11 +25,11 @@ export default function News() {
                 <div className="card-body p-0">
                     <div className="d-flex">
                         <div className="py-3 px-4 border-right text-center">
-                            <h3 className="text-primary mb-0">1</h3>
-                            <p className="mb-0">Oct</p>
+                            <h3 className="text-primary mb-0">{newsObjectItem.date.substr(0, 2).trim()}</h3>
+                            <p className="mb-0">{newsObjectItem.date.split(" ").pop()}</p>
                         </div>
                         <div className="p-3">
-                            <Link to="/news/insights-our-corporate-health" className="h4 font-primary text-dark">
+                            <Link to={`/news/${newsObjectItem.props}`} className="h4 font-primary text-dark">
                                 {newsObjectItem.title}
                             </Link>
                             <p>by {newsObjectItem.author}</p>

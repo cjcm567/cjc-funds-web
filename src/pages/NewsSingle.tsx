@@ -10,6 +10,7 @@ type TParams = {props: string}
 
 export default function NewsSingle(props: RouteComponentProps<TParams>) {
     const newsTitle = props.match.params.props
+    console.log(newsTitle)
     const newsRender = {title: "", content: "", author: "", date: "", imageUri: ""}
     for (let index = 0; index < newsData.length; index++) {
         if (newsTitle === newsData[index]["props"]) {

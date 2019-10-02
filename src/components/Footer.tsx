@@ -13,10 +13,10 @@ function Footer() {
     return (
         <>
             <footer className="footer">
-                <div className="py-100 border-bottom" style={{borderColor: "#454547 !important"}}>
+                <div className="py-50 border-bottom" style={{borderColor: "#454547 !important"}}>
                     <div className="container">
                         <div className="row">
-                            <div className="col-lg-4 col-md-4">
+                            <div className="col-lg-3 col-md-4">
                                 <div className="mb-5 mb-md-0 text-center text-md-left">
                                     <Link to="/" className="mb-30">
                                         <img src={logo} alt="logo" style={{height: "9vh"}} />
@@ -25,71 +25,38 @@ function Footer() {
                                         Carrick Just Asset Management Limited
                                         是一家被基金经理授权提供管理投资计划的基金公司。公司成立于2017年，总部位于新西兰奥克兰。本公司积极管理该计划下的资金，并致力于确保其客户实现其投资目标。
                                     </p>
-                                    {/* social icon */}
-                                    <ul className="list-inline">
-                                        <li className="list-inline-item">
-                                            <a className="social-icon-outline" href="#">
-                                                <i className="ti-facebook"></i>
-                                            </a>
-                                        </li>
-                                        <li className="list-inline-item">
-                                            <a className="social-icon-outline" href="#">
-                                                <i className="ti-twitter-alt"></i>
-                                            </a>
-                                        </li>
-                                        <li className="list-inline-item">
-                                            <a className="social-icon-outline" href="#">
-                                                <i className="ti-vimeo-alt"></i>
-                                            </a>
-                                        </li>
-                                        <li className="list-inline-item">
-                                            <a className="social-icon-outline" href="#">
-                                                <i className="ti-linkedin"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
                                 </div>
                             </div>
                             {/* footer links */}
-                            <div className="col-lg-2 col-md-4 col-6">
-                                <h4 className="mb-4">基金</h4>
-                                <ul className="footer-links">
+                            <div className="col-lg-2 col-md-4 col-6 text-md-left">
+                                <Link to="/funds">
+                                    <h4 className="mb-4">基金</h4>
+                                </Link>
+                                <ul className="footer-links text-left">
                                     <li>
-                                        <a href="#">FOF</a>
-                                    </li>
-                                    {/* <li>
-                                        <a href="#">关于我们</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">联系我们</a>
+                                        <Link to="/funds/fund-of-funds">Fund of Funds</Link>
                                     </li>
                                     <li>
-                                        <a href="#">基金</a>
+                                        <Link to="/funds/carrick-dividend-yield-fund">Dividend Yield Fund</Link>
                                     </li>
-                                    <li>
-                                        <a href="#">Privacy Policy</a>
-                                    </li> */}
                                 </ul>
                             </div>
                             {/* footer links */}
-                            <div className="col-lg-2 col-md-4 col-6">
+                            <div className="col-lg-2 col-md-4 col-6 text-md-left">
                                 <h4 className="mb-4">快速连接</h4>
-                                <ul className="footer-links">
+                                <ul className="footer-links text-left">
                                     <li>
-                                        <a href="#">关于我们</a>
+                                        <Link to="/about-us">关于我们</Link>
                                     </li>
                                     <li>
-                                        <a href="#">联系我们</a>
+                                        <Link to="/news">业内新闻</Link>
                                     </li>
                                     <li>
-                                        <a href="#">新闻</a>
+                                        <Link to="/industry">行业发展</Link>
                                     </li>
                                     <li>
-                                        <a href="#">行业发展</a>
+                                        <Link to="/contact-us">联系我们</Link>
                                     </li>
-                                    {/* <li>
-                                        <a href="#">Privacy Policy</a>
-                                    </li> */}
                                 </ul>
                             </div>
                             {/* subscribe form */}

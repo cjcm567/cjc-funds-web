@@ -40,14 +40,16 @@ function Home() {
     const newsRender = newsObject.map(newsObjectItem => (
         <li className="d-flex border-bottom" key={newsObjectItem.props}>
             <div className="py-3 px-4 border-right text-center">
-                <h3 className="text-primary mb-0">01</h3>
-                <p className="mb-2">Oct</p>
+                <h3 className="text-primary mb-0" style={{minWidth: "2.2vw"}}>
+                    {newsObjectItem.date.substr(0, 2).trim()}
+                </h3>
+                <p className="mb-2">{newsObjectItem.date.split(" ").pop()}</p>
             </div>
             <div className="p-3">
                 <Link to="/news/celebrating-new-zealand-shares" className="h4 font-primary text-dark">
-                    {newsObjectItem.title.split("\n")}
+                    {newsObjectItem.title}
                 </Link>
-                <p>{newsObjectItem.author.split("\n")}</p>
+                <p>{newsObjectItem.author}</p>
             </div>
         </li>
     ))
