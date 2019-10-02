@@ -17,22 +17,21 @@ function ContactUs() {
                                     <li className="d-flex mb-30">
                                         <i className="round-icon mr-3 ti-mobile"></i>
                                         <div className="align-self-center font-primary">
-                                            <p>+88 0123 456 789</p>
-                                            <p>+88 987 654 3210</p>
+                                            <p>+64 9 2803716</p>
                                         </div>
                                     </li>
                                     <li className="d-flex mb-30">
                                         <i className="round-icon mr-3 ti-email"></i>
                                         <div className="align-self-center font-primary">
-                                            <p>info@biztrox.com</p>
-                                            <p>biztrox@email.com</p>
+                                            <p>xyz@abc.com</p>
                                         </div>
                                     </li>
                                     <li className="d-flex mb-30">
                                         <i className="round-icon mr-3 ti-map-alt"></i>
                                         <div className="align-self-center font-primary">
-                                            <p>24/B Garden Street.</p>
-                                            <p>Northambia, Weals, UK</p>
+                                            <p>Carrick Just Asset Management Limited</p>
+                                            <p>Level 2, 3 Margot Street, Epsom</p>
+                                            <p>Auckland 1051</p>
                                         </div>
                                     </li>
                                 </ul>
