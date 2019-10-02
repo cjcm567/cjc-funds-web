@@ -58,7 +58,7 @@ function Home() {
         <>
             <Layout>
                 <div className="App">
-                    <div className="mb-50">
+                    {/* <div className="mb-50">
                         <Slider
                             items={IMAGE_DATA}
                             speed={1}
@@ -68,7 +68,7 @@ function Home() {
                             dots={true}
                             arrows={true}
                         />
-                    </div>
+                    </div> */}
 
                     <div className="mb-50">
                         <Carousel />
