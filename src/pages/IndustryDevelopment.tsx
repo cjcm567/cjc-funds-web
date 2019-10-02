@@ -7,19 +7,15 @@ import IndustryImg02 from "../images/industry/02.png"
 import IndustryImg03 from "../images/industry/03.png"
 
 export default function IndustryDevelopment() {
-    const style = {
-        height: 100,
-    }
     return (
         <Layout>
             <section className="page-section" id="about">
                 <div className="container">
-                    <div className="row">
+                    <div className="row mb-100">
                         <div className="col-lg-12 text-center">
                             <h2 className="section-heading text-uppercase">行业发展</h2>
                         </div>
                     </div>
-                    <div style={style} />
                     <div className="row">
                         <div className="col-lg-12">
                             <ul className="timeline">

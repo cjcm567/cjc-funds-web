@@ -50,11 +50,9 @@ function HeaderComponent() {
                 <div className="navigation">
                     <div className="container">
                         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                            <a className="navbar-brand" href="index.html">
-                                <Link to="/">
-                                    <img className="navbar-brand img" src={logoImage} alt="logo" />
-                                </Link>
-                            </a>
+                            <Link to="/">
+                                <img className="navbar-brand img" src={logoImage} alt="logo" />
+                            </Link>
                             <button
                                 className="navbar-toggler"
                                 type="button"
@@ -74,7 +72,6 @@ function HeaderComponent() {
                                         </Link>
                                     </li>
                                     <li className="nav-item">
-                                        {/* URL for content01 */}
                                         <Link to="/about-us" className="nav-link">
                                             关于我们
                                         </Link>
@@ -88,32 +85,21 @@ function HeaderComponent() {
                                                 aria-haspopup="true"
                                                 aria-expanded="false"
                                                 onClick={handleDropdownCollapse}>
-                                                基金
+                                                基金产品
                                             </a>
                                         </Link>
-
-                                        {/* <div className={dropdownMenuStatus}>
-                                            <Link to="/funds/" className="dropdown-item">
-                                                FUNDS_item01
+                                        <div className={dropdownMenuStatus}>
+                                            <Link to="/funds/fund-of-funds" className="dropdown-item">
+                                                Fund of Funds
                                             </Link>
-                                            <Link to="/products-and-services/hedge" className="dropdown-item">
-                                                FUNDS_item02
+                                            <Link to="/funds/carrick-dividend-yield-fund" className="dropdown-item">
+                                                Carrick Dividend Yield Fund
                                             </Link>
-                                            <Link
-                                                to="/products-and-services/introducing-brokers"
-                                                className="dropdown-item">
-                                                FUNDS_item03
-                                            </Link>
-                                            <Link
-                                                to="/products-and-services/multi-account-manager-solution"
-                                                className="dropdown-item">
-                                                FUNDS_item04
-                                            </Link>
-                                        </div> */}
+                                        </div>
                                     </li>
                                     <li className="nav-item">
                                         <Link to="/news" className="nav-link">
-                                            新闻
+                                            业内新闻
                                         </Link>
                                     </li>
                                     <li className="nav-item">
@@ -122,10 +108,7 @@ function HeaderComponent() {
                                         </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link
-                                            to="/login-or-join"
-                                            className="nav-link btn btn-primary btn-sm"
-                                            style={{color: "white"}}>
+                                        <Link to="/login-or-join" className="btn btn-primary btn-sm text-white">
                                             Join Us
                                         </Link>
                                     </li>

@@ -12,7 +12,7 @@ import serviceImage04 from "../images/service/service-4.jpg"
 import AboutUsImage from "../images/background/about-bg.jpg"
 import imageCapitalMarkets from "../images/news/what-does-future-hold-our-capital-markets.jpg"
 import imageCorporateHealth from "../images/news/insights-our-corporate-health.jpg"
-
+import newsData from "../data/newsData.json"
 const IMAGE_DATA = [
     {
         src: require("../images/banner/banner-1.jpg"),
@@ -32,6 +32,28 @@ const sectionStyle = {
 }
 
 function Home() {
+    const newsObject = []
+    for (let index = 0; index <= 2; index++) {
+        newsObject.push(newsData[index])
+    }
+
+    const newsRender = newsObject.map(newsObjectItem => (
+        <li className="d-flex border-bottom" key={newsObjectItem.props}>
+            <div className="py-3 px-4 border-right text-center">
+                <h3 className="text-primary mb-0" style={{minWidth: "2.2vw"}}>
+                    {newsObjectItem.date.substr(0, 2).trim()}
+                </h3>
+                <p className="mb-2">{newsObjectItem.date.split(" ").pop()}</p>
+            </div>
+            <div className="p-3">
+                <Link to="/news/celebrating-new-zealand-shares" className="h4 font-primary text-dark">
+                    {newsObjectItem.title}
+                </Link>
+                <p>{newsObjectItem.author}</p>
+            </div>
+        </li>
+    ))
+
     return (
         <>
             <Layout>
@@ -65,20 +87,21 @@ function Home() {
                                     <div className="col-lg-4 col-sm-6 mb-5 mb-lg-0">
                                         <div className="card text-center">
                                             <h4 className="card-title pt-3">量化策略</h4>
-                                            <div className="card-img-wrapper">
+                                            <div className="card-img-wrapper mb-20">
                                                 <img
                                                     className="card-img-top rounded-0"
+                                                    height="200px"
                                                     src={serviceImage01}
                                                     alt="service-image"
                                                 />
                                             </div>
                                             <div className="card-body p-0">
-                                                <br />
-                                                <p className="card-text mx-2 mb-0">1. AI技术，数据挖掘发现机会</p>
-                                                <p className="card-text mx-2 mb-0">2. 计算机7天24小时监控市场</p>
-                                                <p className="card-text mx-2 mb-0">3. 全自动化高效稳定的执行</p>
+                                                <div className="text-left pl-3">
+                                                    <p className="card-text mx-2 mb-0">1. AI技术，数据挖掘发现机会</p>
+                                                    <p className="card-text mx-2 mb-0">2. 计算机7天24小时监控市场</p>
+                                                    <p className="card-text mx-2 mb-0">3. 全自动化高效稳定的执行</p>
+                                                </div>
                                                 <Link to="/about-us/" className="btn btn-secondary translateY-25">
-                                                    {" "}
                                                     更多
                                                 </Link>
                                             </div>
@@ -88,24 +111,25 @@ function Home() {
                                     <div className="col-lg-4 col-sm-6 mb-5 mb-lg-0">
                                         <div className="card text-center">
                                             <h4 className="card-title pt-3">控制风险</h4>
-                                            <div className="card-img-wrapper">
+                                            <div className="card-img-wrapper mb-20">
                                                 <img
                                                     className="card-img-top rounded-0"
+                                                    height="200px"
                                                     src={serviceImage02}
                                                     alt="service-image"
                                                 />
                                             </div>
                                             <div className="card-body p-0">
-                                                <br />
-                                                <p className="card-text mx-2 mb-0">1. 全面了解FOF可能表现</p>
-                                                <p className="card-text mx-2 mb-0">
-                                                    2. 实时监控，确保投中表现与过往一致
-                                                </p>
-                                                <p className="card-text mx-2 mb-0">
-                                                    3.多周期多维度跟踪子基金业绩与数据
-                                                </p>
+                                                <div className="text-left pl-3">
+                                                    <p className="card-text mx-2 mb-0">1. 全面了解FOF可能表现</p>
+                                                    <p className="card-text mx-2 mb-0">
+                                                        2. 实时监控，确保投中表现与过往一致
+                                                    </p>
+                                                    <p className="card-text mx-2 mb-0">
+                                                        3.多周期多维度跟踪子基金业绩与数据
+                                                    </p>
+                                                </div>
                                                 <Link to="/about-us/" className="btn btn-secondary translateY-25">
-                                                    {" "}
                                                     更多
                                                 </Link>
                                             </div>
@@ -115,24 +139,26 @@ function Home() {
                                     <div className="col-lg-4 col-sm-6">
                                         <div className="card text-center">
                                             <h4 className="card-title pt-3">策略原则</h4>
-                                            <div className="card-img-wrapper">
+                                            <div className="card-img-wrapper mb-20">
                                                 <img
                                                     className="card-img-top rounded-0"
+                                                    height="200px"
                                                     src={serviceImage03}
                                                     alt="service-image"
                                                 />
                                             </div>
                                             <div className="card-body p-0">
-                                                <br />
-                                                <p className="card-text mx-2 mb-0">
-                                                    1. 根据大类资产轮动规律配置策略及资产
-                                                </p>
-                                                <p className="card-text mx-2 mb-0">
-                                                    2.中性策略为主，趋势策略和指数增强策略为辅
-                                                </p>
-                                                <p className="card-text mx-2 mb-0">
-                                                    3. 多品种、多策略、多周期的量化策略投资配置思路
-                                                </p>
+                                                <div className="text-left pl-1">
+                                                    <p className="card-text mx-2 mb-0">
+                                                        1. 根据大类资产轮动规律配置策略及资产
+                                                    </p>
+                                                    <p className="card-text mx-2 mb-0">
+                                                        2.中性策略为主，趋势策略和指数增强策略为辅
+                                                    </p>
+                                                    <p className="card-text mx-2 mb-0">
+                                                        3. 多品种、多策略、多周期的量化策略投资配置思路
+                                                    </p>
+                                                </div>
                                                 <Link to="/about-us/" className="btn btn-secondary translateY-25">
                                                     更多
                                                 </Link>
@@ -152,36 +178,35 @@ function Home() {
                                     <div className="rounded p-sm-5 px-3 py-5 bg-secondary">
                                         <h3 className="section-title section-title-border-half text-white">关于我们</h3>
                                         <p className="text-white mb-40">
-                                            Excepteur sint occaecat cupidatat non proident sunt culpa qui officia
-                                            deserunt mollit anim id est laborum.
+                                            Carrick Just Asset Management Limited
+                                            是一家被基金经理授权提供管理投资计划的基金公司。
                                         </p>
                                         <div>
                                             <ul className="d-inline-block pl-0">
                                                 <li className="font-secondary mb-10 text-white float-sm-left mr-sm-5">
-                                                    <i className="text-primary mr-2 ti-arrow-circle-right" />
-                                                    Business Services
+                                                    <i className="text-primary mr-2 ti-arrow-circle-right"></i>投资思路
                                                 </li>
                                                 <li className="font-secondary mb-10 text-white">
-                                                    <i className="text-primary mr-2 ti-arrow-circle-right" />
-                                                    Audit &amp; Assurance
+                                                    <i className="text-primary mr-2 ti-arrow-circle-right"></i>
+                                                    研究与分析
                                                 </li>
                                                 <li className="font-secondary mb-10 text-white">
-                                                    <i className="text-primary mr-2 ti-arrow-circle-right" />
-                                                    IT Control Solutions
+                                                    <i className="text-primary mr-2 ti-arrow-circle-right"></i>
+                                                    投资组合建设
                                                 </li>
                                             </ul>
                                             <ul className="d-inline-block pl-0">
                                                 <li className="font-secondary mb-10 text-white">
-                                                    <i className="text-primary mr-2 ti-arrow-circle-right" />
-                                                    Business Services
+                                                    <i className="text-primary mr-2 ti-arrow-circle-right"></i>
+                                                    战术分配和平衡
                                                 </li>
                                                 <li className="font-secondary mb-10 text-white">
-                                                    <i className="text-primary mr-2 ti-arrow-circle-right" />
-                                                    Audit &amp; Assurance
+                                                    <i className="text-primary mr-2 ti-arrow-circle-right"></i>
+                                                    灵活的投资方法
                                                 </li>
                                                 <li className="font-secondary mb-10 text-white">
-                                                    <i className="text-primary mr-2 ti-arrow-circle-right" />
-                                                    IT Control Solutions
+                                                    <i className="text-primary mr-2 ti-arrow-circle-right"></i>
+                                                    适当的投资组合多元化
                                                 </li>
                                             </ul>
                                         </div>
@@ -294,51 +319,7 @@ function Home() {
                                 </div>
                                 {/* blog-list */}
                                 <div className="col-lg-4 col-12">
-                                    <ul className="bg-white border rounded pl-0">
-                                        <li className="d-flex border-bottom">
-                                            <div className="py-3 px-4 border-right text-center">
-                                                <h3 className="text-primary mb-0">25</h3>
-                                                <p className="mb-2">Apr</p>
-                                            </div>
-                                            <div className="p-3">
-                                                <Link
-                                                    to="/news/celebrating-new-zealand-shares"
-                                                    className="h4 font-primary text-dark">
-                                                    恭喜新西兰股票市场新突破!
-                                                </Link>
-
-                                                <p>Carrick Asset Editorial</p>
-                                            </div>
-                                        </li>
-                                        <li className="d-flex border-bottom">
-                                            <div className="py-3 px-4 border-right text-center">
-                                                <h3 className="text-primary mb-0">29</h3>
-                                                <p className="mb-2">Oct</p>
-                                            </div>
-                                            <div className="p-3">
-                                                <Link
-                                                    to="/news/nz-housing-market-correction-or-crash"
-                                                    className="h4 font-primary text-dark">
-                                                    新西兰住房市场：回春或崩溃
-                                                </Link>
-                                                <p>Carrick Asset Editorial</p>
-                                            </div>
-                                        </li>
-                                        <li className="d-flex">
-                                            <div className="py-3 px-4 border-right text-center">
-                                                <h3 className="text-primary mb-0">20</h3>
-                                                <p className="mb-2">Dec</p>
-                                            </div>
-                                            <div className="p-3">
-                                                <Link
-                                                    to="/news/end-bull-market-or-opportunity-to-buy"
-                                                    className="h4 font-primary text-dark">
-                                                    牛市的终结还是买入的机会？
-                                                </Link>
-                                                <p>Carrick Asset Editorial</p>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                    <ul className="bg-white border rounded pl-0">{newsRender}</ul>
                                 </div>
                             </div>
                         </div>
