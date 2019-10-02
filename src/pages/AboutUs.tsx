@@ -3,9 +3,12 @@
 import React, {useState} from "react"
 import {Link} from "react-router-dom"
 import Layout from "../components/layout"
-import imageBackground from "../images/news/background.jpg"
-import newsObject from "../data/newsData.json"
-
+import imageAbout from "../images/aboutus/aboutus.jpg"
+import imageCeo from "../images/aboutus/ceo.jpg"
+import imagels from "../images/aboutus/ls.jpg"
+const ceoStyle = {
+    backgroundImage: `url(${imageCeo})`,
+}
 export default function AboutUs() {
     const [activeState, setActiveState] = useState("collapse")
 
@@ -44,11 +47,7 @@ export default function AboutUs() {
                             </div>
                             {/* philosophy image */}
                             <div className="col-lg-5 align-self-center order-1 order-lg-2 mb-md-50">
-                                <img
-                                    className="img-fluid w-100"
-                                    src="images/about/philosophy.jpg"
-                                    alt="philosophy-image"
-                                />
+                                <img className="img-fluid w-100" src={imageAbout} alt="philosophy-image" />
                             </div>
                         </div>
                     </div>
@@ -60,9 +59,7 @@ export default function AboutUs() {
                     <div className="container">
                         <div className="row rounded bg-secondary">
                             {/* ceo image */}
-                            <div
-                                className="col-lg-5 rounded-left ceo-image"
-                                style={{backgroundImage: "url(images/about/ceo.jpg);"}}></div>
+                            <div className="col-lg-5 rounded-left ceo-image" style={ceoStyle}></div>
                             <div className="col-lg-7">
                                 {/* ceo content */}
                                 <div className="p-5">
@@ -175,6 +172,9 @@ export default function AboutUs() {
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div className="col-lg-6">
+                                <img className="img-fluid w-100" src={imagels} alt="philosophy-image" />
                             </div>
                         </div>
                     </div>
