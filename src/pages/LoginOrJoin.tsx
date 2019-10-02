@@ -4,7 +4,7 @@ import React, {Suspense, useState} from "react"
 import Layout from "../components/layout"
 import logo from "../images/logo.svg"
 
-function LoginOrJoin() {
+export default function LoginOrJoin() {
     const [loginOrJoin, setLoginOrJoin] = useState("Login")
     const [joinButton, setJoinButton] = useState("Sign Up")
     const [signUpIntro, setSignUpIntro] = useState("Need An Account?")
@@ -145,13 +145,5 @@ function LoginOrJoin() {
                 </section>
             </Layout>
         </>
-    )
-}
-
-export default function LoginOrJoinComponent() {
-    return (
-        <Suspense fallback="loading...">
-            <LoginOrJoin />
-        </Suspense>
     )
 }
