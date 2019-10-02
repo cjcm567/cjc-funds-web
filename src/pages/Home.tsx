@@ -65,20 +65,21 @@ function Home() {
                                     <div className="col-lg-4 col-sm-6 mb-5 mb-lg-0">
                                         <div className="card text-center">
                                             <h4 className="card-title pt-3">量化策略</h4>
-                                            <div className="card-img-wrapper">
+                                            <div className="card-img-wrapper mb-20">
                                                 <img
                                                     className="card-img-top rounded-0"
+                                                    height="200px"
                                                     src={serviceImage01}
                                                     alt="service-image"
                                                 />
                                             </div>
                                             <div className="card-body p-0">
-                                                <br />
-                                                <p className="card-text mx-2 mb-0">1. AI技术，数据挖掘发现机会</p>
-                                                <p className="card-text mx-2 mb-0">2. 计算机7天24小时监控市场</p>
-                                                <p className="card-text mx-2 mb-0">3. 全自动化高效稳定的执行</p>
+                                                <div className="text-left pl-3">
+                                                    <p className="card-text mx-2 mb-0">1. AI技术，数据挖掘发现机会</p>
+                                                    <p className="card-text mx-2 mb-0">2. 计算机7天24小时监控市场</p>
+                                                    <p className="card-text mx-2 mb-0">3. 全自动化高效稳定的执行</p>
+                                                </div>
                                                 <Link to="/about-us/" className="btn btn-secondary translateY-25">
-                                                    {" "}
                                                     更多
                                                 </Link>
                                             </div>
@@ -88,24 +89,25 @@ function Home() {
                                     <div className="col-lg-4 col-sm-6 mb-5 mb-lg-0">
                                         <div className="card text-center">
                                             <h4 className="card-title pt-3">控制风险</h4>
-                                            <div className="card-img-wrapper">
+                                            <div className="card-img-wrapper mb-20">
                                                 <img
                                                     className="card-img-top rounded-0"
+                                                    height="200px"
                                                     src={serviceImage02}
                                                     alt="service-image"
                                                 />
                                             </div>
                                             <div className="card-body p-0">
-                                                <br />
-                                                <p className="card-text mx-2 mb-0">1. 全面了解FOF可能表现</p>
-                                                <p className="card-text mx-2 mb-0">
-                                                    2. 实时监控，确保投中表现与过往一致
-                                                </p>
-                                                <p className="card-text mx-2 mb-0">
-                                                    3.多周期多维度跟踪子基金业绩与数据
-                                                </p>
+                                                <div className="text-left pl-3">
+                                                    <p className="card-text mx-2 mb-0">1. 全面了解FOF可能表现</p>
+                                                    <p className="card-text mx-2 mb-0">
+                                                        2. 实时监控，确保投中表现与过往一致
+                                                    </p>
+                                                    <p className="card-text mx-2 mb-0">
+                                                        3.多周期多维度跟踪子基金业绩与数据
+                                                    </p>
+                                                </div>
                                                 <Link to="/about-us/" className="btn btn-secondary translateY-25">
-                                                    {" "}
                                                     更多
                                                 </Link>
                                             </div>
@@ -115,24 +117,26 @@ function Home() {
                                     <div className="col-lg-4 col-sm-6">
                                         <div className="card text-center">
                                             <h4 className="card-title pt-3">策略原则</h4>
-                                            <div className="card-img-wrapper">
+                                            <div className="card-img-wrapper mb-20">
                                                 <img
                                                     className="card-img-top rounded-0"
+                                                    height="200px"
                                                     src={serviceImage03}
                                                     alt="service-image"
                                                 />
                                             </div>
                                             <div className="card-body p-0">
-                                                <br />
-                                                <p className="card-text mx-2 mb-0">
-                                                    1. 根据大类资产轮动规律配置策略及资产
-                                                </p>
-                                                <p className="card-text mx-2 mb-0">
-                                                    2.中性策略为主，趋势策略和指数增强策略为辅
-                                                </p>
-                                                <p className="card-text mx-2 mb-0">
-                                                    3. 多品种、多策略、多周期的量化策略投资配置思路
-                                                </p>
+                                                <div className="text-left pl-1">
+                                                    <p className="card-text mx-2 mb-0">
+                                                        1. 根据大类资产轮动规律配置策略及资产
+                                                    </p>
+                                                    <p className="card-text mx-2 mb-0">
+                                                        2.中性策略为主，趋势策略和指数增强策略为辅
+                                                    </p>
+                                                    <p className="card-text mx-2 mb-0">
+                                                        3. 多品种、多策略、多周期的量化策略投资配置思路
+                                                    </p>
+                                                </div>
                                                 <Link to="/about-us/" className="btn btn-secondary translateY-25">
                                                     更多
                                                 </Link>
