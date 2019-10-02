@@ -12,7 +12,7 @@ import serviceImage04 from "../images/service/service-4.jpg"
 import AboutUsImage from "../images/background/about-bg.jpg"
 import imageCapitalMarkets from "../images/news/what-does-future-hold-our-capital-markets.jpg"
 import imageCorporateHealth from "../images/news/insights-our-corporate-health.jpg"
-
+import newsData from "../data/newsData.json"
 const IMAGE_DATA = [
     {
         src: require("../images/banner/banner-1.jpg"),
@@ -32,6 +32,26 @@ const sectionStyle = {
 }
 
 function Home() {
+    const newsObject = []
+    for (let index = 0; index <= 2; index++) {
+        newsObject.push(newsData[index])
+    }
+
+    const newsRender = newsObject.map(newsObjectItem => (
+        <li className="d-flex border-bottom" key={newsObjectItem.props}>
+            <div className="py-3 px-4 border-right text-center">
+                <h3 className="text-primary mb-0">01</h3>
+                <p className="mb-2">Oct</p>
+            </div>
+            <div className="p-3">
+                <Link to="/news/celebrating-new-zealand-shares" className="h4 font-primary text-dark">
+                    {newsObjectItem.title.split("\n")}
+                </Link>
+                <p>{newsObjectItem.author.split("\n")}</p>
+            </div>
+        </li>
+    ))
+
     return (
         <>
             <Layout>
@@ -152,36 +172,35 @@ function Home() {
                                     <div className="rounded p-sm-5 px-3 py-5 bg-secondary">
                                         <h3 className="section-title section-title-border-half text-white">关于我们</h3>
                                         <p className="text-white mb-40">
-                                            Excepteur sint occaecat cupidatat non proident sunt culpa qui officia
-                                            deserunt mollit anim id est laborum.
+                                            Carrick Just Asset Management Limited
+                                            是一家被基金经理授权提供管理投资计划的基金公司。
                                         </p>
                                         <div>
                                             <ul className="d-inline-block pl-0">
                                                 <li className="font-secondary mb-10 text-white float-sm-left mr-sm-5">
-                                                    <i className="text-primary mr-2 ti-arrow-circle-right" />
-                                                    Business Services
+                                                    <i className="text-primary mr-2 ti-arrow-circle-right"></i>投资思路
                                                 </li>
                                                 <li className="font-secondary mb-10 text-white">
-                                                    <i className="text-primary mr-2 ti-arrow-circle-right" />
-                                                    Audit &amp; Assurance
+                                                    <i className="text-primary mr-2 ti-arrow-circle-right"></i>
+                                                    研究与分析
                                                 </li>
                                                 <li className="font-secondary mb-10 text-white">
-                                                    <i className="text-primary mr-2 ti-arrow-circle-right" />
-                                                    IT Control Solutions
+                                                    <i className="text-primary mr-2 ti-arrow-circle-right"></i>
+                                                    投资组合建设
                                                 </li>
                                             </ul>
                                             <ul className="d-inline-block pl-0">
                                                 <li className="font-secondary mb-10 text-white">
-                                                    <i className="text-primary mr-2 ti-arrow-circle-right" />
-                                                    Business Services
+                                                    <i className="text-primary mr-2 ti-arrow-circle-right"></i>
+                                                    战术分配和平衡
                                                 </li>
                                                 <li className="font-secondary mb-10 text-white">
-                                                    <i className="text-primary mr-2 ti-arrow-circle-right" />
-                                                    Audit &amp; Assurance
+                                                    <i className="text-primary mr-2 ti-arrow-circle-right"></i>
+                                                    灵活的投资方法
                                                 </li>
                                                 <li className="font-secondary mb-10 text-white">
-                                                    <i className="text-primary mr-2 ti-arrow-circle-right" />
-                                                    IT Control Solutions
+                                                    <i className="text-primary mr-2 ti-arrow-circle-right"></i>
+                                                    适当的投资组合多元化
                                                 </li>
                                             </ul>
                                         </div>
@@ -294,51 +313,7 @@ function Home() {
                                 </div>
                                 {/* blog-list */}
                                 <div className="col-lg-4 col-12">
-                                    <ul className="bg-white border rounded pl-0">
-                                        <li className="d-flex border-bottom">
-                                            <div className="py-3 px-4 border-right text-center">
-                                                <h3 className="text-primary mb-0">25</h3>
-                                                <p className="mb-2">Apr</p>
-                                            </div>
-                                            <div className="p-3">
-                                                <Link
-                                                    to="/news/celebrating-new-zealand-shares"
-                                                    className="h4 font-primary text-dark">
-                                                    恭喜新西兰股票市场新突破!
-                                                </Link>
-
-                                                <p>Carrick Asset Editorial</p>
-                                            </div>
-                                        </li>
-                                        <li className="d-flex border-bottom">
-                                            <div className="py-3 px-4 border-right text-center">
-                                                <h3 className="text-primary mb-0">29</h3>
-                                                <p className="mb-2">Oct</p>
-                                            </div>
-                                            <div className="p-3">
-                                                <Link
-                                                    to="/news/nz-housing-market-correction-or-crash"
-                                                    className="h4 font-primary text-dark">
-                                                    新西兰住房市场：回春或崩溃
-                                                </Link>
-                                                <p>Carrick Asset Editorial</p>
-                                            </div>
-                                        </li>
-                                        <li className="d-flex">
-                                            <div className="py-3 px-4 border-right text-center">
-                                                <h3 className="text-primary mb-0">20</h3>
-                                                <p className="mb-2">Dec</p>
-                                            </div>
-                                            <div className="p-3">
-                                                <Link
-                                                    to="/news/end-bull-market-or-opportunity-to-buy"
-                                                    className="h4 font-primary text-dark">
-                                                    牛市的终结还是买入的机会？
-                                                </Link>
-                                                <p>Carrick Asset Editorial</p>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                    <ul className="bg-white border rounded pl-0">{newsRender}</ul>
                                 </div>
                             </div>
                         </div>
