@@ -43,7 +43,7 @@ function HeaderComponent() {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
-                            <ul className="list-inline text-lg-right text-center"></ul>
+                            <ul className="list-inline text-lg-right text-center" />
                         </div>
                     </div>
                 </div>
@@ -63,7 +63,7 @@ function HeaderComponent() {
                                 aria-controls="navbarSupportedContent"
                                 aria-expanded={ariaExpanded}
                                 aria-label="Toggle navigation">
-                                <span className="navbar-toggler-icon" onClick={handleNavCollapse}></span>
+                                <span className="navbar-toggler-icon" onClick={handleNavCollapse} />
                             </button>
 
                             <div className={collapseStatus} id="navbarSupportedContent">
@@ -81,7 +81,6 @@ function HeaderComponent() {
                                     </li>
                                     <li className="nav-item dropdown">
                                         <Link to="/funds">
-                                       
                                             <a
                                                 className="nav-link dropdown-toggle"
                                                 role="button"
@@ -123,9 +122,12 @@ function HeaderComponent() {
                                         </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link btn btn-primary btn-sm" href="" style={{color: "white"}}>
-                                            Register
-                                        </a>
+                                        <Link
+                                            to="/login-or-join"
+                                            className="nav-link btn btn-primary btn-sm"
+                                            style={{color: "white"}}>
+                                            Join Us
+                                        </Link>
                                     </li>
                                 </ul>
                             </div>
