@@ -3,9 +3,12 @@
 import React from "react"
 import {Link} from "react-router-dom"
 import Layout from "../components/layout"
-import imageBackground from "../images/news/background.jpg"
-import newsObject from "../data/newsData.json"
-
+import imageAbout from "../images/aboutus/aboutus.jpg"
+import imageCeo from "../images/aboutus/ceo.jpg"
+import imagels from "../images/aboutus/ls.jpg"
+const ceoStyle = {
+backgroundImage: `url(${imageCeo})`
+}
 export default function AboutUs() {
     return (
         <>
@@ -41,7 +44,7 @@ export default function AboutUs() {
                             <div className="col-lg-5 align-self-center order-1 order-lg-2 mb-md-50">
                                 <img
                                     className="img-fluid w-100"
-                                    src="images/about/philosophy.jpg"
+                                    src={imageAbout}
                                     alt="philosophy-image"
                                 />
                             </div>
@@ -57,7 +60,7 @@ export default function AboutUs() {
                             {/* ceo image */}
                             <div
                                 className="col-lg-5 rounded-left ceo-image"
-                                style={{backgroundImage: "url(images/about/ceo.jpg);"}}></div>
+                                style={ceoStyle}></div>
                             <div className="col-lg-7">
                                 {/* ceo content */}
                                 <div className="p-5">
@@ -73,7 +76,7 @@ export default function AboutUs() {
                                         •灵活的投资方法 <br/> 
                                         •进行适当的投资组合多元化<br/>
                                     </p>
-                                    <img src="images/about/ceo-signature.png" alt="ceo-signature" />
+                                   
                                     {/* <h5 className="text-white">John Doe</h5>
                                     <h6 className="text-white">CEO</h6> */}
                                 </div>
@@ -170,6 +173,13 @@ export default function AboutUs() {
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div className="col-lg-6">
+                            <img
+                                    className="img-fluid w-100"
+                                    src={imagels}
+                                    alt="philosophy-image"
+                                />
                             </div>
                         </div>
                     </div>
