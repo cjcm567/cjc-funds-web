@@ -32,7 +32,7 @@ const sectionStyle = {
 }
 
 function Home() {
-    let newsObject = []
+    const newsObject = []
     for (let index = 0; index <= 2; index++) {
         newsObject.push(newsData[index])
     }
@@ -170,9 +170,10 @@ function Home() {
                             <div className="row">
                                 <div className="col-lg-6 ml-auto">
                                     <div className="rounded p-sm-5 px-3 py-5 bg-secondary">
-                                    <h3 className="section-title section-title-border-half text-white">关于我们</h3>
+                                        <h3 className="section-title section-title-border-half text-white">关于我们</h3>
                                         <p className="text-white mb-40">
-                                            Carrick Just Asset Management Limited 是一家被基金经理授权提供管理投资计划的基金公司。
+                                            Carrick Just Asset Management Limited
+                                            是一家被基金经理授权提供管理投资计划的基金公司。
                                         </p>
                                         <div>
                                             <ul className="d-inline-block pl-0">
@@ -180,25 +181,30 @@ function Home() {
                                                     <i className="text-primary mr-2 ti-arrow-circle-right"></i>投资思路
                                                 </li>
                                                 <li className="font-secondary mb-10 text-white">
-                                                    <i className="text-primary mr-2 ti-arrow-circle-right"></i>研究与分析
+                                                    <i className="text-primary mr-2 ti-arrow-circle-right"></i>
+                                                    研究与分析
                                                 </li>
                                                 <li className="font-secondary mb-10 text-white">
-                                                    <i className="text-primary mr-2 ti-arrow-circle-right"></i>投资组合建设
+                                                    <i className="text-primary mr-2 ti-arrow-circle-right"></i>
+                                                    投资组合建设
                                                 </li>
                                             </ul>
                                             <ul className="d-inline-block pl-0">
                                                 <li className="font-secondary mb-10 text-white">
-                                                    <i className="text-primary mr-2 ti-arrow-circle-right"></i>战术分配和平衡
+                                                    <i className="text-primary mr-2 ti-arrow-circle-right"></i>
+                                                    战术分配和平衡
                                                 </li>
                                                 <li className="font-secondary mb-10 text-white">
-                                                    <i className="text-primary mr-2 ti-arrow-circle-right"></i>灵活的投资方法
+                                                    <i className="text-primary mr-2 ti-arrow-circle-right"></i>
+                                                    灵活的投资方法
                                                 </li>
                                                 <li className="font-secondary mb-10 text-white">
-                                                    <i className="text-primary mr-2 ti-arrow-circle-right"></i>适当的投资组合多元化
+                                                    <i className="text-primary mr-2 ti-arrow-circle-right"></i>
+                                                    适当的投资组合多元化
                                                 </li>
                                             </ul>
                                         </div>
-                                        <a href="/about-us/" className="btn btn-primary mt-4">
+                                        <a href="/about-us" className="btn btn-primary mt-4">
                                             更多
                                         </a>
                                     </div>
@@ -307,9 +313,7 @@ function Home() {
                                 </div>
                                 {/* blog-list */}
                                 <div className="col-lg-4 col-12">
-                                    <ul className="bg-white border rounded pl-0">
-                                       {newsRender}
-                                    </ul>
+                                    <ul className="bg-white border rounded pl-0">{newsRender}</ul>
                                 </div>
                             </div>
                         </div>

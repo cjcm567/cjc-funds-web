@@ -22,7 +22,8 @@ function Footer() {
                                         <img src={logo} alt="logo" style={{height: "9vh"}} />
                                     </Link>
                                     <p className="mb-30">
-                                    Carrick Just Asset Management Limited 是一家被基金经理授权提供管理投资计划的基金公司。公司成立于2017年，总部位于新西兰奥克兰。本公司积极管理该计划下的资金，并致力于确保其客户实现其投资目标。
+                                        Carrick Just Asset Management Limited
+                                        是一家被基金经理授权提供管理投资计划的基金公司。公司成立于2017年，总部位于新西兰奥克兰。本公司积极管理该计划下的资金，并致力于确保其客户实现其投资目标。
                                     </p>
                                     {/* social icon */}
                                     <ul className="list-inline">
@@ -95,9 +96,7 @@ function Footer() {
                             <div className="col-lg-3 col-md-12 offset-lg-1">
                                 <div className="mt-5 mt-lg-0 text-center text-md-left">
                                     <h4 className="mb-4 ">欢迎订阅</h4>
-                                    <p className="mb-4">
-                                    Carrick Just Asset Management Limited 您最好的选择
-                                    </p>
+                                    <p className="mb-4">Carrick Just Asset Management Limited 您最好的选择</p>
                                     <form action="#" className="position-relative">
                                         <input
                                             type="text"
@@ -118,13 +117,13 @@ function Footer() {
                 {/* copyright */}
                 <div className="pt-4 pb-3 position-relative">
                     <div className="container">
-                        {/* <div className="row">
+                        <div className="row">
                             <div className="col-lg-6 col-md-5">
                                 <p className="text-center text-md-left">
                                     <code>Carrick Funds</code> &copy; {copyrightYear} All Right Reserved
                                 </p>
                             </div>
-                            <div className="col-lg-6 col-md-7">
+                            {/* <div className="col-lg-6 col-md-7">
                                 <ul className="list-inline text-center text-md-right">
                                     <li className="list-inline-item mx-lg-3 my-lg-0 mx-2 my-2">
                                         <a className="font-secondary " href="#">
@@ -147,8 +146,8 @@ function Footer() {
                                         </a>
                                     </li>
                                 </ul>
-                            </div>
-                        </div> */}
+                            </div> */}
+                        </div>
                     </div>
                     {/* back to top */}
                     <button className="back-to-top" onClick={backToTop}>
