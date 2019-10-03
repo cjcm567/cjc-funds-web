@@ -13,41 +13,6 @@ import aboutListData from "../data/Home/HomeAboutListData.json"
 const sectionStyle = {
     backgroundImage: `url(${AboutUsImage})`,
 }
-function HomeRender() {
-    const homeObject = []
-    for (let index = 0; index <= 2; index++) {
-        homeObject.push(homeData[index])
-    }
-    return (
-        <>
-            {homeObject.map(homeObjectItem => (
-                <div className="col-lg-4 col-sm-6 mb-5 mb-lg-0" key={homeObjectItem.Dickey}>
-                    <div className="card text-center">
-                        <h4 className="card-title pt-3">{homeObjectItem.title}</h4>
-                        <div className="card-img-wrapper mb-20">
-                            <img
-                                className="card-img-top rounded-0"
-                                height="200px"
-                                src={require(`../images/service/${homeObjectItem.imageUri}.jpg`)}
-                                alt="service-image"
-                            />
-                        </div>
-                        <div className="card-body p-0">
-                            <div className="text-left pl-3">
-                                <p className="card-text mx-2 mb-0">{homeObjectItem.p1}</p>
-                                <p className="card-text mx-2 mb-0">{homeObjectItem.p2}</p>
-                                <p className="card-text mx-2 mb-0">{homeObjectItem.p3}</p>
-                            </div>
-                            <Link to="/about-us/" className="btn btn-secondary translateY-25">
-                                更多
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-            ))}
-        </>
-    )
-}
 
 function AboutListRender() {
     const aboutListObj = []
@@ -57,7 +22,7 @@ function AboutListRender() {
     return (
         <>
             {aboutListObj.map(aboutListObjItem => (
-                <ul className="d-inline-block pl-0">
+                <ul className="d-inline-block pl-0" key={aboutListObjItem.p1}>
                     <li className="font-secondary mb-10 text-white float-sm-left mr-sm-5">
                         <i className="text-primary mr-2 ti-arrow-circle-right"></i>
                         {aboutListObjItem.p1}
@@ -97,9 +62,39 @@ function Home() {
             </div>
         </li>
     ))
-    
+    const homeObject = []
+    for (let index = 0; index <= 2; index++) {
+        homeObject.push(homeData[index])
+    }
+
+    const HomeRender = homeObject.map(homeObjectItem => (
+        <div className="col-lg-4 col-sm-6 mb-4 mb-lg-0" key={homeObjectItem.Dickey}>
+            <div className="card text-center mb-4">
+                <h4 className="card-title pt-3">{homeObjectItem.title}</h4>
+                <div className="card-img-wrapper mb-20">
+                    <img
+                        className="card-img-top rounded-0"
+                        height="200px"
+                        src={require(`../images/service/${homeObjectItem.imageUri}.jpg`)}
+                        alt="service-image"
+                    />
+                </div>
+                <div className="card-body p-0">
+                    <div className="text-left pl-2">
+                        <p className="card-text mx-2 mb-0">{homeObjectItem.p1}</p>
+                        <p className="card-text mx-2 mb-0">{homeObjectItem.p2}</p>
+                        <p className="card-text mx-2 mb-0">{homeObjectItem.p3}</p>
+                    </div>
+                    <Link to="/about-us/" className="btn btn-secondary translateY-25">
+                        更多
+                    </Link>
+                </div>
+            </div>
+        </div>
+    ))
+
     const newsExampleObject = []
-    for (let index = 0; index <2; index++) {
+    for (let index = 0; index < 2; index++) {
         newsExampleObject.push(newsData[index])
     }
     const newsExampleRender = newsExampleObject.map(newsExampleObjectItem => (
@@ -121,7 +116,7 @@ function Home() {
                                 <p className="mb-0">{newsExampleObjectItem.date.split(" ").pop()}</p>
                             </div>
                             <div className="p-3">
-                                <a className="h4 font-primary text-dark">{newsExampleObjectItem.title}</a>
+                                <h4 className="h4 font-primary text-dark">{newsExampleObjectItem.title}</h4>
                                 <p>{newsExampleObjectItem.author}</p>
                             </div>
                         </div>
@@ -137,7 +132,7 @@ function Home() {
                     <div className="mb-50">
                         <Carousel />
                     </div>
-                    {/* service  */}
+                    {/* best service  */}
                     <div>
                         <section className="section">
                             <div className="container">
@@ -146,7 +141,7 @@ function Home() {
                                         <h5 className="section-title-sm">优质服务</h5>
                                         <h2 className="section-title section-title-border">服务内容</h2>
                                     </div>
-                                    <HomeRender></HomeRender>
+                                    {HomeRender}
                                 </div>
                             </div>
                         </section>
@@ -206,7 +201,7 @@ function Home() {
                                     </Link>
                                 </div>
                                 {/* blog-item */}
-                                {newsExampleRender}                                
+                                {newsExampleRender}
                                 {/* blog-list */}
                                 <div className="col-lg-4 col-12">
                                     <ul className="bg-white border rounded pl-0">{newsRender}</ul>

@@ -961,7 +961,7 @@ button {
     position: absolute;
     left: 0;
     top: 0;
-    height: 75px;
+    height: 90px;
     width: auto;
     background: #fff;
     text-align: center;
@@ -1527,7 +1527,7 @@ button {
 /* card */
 .card-img-wrapper {
     position: relative;
-    /*height: 30vh;*/
+    
 }
 
 .card-img-wrapper::before {
