@@ -44,10 +44,9 @@ export default function LoginOrJoin() {
                                             className="col-md-5 signup-greeting overlay"
                                             style={{backgroundImage: "url(images/background/signup.jpg);"}}>
                                             <img src={logo} alt="logo" style={{height: "10vh"}} />
-                                            <h4>Welcome!</h4>
+                                            <h4>欢迎！</h4>
                                             <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                tempor incididunt ut labore et dolore magna.
+                                                Carrick基金管理公司期待与您共同发展
                                             </p>
                                         </div>
                                         <div className="col-md-7">
