@@ -50,7 +50,7 @@ function HeaderComponent() {
                 <div className="navigation">
                     <div className="container">
                         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                            <Link to="/">
+                            <Link className="navbar-brand" to="/">
                                 <img className="navbar-brand img" src={logoImage} alt="logo" />
                             </Link>
                             <button

@@ -961,8 +961,8 @@ button {
     position: absolute;
     left: 0;
     top: 0;
-    height: 100px;
-    width: 250px;
+    height: 75px;
+    width: auto;
     background: #fff;
     text-align: center;
     box-shadow: 0px 5px 10px 0px rgba(255, 254, 254, 0.1);
