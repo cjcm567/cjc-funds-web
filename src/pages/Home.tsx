@@ -80,6 +80,7 @@ function Home() {
     for (let index = 0; index <= 2; index++) {
         newsObject.push(newsData[index])
     }
+
     const newsRender = newsObject.map(newsObjectItem => (
         <li className="d-flex border-bottom" key={newsObjectItem.props}>
             <div className="py-3 px-5 border-right text-center">
@@ -96,6 +97,7 @@ function Home() {
             </div>
         </li>
     ))
+    
     const newsExampleObject = []
     for (let index = 0; index <2; index++) {
         newsExampleObject.push(newsData[index])

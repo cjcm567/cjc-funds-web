@@ -77,16 +77,11 @@ function HeaderComponent() {
                                         </Link>
                                     </li>
                                     <li className="nav-item dropdown">
-                                        <Link to="/funds">
-                                            <a
-                                                className="nav-link dropdown-toggle"
-                                                role="button"
-                                                data-toggle="dropdown"
-                                                aria-haspopup="true"
-                                                aria-expanded="false"
-                                                onClick={handleDropdownCollapse}>
-                                                基金产品
-                                            </a>
+                                        <Link
+                                            to="/funds"
+                                            className="nav-link dropdown-toggle"
+                                            onClick={handleDropdownCollapse}>
+                                            基金产品
                                         </Link>
                                         <div className={dropdownMenuStatus}>
                                             <Link to="/funds/fund-of-funds" className="dropdown-item">
