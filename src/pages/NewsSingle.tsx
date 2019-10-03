@@ -3,6 +3,8 @@
 import React from "react"
 import {Link, RouteComponentProps} from "react-router-dom"
 import Layout from "../components/layout"
+import {LazyImage} from "react-lazy-images"
+import imagePreloader from "../images/preloader.gif"
 import imageBackground from "../images/news/background.jpg"
 import newsData from "../data/newsData.json"
 
@@ -49,10 +51,15 @@ export default function NewsSingle(props: RouteComponentProps<TParams>) {
                         <div className="row">
                             <div className="col-lg-8 py-100">
                                 <div className="border rounded bg-white">
-                                    <img
-                                        className="img-fluid w-100 rounded-top"
+                                    <LazyImage
                                         src={require(`../images/news/${newsRender.imageUri}.jpg`)}
-                                        alt="news image"
+                                        alt={newsRender.title}
+                                        placeholder={({imageProps, ref}) => (
+                                            <img ref={ref} src={imagePreloader} alt={imageProps.alt} />
+                                        )}
+                                        actual={({imageProps}) => (
+                                            <img className="img-fluid w-100 rounded-top" {...imageProps} />
+                                        )}
                                     />
                                     <div className="p-4">
                                         <h3>{newsRender.title}</h3>

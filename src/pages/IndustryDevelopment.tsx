@@ -2,6 +2,8 @@
 import * as React from "react"
 import Layout from "../components/layout"
 import "../styles/Industry.css"
+import {LazyImage} from "react-lazy-images"
+import imagePreloader from "../images/preloader.gif"
 import IndustryImg01 from "../images/industry/01.png"
 import IndustryImg02 from "../images/industry/02.png"
 import IndustryImg03 from "../images/industry/03.png"
@@ -21,7 +23,16 @@ export default function IndustryDevelopment() {
                             <ul className="timeline">
                                 <li>
                                     <div className="timeline-image">
-                                        <img className="rounded-circle img-fluid" src={IndustryImg01} alt="" />
+                                        <LazyImage
+                                            src={IndustryImg01}
+                                            alt="industry step 1"
+                                            placeholder={({imageProps, ref}) => (
+                                                <img ref={ref} src={imagePreloader} alt={imageProps.alt} />
+                                            )}
+                                            actual={({imageProps}) => (
+                                                <img className="rounded-circle img-fluid" {...imageProps} />
+                                            )}
+                                        />
                                     </div>
 
                                     <div className="timeline-panel">
@@ -39,7 +50,16 @@ export default function IndustryDevelopment() {
                                 </li>
                                 <li className="timeline-inverted">
                                     <div className="timeline-image">
-                                        <img className="rounded-circle img-fluid" src={IndustryImg02} alt="" />
+                                        <LazyImage
+                                            src={IndustryImg02}
+                                            alt="industry step 2"
+                                            placeholder={({imageProps, ref}) => (
+                                                <img ref={ref} src={imagePreloader} alt={imageProps.alt} />
+                                            )}
+                                            actual={({imageProps}) => (
+                                                <img className="rounded-circle img-fluid" {...imageProps} />
+                                            )}
+                                        />
                                     </div>
                                     <div className="timeline-panel">
                                         <div className="timeline-heading">
@@ -59,7 +79,16 @@ export default function IndustryDevelopment() {
                                 </li>
                                 <li>
                                     <div className="timeline-image">
-                                        <img className="rounded-circle img-fluid" src={IndustryImg03} alt="" />
+                                        <LazyImage
+                                            src={IndustryImg03}
+                                            alt="industry step 3"
+                                            placeholder={({imageProps, ref}) => (
+                                                <img ref={ref} src={imagePreloader} alt={imageProps.alt} />
+                                            )}
+                                            actual={({imageProps}) => (
+                                                <img className="rounded-circle img-fluid" {...imageProps} />
+                                            )}
+                                        />
                                     </div>
                                     <div className="timeline-panel">
                                         <div className="timeline-heading">
