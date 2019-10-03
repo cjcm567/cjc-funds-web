@@ -1,11 +1,12 @@
 /** @format */
 
 import React, {useState} from "react"
-import {Link} from "react-router-dom"
+import {LazyImage} from "react-lazy-images"
 import Layout from "../components/layout"
+import imagePreloader from "../images/preloader.gif"
 import imageAbout from "../images/aboutus/aboutus.jpg"
 import imageCeo from "../images/aboutus/ceo.jpg"
-import imagels from "../images/aboutus/ls.jpg"
+import imageFlow from "../images/aboutus/ls.jpg"
 const ceoStyle = {
     backgroundImage: `url(${imageCeo})`,
 }
@@ -47,7 +48,14 @@ export default function AboutUs() {
                             </div>
                             {/* philosophy image */}
                             <div className="col-lg-5 align-self-center order-1 order-lg-2 mb-md-50">
-                                <img className="img-fluid w-100" src={imageAbout} alt="philosophy-image" />
+                                <LazyImage
+                                    src={imageAbout}
+                                    alt="philosophy-image"
+                                    placeholder={({imageProps, ref}) => (
+                                        <img ref={ref} src={imagePreloader} alt={imageProps.alt} />
+                                    )}
+                                    actual={({imageProps}) => <img className="img-fluid w-100" {...imageProps} />}
+                                />
                             </div>
                         </div>
                     </div>
@@ -174,7 +182,14 @@ export default function AboutUs() {
                                 </div>
                             </div>
                             <div className="col-lg-6">
-                                <img className="img-fluid w-100" src={imagels} alt="philosophy-image" />
+                                <LazyImage
+                                    src={imageFlow}
+                                    alt="philosophy-image"
+                                    placeholder={({imageProps, ref}) => (
+                                        <img ref={ref} src={imagePreloader} alt={imageProps.alt} />
+                                    )}
+                                    actual={({imageProps}) => <img className="img-fluid w-100" {...imageProps} />}
+                                />
                             </div>
                         </div>
                     </div>

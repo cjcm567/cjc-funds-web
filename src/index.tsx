@@ -5,15 +5,32 @@ import ReactDOM from "react-dom"
 import {BrowserRouter as Router, Route, Switch, RouteComponentProps} from "react-router-dom"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "./styles/styles.css"
-import Home from "./pages/Home"
+import gifPreloader from "./images/preloader.gif"
 import ScrollToTop from "./components/ScrollToTop"
 import * as serviceWorker from "./serviceWorker"
-import Industry from "./pages/IndustryDevelopment"
-
+const Preloader = () => {
+    return <img src={gifPreloader} alt="loading..." />
+}
+const HomeComponent = lazy(() => import("./pages/Home"))
+const Home = () => {
+    return (
+        <Suspense fallback={Preloader}>
+            <HomeComponent />
+        </Suspense>
+    )
+}
+const IndustryComponent = lazy(() => import("./pages/IndustryDevelopment"))
+const Industry = () => {
+    return (
+        <Suspense fallback={Preloader}>
+            <IndustryComponent />
+        </Suspense>
+    )
+}
 const ContactUsComponent = lazy(() => import("./pages/ContactUs"))
 const ContactUs = () => {
     return (
-        <Suspense fallback={null}>
+        <Suspense fallback={Preloader}>
             <ContactUsComponent />
         </Suspense>
     )
@@ -21,7 +38,7 @@ const ContactUs = () => {
 const NotFoundComponent = lazy(() => import("./pages/404"))
 const NotFound = () => {
     return (
-        <Suspense fallback={null}>
+        <Suspense fallback={Preloader}>
             <NotFoundComponent />
         </Suspense>
     )
@@ -29,7 +46,7 @@ const NotFound = () => {
 const LoginOrJoinComponent = lazy(() => import("./pages/LoginOrJoin"))
 const LoginOrJoin = () => {
     return (
-        <Suspense fallback={null}>
+        <Suspense fallback={Preloader}>
             <LoginOrJoinComponent />
         </Suspense>
     )
@@ -37,7 +54,7 @@ const LoginOrJoin = () => {
 const AboutUsComponent = lazy(() => import("./pages/AboutUs"))
 const AboutUs = () => {
     return (
-        <Suspense fallback={null}>
+        <Suspense fallback={Preloader}>
             <AboutUsComponent />
         </Suspense>
     )
@@ -45,7 +62,7 @@ const AboutUs = () => {
 const NewsComponent = lazy(() => import("./pages/News"))
 const News = () => {
     return (
-        <Suspense fallback={null}>
+        <Suspense fallback={Preloader}>
             <NewsComponent />
         </Suspense>
     )
@@ -54,7 +71,7 @@ const NewsSingleComponent = lazy(() => import("./pages/NewsSingle"))
 type TParams = {props: string}
 const NewsSingle = (props: RouteComponentProps<TParams>) => {
     return (
-        <Suspense fallback={null}>
+        <Suspense fallback={Preloader}>
             <NewsSingleComponent {...props} />
         </Suspense>
     )
@@ -62,7 +79,7 @@ const NewsSingle = (props: RouteComponentProps<TParams>) => {
 const FundsComponent = lazy(() => import("./pages/Funds"))
 const Funds = () => {
     return (
-        <Suspense fallback={null}>
+        <Suspense fallback={Preloader}>
             <FundsComponent />
         </Suspense>
     )
@@ -70,7 +87,7 @@ const Funds = () => {
 const FundOfFundsComponent = lazy(() => import("./pages/FundOfFunds"))
 const FundOfFunds = () => {
     return (
-        <Suspense fallback={null}>
+        <Suspense fallback={Preloader}>
             <FundOfFundsComponent />
         </Suspense>
     )
@@ -78,12 +95,11 @@ const FundOfFunds = () => {
 const FundDividedYieldComponent = lazy(() => import("./pages/FundDividendYield"))
 const FundDividedYield = () => {
     return (
-        <Suspense fallback={null}>
+        <Suspense fallback={Preloader}>
             <FundDividedYieldComponent />
         </Suspense>
     )
 }
-
 ReactDOM.render(
     <Router>
         <ScrollToTop>

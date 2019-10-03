@@ -3,6 +3,8 @@
 import React from "react"
 import {Link} from "react-router-dom"
 import Layout from "../components/layout"
+import {LazyImage} from "react-lazy-images"
+import imagePreloader from "../images/preloader.gif"
 import imageBackground from "../images/news/background.jpg"
 import newsObject from "../data/newsData.json"
 
@@ -10,16 +12,15 @@ export default function News() {
     const sectionStyle = {
         backgroundImage: `url(${imageBackground})`,
     }
-
     const newsCard = newsObject.map(newsObjectItem => (
         <div className="col-lg-4 col-sm-6 mb-4" key={newsObjectItem.props}>
             <div className="card">
                 <div className="card-img-wrapper overlay-rounded-top">
-                    <img
-                        className="card-img-top"
-                        height="200px"
+                    <LazyImage
                         src={require(`../images/news/${newsObjectItem.props}.jpg`)}
                         alt={newsObjectItem.title}
+                        placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
+                        actual={({imageProps}) => <img className="card-img-top" height="200px" {...imageProps} />}
                     />
                 </div>
                 <div className="card-body p-0">
