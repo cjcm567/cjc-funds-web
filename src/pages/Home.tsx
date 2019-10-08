@@ -3,7 +3,6 @@
 import React, {Suspense} from "react"
 import {Link} from "react-router-dom"
 import Layout from "../components/layout"
-import Slider from "../components/Slider/Slider"
 import Carousel from "../components/Carousel"
 import serviceImage01 from "../images/service/service-1.jpg"
 import serviceImage02 from "../images/service/service-2.jpg"
@@ -58,22 +57,11 @@ function Home() {
         <>
             <Layout>
                 <div className="App">
-                    {/* <div className="mb-50">
-                        <Slider
-                            items={IMAGE_DATA}
-                            speed={1}
-                            delay={2.1}
-                            pause={true}
-                            autoplay={true}
-                            dots={true}
-                            arrows={true}
-                        />
-                    </div> */}
+                   
 
                     <div className="mb-50">
                         <Carousel />
                     </div>
-
                     {/* service  */}
                     <div>
                         <section className="section">

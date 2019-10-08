@@ -9,6 +9,7 @@ import Home from "./pages/Home"
 import ScrollToTop from "./components/ScrollToTop"
 import * as serviceWorker from "./serviceWorker"
 import Industry from "./pages/IndustryDevelopment"
+import CRM from "./pages/CRMPage"
 
 const ContactUsComponent = lazy(() => import("./pages/ContactUs"))
 const ContactUs = () => {
@@ -98,8 +99,10 @@ ReactDOM.render(
                 <Route path="/news" exact component={News} />
                 <Route path="/news/:props" exact component={NewsSingle} />
                 <Route path="/login-or-join" component={LoginOrJoin} />
+                <Route path="/CRMPage" component={CRM}/>
                 <Route path="/404" component={NotFound} />
                 <Route path="*" component={NotFound} />
+              
                 <Route component={NotFound} />
             </Switch>
         </ScrollToTop>
