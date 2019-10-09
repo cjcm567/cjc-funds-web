@@ -216,7 +216,6 @@ function FundsComponent(isShowId: number) {
         )
     }
 }
-
 export default function FundOfFunds() {
     const fundsDict = [
         {id: 0, content: "量化 FOF 基金经营", style: "active border-bottom"},
@@ -228,21 +227,15 @@ export default function FundOfFunds() {
     const [defaultActive, setDefaultActive] = useState(0)
     const [activePart, setActivePart] = useState(fundsDict)
     const handleClickOnSidebar = (id: number) => {
+        if (id !== 0) {
+            fundsDict[id].style = "active border-bottom"
+            fundsDict[0].style = "border-bottom"
+        } else {
+            fundsDict[0].style = "active border-bottom"
+        }
         setDefaultActive(id)
-    }
-    useEffect(() => {
-        fundsDict.forEach(fundsDictItem => {
-            if (fundsDictItem.id != 0 && fundsDictItem.id == defaultActive) {
-                fundsDictItem.style = "active border-bottom"
-                fundsDict[0].style = "border-bottom"
-            }
-            if (fundsDictItem.id == 0 && fundsDictItem.id == defaultActive) {
-                fundsDictItem.style = "border-bottom"
-                fundsDict[0].style = "active border-bottom"
-            }
-        })
         setActivePart(fundsDict)
-    })
+    }
     const listSidebar = fundsDict.map(fundsDictItem => (
         <li key={fundsDictItem.id} className={activePart[fundsDictItem.id].style}>
             <a className="d-block font-primary text-dark p-4" onClick={() => handleClickOnSidebar(fundsDictItem.id)}>
@@ -250,7 +243,6 @@ export default function FundOfFunds() {
             </a>
         </li>
     ))
-
     return (
         <>
             <Layout>
