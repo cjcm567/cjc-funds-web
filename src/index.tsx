@@ -100,6 +100,15 @@ const FundDividedYield = () => {
         </Suspense>
     )
 }
+
+const ManagerComponent = lazy(() => import("./pages/Manager"))
+const Manager = () => {
+    return (
+        <Suspense fallback={Preloader}>
+            <ManagerComponent />
+        </Suspense>
+    )
+}
 ReactDOM.render(
     <Router>
         <ScrollToTop>
@@ -110,7 +119,8 @@ ReactDOM.render(
                 <Route path="/funds" exact component={Funds} />
                 <Route path="/funds/fund-of-funds" exact component={FundOfFunds} />
                 <Route path="/funds/carrick-dividend-yield-fund" exact component={FundDividedYield} />
-                <Route path="/about-us" component={AboutUs} />
+                <Route path="/about-us" exact component={AboutUs} />
+                <Route path="/about-us/manager" exact component={Manager} />
                 <Route path="/news" exact component={News} />
                 <Route path="/news/:props" exact component={NewsSingle} />
                 <Route path="/login-or-join" component={LoginOrJoin} />
