@@ -25,14 +25,16 @@ function Footer() {
     return (
         <>
             <div className="py-4" style={bannerBgStyle}>
-                <div className="row">
-                    <div className="col-lg-8 pl-5 text-center">
-                        <span className="h3">See how we can help. Contact us today</span>
-                    </div>
-                    <div className="col-lg-4 text-center pr-5">
-                        <Link to="/contact-us" className="btn-sm btn-primary" style={{textTransform: "uppercase"}}>
-                            Get In Touch
-                        </Link>
+                <div className="container">
+                    <div className="row justify-content-between">
+                        <div className="col-lg-6 align-self-center">
+                            <h3 className="text-white">See how we can help. Contact us today</h3>
+                        </div>
+                        <div className="col-lg-6 text-lg-center text-center align-self-center">
+                            <Link to="/contact-us" className="btn-sm btn-light" style={{textTransform: "uppercase"}}>
+                                Get In Touch
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>
