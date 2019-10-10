@@ -1,5 +1,7 @@
 /** @format */
 
+// eslint-disable-next-line no-dupe-keys
+
 import React, {Suspense} from "react"
 import {Link} from "react-router-dom"
 import logo from "../images/logoicon.png"
@@ -9,9 +11,31 @@ function Footer() {
         window.scrollTo(0, 0)
         return null
     }
+    const bannerBgStyle = {
+        color: "#ffffff",
+        // background: "rgb(0,98,204)",
+        // background: "-moz-linear-gradient(90deg, rgba(0,98,204,1) 0%, rgba(39,141,202,1) 50%);",
+        // background: "-webkit-linear-gradient(90deg, rgba(0,98,204,1) 0%, rgba(39,141,202,1) 50%)",
+        background: "linear-gradient(90deg, rgba(0,98,204,1) 0%, rgba(39,141,202,1) 50%)",
+        filter:
+            "progid:DXImageTransform.Microsoft.gradient(startColorstr='#0062cc',endColorstr='#278dca',GradientType=1)",
+        fontSize: "30px",
+    }
     const copyrightYear = new Date().getFullYear()
     return (
         <>
+            <div className="py-4" style={bannerBgStyle}>
+                <div className="row">
+                    <div className="col-lg-8 pl-5 text-center">
+                        <span className="h3">See how we can help. Contact us today</span>
+                    </div>
+                    <div className="col-lg-4 text-center pr-5">
+                        <Link to="/contact-us" className="btn-sm btn-primary" style={{textTransform: "uppercase"}}>
+                            Get In Touch
+                        </Link>
+                    </div>
+                </div>
+            </div>
             <footer className="footer">
                 <div className="py-50 border-bottom" style={{borderColor: "#454547 !important"}}>
                     <div className="container">
@@ -90,30 +114,6 @@ function Footer() {
                                     <code>Carrick Funds</code> &copy; {copyrightYear} All Right Reserved
                                 </p>
                             </div>
-                            {/* <div className="col-lg-6 col-md-7">
-                                <ul className="list-inline text-center text-md-right">
-                                    <li className="list-inline-item mx-lg-3 my-lg-0 mx-2 my-2">
-                                        <a className="font-secondary " href="#">
-                                            Legal
-                                        </a>
-                                    </li>
-                                    <li className="list-inline-item mx-lg-3 my-lg-0 mx-2 my-2">
-                                        <a className="font-secondary " href="#">
-                                            Sitemap
-                                        </a>
-                                    </li>
-                                    <li className="list-inline-item mx-lg-3 my-lg-0 mx-2 my-2">
-                                        <a className="font-secondary " href="#">
-                                            Privacy Policy
-                                        </a>
-                                    </li>
-                                    <li className="list-inline-item ml-lg-3 my-lg-0 ml-2 my-2 ml-0">
-                                        <a className="font-secondary " href="#">
-                                            Terms &amp; Conditions
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div> */}
                         </div>
                     </div>
                     {/* back to top */}
