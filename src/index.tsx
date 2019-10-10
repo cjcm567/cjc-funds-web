@@ -42,6 +42,16 @@ const AboutUs = () => {
         </Suspense>
     )
 }
+
+const CarrickResponsibilityComponent = lazy(() => import("./pages/CarrickResponsibility"))
+const CarrickResponsibility = () => {
+    return (
+        <Suspense fallback={null}>
+            <CarrickResponsibilityComponent />
+        </Suspense>
+    )
+}
+
 const NewsComponent = lazy(() => import("./pages/News"))
 const News = () => {
     return (
@@ -94,7 +104,8 @@ ReactDOM.render(
                 <Route path="/funds" exact component={Funds} />
                 <Route path="/funds/fund-of-funds" exact component={FundOfFunds} />
                 <Route path="/funds/carrick-dividend-yield-fund" exact component={FundDividedYield} />
-                <Route path="/about-us" component={AboutUs} />
+                <Route path="/about-us" exact component={AboutUs} />
+                <Route path="/about-us/carrick-responsibility" exact component={CarrickResponsibility} />
                 <Route path="/news" exact component={News} />
                 <Route path="/news/:props" exact component={NewsSingle} />
                 <Route path="/login-or-join" component={LoginOrJoin} />
