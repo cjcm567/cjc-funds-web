@@ -93,7 +93,6 @@ ReactDOM.render(
                 <Route path="/" exact component={Home} />
                 <Route path="/contact-us" component={ContactUs} />
                 <Route path="/industry" component={Industry} />
-
                 <Route path="/funds" exact component={Funds} />
                 <Route path="/funds/fund-of-funds" exact component={FundOfFunds} />
                 <Route path="/funds/carrick-dividend-yield-fund" exact component={FundDividedYield} />
