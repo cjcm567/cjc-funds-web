@@ -45,9 +45,7 @@ export default function LoginOrJoin() {
                                             style={{backgroundImage: "url(images/background/signup.jpg);"}}>
                                             <img src={logo} alt="logo" style={{height: "10vh"}} />
                                             <h4>欢迎！</h4>
-                                            <p>
-                                                Carrick基金管理公司期待与您共同发展
-                                            </p>
+                                            <p>Carrick基金管理公司期待与您共同发展</p>
                                         </div>
                                         <div className="col-md-7">
                                             <div className="signup-form">

@@ -110,9 +110,6 @@ function HeaderComponent() {
                                                 className="dropdown-item">
                                                 我们的投资理念
                                             </Link>
-                                            <Link to="/about-us/carrick-advantages" className="dropdown-item">
-                                                我们的优势
-                                            </Link>
                                         </div>
                                     </li>
                                     <li className="nav-item dropdown">
@@ -143,7 +140,7 @@ function HeaderComponent() {
                                     </li>
                                     <li className="nav-item">
                                         <Link to="/login-or-join" className="btn btn-primary btn-sm text-white">
-                                            Join Us
+                                            Invest now
                                         </Link>
                                     </li>
                                 </ul>
