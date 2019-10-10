@@ -8,6 +8,12 @@ import "./styles/styles.css"
 import gifPreloader from "./images/preloader.gif"
 import ScrollToTop from "./components/ScrollToTop"
 import * as serviceWorker from "./serviceWorker"
+
+import Industry from "./pages/IndustryDevelopment"
+import CRM from "./pages/CRMPage"
+import InvestClass from "./pages/InvestClass"
+
+
 const Preloader = () => {
     return <img src={gifPreloader} alt="loading..." />
 }
@@ -27,6 +33,7 @@ const Industry = () => {
         </Suspense>
     )
 }
+
 const ContactUsComponent = lazy(() => import("./pages/ContactUs"))
 const ContactUs = () => {
     return (
@@ -143,8 +150,10 @@ ReactDOM.render(
                 <Route path="/about-us/carrick-responsibility" exact component={CarrickResponsibility} />
                 <Route path="/about-us/carrick-Investment-philosophy" exact component={CarrickInvestmentPhilosophy} />
                 <Route path="/news" exact component={News} />
+                <Route path="/InvestClass" exact component={InvestClass} />
                 <Route path="/news/:props" exact component={NewsSingle} />
                 <Route path="/login-or-join" component={LoginOrJoin} />
+                <Route path="/CRMPage" component={CRM} />
                 <Route path="/404" component={NotFound} />
                 <Route path="*" component={NotFound} />
                 <Route component={NotFound} />
