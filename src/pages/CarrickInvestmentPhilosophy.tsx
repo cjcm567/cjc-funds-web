@@ -123,18 +123,6 @@ export default function CarrickInvestmentPhilosophy() {
                         </div>
                     </div>
                 </section>
-                {/* <!-- /ceo section  */}
-
-                <section className="cta overlay-primary py-50 text-center text-lg-left">
-                    <div className="container">
-                        <div className="row justify-content-between">
-                            <div className="col-lg-6">
-                                <h3 className="text-white">Biztrox give the smart solution for your business</h3>
-                            </div>
-                            <div className="col-lg-6 text-lg-right align-self-center"></div>
-                        </div>
-                    </div>
-                </section>
             </Layout>
         </>
     )
