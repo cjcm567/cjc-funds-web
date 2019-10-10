@@ -31,7 +31,7 @@ export default function CarrickResponsibility() {
                 <section className="section">
                     <div className="container">
                         <div className="row">
-                            {/* <!-- philosophy video  */}
+                            {/* <!-- Social Responsibility  */}
                             <div className="col-lg-7">
                                 <h5 className="section-title-sm">Social</h5>
                                 <h2 className="section-title section-title-border-half">社会责任</h2>
@@ -62,46 +62,44 @@ export default function CarrickResponsibility() {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-6 ml-auto">
-                                <div className="rounded p-sm-5 px-3 py-5 bg-secondary">
-                                    <h3 className="section-title section-title-border-half text-white">Who We Are?</h3>
-                                    <p className="text-white mb-40">
-                                        Excepteur sint occaecat cupidatat non proident sunt culpa qui officia deserunt
-                                        mollit anim id est laborum.
-                                    </p>
-                                    <div>
-                                        <ul className="d-inline-block pl-0">
-                                            <li className="font-secondary mb-10 text-white float-sm-left mr-sm-5">
-                                                <i className="text-primary mr-2 ti-arrow-circle-right"></i>Business
-                                                Services
-                                            </li>
-                                            <li className="font-secondary mb-10 text-white">
-                                                <i className="text-primary mr-2 ti-arrow-circle-right"></i>Audit &amp;
-                                                Assurance
-                                            </li>
-                                            <li className="font-secondary mb-10 text-white">
-                                                <i className="text-primary mr-2 ti-arrow-circle-right"></i>IT Control
-                                                Solutions
-                                            </li>
-                                        </ul>
-                                        <ul className="d-inline-block pl-0">
-                                            <li className="font-secondary mb-10 text-white">
-                                                <i className="text-primary mr-2 ti-arrow-circle-right"></i>Business
-                                                Services
-                                            </li>
-                                            <li className="font-secondary mb-10 text-white">
-                                                <i className="text-primary mr-2 ti-arrow-circle-right"></i>Audit &amp;
-                                                Assurance
-                                            </li>
-                                            <li className="font-secondary mb-10 text-white">
-                                                <i className="text-primary mr-2 ti-arrow-circle-right"></i>IT Control
-                                                Solutions
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <a href="#" className="btn btn-primary mt-4">
-                                        Explore More
-                                    </a>
+                                {/* <div className="rounded p-sm-5 px-3 py-5 bg-secondary"> */}
+                                <h3 className="section-title section-title-border-half text-white">Who We Are?</h3>
+                                <p className="text-white mb-40">
+                                    Excepteur sint occaecat cupidatat non proident sunt culpa qui officia deserunt
+                                    mollit anim id est laborum.
+                                </p>
+                                <div>
+                                    <ul className="d-inline-block pl-0">
+                                        <li className="font-secondary mb-10 text-white float-sm-left mr-sm-5">
+                                            <i className="text-primary mr-2 ti-arrow-circle-right"></i>Business Services
+                                        </li>
+                                        <li className="font-secondary mb-10 text-white">
+                                            <i className="text-primary mr-2 ti-arrow-circle-right"></i>Audit &amp;
+                                            Assurance
+                                        </li>
+                                        <li className="font-secondary mb-10 text-white">
+                                            <i className="text-primary mr-2 ti-arrow-circle-right"></i>IT Control
+                                            Solutions
+                                        </li>
+                                    </ul>
+                                    <ul className="d-inline-block pl-0">
+                                        <li className="font-secondary mb-10 text-white">
+                                            <i className="text-primary mr-2 ti-arrow-circle-right"></i>Business Services
+                                        </li>
+                                        <li className="font-secondary mb-10 text-white">
+                                            <i className="text-primary mr-2 ti-arrow-circle-right"></i>Audit &amp;
+                                            Assurance
+                                        </li>
+                                        <li className="font-secondary mb-10 text-white">
+                                            <i className="text-primary mr-2 ti-arrow-circle-right"></i>IT Control
+                                            Solutions
+                                        </li>
+                                    </ul>
                                 </div>
+                                <a href="#" className="btn btn-primary mt-4">
+                                    Explore More
+                                </a>
+                                {/* </div> */}
                             </div>
                         </div>
                     </div>
