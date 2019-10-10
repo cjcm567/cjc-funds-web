@@ -98,16 +98,10 @@ function HeaderComponent() {
                                         <Link
                                             to="/about-us"
                                             className="nav-link dropdown-toggle"
-                                            onClick={handleDropdownCollapse}>
+                                            onClick={asHandleDropdownCollapse}>
                                             关于我们
                                         </Link>
-                                        <div className={dropdownMenuStatus}>
-                                            <Link to="/about-us" className="dropdown-item">
-                                                关于我们
-                                            </Link>
-                                            <Link to="/about-us/manager" className="dropdown-item">
-                                                基金经理人 onClick={asHandleDropdownCollapse}>
-                                            </Link>
+                                        <div className={aboutUsDropdownMenuStatus}>
                                             <Link to="/about-us/carrick-responsibility" className="dropdown-item">
                                                 我们的责任
                                             </Link>
@@ -144,12 +138,6 @@ function HeaderComponent() {
                                             行业发展
                                         </Link>
                                     </li>
-                                    <li className="nav-item">
-                                        <Link to="/InvestClass" className="nav-link">
-                                            投资学堂
-                                        </Link>
-                                    </li>
-
                                     <li className="nav-item">
                                         <Link to="/login-or-join" className="btn btn-primary btn-sm text-white">
                                             Invest now

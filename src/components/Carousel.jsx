@@ -1,6 +1,8 @@
 /** @format */
 import React, {useState} from "react"
 import Carousel from "react-bootstrap/Carousel"
+import {LazyImage} from "react-lazy-images"
+import imagePreloader from "../images/preloader.gif"
 import imageBanner1 from "../images/banner/banner-1.jpg"
 import imageBanner2 from "../images/banner/banner-2.jpg"
 import imageBanner3 from "../images/banner/banner-3.jpg"
@@ -29,25 +31,31 @@ export default function ControlledCarousel() {
         <>
             <Carousel activeIndex={index} direction={direction} onSelect={handleSelect}>
                 <Carousel.Item style={carouselItemStyle}>
-                    <img className="d-block w-100" style={carouselImgStyle} src={imageBanner1} alt="First slide" />
-                    <Carousel.Caption>
-                        {/* <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
-                    </Carousel.Caption>
+                    <LazyImage
+                        src={imageBanner1}
+                        alt="First slide"
+                        style={carouselImgStyle}
+                        placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
+                        actual={({imageProps}) => <img {...imageProps} />}
+                    />
                 </Carousel.Item>
                 <Carousel.Item style={carouselItemStyle}>
-                    <img className="d-block w-100" style={carouselImgStyle} src={imageBanner2} alt="Second slide" />
-                    <Carousel.Caption>
-                        {/* <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
-                    </Carousel.Caption>
+                    <LazyImage
+                        src={imageBanner2}
+                        alt="Second slide"
+                        style={carouselImgStyle}
+                        placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
+                        actual={({imageProps}) => <img {...imageProps} />}
+                    />
                 </Carousel.Item>
                 <Carousel.Item style={carouselItemStyle}>
-                    <img className="d-block w-100" style={carouselImgStyle} src={imageBanner3} alt="Third slide" />
-                    <Carousel.Caption>
-                        {/* <h3>Third slide label</h3>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> */}
-                    </Carousel.Caption>
+                    <LazyImage
+                        src={imageBanner3}
+                        alt="Third slide"
+                        style={carouselImgStyle}
+                        placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
+                        actual={({imageProps}) => <img {...imageProps} />}
+                    />
                 </Carousel.Item>
             </Carousel>
         </>

@@ -1,6 +1,6 @@
 /** @format */
 
-import React, {Suspense, useState} from "react"
+import React, {useState} from "react"
 import Layout from "../components/layout"
 import logo from "../images/logo.svg"
 
@@ -36,6 +36,7 @@ export default function LoginOrJoin() {
             <Layout>
                 <section className="d-flex align-items-center justify-content-center" style={{height: "100vh"}}>
                     <div className="container">
+                        s
                         <div className="row">
                             <div className="col-lg-8 mx-auto">
                                 <div className="signup">
@@ -44,11 +45,8 @@ export default function LoginOrJoin() {
                                             className="col-md-5 signup-greeting overlay"
                                             style={{backgroundImage: "url(images/background/signup.jpg);"}}>
                                             <img src={logo} alt="logo" style={{height: "10vh"}} />
-                                            <h4>Welcome!</h4>
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                tempor incididunt ut labore et dolore magna.
-                                            </p>
+                                            <h4>欢迎！</h4>
+                                            <p>Carrick基金管理公司期待与您共同发展</p>
                                         </div>
                                         <div className="col-md-7">
                                             <div className="signup-form">

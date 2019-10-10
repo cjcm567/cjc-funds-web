@@ -3,34 +3,22 @@
 import React from "react"
 import {Link} from "react-router-dom"
 import Layout from "../components/layout"
+import {LazyImage} from "react-lazy-images"
+import imagePreloader from "../images/preloader.gif"
 import imageArrowTop from "../images/funds/arrow-top.png"
 import imageArrowBottom from "../images/funds/arrow-bottom.png"
-
-const fundsOverview = [
-    {
-        props: "fund-of-funds",
-        title: "Fund of Funds",
-        desc:
-            "FOF（Fund of Funds，基金中的基金）指投资于基金组合的基金。在欧美市场，FOF 已发展成为数量规模占比均较大的一类成熟的理财产品，相比而言，在我国 FOF 仍具有较大的发展空间（家族理财机构及对冲基金）。",
-    },
-    {
-        props: "carrick-dividend-yield-fund",
-        title: "Dividend Yield Fund",
-        desc:
-            "该基金的目标是取得长期平均每年3％的正绝对收益。 这是绝对回报基金。 它打算通过产生股息形式的回报以及保持每年的基金资本价值来实现这一目标。 策略是投资于股息收益率高且有增长机会维持价值的NZX上市证券。",
-    },
-]
+import fundsOverview from "../data/fundsData.json"
 
 const fundsCard = fundsOverview.map(fundsItem => (
     <div className="col-lg-4 col-sm-6 mb-5" key={fundsItem.props}>
         <div className="card text-center">
             <h4 className="card-title pt-3">{fundsItem.title}</h4>
             <div className="card-img-wrapper">
-                <img
-                    className="card-img-top rounded-0"
-                    height="200px"
+                <LazyImage
                     src={require(`../images/funds/${fundsItem.props}.jpg`)}
                     alt={fundsItem.props}
+                    placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
+                    actual={({imageProps}) => <img className="card-img-top rounded-0" height="200px" {...imageProps} />}
                 />
             </div>
             <div className="card-body p-0">
@@ -100,8 +88,18 @@ export default function Funds() {
                             </div>
                         </div>
                     </div>
-                    <img className="arrow-top" src={imageArrowTop} alt="image of Arrow Top" />
-                    <img className="arrow-bottom" src={imageArrowBottom} alt="image of Arrow Bottom" />
+                    <LazyImage
+                        src={imageArrowTop}
+                        alt="image of Arrow Top"
+                        placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
+                        actual={({imageProps}) => <img className="arrow-top" {...imageProps} />}
+                    />
+                    <LazyImage
+                        src={imageArrowBottom}
+                        alt="image of Arrow Bottom"
+                        placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
+                        actual={({imageProps}) => <img className="arrow-bottom" {...imageProps} />}
+                    />
                 </section>
             </Layout>
         </>
