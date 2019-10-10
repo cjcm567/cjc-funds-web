@@ -4,6 +4,7 @@ import React, {lazy, Suspense} from "react"
 import Layout from "../components/layout"
 import Chart from "../components/Chart"
 import imageProfile from "../images/aboutus/profile.jpg"
+import TradingViewWidget, {Themes} from "react-tradingview-widget"
 const InvestmentFlowComponent = lazy(() => import("../components/InvestmentFlow"))
 const InvestmentFlow = () => {
     return (
@@ -148,6 +149,7 @@ export default function Manager() {
                     </div>
                 </section>
                 <InvestmentFlow />
+                <TradingViewWidget symbol="NASDAQ:AAPL" theme={Themes.DARK} locale="fr" autosize />
             </Layout>
         </>
     )
