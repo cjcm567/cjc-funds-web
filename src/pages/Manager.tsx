@@ -54,9 +54,7 @@ export default function Manager() {
                                         className="d-inline-block mr-1 text-dark ti-files"
                                         style={{fontSize: "20px;"}}></i>
                                     <h4 className="mb-1 d-inline-block">Professional CV</h4>
-                                    <a className="font-secondary text-color d-block ml-4" href="#">
-                                        Download pdf
-                                    </a>
+                                    <a className="font-secondary text-color d-block ml-4">Download pdf</a>
                                 </div>
                             </aside>
                             {/* sidebar team member details */}

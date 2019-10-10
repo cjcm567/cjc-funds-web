@@ -1,6 +1,6 @@
 /** @format */
 
-import React, {useState, useEffect} from "react"
+import React, {useState} from "react"
 import Layout from "../components/layout"
 import {LazyImage} from "react-lazy-images"
 import imagePreloader from "../images/preloader.gif"
@@ -9,11 +9,10 @@ import imageStrategy from "../images/funds/strategy.png"
 import imageCalculate from "../images/funds/calculate.jpg"
 import imageCrossPlatform from "../images/funds/cross-platform.jpg"
 import imageFundOfFunds from "../images/funds/fund-of-funds.jpg"
-import imageCooperate from "../images/funds/cooperate.jpg"
 import imageMobile from "../images/funds/mobile.jpg"
 
 function FundsComponent(isShowId: number) {
-    if (isShowId == 0) {
+    if (isShowId === 0) {
         return (
             <>
                 <div>
@@ -78,7 +77,7 @@ function FundsComponent(isShowId: number) {
             </>
         )
     }
-    if (isShowId == 1) {
+    if (isShowId === 1) {
         return (
             <>
                 <div>
