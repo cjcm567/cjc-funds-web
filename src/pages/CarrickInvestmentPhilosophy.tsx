@@ -78,41 +78,46 @@ export default function CarrickInvestmentPhilosophy() {
 
                 {/* <!-- ceo section  */}
                 <section className="section">
-                    <h3 className="section-title section-title-border-half">我们的优势</h3>
-                    <div className="container bg-gray">
-                        <div className="row rounded ">
-                            <div className="col-lg-6">
-                                <h5>基本理念</h5>
-                                <p>
-                                    Carrick Just Asset Management
-                                    Limited都是依靠自己的第一手研究，相信自己的直觉，并从多年的经验中汲取教训，以便为您创建最佳的投资组合。
-                                </p>
-                            </div>
-                            <div className="col-lg-6">
-                                <h5>透明度</h5>
-                                <p>
-                                    Carrick Just Asset Management Limited做的每一笔投资都秉持着负责，透明和坦率的原则。
-                                    您将 永远知道您的资金投资于何处以及其表现如何。
-                                    我们相信交流与投资同等重要。我们为我们所做的事感到自豪，并希望与您分享。丰富经验
-                                </p>
-                            </div>
-                            <div className="row rounded">
-                                <div className="col-lg-6">
-                                    <h5>丰富经验</h5>
-                                    <p>
+                    <div className="container">
+                        <h5 className="section-title-sm">Advantages</h5>
+                        <h2 className="section-title section-title-border-half">我们的优势</h2>
+                    </div>
+                    <div className="container">
+                        <div className="container ">
+                            <div className="row rounded ">
+                                <div className="col-lg-4 bg-gray mr-1 mb-1">
+                                    <h5>基本理念</h5>
+                                    <p className="text-dark mb-40">
                                         Carrick Just Asset Management
-                                        Limited拥有新西兰最有经验的投资团队之一来管理您的资金。
-                                        他们从各种投资条件中汲取了丰富的经验教训。
+                                        Limited都是依靠自己的第一手研究，相信自己的直觉，并从多年的经验中汲取教训，以便为您创建最佳的投资组合。
                                     </p>
                                 </div>
-                                <div className="col-lg-6">
-                                    <h5>服务准则</h5>
-                                    <p>
+                                <div className="col-lg-4 bg-gray ml-1 mb-1">
+                                    <h5>透明度</h5>
+                                    <p className="text-dark mb-40">
                                         Carrick Just Asset Management
-                                        Limited能够为我们的每一位客户提供体贴入微的投资咨询服务，
-                                        无论您是第一次投资还是经验丰富的投资者，我们都可以为您提供帮助。我们拥有深厚的服务文化和以客户为中心的企业文化。
-                                        我们的团队致力于增加客户的财富，使他们过上更好的生活。
+                                        Limited做的每一笔投资都秉持着负责，透明和坦率的原则。 您将
+                                        永远知道您的资金投资于何处以及其表现如何。
+                                        我们相信交流与投资同等重要。我们为我们所做的事感到自豪，并希望与您分享。丰富经验
                                     </p>
+                                </div>
+                                <div className="row rounded">
+                                    <div className="col-lg-4 bg-gray mt-1 mr-1">
+                                        <h5>丰富经验</h5>
+                                        <p className="text-dark mb-40">
+                                            Carrick Just Asset Management
+                                            Limited拥有新西兰最有经验的投资团队之一来管理您的资金。
+                                            他们从各种投资条件中汲取了丰富的经验教训。
+                                        </p>
+                                    </div>
+                                    <div className="col-lg-4 bg-gray mt-1 ml-1">
+                                        <h5>服务准则</h5>
+                                        <p className="text-dark mb-40">
+                                            Carrick Just Asset Management
+                                            Limited能够为我们的每一位客户提供体贴入微的投资咨询服务，
+                                            无论您是第一次投资还是经验丰富的投资者，我们都可以为您提供帮助。我们拥有深厚的服务文化和以客户为中心的企业文化。
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
