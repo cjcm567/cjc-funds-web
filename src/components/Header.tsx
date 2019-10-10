@@ -108,8 +108,14 @@ function HeaderComponent() {
                                         </Link>
                                     </li>
                                     <li className="nav-item">
+                                        <Link to="/InvestClass" className="nav-link">
+                                            投资学堂
+                                        </Link>
+                                    </li>
+
+                                    <li className="nav-item">
                                         <Link to="/login-or-join" className="btn btn-primary btn-sm text-white">
-                                            Join Us
+                                            Invest now
                                         </Link>
                                     </li>
                                 </ul>

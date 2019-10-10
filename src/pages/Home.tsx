@@ -12,20 +12,7 @@ import AboutUsImage from "../images/background/about-bg.jpg"
 import imageCapitalMarkets from "../images/news/what-does-future-hold-our-capital-markets.jpg"
 import imageCorporateHealth from "../images/news/insights-our-corporate-health.jpg"
 import newsData from "../data/newsData.json"
-const IMAGE_DATA = [
-    {
-        src: require("../images/banner/banner-1.jpg"),
-        alt: "banner-1",
-    },
-    {
-        src: require("../images/banner/banner-2.jpg"),
-        alt: "banner-2",
-    },
-    {
-        src: require("../images/banner/banner-3.jpg"),
-        alt: "banner-3",
-    },
-]
+
 const sectionStyle = {
     backgroundImage: `url(${AboutUsImage})`,
 }
@@ -57,8 +44,7 @@ function Home() {
         <>
             <Layout>
                 <div className="App">
-                   
-
+                    {/* Slider */}
                     <div className="mb-50">
                         <Carousel />
                     </div>

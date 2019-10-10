@@ -10,6 +10,7 @@ import ScrollToTop from "./components/ScrollToTop"
 import * as serviceWorker from "./serviceWorker"
 import Industry from "./pages/IndustryDevelopment"
 import CRM from "./pages/CRMPage"
+import InvestClass from "./pages/InvestClass"
 
 const ContactUsComponent = lazy(() => import("./pages/ContactUs"))
 const ContactUs = () => {
@@ -92,17 +93,18 @@ ReactDOM.render(
                 <Route path="/" exact component={Home} />
                 <Route path="/contact-us" component={ContactUs} />
                 <Route path="/industry" component={Industry} />
+
                 <Route path="/funds" exact component={Funds} />
                 <Route path="/funds/fund-of-funds" exact component={FundOfFunds} />
                 <Route path="/funds/carrick-dividend-yield-fund" exact component={FundDividedYield} />
                 <Route path="/about-us" component={AboutUs} />
                 <Route path="/news" exact component={News} />
+                <Route path="/InvestClass" exact component={InvestClass} />
                 <Route path="/news/:props" exact component={NewsSingle} />
                 <Route path="/login-or-join" component={LoginOrJoin} />
-                <Route path="/CRMPage" component={CRM}/>
+                <Route path="/CRMPage" component={CRM} />
                 <Route path="/404" component={NotFound} />
                 <Route path="*" component={NotFound} />
-              
                 <Route component={NotFound} />
             </Switch>
         </ScrollToTop>

@@ -7,20 +7,18 @@ import Logo from "../images/logo1.png"
 import "../styles/crm.css"
 import UserImg from "../images/user.svg"
 import MenuData from "../data/crm.json"
-import { Link } from "react-router-dom"
+import {Link} from "react-router-dom"
 const {SubMenu} = Menu
 const {Header, Content, Sider} = Layout
 const dataSource = [
     {
         key: "1",
         name: "Mike",
-        TransactionType:"withDraw",
-        time:"10-09-2019",
+        TransactionType: "withDraw",
+        time: "10-09-2019",
         Amount: "1000",
-        EntryFees:"2.2%",
-
+        EntryFees: "2.2%",
     },
-    
 ]
 
 const columns = [
@@ -29,16 +27,13 @@ const columns = [
         dataIndex: "name",
         key: "name",
 
-       render(text: any) {
-           return (
-                <Link to="/">{text}</Link>
-           );
-       }
-       
+        render(text: any) {
+            return <Link to="/">{text}</Link>
+        },
     },
     {
-        title:"TransactionType",
-        dataIndex:"TransactionType",
+        title: "TransactionType",
+        dataIndex: "TransactionType",
         key: "TransactionType",
     },
     {
@@ -61,7 +56,6 @@ const columns = [
         dataIndex: "OtherExpenses",
         key: "OtherExpenses",
     },
-    
 ]
 
 function CRMComponent() {
