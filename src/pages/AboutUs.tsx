@@ -11,8 +11,10 @@ const ceoStyle = {
     backgroundImage: `url(${imageCeo})`,
 }
 export default function AboutUs() {
-    const [activeState, setActiveState] = useState("collapse")
-
+    const [activeState, setActiveState] = useState()
+    // const toggleAccordion = (id: number) => {
+    //     setActiveState(activeState === "collapse" ? "collapse show" : "collapse")
+    // }
     const toggleAccordion = () => {
         setActiveState(activeState === "collapse" ? "collapse show" : "collapse")
     }
@@ -27,8 +29,8 @@ export default function AboutUs() {
                                 <h2 className="section-title section-title-border-half">我们的历史</h2>
                                 <p>
                                     Carrick Just Asset Management Limited
-                                    是一家被基金经理授权提供管理投资计划的基金公司。公司成立于2017年，总部位于新西兰奥克兰。本公司积极管理该计划下的资金，并致力于确保其客户实现其投资目标。
-                                    我们在此管理投资计划下提供了一系列资金，以适应不同的投资者需求，并帮助我们的客户实现他们的投资目标。
+                                    是一家被新西兰政府授权提供管理投资计划的基金公司。公司成立于2019年，总部位于新西兰奥克兰。本公司积极管理该计划下的资金，并致力于确保其客户实现其投资目标。
+                                    公司在此管理投资计划下提供了一系列资金，以适应不同的投资者需求，并帮助我们的客户实现他们的投资目标。
                                     我们有能力投资各种资产类别，我们的目标是使投资人获得高于适当基准的回报。
                                     我们通过运用我们的投资方法，专业知识和理念积极管理资金。
                                 </p>
@@ -43,7 +45,7 @@ export default function AboutUs() {
                                     有关PIE的税收信息，点击按钮访问ird官方网站查询。
                                 </p>
                                 <a href="https://www.ird.govt.nz" className="btn btn-primary">
-                                    Explore More
+                                    Access to IRD web
                                 </a>
                             </div>
                             {/* philosophy image */}
@@ -82,7 +84,9 @@ export default function AboutUs() {
                                     <p className="text-white">•关于风险管理的纪律立场</p>
                                     <p className="text-white">•灵活的投资方法</p>
                                     <p className="text-white">•进行适当的投资组合多元化</p>
-                                    <img src="images/about/ceo-signature.png" alt="ceo-signature" />
+                                    <a href="/about-us/carrick-Investment-philosophy" className="btn btn-info">
+                                        Explore More
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -91,7 +95,7 @@ export default function AboutUs() {
                 {/* ceo section */}
 
                 {/* skill */}
-                <section className="section">
+                <section className="section bg-gray">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
@@ -101,79 +105,74 @@ export default function AboutUs() {
                             {/* accordion */}
                             <div className="col-lg-6">
                                 <div id="accordion" className="mb-md-50">
-                                    <div className="card border-0 mb-4">
-                                        <div className="card-header bg-gray border p-0">
-                                            <a
+                                    <div className="card border-0 mb-4 bg-gray">
+                                        <div id="0" className="card-header bg-white border p-0">
+                                            <p
                                                 className="card-link h5 d-block tex-dark mb-0 py-10 px-4"
-                                                data-toggle="collapse"
-                                                onClick={toggleAccordion}>
+                                                data-toggle="collapse show">
                                                 投资思路
-                                            </a>
+                                            </p>
                                         </div>
-                                        <div id="collapseOne" className={activeState} data-parent="#accordion">
-                                            <div className="card-body font-secondary text-color pl-0 pb-0">
+                                        <div className={activeState} data-parent="#accordion">
+                                            <div className="card-body font-secondary text-color bg-gray pl-0 pb-0">
                                                 投资过程的第一阶段涉及投资理念的产生。
                                                 我们的投资经理人提出的想法是什么产品在许多可投资的产品中是我们可以投资的，以实现基金的目标之间的产品。
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="card border-0 mb-4">
-                                        <div className="card-header bg-gray border p-0">
-                                            <a
+                                    <div className="card border-0 mb-4 bg-gray">
+                                        <div id="1" className="card-header bg-white border p-0">
+                                            <p
                                                 className="collapsed card-link h5 d-block tex-dark mb-0 py-10 px-4"
-                                                data-toggle="collapse"
-                                                onClick={toggleAccordion}>
+                                                data-toggle="collapse show">
                                                 研究与分析
-                                            </a>
+                                            </p>
                                         </div>
-                                        <div id="collapseTwo" className={activeState} data-parent="#accordion">
-                                            <div className="card-body font-secondary text-color pl-0 pb-0">
+                                        <div className={activeState} data-parent="#accordion">
+                                            <div className="card-body font-secondary text-color bg-gray pl-0 pb-0">
                                                 然后，我们会对要投资的证券进行详细分析。该分析可能包括价格预测，技术分析，定量分析，行业和公司特定的研究与分析。
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="card border-0 mb-4">
-                                        <div className="card-header bg-gray border p-0">
-                                            <a
+                                    <div className="card border-0 mb-4 bg-gray">
+                                        <div id="2" className="card-header bg-white border p-0">
+                                            <p
                                                 className="collapsed card-link h5 d-block tex-dark mb-0 py-10 px-4"
-                                                data-toggle="collapse"
-                                                onClick={toggleAccordion}>
+                                                data-toggle="collapse show">
                                                 投资组合建设
-                                            </a>
+                                            </p>
                                         </div>
-                                        <div id="collapseThree" className={activeState} data-parent="#accordion">
-                                            <div className="card-body font-secondary text-color pl-0 pb-0">
+                                        <div className={activeState} data-parent="#accordion">
+                                            <div className="card-body font-secondary text-color bg-gray pl-0 pb-0">
                                                 决定要投资的证券后，我们会考虑资产分配和限额要求，将证券添加到投资组合中。
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="card border-0 mb-4">
-                                        <div className="card-header bg-gray border p-0">
-                                            <a
+                                    <div className="card border-0 mb-4 bg-gray">
+                                        <div id="3" className="card-header bg-white border p-0">
+                                            <p
                                                 className="collapsed card-link h5 d-block tex-dark mb-0 py-10 px-4"
-                                                data-toggle="collapse"
-                                                onClick={toggleAccordion}>
+                                                data-toggle="collapse show">
                                                 投资组合监控
-                                            </a>
+                                            </p>
                                         </div>
-                                        <div id="collapseThree" className={activeState} data-parent="#accordion">
-                                            <div className="card-body font-secondary text-color pl-0 pb-0">
+                                        <div className={activeState} data-parent="#accordion">
+                                            <div className="card-body font-secondary text-color bg-gray pl-0 pb-0">
                                                 持续监控建筑组合的绩效，以使我们能够评估其绩效，并确保投资符合 SIPO
                                                 的要求。
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="card border-0 mb-4">
-                                        <div className="card-header bg-gray border p-0">
-                                            <a
+                                    <div className="card border-0 mb-4 bg-gray">
+                                        <div id="4" className="card-header bg-white border p-0">
+                                            <p
                                                 className="collapsed card-link h5 d-block tex-dark mb-0 py-10 px-4"
-                                                data-toggle="collapse"
-                                                onClick={toggleAccordion}>
+                                                data-toggle="collapse show">
                                                 战术分配和平衡
-                                            </a>
+                                            </p>
                                         </div>
-                                        <div id="collapseThree" className={activeState} data-parent="#accordion">
-                                            <div className="card-body font-secondary text-color pl-0 pb-0">
+                                        <div className={activeState} data-parent="#accordion">
+                                            <div className="card-body font-secondary text-color bg-gray pl-0 pb-0">
                                                 我们积极管理投资。
                                                 我们致力于调整和平衡投资组合中的成分的策略，以为我们的客户实现最佳结果并遵守资产分配限制。
                                             </div>

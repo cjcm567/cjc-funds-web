@@ -6,9 +6,7 @@ import logoImage from "../images/logo.png"
 
 function HeaderComponent() {
     const [collapseStatus, setCollapseStatus] = useState("collapse navbar-collapse")
-    const [aboutUSCollapseStatus, setAboutUsCollapseStatus] = useState("collapse asnavbar-collapse")
     const [dropdownMenuStatus, setDropdownMenuStatus] = useState("dropdown-menu")
-    const [aboutUsDropdownMenuStatus, setAboutUsDropdownMenuStatus] = useState("dropdown-menu")
     const [loginChooserStatus, setLoginChooserStatus] = useState("login-chooser")
     const [ariaExpanded, setAriaExpanded] = useState(false)
 
@@ -22,16 +20,6 @@ function HeaderComponent() {
         }
     }
 
-    const asHandleNavCollapse = () => {
-        if (aboutUSCollapseStatus.includes("show")) {
-            setAboutUsCollapseStatus("collapse asnavbar-collapse")
-            setAriaExpanded(false)
-        } else {
-            setAboutUsCollapseStatus("collapse asnavbar-collapse show")
-            setAriaExpanded(true)
-        }
-    }
-
     const handleDropdownCollapse = () => {
         if (dropdownMenuStatus.includes("show")) {
             setDropdownMenuStatus("dropdown-menu")
@@ -41,17 +29,6 @@ function HeaderComponent() {
             setAriaExpanded(true)
         }
     }
-
-    const asHandleDropdownCollapse = () => {
-        if (dropdownMenuStatus.includes("show")) {
-            setAboutUsDropdownMenuStatus("dropdown-menu")
-            setAriaExpanded(false)
-        } else {
-            setAboutUsDropdownMenuStatus("dropdown-menu show")
-            setAriaExpanded(true)
-        }
-    }
-
     const handleLoginChooser = () => {
         if (loginChooserStatus.includes("open")) {
             setLoginChooserStatus("login-chooser")
@@ -94,29 +71,10 @@ function HeaderComponent() {
                                             主页
                                         </Link>
                                     </li>
-                                    <li className="nav-item dropdown">
-                                        <Link
-                                            to="/about-us"
-                                            className="nav-link dropdown-toggle"
-                                            onClick={handleDropdownCollapse}>
+                                    <li className="nav-item">
+                                        <Link to="/about-us" className="nav-link">
                                             关于我们
                                         </Link>
-                                        <div className={dropdownMenuStatus}>
-                                            <Link to="/about-us" className="dropdown-item">
-                                                关于我们
-                                            </Link>
-                                            <Link to="/about-us/manager" className="dropdown-item">
-                                                基金经理人 onClick={asHandleDropdownCollapse}>
-                                            </Link>
-                                            <Link to="/about-us/carrick-responsibility" className="dropdown-item">
-                                                我们的责任
-                                            </Link>
-                                            <Link
-                                                to="/about-us/carrick-Investment-philosophy"
-                                                className="dropdown-item">
-                                                我们的投资理念
-                                            </Link>
-                                        </div>
                                     </li>
                                     <li className="nav-item dropdown">
                                         <Link
@@ -146,7 +104,7 @@ function HeaderComponent() {
                                     </li>
                                     <li className="nav-item">
                                         <Link to="/login-or-join" className="btn btn-primary btn-sm text-white">
-                                            Invest now
+                                            Join Us
                                         </Link>
                                     </li>
                                 </ul>
