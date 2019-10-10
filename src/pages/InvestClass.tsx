@@ -8,7 +8,7 @@ import imageCrossPlatform from "../images/funds/cross-platform.jpg"
 import imageFundOfFunds from "../images/funds/fund-of-funds.jpg"
 import Paragraph from "antd/lib/typography/Paragraph"
 
-function FundsComponent(isShowId: number) {
+function InvestClassComponent(isShowId: number) {
     if (isShowId == 0) {
         return (
             <>
@@ -109,7 +109,7 @@ function FundsComponent(isShowId: number) {
                             </li>
                             <li className="font-secondary mb-10">
                                 <p>
-                                    基金通常会把已经实现的收益向投资人进行分配。分红的基础为"基金净收益"，即基金的收入回报和通过卖出证券实现的资本回报，减去依法可以在基金收益中扣除的费用后的余额。按照目前有关规定，分红有两个约束条件：一是基金投资要有已实现的净收益，二是分红比例在一年中不得低于已实现净收益的90%。
+                                    基金通常会把已经实现的收益向投资人进行分配。分红的基础为「基金净收益」，即基金的收入回报和通过卖出证券实现的资本回报，减去依法可以在基金收益中扣除的费用后的余额。按照目前有关规定，分红有两个约束条件：一是基金投资要有已实现的净收益，二是分红比例在一年中不得低于已实现净收益的90%。
                                 </p>
                             </li>
                             <li className="font-secondary mb-10">
@@ -129,7 +129,7 @@ function FundsComponent(isShowId: number) {
         )
     }
 }
-export default function FundOfFunds() {
+export default function InvestClass() {
     const fundsDict = [
         {id: 0, content: "什么是基金？", style: "active border-bottom"},
         {id: 1, content: "不同的基金类型", style: "border-bottom"},
@@ -258,7 +258,7 @@ export default function FundOfFunds() {
                                 </div>
                             </aside>
                             {/* service single content */}
-                            <div className="col-lg-8 order-lg-2 order-1">{FundsComponent(defaultActive)}</div>
+                            <div className="col-lg-8 order-lg-2 order-1">{InvestClassComponent(defaultActive)}</div>
                         </div>
                     </div>
                 </section>

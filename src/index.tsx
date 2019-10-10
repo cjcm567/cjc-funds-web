@@ -9,14 +9,19 @@ import gifPreloader from "./images/preloader.gif"
 import ScrollToTop from "./components/ScrollToTop"
 import * as serviceWorker from "./serviceWorker"
 
-import Industry from "./pages/IndustryDevelopment"
-import CRM from "./pages/CRMPage"
-import InvestClass from "./pages/InvestClass"
-
-
 const Preloader = () => {
     return <img src={gifPreloader} alt="loading..." />
 }
+
+const InvestClassComponent = lazy(() => import("./pages/InvestClass"))
+const InvestClass = () => {
+    return (
+        <Suspense fallback={Preloader}>
+            <InvestClassComponent />
+        </Suspense>
+    )
+}
+
 const HomeComponent = lazy(() => import("./pages/Home"))
 const Home = () => {
     return (
@@ -153,7 +158,6 @@ ReactDOM.render(
                 <Route path="/InvestClass" exact component={InvestClass} />
                 <Route path="/news/:props" exact component={NewsSingle} />
                 <Route path="/login-or-join" component={LoginOrJoin} />
-                <Route path="/CRMPage" component={CRM} />
                 <Route path="/404" component={NotFound} />
                 <Route path="*" component={NotFound} />
                 <Route component={NotFound} />

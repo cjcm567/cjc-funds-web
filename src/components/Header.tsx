@@ -6,10 +6,8 @@ import logoImage from "../images/logo.png"
 
 function HeaderComponent() {
     const [collapseStatus, setCollapseStatus] = useState("collapse navbar-collapse")
-    const [aboutUSCollapseStatus, setAboutUsCollapseStatus] = useState("collapse asnavbar-collapse")
     const [dropdownMenuStatus, setDropdownMenuStatus] = useState("dropdown-menu")
     const [aboutUsDropdownMenuStatus, setAboutUsDropdownMenuStatus] = useState("dropdown-menu")
-    const [loginChooserStatus, setLoginChooserStatus] = useState("login-chooser")
     const [ariaExpanded, setAriaExpanded] = useState(false)
 
     const handleNavCollapse = () => {
@@ -22,12 +20,12 @@ function HeaderComponent() {
         }
     }
 
-    const asHandleNavCollapse = () => {
-        if (aboutUSCollapseStatus.includes("show")) {
-            setAboutUsCollapseStatus("collapse asnavbar-collapse")
+    const handleAboutUsDropdownCollapse = () => {
+        if (aboutUsDropdownMenuStatus.includes("show")) {
+            setAboutUsDropdownMenuStatus("dropdown-menu")
             setAriaExpanded(false)
         } else {
-            setAboutUsCollapseStatus("collapse asnavbar-collapse show")
+            setAboutUsDropdownMenuStatus("dropdown-menu show")
             setAriaExpanded(true)
         }
     }
@@ -39,24 +37,6 @@ function HeaderComponent() {
         } else {
             setDropdownMenuStatus("dropdown-menu show")
             setAriaExpanded(true)
-        }
-    }
-
-    const asHandleDropdownCollapse = () => {
-        if (dropdownMenuStatus.includes("show")) {
-            setAboutUsDropdownMenuStatus("dropdown-menu")
-            setAriaExpanded(false)
-        } else {
-            setAboutUsDropdownMenuStatus("dropdown-menu show")
-            setAriaExpanded(true)
-        }
-    }
-
-    const handleLoginChooser = () => {
-        if (loginChooserStatus.includes("open")) {
-            setLoginChooserStatus("login-chooser")
-        } else {
-            setLoginChooserStatus("login-chooser open")
         }
     }
 
@@ -98,15 +78,15 @@ function HeaderComponent() {
                                         <Link
                                             to="/about-us"
                                             className="nav-link dropdown-toggle"
-                                            onClick={handleDropdownCollapse}>
+                                            onClick={handleAboutUsDropdownCollapse}>
                                             关于我们
                                         </Link>
-                                        <div className={dropdownMenuStatus}>
+                                        <div className={aboutUsDropdownMenuStatus}>
                                             <Link to="/about-us" className="dropdown-item">
                                                 关于我们
                                             </Link>
                                             <Link to="/about-us/manager" className="dropdown-item">
-                                                基金经理人 onClick={asHandleDropdownCollapse}>
+                                                基金经理人
                                             </Link>
                                             <Link to="/about-us/carrick-responsibility" className="dropdown-item">
                                                 我们的责任
