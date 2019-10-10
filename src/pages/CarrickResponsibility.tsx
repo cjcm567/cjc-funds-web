@@ -65,10 +65,10 @@ export default function CarrickResponsibility() {
                                 {/* <div className="rounded p-sm-5 px-3 py-5 bg-secondary"> */}
                                 <h3 className="section-title section-title-border-half text-white">Who We Are?</h3>
                                 <p className="text-white mb-40">
-                                    Excepteur sint occaecat cupidatat non proident sunt culpa qui officia deserunt
-                                    mollit anim id est laborum.
+                                    我们的目标是使投资人获得高于适当基准的回报。
+                                    我们通过运用我们的投资方法，专业知识和理念积极管理资金。
                                 </p>
-                                <div>
+                                {/* <div>
                                     <ul className="d-inline-block pl-0">
                                         <li className="font-secondary mb-10 text-white float-sm-left mr-sm-5">
                                             <i className="text-primary mr-2 ti-arrow-circle-right"></i>Business Services
@@ -95,9 +95,9 @@ export default function CarrickResponsibility() {
                                             Solutions
                                         </li>
                                     </ul>
-                                </div>
-                                <a href="#" className="btn btn-primary mt-4">
-                                    Explore More
+                                </div> */}
+                                <a href="/about-us" className="btn btn-primary mt-4">
+                                    Read More
                                 </a>
                                 {/* </div> */}
                             </div>
@@ -106,46 +106,23 @@ export default function CarrickResponsibility() {
                 </section>
 
                 {/* <!-- ceo section  */}
-                <section className="section">
+                <section className="section bg-gray">
                     <div className="container">
                         <div className="row rounded bg-gray">
                             <div className="col-lg-7">
-                                {/*  ceo content  */}
+                                {/*  regulation  */}
                                 <div className="p-5">
-                                    <h2 className="section-title section-title-border-half">
-                                        We are efficient to
-                                        <br /> make your business rise{" "}
-                                    </h2>
+                                    <h5 className="section-title-sm">Regulation</h5>
+                                    <h2 className="section-title section-title-border-half">监管责任</h2>
                                     <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor
-                                        didunt laboris nisi ut aliquip ex commodo consequat. duis aute irure dolor in
-                                        reprehenderit voluptate velit esse cillum dolore fugiat nulla pariatur.Excepteur
-                                        sint ocaecat cupidatat non proident sunt culpa qui officia deserunt mollit anim
-                                        id est laborum.
+                                        Carrick Just Asset Management
+                                        Limited与区块链和金融行业内外的各位值得信赖的顾问进行咨询，以确保我们在所有业务实践中保持客观，公正和道德。
+                                        我们还会仔细筛选投资是否存在任何危险信号，例如有可能的诈骗或非法活动，以便排除可能已包含在任何其他投资组合中的资产。
                                     </p>
-                                    <img src="images/about/ceo-signature-2.png" alt="ceo-signature" />
-                                    <h5>Ema Rao</h5>
-                                    <h6>CEO</h6>
                                 </div>
                             </div>
                             {/* ceo image */}
                             <div className="col-lg-5 rounded-right ceo-image"></div>
-                        </div>
-                    </div>
-                </section>
-                {/* <!-- /ceo section  */}
-
-                <section className="cta overlay-primary py-50 text-center text-lg-left">
-                    <div className="container">
-                        <div className="row justify-content-between">
-                            <div className="col-lg-6">
-                                <h3 className="text-white">Biztrox give the smart solution for your business</h3>
-                            </div>
-                            <div className="col-lg-6 text-lg-right align-self-center">
-                                <a href="#" className="btn btn-light">
-                                    GET AN QUOTE
-                                </a>
-                            </div>
                         </div>
                     </div>
                 </section>
