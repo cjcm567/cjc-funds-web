@@ -147,7 +147,7 @@ export default function Manager() {
                         </div>
                     </div>
                 </section>
-                <InvestmentFlow />
+                {/* <InvestmentFlow /> */}
             </Layout>
         </>
     )

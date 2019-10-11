@@ -2,7 +2,6 @@
 
 import React from "react"
 import {LazyImage} from "react-lazy-images"
-import Helmet from "react-helmet"
 import Layout from "../components/layout"
 import "../styles/Industry.css"
 import pointImage from "../images/industry/point.png"
@@ -11,17 +10,10 @@ import communicationImage from "../images/industry/comm.png"
 import icon1Image from "../images/industry/ICON1.png"
 import icon3Image from "../images/industry/ICON3.png"
 import icon5Image from "../images/industry/ICON5.png"
-import imagePreloader from "../images/preloader.gif"
-import IndustryImg01 from "../images/industry/01.png"
-import IndustryImg02 from "../images/industry/02.png"
-import IndustryImg03 from "../images/industry/03.png"
 
 export default function IndustryDevelopment() {
     return (
         <Layout>
-            <Helmet>
-                <title>行业发展</title>
-            </Helmet>
             <section className="product section">
                 <div className="container">
                     <div className="row justify-content-center mb-100">
