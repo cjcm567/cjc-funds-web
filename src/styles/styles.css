@@ -1527,7 +1527,6 @@ button {
 /* card */
 .card-img-wrapper {
     position: relative;
-    
 }
 
 .card-img-wrapper::before {
@@ -1558,6 +1557,9 @@ button {
     left: 50%;
     transform: translateX(-50%) rotate(-45deg);
     transition: 0.2s ease;
+    border-top: 1px solid #dee2e6;
+    border-right: 1px solid #dee2e6;
+
 }
 
 .card:hover .card-img-wrapper::before {

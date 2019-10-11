@@ -132,7 +132,6 @@ function Home() {
                     <div className="mb-50">
                         <Carousel />
                     </div>
-                    {/* best service  */}
                     <div>
                         <section className="section">
                             <div className="container">

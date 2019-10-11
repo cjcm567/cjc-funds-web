@@ -1,15 +1,14 @@
 /** @format */
 
-import React, {useState, useEffect} from "react"
+import React, {useState} from "react"
 import Layout from "../components/layout"
+import {LazyImage} from "react-lazy-images"
+import imagePreloader from "../images/preloader.gif"
 import imageCoreCompetence from "../images/funds/core-competence.png"
-import imageStrategy from "../images/funds/strategy.png"
 import imageCalculate from "../images/funds/calculate.jpg"
 import imageCrossPlatform from "../images/funds/cross-platform.jpg"
 import imageDividendYield from "../images/funds/carrick-dividend-yield-fund.jpg"
 import imageRiskFigure from "../images/funds/risk-figure.jpg"
-import imageCooperate from "../images/funds/cooperate.jpg"
-import imageMobile from "../images/funds/mobile.jpg"
 
 function FundsComponent(isShowId: number) {
     if (isShowId == 0) {
@@ -37,7 +36,12 @@ function FundsComponent(isShowId: number) {
                             </li>
                         </ul>
                     </div>
-                    <img className="img-fluid w-100 mb-40" src={imageCrossPlatform} alt="image of Core Competence" />
+                    <LazyImage
+                        src={imageCrossPlatform}
+                        alt="image of Core Competence"
+                        placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
+                        actual={({imageProps}) => <img className="img-fluid w-100 mb-40" {...imageProps} />}
+                    />
                     <h4 className="mb-30">战略</h4>
                     <div className="bg-gray p-5 rounded mb-60">
                         <ul className="d-inline-block pl-0 mb-10">
@@ -68,7 +72,12 @@ function FundsComponent(isShowId: number) {
             <>
                 <div>
                     <h4 className="mb-30">风险指标</h4>
-                    <img className="img-fluid w-100 mb-40" src={imageRiskFigure} alt="image of risk figure" />
+                    <LazyImage
+                        src={imageRiskFigure}
+                        alt="image of risk figure"
+                        placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
+                        actual={({imageProps}) => <img className="img-fluid w-100 mb-40" {...imageProps} />}
+                    />
                     <h4 className="mb-30">费用</h4>
                     <p className="font-secondary mb-10">
                         1.49％ （估计的年度费用。 这些费用是根据基金资产净值（NAV）的百分比估算的，并包括GST。）
@@ -82,7 +91,12 @@ function FundsComponent(isShowId: number) {
             <>
                 <div>
                     <h4 className="mb-30">目标投资组合</h4>
-                    <img className="img-fluid w-100 mb-40" src={imageCoreCompetence} alt="image of Core Competence" />
+                    <LazyImage
+                        src={imageCoreCompetence}
+                        alt="image of combo"
+                        placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
+                        actual={({imageProps}) => <img className="img-fluid w-100 mb-40" {...imageProps} />}
+                    />
                     <div className="row">
                         <div className="col-lg-6 bg-gray p-5 rounded mb-60">
                             <h4 className="mb-10">投资组合</h4>
@@ -93,7 +107,6 @@ function FundsComponent(isShowId: number) {
                             <p className="mb-20">0-25％ 现金或现金等价物</p>
                             <p className="mb-20">每个证券不超过 20％</p>
                         </div>
-
                         <div className="col-lg-6 bg-gray p-5 rounded mb-60">
                             <h4 className="mb-10">最低建议投资期限</h4>
                             <p className="mb-20">3 年</p>
@@ -115,7 +128,12 @@ function FundsComponent(isShowId: number) {
             <>
                 <div>
                     <h4 className="mb-30">分红</h4>
-                    <img className="img-fluid w-100 mb-40" src={imageCoreCompetence} alt="image of Core Competence" />
+                    <LazyImage
+                        src={imageCoreCompetence}
+                        alt="image of combo"
+                        placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
+                        actual={({imageProps}) => <img className="img-fluid w-100 mb-40" {...imageProps} />}
+                    />
                     <p className="font-secondary mb-10">
                         Carrick Dividend Yield Fund每半年支付一次分红。
                         您可以选择将分红重新投资到基金中或记入您的银行帐户。
@@ -131,7 +149,12 @@ function FundsComponent(isShowId: number) {
             <>
                 <div>
                     <h4 className="mb-30">投资优势</h4>
-                    <img className="img-fluid w-100 mb-40" src={imageCalculate} alt="image of Strategy" />
+                    <LazyImage
+                        src={imageCalculate}
+                        alt="image of Strategy"
+                        placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
+                        actual={({imageProps}) => <img className="img-fluid w-100 mb-40" {...imageProps} />}
+                    />
                     <div className="bg-gray p-5 rounded mb-60">
                         <ul className="d-inline-block pl-0 mb-10">
                             <li className="font-secondary mb-10">
@@ -237,10 +260,15 @@ export default function FundDividedYield() {
                                         </div>
                                     </div>
                                     <div className="col-lg-4">
-                                        <img
-                                            className="img-fluid rounded"
+                                        <LazyImage
                                             src={imageDividendYield}
                                             alt="image of benefit"
+                                            placeholder={({imageProps, ref}) => (
+                                                <img ref={ref} src={imagePreloader} alt={imageProps.alt} />
+                                            )}
+                                            actual={({imageProps}) => (
+                                                <img className="img-fluid rounded" {...imageProps} />
+                                            )}
                                         />
                                     </div>
                                 </div>

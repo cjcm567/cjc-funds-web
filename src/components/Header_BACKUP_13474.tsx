@@ -6,8 +6,10 @@ import logoImage from "../images/logo.png"
 
 function HeaderComponent() {
     const [collapseStatus, setCollapseStatus] = useState("collapse navbar-collapse")
+    const [aboutUSCollapseStatus, setAboutUsCollapseStatus] = useState("collapse asnavbar-collapse")
     const [dropdownMenuStatus, setDropdownMenuStatus] = useState("dropdown-menu")
     const [aboutUsDropdownMenuStatus, setAboutUsDropdownMenuStatus] = useState("dropdown-menu")
+    const [loginChooserStatus, setLoginChooserStatus] = useState("login-chooser")
     const [ariaExpanded, setAriaExpanded] = useState(false)
 
     const handleNavCollapse = () => {
@@ -20,12 +22,12 @@ function HeaderComponent() {
         }
     }
 
-    const handleAboutUsDropdownCollapse = () => {
-        if (aboutUsDropdownMenuStatus.includes("show")) {
-            setAboutUsDropdownMenuStatus("dropdown-menu")
+    const asHandleNavCollapse = () => {
+        if (aboutUSCollapseStatus.includes("show")) {
+            setAboutUsCollapseStatus("collapse asnavbar-collapse")
             setAriaExpanded(false)
         } else {
-            setAboutUsDropdownMenuStatus("dropdown-menu show")
+            setAboutUsCollapseStatus("collapse asnavbar-collapse show")
             setAriaExpanded(true)
         }
     }
@@ -37,6 +39,24 @@ function HeaderComponent() {
         } else {
             setDropdownMenuStatus("dropdown-menu show")
             setAriaExpanded(true)
+        }
+    }
+
+    const asHandleDropdownCollapse = () => {
+        if (dropdownMenuStatus.includes("show")) {
+            setAboutUsDropdownMenuStatus("dropdown-menu")
+            setAriaExpanded(false)
+        } else {
+            setAboutUsDropdownMenuStatus("dropdown-menu show")
+            setAriaExpanded(true)
+        }
+    }
+
+    const handleLoginChooser = () => {
+        if (loginChooserStatus.includes("open")) {
+            setLoginChooserStatus("login-chooser")
+        } else {
+            setLoginChooserStatus("login-chooser open")
         }
     }
 
@@ -78,15 +98,15 @@ function HeaderComponent() {
                                         <Link
                                             to="/about-us"
                                             className="nav-link dropdown-toggle"
-                                            onClick={handleAboutUsDropdownCollapse}>
+                                            onClick={handleDropdownCollapse}>
                                             关于我们
                                         </Link>
-                                        <div className={aboutUsDropdownMenuStatus}>
+                                        <div className={dropdownMenuStatus}>
                                             <Link to="/about-us" className="dropdown-item">
                                                 关于我们
                                             </Link>
                                             <Link to="/about-us/manager" className="dropdown-item">
-                                                基金经理人
+                                                基金经理人 onClick={asHandleDropdownCollapse}>
                                             </Link>
                                             <Link to="/about-us/carrick-responsibility" className="dropdown-item">
                                                 我们的责任
@@ -124,12 +144,6 @@ function HeaderComponent() {
                                             行业发展
                                         </Link>
                                     </li>
-                                    <li className="nav-item">
-                                        <Link to="/InvestClass" className="nav-link">
-                                            投资学堂
-                                        </Link>
-                                    </li>
-
                                     <li className="nav-item">
                                         <Link to="/login-or-join" className="btn btn-primary btn-sm text-white">
                                             Invest now
