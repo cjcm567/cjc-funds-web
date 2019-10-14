@@ -1,7 +1,7 @@
 /** @format */
 
-import React from "react"
-import {Link, RouteComponentProps} from "react-router-dom"
+import React, {useState} from "react"
+import {Link, RouteComponentProps, Redirect} from "react-router-dom"
 import Layout from "../components/layout"
 import {LazyImage} from "react-lazy-images"
 import imagePreloader from "../images/preloader.gif"
@@ -11,6 +11,7 @@ import newsData from "../data/newsData.json"
 type TParams = {props: string}
 
 export default function NewsSingle(props: RouteComponentProps<TParams>) {
+    const [nonValidProps, setNonValidProps] = useState(true)
     const newsTitle = props.match.params.props
     console.log(newsTitle)
     const newsRender = {title: "", content: "", author: "", date: "", imageUri: ""}
@@ -23,11 +24,15 @@ export default function NewsSingle(props: RouteComponentProps<TParams>) {
             newsRender["imageUri"] = newsData[index]["props"]
         }
     }
+    // if (newsRender.title.length !== 0) {
+    //     setNonValidProps(false)
+    // }
     const sectionStyle = {
         backgroundImage: `url(${imageBackground})`,
     }
     return (
         <>
+            {/* {nonValidProps ? <Redirect to="/404" /> : null} */}
             <Layout>
                 <section className="page-title overlay" style={sectionStyle}>
                     <div className="container">

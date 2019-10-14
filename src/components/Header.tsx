@@ -82,11 +82,8 @@ function HeaderComponent() {
                                             关于我们
                                         </Link>
                                         <div className={aboutUsDropdownMenuStatus}>
-                                            <Link to="/about-us" className="dropdown-item">
-                                                关于我们
-                                            </Link>
-                                            <Link to="/about-us/manager" className="dropdown-item">
-                                                基金经理人
+                                            <Link to="/about-us/team" className="dropdown-item">
+                                                精英团队
                                             </Link>
                                             <Link to="/about-us/carrick-responsibility" className="dropdown-item">
                                                 我们的责任
@@ -94,7 +91,7 @@ function HeaderComponent() {
                                             <Link
                                                 to="/about-us/carrick-Investment-philosophy"
                                                 className="dropdown-item">
-                                                我们的投资理念
+                                                投资理念
                                             </Link>
                                         </div>
                                     </li>
