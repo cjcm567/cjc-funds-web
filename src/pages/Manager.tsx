@@ -81,36 +81,71 @@ export default function Manager() {
                             {/* sidebar team member details */}
                             <div className="col-lg-8">
                                 <div>
+                                    <h2>Eric Zheng</h2>
+                                    <h3 className="text-primary mb-30">执行董事</h3>
+                                    <p className="h5 mb-40">拥有近20年的海外金融市场工作经验和管理背景</p>
+                                    {/* <div className="row"> */}
+                                    <h4>简介</h4>
+                                    <p>从事过交易、风控、销售、投资者教育等多个领域</p>
+                                    <p>曾担任过新西兰知名上市金融公司销售部负责人</p>
+                                    <p>对金融行业格局、前瞻战略和行业管理有着独道见解</p>
+                                    {/* </div> */}
+                                </div>
+                                <div>
+                                    <h2>Shone Shen</h2>
+                                    <h3 className="text-primary mb-30">董事</h3>
+                                    <p className="h5 mb-40">拥有近15年的金融行业从业背景</p>
+                                    {/* <div className="row"> */}
+                                    <h4>简介</h4>
+                                    <p>对于销售以及团队建设有着丰富的实战经验</p>
+                                    <p>
+                                        熟悉上下游渠道关系的搭建和维护，擅于在合作双方实现双赢的前提下，将业务相关成本降到最低
+                                    </p>
+                                    <p>作为公司董事对公司利润提升有着重要作用</p>
+                                    {/* </div> */}
+                                </div>
+                                <div>
+                                    <h2>Jimmy Koh</h2>
+                                    <h3 className="text-primary mb-30">风控经理</h3>
+                                    <p className="h5 mb-40">
+                                        拥有超过30年的新西兰、新加坡等国际一流金融从业经验，国际视野广阔
+                                    </p>
+                                    {/* <div className="row"> */}
+                                    <h4>简介</h4>
+                                    <p>曾经获得过CFA国际注册金融分析师专业资质</p>
+                                    <p>负责公司外联、国际业务和新项目的引入</p>
+                                    {/* </div> */}
+                                </div>
+                                <div>
                                     <h2>高飞</h2>
-                                    <h3 className="text-primary mb-30">基金经理人</h3>
+                                    <h3 className="text-primary mb-30">基金经理</h3>
                                     <p className="h5 mb-40">
                                         高飞作为中国第一代股民，拥有近 30 年的证券投资交易经验和近 20 年的外汇投资经验。
                                     </p>
-                                    <div className="row">
+                                    {/*<div className="row">
                                         {/* contact info */}
-                                        <div className="col-md-6">
+                                    {/*<div className="col-md-6">
                                             <h4>联系方式</h4>
                                             <ul className="pl-0 mb-40">
                                                 <li className="font-secondary text-color my-3">
                                                     <i className="mr-3 ti-mobile"></i>+88 525 325 22
-                                                </li>
+                                                </li> 
                                                 <li className="font-secondary text-color my-3">
-                                                    <i className="mr-3 ti-email"></i>philipwilson@biztrox.com
+                                                    <i className="mr-3 ti-email"></i>fei.gao@carrick
                                                 </li>
-                                                <li className="font-secondary text-color my-3">
+                                                 <li className="font-secondary text-color my-3">
                                                     <i className="mr-3 ti-location-pin"></i>2/A Southampton, Sandiago,
                                                     USA.
-                                                </li>
+                                                </li> 
                                             </ul>
                                         </div>
-                                    </div>
-                                    <Chart options={options} />
-                                    <h4>工作履历</h4>
-                                    <p className="h5">曾任</p>
+                                    </div>*/}
+                                    {/* <Chart options={options} /> */}
+                                    <h4>简介</h4>
                                     <p>新西兰方圆资产管理有限公司基金经理和策略师</p>
                                     <p>中国国泰君安香港公司海外发展部新西兰特邀投资专家</p>
                                     <p> 新西兰大洋资产管理有限公司基金经理。</p>
-                                    <h4>专业分析</h4>
+                                    {/* <h4>专业分析</h4>
                                     <p>丰富的金融实战经验和扎实的金融理论使高飞对基金管理投资拥有自己独到的见解</p>
                                     <div className="p-3 bg-light">
                                         <h5 className="text-dark font-primary mb-10">人和人性</h5>
@@ -140,8 +175,30 @@ export default function Manager() {
                                         <h5 className="text-dark font-primary mb-10">资本市场是有效的</h5>
                                         <p className="font-secondary mb-10">
                                             资本市场是有效的。所以在当时当下市场并不存在所谓的高估和低估，所有的企业定价俱都合理，任何定价都是当时，当下市场全体参与人和参与资本基于过去，现在和未来所有可预期的影响市场定价全部可变因子的综合考量和博弈结果，因此有机会超越市场平均回报的可能途径。
-                                        </p>
-                                    </div>
+                                        </p> */}
+                                </div>
+                                <div>
+                                    <h2>Mark Fan</h2>
+                                    <h3 className="text-primary mb-30">合规经理</h3>
+                                    <p className="h5 mb-40">拥有近10年财务金融领域资深专业人士</p>
+                                    {/* <div className="row"> */}
+                                    <h4>简介</h4>
+                                    <p>曾就职于PwC普华永道和九鼎投资等多家知名国际一流金融机构</p>
+                                    <p>南开大学研究生毕业，国际注册反洗钱专家，国际认证内部审计师</p>
+                                    <p>擅长合规、风控等专业领域，Mark将为凯利资产管理的不断成长保驾护航</p>
+                                    {/* </div> */}
+                                </div>
+                                <div>
+                                    <h2>Summer Xia</h2>
+                                    <h3 className="text-primary mb-30">客户关系经理</h3>
+                                    <p className="h5 mb-40">多年金融行业前端客户管理和后台数据管理等丰富工作经验</p>
+                                    {/* <div className="row"> */}
+                                    <h4>简介</h4>
+                                    <p>
+                                        其在客户大数据分析、利用互联网前沿技术为客户提供高附加值服务和精准营销等方面具有领先的市场思维
+                                    </p>
+                                    <p>与客户沟通顺畅，积极处理客户的紧急需求，与客户保持良好的长期合作关系</p>
+                                    {/* </div> */}
                                 </div>
                             </div>
                         </div>

@@ -140,6 +140,14 @@ const Manager = () => {
         </Suspense>
     )
 }
+const ManagerTeamComponent = lazy(() => import("./pages/ManagerTeam"))
+const ManagerTeam = () => {
+    return (
+        <Suspense fallback={Preloader}>
+            <ManagerTeamComponent />
+        </Suspense>
+    )
+}
 ReactDOM.render(
     <Router>
         <ScrollToTop>
@@ -151,7 +159,8 @@ ReactDOM.render(
                 <Route path="/funds/fund-of-funds" exact component={FundOfFunds} />
                 <Route path="/funds/carrick-dividend-yield-fund" exact component={FundDividedYield} />
                 <Route path="/about-us" exact component={AboutUs} />
-                <Route path="/about-us/manager" exact component={Manager} />
+                <Route path="/about-us/team" exact component={ManagerTeam} />
+                <Route path="/about-us/team/:props" exact component={Manager} />
                 <Route path="/about-us/carrick-responsibility" exact component={CarrickResponsibility} />
                 <Route path="/about-us/carrick-Investment-philosophy" exact component={CarrickInvestmentPhilosophy} />
                 <Route path="/news" exact component={News} />
