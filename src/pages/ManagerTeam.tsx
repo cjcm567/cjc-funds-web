@@ -2,17 +2,16 @@
 
 import React from "react"
 import {Link} from "react-router-dom"
-import Layout from "../components/layout"
 import {LazyImage} from "react-lazy-images"
+import Layout from "../components/layout"
 import imagePreloader from "../images/preloader.gif"
-import imageBackground from "../images/news/background.jpg"
 import teamObject from "../data/teamData.json"
 
 export default function ManagerTeam() {
     const teamCard = teamObject.map(teamObjectItem => (
         <div className="col-lg-4 col-sm-6 mb-4" key={teamObjectItem.props}>
-            <div className="card text-center">
-                <Link to={`/news/${teamObjectItem.props}`}>
+            <Link to={`/about-us/team/${teamObjectItem.props}`}>
+                <div className="card text-center">
                     <LazyImage
                         src={require(`../images/team/${teamObjectItem.props}.jpg`)}
                         alt={teamObjectItem.name}
@@ -23,8 +22,8 @@ export default function ManagerTeam() {
                         <h5 className="card-title">{teamObjectItem.name}</h5>
                         <h6 className="text-color mb-30">{teamObjectItem.title}</h6>
                     </div>
-                </Link>
-            </div>
+                </div>
+            </Link>
         </div>
     ))
     return (

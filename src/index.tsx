@@ -133,10 +133,10 @@ const FundDividedYield = () => {
 }
 
 const ManagerComponent = lazy(() => import("./pages/Manager"))
-const Manager = () => {
+const Manager = (props: RouteComponentProps<TParams>) => {
     return (
         <Suspense fallback={Preloader}>
-            <ManagerComponent />
+            <ManagerComponent {...props} />
         </Suspense>
     )
 }
