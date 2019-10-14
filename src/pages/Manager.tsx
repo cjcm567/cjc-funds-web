@@ -1,35 +1,15 @@
 /** @format */
 
 import React, {lazy, Suspense} from "react"
+import {Link, RouteComponentProps} from "react-router-dom"
 import Layout from "../components/layout"
-import Chart from "../components/Chart"
+// import Chart from "../components/Chart"
 import imageProfile from "../images/aboutus/profile.jpg"
-const InvestmentFlowComponent = lazy(() => import("../components/InvestmentFlow"))
-const InvestmentFlow = () => {
-    return (
-        <Suspense fallback="loading...">
-            <InvestmentFlowComponent />
-        </Suspense>
-    )
-}
+// const InvestmentFlowComponent = lazy(() => import("../components/InvestmentFlow"))
+import teamObject from "../data/teamData.json"
+type TParams = {props: string}
 
-export default function Manager() {
-    const options: Highcharts.Options = {
-        title: {
-            text: "My chart",
-        },
-        series: [
-            {
-                type: "line",
-                data: [1, 2, 3],
-            },
-        ],
-        credits: {
-            text: "Carrick Just Asset",
-            href: "https://carrickasset.com",
-        },
-    }
-
+export default function Manager(props: RouteComponentProps<TParams>) {
     return (
         <>
             <Layout>
