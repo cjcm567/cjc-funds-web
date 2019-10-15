@@ -1,46 +1,30 @@
 /** @format */
 
-import React, {Suspense} from "react"
+import React, {lazy, Suspense} from "react"
 import {Link} from "react-router-dom"
 import Layout from "../components/layout"
 import Carousel from "../components/Carousel"
 import serviceImage04 from "../images/service/service-4.jpg"
 import AboutUsImage from "../images/background/about-bg.jpg"
+import imagePreloader from "../images/preloader.gif"
 import newsData from "../data/newsData.json"
 import homeData from "../data/Home/homeData.json"
 import aboutListData from "../data/Home/HomeAboutListData.json"
-
 const sectionStyle = {
     backgroundImage: `url(${AboutUsImage})`,
 }
-
-function AboutListRender() {
-    const aboutListObj = []
-    for (let index = 0; index < aboutListData.length; index++) {
-        aboutListObj.push(aboutListData[index])
-    }
+const Preloader = () => {
+    return <img src={imagePreloader} alt="loading..." />
+}
+const PartnersComponent = lazy(() => import("../components/Partners"))
+const Partners = () => {
     return (
-        <>
-            {aboutListObj.map(aboutListObjItem => (
-                <ul className="d-inline-block pl-0" key={aboutListObjItem.p1}>
-                    <li className="font-secondary mb-10 text-white float-sm-left mr-sm-5">
-                        <i className="text-primary mr-2 ti-arrow-circle-right"></i>
-                        {aboutListObjItem.p1}
-                    </li>
-                    <li className="font-secondary mb-10 text-white">
-                        <i className="text-primary mr-2 ti-arrow-circle-right"></i>
-                        {aboutListObjItem.p2}
-                    </li>
-                    <li className="font-secondary mb-10 text-white">
-                        <i className="text-primary mr-2 ti-arrow-circle-right"></i>
-                        {aboutListObjItem.p3}
-                    </li>
-                </ul>
-            ))}
-        </>
+        <Suspense fallback={Preloader}>
+            <PartnersComponent />
+        </Suspense>
     )
 }
-function Home() {
+export default function Home() {
     const newsObject = []
     for (let index = 0; index <= 2; index++) {
         newsObject.push(newsData[index])
@@ -79,15 +63,15 @@ function Home() {
                         alt="service-image"
                     />
                 </div>
-                <div className="card-body p-0">
+                <div className="card-body p-0" style={{minHeight: "16vh"}}>
                     <div className="text-left pl-2">
                         <p className="card-text mx-2 mb-0">{homeObjectItem.p1}</p>
                         <p className="card-text mx-2 mb-0">{homeObjectItem.p2}</p>
                         <p className="card-text mx-2 mb-0">{homeObjectItem.p3}</p>
                     </div>
-                    <Link to="/about-us/" className="btn btn-secondary translateY-25">
+                    {/* <Link to="/about-us/" className="btn btn-secondary translateY-25">
                         更多
-                    </Link>
+                    </Link> */}
                 </div>
             </div>
         </div>
@@ -125,6 +109,28 @@ function Home() {
             </Link>
         </div>
     ))
+
+    const aboutListObj = []
+    for (let index = 0; index < aboutListData.length; index++) {
+        aboutListObj.push(aboutListData[index])
+    }
+
+    const AboutListRender = aboutListObj.map(aboutListObjItem => (
+        <ul className="d-inline-block pl-0" key={aboutListObjItem.p1}>
+            <li className="font-secondary mb-10 text-white float-sm-left mr-sm-5">
+                <i className="text-primary mr-2 ti-arrow-circle-right"></i>
+                {aboutListObjItem.p1}
+            </li>
+            <li className="font-secondary mb-10 text-white">
+                <i className="text-primary mr-2 ti-arrow-circle-right"></i>
+                {aboutListObjItem.p2}
+            </li>
+            <li className="font-secondary mb-10 text-white">
+                <i className="text-primary mr-2 ti-arrow-circle-right"></i>
+                {aboutListObjItem.p3}
+            </li>
+        </ul>
+    ))
     return (
         <>
             <Layout>
@@ -145,8 +151,6 @@ function Home() {
                             </div>
                         </section>
                     </div>
-                    {/* About Us */}
-
                     <section className="about section-sm overlay" style={sectionStyle}>
                         <div className="container">
                             <div className="row">
@@ -157,9 +161,7 @@ function Home() {
                                             Carrick Just Asset Management Limited
                                             是一家被基金经理授权提供管理投资计划的基金公司。
                                         </p>
-                                        <div>
-                                            <AboutListRender></AboutListRender>
-                                        </div>
+                                        {AboutListRender}
                                         <a href="/about-us" className="btn btn-primary mt-4">
                                             更多
                                         </a>
@@ -190,6 +192,7 @@ function Home() {
                         </div>
                     </section>
                     {/* blog  */}
+                    <Partners />
                     <section className="section bg-gray border-bottom">
                         <div className="container">
                             <div className="row justify-content-center">
@@ -199,9 +202,7 @@ function Home() {
                                         <h2 className="section-title section-title-border-gray">公司时讯</h2>
                                     </Link>
                                 </div>
-                                {/* blog-item */}
                                 {newsExampleRender}
-                                {/* blog-list */}
                                 <div className="col-lg-4 col-12">
                                     <ul className="bg-white border rounded pl-0">{newsRender}</ul>
                                 </div>
@@ -211,13 +212,5 @@ function Home() {
                 </div>
             </Layout>
         </>
-    )
-}
-
-export default function HomeComponent() {
-    return (
-        <Suspense fallback="loading...">
-            <Home />
-        </Suspense>
     )
 }

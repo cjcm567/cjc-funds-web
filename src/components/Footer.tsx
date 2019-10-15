@@ -59,11 +59,14 @@ function Footer() {
                                     <h4 className="mb-4">基金</h4>
                                 </Link>
                                 <ul className="footer-links text-left">
-                                    <li>
+                                    {/* <li>
                                         <Link to="/funds/fund-of-funds">Fund of Funds</Link>
-                                    </li>
+                                    </li> */}
                                     <li>
                                         <Link to="/funds/carrick-dividend-yield-fund">Dividend Yield Fund</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/funds/carrick-nz-au-property-fund">NZ&AU Property Fund</Link>
                                     </li>
                                 </ul>
                             </div>

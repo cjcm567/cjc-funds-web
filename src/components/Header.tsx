@@ -82,11 +82,11 @@ function HeaderComponent() {
                                             关于我们
                                         </Link>
                                         <div className={aboutUsDropdownMenuStatus}>
+                                            <Link to="/about-us/company-details" className="dropdown-item">
+                                                公司简介
+                                            </Link>
                                             <Link to="/about-us/team" className="dropdown-item">
                                                 精英团队
-                                            </Link>
-                                            <Link to="/about-us/carrick-responsibility" className="dropdown-item">
-                                                我们的责任
                                             </Link>
                                             <Link
                                                 to="/about-us/carrick-Investment-philosophy"
@@ -103,11 +103,14 @@ function HeaderComponent() {
                                             基金产品
                                         </Link>
                                         <div className={dropdownMenuStatus}>
-                                            <Link to="/funds/fund-of-funds" className="dropdown-item">
+                                            {/* <Link to="/funds/fund-of-funds" className="dropdown-item">
                                                 Fund of Funds
-                                            </Link>
+                                            </Link> */}
                                             <Link to="/funds/carrick-dividend-yield-fund" className="dropdown-item">
                                                 Carrick Dividend Yield Fund
+                                            </Link>
+                                            <Link to="/funds/carrick-nz-au-property-fund" className="dropdown-item">
+                                                Carrick NZ&AU Property Fund
                                             </Link>
                                         </div>
                                     </li>
@@ -116,11 +119,11 @@ function HeaderComponent() {
                                             业内新闻
                                         </Link>
                                     </li>
-                                    <li className="nav-item">
+                                    {/* <li className="nav-item">
                                         <Link to="/industry" className="nav-link">
                                             行业发展
                                         </Link>
-                                    </li>
+                                    </li> */}
                                     <li className="nav-item">
                                         <Link to="/InvestClass" className="nav-link">
                                             投资学堂

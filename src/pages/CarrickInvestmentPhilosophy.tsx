@@ -13,21 +13,6 @@ export default function CarrickInvestmentPhilosophy() {
     return (
         <>
             <Layout>
-                <section className="page-title overlay">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12 text-center">
-                                <h2 className="text-white font-weight-bold">投资理念</h2>
-                                <ol className="breadcrumb">
-                                    <li>
-                                        <Link to="/about-us">关于我们</Link>
-                                    </li>
-                                    <li>投资理念</li>
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
-                </section>
                 <section className="section">
                     <div className="container">
                         <div className="row">
