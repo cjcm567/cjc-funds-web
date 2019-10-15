@@ -1664,14 +1664,12 @@ button {
 .clients ul li {
     height: 66px;
 }
-
 .clients ul li img {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
     display: inline-block;
 }
-
 /* 14.4 process */
 .process-item {
     width: 330px;
@@ -1686,13 +1684,11 @@ button {
     width: 10vw;
     min-height: 44vh;
 }
-
 @media (max-width: 1199px) {
     .process-item-two {
         width: unset;
     }
 }
-
 .process-item-number {
     position: absolute;
     left: -35px;
