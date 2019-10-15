@@ -43,13 +43,37 @@ function HeaderComponent() {
     return (
         <>
             <header className="box-shadow">
-                <div className="container">
+                {/* <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
                             <ul className="list-inline text-lg-right text-center" />
                         </div>
                     </div>
                 </div>
+                <div className="top-header" style={{background: "#000", opacity: "0.6"}}>
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-12">
+                                <ul className="list-inline text-lg-right text-center">
+                                    <li className="list-inline-item">
+                                        <a href="mailto:info@companyname.com">info@companyname.com</a>
+                                    </li>
+                                    <li className="list-inline-item">
+                                        <a href="callto:1234565523">
+                                            Call Us Now:
+                                            <span className="ml-2"> 123 456 5523</span>
+                                        </a>
+                                    </li>
+                                    <li className="list-inline-item">
+                                        <a href="#" id="searchOpen">
+                                            <i className="ti-search"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div> */}
                 <div className="navigation">
                     <div className="container">
                         <nav className="navbar navbar-expand-lg navbar-light bg-light">
