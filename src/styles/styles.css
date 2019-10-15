@@ -1682,6 +1682,16 @@ button {
         width: unset;
     }
 }
+.process-item-two {
+    width: 10vw;
+    min-height: 44vh;
+}
+
+@media (max-width: 1199px) {
+    .process-item-two {
+        width: unset;
+    }
+}
 
 .process-item-number {
     position: absolute;
