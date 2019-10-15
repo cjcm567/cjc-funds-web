@@ -109,6 +109,9 @@ function HeaderComponent() {
                                             <Link to="/funds/carrick-dividend-yield-fund" className="dropdown-item">
                                                 Carrick Dividend Yield Fund
                                             </Link>
+                                            <Link to="/funds/carrick-nz-au-property-fund" className="dropdown-item">
+                                                Carrick NZ&AU Property Fund
+                                            </Link>
                                         </div>
                                     </li>
                                     <li className="nav-item">

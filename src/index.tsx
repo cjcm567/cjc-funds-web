@@ -38,7 +38,6 @@ const Industry = () => {
         </Suspense>
     )
 }
-
 const ContactUsComponent = lazy(() => import("./pages/ContactUs"))
 const ContactUs = () => {
     return (
@@ -131,6 +130,14 @@ const FundDividedYield = () => {
         </Suspense>
     )
 }
+const FundPropertyComponent = lazy(() => import("./pages/FundProperty"))
+const FundProperty = () => {
+    return (
+        <Suspense fallback={Preloader}>
+            <FundPropertyComponent />
+        </Suspense>
+    )
+}
 
 const ManagerComponent = lazy(() => import("./pages/Manager"))
 const Manager = (props: RouteComponentProps<TParams>) => {
@@ -158,6 +165,7 @@ ReactDOM.render(
                 <Route path="/funds" exact component={Funds} />
                 <Route path="/funds/fund-of-funds" exact component={FundOfFunds} />
                 <Route path="/funds/carrick-dividend-yield-fund" exact component={FundDividedYield} />
+                <Route path="/funds/carrick-nz-au-property-fund" exact component={FundProperty} />
                 <Route path="/about-us" exact component={AboutUs} />
                 <Route path="/about-us/team" exact component={ManagerTeam} />
                 <Route path="/about-us/team/:props" exact component={Manager} />

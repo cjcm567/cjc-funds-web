@@ -1,6 +1,6 @@
 /** @format */
 
-import React, {Suspense} from "react"
+import React from "react"
 import {Link} from "react-router-dom"
 import Layout from "../components/layout"
 import Carousel from "../components/Carousel"
@@ -14,33 +14,7 @@ const sectionStyle = {
     backgroundImage: `url(${AboutUsImage})`,
 }
 
-function AboutListRender() {
-    const aboutListObj = []
-    for (let index = 0; index < aboutListData.length; index++) {
-        aboutListObj.push(aboutListData[index])
-    }
-    return (
-        <>
-            {aboutListObj.map(aboutListObjItem => (
-                <ul className="d-inline-block pl-0" key={aboutListObjItem.p1}>
-                    <li className="font-secondary mb-10 text-white float-sm-left mr-sm-5">
-                        <i className="text-primary mr-2 ti-arrow-circle-right"></i>
-                        {aboutListObjItem.p1}
-                    </li>
-                    <li className="font-secondary mb-10 text-white">
-                        <i className="text-primary mr-2 ti-arrow-circle-right"></i>
-                        {aboutListObjItem.p2}
-                    </li>
-                    <li className="font-secondary mb-10 text-white">
-                        <i className="text-primary mr-2 ti-arrow-circle-right"></i>
-                        {aboutListObjItem.p3}
-                    </li>
-                </ul>
-            ))}
-        </>
-    )
-}
-function Home() {
+export default function Home() {
     const newsObject = []
     for (let index = 0; index <= 2; index++) {
         newsObject.push(newsData[index])
@@ -125,6 +99,28 @@ function Home() {
             </Link>
         </div>
     ))
+
+    const aboutListObj = []
+    for (let index = 0; index < aboutListData.length; index++) {
+        aboutListObj.push(aboutListData[index])
+    }
+
+    const AboutListRender = aboutListObj.map(aboutListObjItem => (
+        <ul className="d-inline-block pl-0" key={aboutListObjItem.p1}>
+            <li className="font-secondary mb-10 text-white float-sm-left mr-sm-5">
+                <i className="text-primary mr-2 ti-arrow-circle-right"></i>
+                {aboutListObjItem.p1}
+            </li>
+            <li className="font-secondary mb-10 text-white">
+                <i className="text-primary mr-2 ti-arrow-circle-right"></i>
+                {aboutListObjItem.p2}
+            </li>
+            <li className="font-secondary mb-10 text-white">
+                <i className="text-primary mr-2 ti-arrow-circle-right"></i>
+                {aboutListObjItem.p3}
+            </li>
+        </ul>
+    ))
     return (
         <>
             <Layout>
@@ -145,8 +141,6 @@ function Home() {
                             </div>
                         </section>
                     </div>
-                    {/* About Us */}
-
                     <section className="about section-sm overlay" style={sectionStyle}>
                         <div className="container">
                             <div className="row">
@@ -157,9 +151,7 @@ function Home() {
                                             Carrick Just Asset Management Limited
                                             是一家被基金经理授权提供管理投资计划的基金公司。
                                         </p>
-                                        <div>
-                                            <AboutListRender></AboutListRender>
-                                        </div>
+                                        {AboutListRender}
                                         <a href="/about-us" className="btn btn-primary mt-4">
                                             更多
                                         </a>
@@ -199,9 +191,7 @@ function Home() {
                                         <h2 className="section-title section-title-border-gray">公司时讯</h2>
                                     </Link>
                                 </div>
-                                {/* blog-item */}
                                 {newsExampleRender}
-                                {/* blog-list */}
                                 <div className="col-lg-4 col-12">
                                     <ul className="bg-white border rounded pl-0">{newsRender}</ul>
                                 </div>
@@ -211,13 +201,5 @@ function Home() {
                 </div>
             </Layout>
         </>
-    )
-}
-
-export default function HomeComponent() {
-    return (
-        <Suspense fallback="loading...">
-            <Home />
-        </Suspense>
     )
 }

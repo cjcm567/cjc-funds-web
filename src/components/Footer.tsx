@@ -65,6 +65,9 @@ function Footer() {
                                     <li>
                                         <Link to="/funds/carrick-dividend-yield-fund">Dividend Yield Fund</Link>
                                     </li>
+                                    <li>
+                                        <Link to="/funds/carrick-nz-au-property-fund">NZ&AU Property Fund</Link>
+                                    </li>
                                 </ul>
                             </div>
                             {/* footer links */}

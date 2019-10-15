@@ -63,6 +63,7 @@ export default function Manager(props: RouteComponentProps<TParams>) {
                                             <img className="img-fluid w-100 rounded-top" {...imageProps} />
                                         )}
                                     />
+                                    Property FundProperty Fund
                                     <div className="py-2 px-4 pb-3">{managerTitles}</div>
                                 </div>
                                 {/* Brochure */}
