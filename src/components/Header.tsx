@@ -131,7 +131,7 @@ function HeaderComponent() {
                                                 Fund of Funds
                                             </Link> */}
                                             <Link to="/funds/carrick-dividend-yield-fund" className="dropdown-item">
-                                                Carrick Dividend Yield Fund
+                                                Carrick NZ&AU Dividend Yield Fund
                                             </Link>
                                             <Link to="/funds/carrick-nz-au-property-fund" className="dropdown-item">
                                                 Carrick NZ&AU Property Fund
