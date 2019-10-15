@@ -146,14 +146,6 @@ export default function Funds() {
                                 </div>
 
                                 <div className="col-lg-3 col-sm-6 mb-md-50">
-                                    {/* <LazyImage
-                                        src={imageArrowBottom}
-                                        alt="image of Arrow Bottom"
-                                        placeholder={({imageProps, ref}) => (
-                                            <img ref={ref} src={imagePreloader} alt={imageProps.alt} />
-                                        )}
-                                        actual={({imageProps}) => <img className="arrow-bottom" {...imageProps} />}
-                                    /> */}
                                     <div className="process-item-two py-xl-4 pl-xl-5 pt-5 px-4 rounded border position-relative">
                                         <div className="process-item-number">7</div>
                                         <h5 className="text-primary">投后管理</h5>
