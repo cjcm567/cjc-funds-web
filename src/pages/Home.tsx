@@ -57,8 +57,6 @@ function Home() {
         <>
             <Layout>
                 <div className="App">
-                   
-
                     <div className="mb-50">
                         <Carousel />
                     </div>

@@ -2,14 +2,14 @@
 
 import React, {lazy, Suspense} from "react"
 import ReactDOM from "react-dom"
-import {BrowserRouter as Router, Route, Switch, RouteComponentProps} from "react-router-dom"
+import {BrowserRouter as Router, Route, Switch, RouteComponentProps, HashRouter} from "react-router-dom"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "./styles/styles.css"
 import Home from "./pages/Home"
 import ScrollToTop from "./components/ScrollToTop"
 import * as serviceWorker from "./serviceWorker"
 import Industry from "./pages/IndustryDevelopment"
-import CRM from "./pages/CRMPage"
+import CRM from "./pages/crm/CRMPage"
 
 const ContactUsComponent = lazy(() => import("./pages/ContactUs"))
 const ContactUs = () => {
@@ -84,6 +84,54 @@ const FundDividedYield = () => {
         </Suspense>
     )
 }
+const WelcomeComponent = lazy(() => import("./pages/crm/components/WelcomeComponent"))
+const Welcome = () => {
+    return (
+        <Suspense fallback={null}>
+            <WelcomeComponent />
+        </Suspense>
+    )
+}
+const UpdateInfoComponent = lazy(() => import("./pages/crm/components/userInf/UpdateInfoComponent"))
+const UpdateInfo = () => {
+    return (
+        <Suspense fallback={null}>
+            <UpdateInfoComponent />
+        </Suspense>
+    )
+}
+const ChangePWComponent = lazy(() => import("./pages/crm/components/userInf/ChangePWComponent"))
+const ChangPW = () => {
+    return (
+        <Suspense fallback={null}>
+            <ChangePWComponent />
+        </Suspense>
+    )
+}
+const DealInforComponent = lazy(() => import("./pages/crm/components/deal/DealInforComponent"))
+const DealInfor = () => {
+    return (
+        <Suspense fallback={null}>
+            <DealInforComponent />
+        </Suspense>
+    )
+}
+const DealListComponent = lazy(() => import("./pages/crm/components/deal/DealListComponent"))
+const DealList = () => {
+    return (
+        <Suspense fallback={null}>
+            <DealListComponent />
+        </Suspense>
+    )
+}
+const UserListComponent = lazy(() => import("./pages/crm/components/user/UserListComponent"))
+const UserList = () => {
+    return (
+        <Suspense fallback={null}>
+            <UserListComponent />
+        </Suspense>
+    )
+}
 
 ReactDOM.render(
     <Router>
@@ -99,10 +147,16 @@ ReactDOM.render(
                 <Route path="/news" exact component={News} />
                 <Route path="/news/:props" exact component={NewsSingle} />
                 <Route path="/login-or-join" component={LoginOrJoin} />
-                <Route path="/CRMPage" component={CRM}/>
+                <Route path="/crm" exact component={Welcome} />
+                <Route path="/crm/updateInfor" component={UpdateInfo} />
+                <Route path="/crm/ChangPW" component={ChangPW} />
+                <Route path="/crm/DealList" excact component={DealList} />
+                <Route path="/crm/DealInfor" component={DealInfor} />
+                <Route path="/crm/UserList" component={UserList} />
+
                 <Route path="/404" component={NotFound} />
                 <Route path="*" component={NotFound} />
-              
+
                 <Route component={NotFound} />
             </Switch>
         </ScrollToTop>
