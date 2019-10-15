@@ -48,8 +48,8 @@ function Footer() {
                                         <img src={logo} alt="logo" style={{height: "9vh"}} />
                                     </Link>
                                     <p className="mb-30">
-                                        Carrick Just Asset Management Limited
-                                        是一家被基金经理授权提供管理投资计划的基金公司。公司成立于2017年，总部位于新西兰奥克兰。本公司积极管理该计划下的资金，并致力于确保其客户实现其投资目标。
+                                        欢迎来到Carrick Just Asset Management
+                                        Limited（凯利资产管理有限公司），我们旨在帮助您实现您的投资目标与财富梦想。凯利资产管理将为全球资产配置、税务规划、资产增值等一系列与财富管理相关的不同需求提供专业的金融服务。
                                     </p>
                                 </div>
                             </div>
