@@ -36,7 +36,7 @@ export default function CompanyDetails() {
                                 <h2 className="section-title section-title-border-half">我们的历史</h2>
                                 <p>
                                     欢迎来到Carrick Just Asset Management
-                                    Limited（凯利资产管理有限公司），我们旨在帮助您实现您的投资目标与财富梦想。凯利资产管理将为全球资产配置、税务规划、资产增值等一系列与财富管理相关的不同需求提供专业的金融服务。
+                                    Limited（凯利资产管理有限公司），我们旨在帮助您实现您的投资目标与财富梦想凯利资产管理有限公司），我们旨在帮助您实现您的投资目标与财富梦想凯利资产管理有限公司），我们旨在帮助您实现您的投资目标与财富梦想。凯利资产管理将为全球资产配置、税务规划、资产增值等一系列与财富管理相关的不同需求提供专业的金融服务。
                                 </p>
                                 <p>
                                     Carrick Just Asset Management Limited

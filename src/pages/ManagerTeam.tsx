@@ -8,7 +8,33 @@ import imagePreloader from "../images/preloader.gif"
 import teamObject from "../data/teamData.json"
 
 export default function ManagerTeam() {
-    const teamCard = teamObject.map(teamObjectItem => (
+    const boardObject = []
+    const managerObject = []
+    for (let index = 0; index <= 1; index++) {
+        boardObject.push(teamObject[index])
+    }
+    for (let index = 2; index < teamObject.length; index++) {
+        managerObject.push(teamObject[index])
+    }
+    const managerCard = boardObject.map(teamObjectItem => (
+        <div className="col-lg-4 col-sm-6 mb-4" key={teamObjectItem.props}>
+            <Link to={`/about-us/team/${teamObjectItem.props}`}>
+                <div className="card text-center">
+                    <LazyImage
+                        src={require(`../images/team/${teamObjectItem.props}.jpg`)}
+                        alt={teamObjectItem.name}
+                        placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
+                        actual={({imageProps}) => <img className="card-img-top" {...imageProps} />}
+                    />
+                    <div className="card-body card-body-2 pb-0 px-4">
+                        <h5 className="card-title">{teamObjectItem.name}</h5>
+                        <h6 className="text-color mb-30">{teamObjectItem.title}</h6>
+                    </div>
+                </div>
+            </Link>
+        </div>
+    ))
+    const teamCard = managerObject.map(teamObjectItem => (
         <div className="col-lg-4 col-sm-6 mb-4" key={teamObjectItem.props}>
             <Link to={`/about-us/team/${teamObjectItem.props}`}>
                 <div className="card text-center">
@@ -47,8 +73,9 @@ export default function ManagerTeam() {
                                     在对宏观、行业及上市公司进行深入研究的基础上，凯利资产管理还建立了动态跟踪指标体系，通过把握各种指标的细微变化来发掘投资先机。
                                 </p>
                             </div>
-                            {teamCard}
+                            {managerCard}
                         </div>
+                        <div className="row justify-content-center">{teamCard}</div>
                     </div>
                 </section>
             </Layout>
