@@ -13,21 +13,6 @@ export default function CarrickResponsibility() {
     return (
         <>
             <Layout>
-                <section className="page-title overlay">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12 text-center">
-                                <h2 className="text-white font-weight-bold">About Us</h2>
-                                <ol className="breadcrumb">
-                                    <li>
-                                        <a href="index.html">About Us</a>
-                                    </li>
-                                    <li>Carrick Responsibility</li>
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
-                </section>
                 <section className="section">
                     <div className="container">
                         <div className="row">

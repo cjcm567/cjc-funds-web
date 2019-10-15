@@ -70,7 +70,14 @@ const AboutUs = () => {
         </Suspense>
     )
 }
-
+const CompanyDetailsComponent = lazy(() => import("./pages/CompanyDetails"))
+const CompanyDetails = () => {
+    return (
+        <Suspense fallback={Preloader}>
+            <CompanyDetailsComponent />
+        </Suspense>
+    )
+}
 const CarrickResponsibilityComponent = lazy(() => import("./pages/CarrickResponsibility"))
 const CarrickResponsibility = () => {
     return (
@@ -167,6 +174,7 @@ ReactDOM.render(
                 <Route path="/funds/carrick-dividend-yield-fund" exact component={FundDividedYield} />
                 <Route path="/funds/carrick-nz-au-property-fund" exact component={FundProperty} />
                 <Route path="/about-us" exact component={AboutUs} />
+                <Route path="/about-us/company-details" exact component={CompanyDetails} />
                 <Route path="/about-us/team" exact component={ManagerTeam} />
                 <Route path="/about-us/team/:props" exact component={Manager} />
                 <Route path="/about-us/carrick-responsibility" exact component={CarrickResponsibility} />

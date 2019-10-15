@@ -1,19 +1,29 @@
 /** @format */
 
-import React from "react"
+import React, {lazy, Suspense} from "react"
 import {Link} from "react-router-dom"
 import Layout from "../components/layout"
 import Carousel from "../components/Carousel"
 import serviceImage04 from "../images/service/service-4.jpg"
 import AboutUsImage from "../images/background/about-bg.jpg"
+import imagePreloader from "../images/preloader.gif"
 import newsData from "../data/newsData.json"
 import homeData from "../data/Home/homeData.json"
 import aboutListData from "../data/Home/HomeAboutListData.json"
-
 const sectionStyle = {
     backgroundImage: `url(${AboutUsImage})`,
 }
-
+const Preloader = () => {
+    return <img src={imagePreloader} alt="loading..." />
+}
+const PartnersComponent = lazy(() => import("../components/Partners"))
+const Partners = () => {
+    return (
+        <Suspense fallback={Preloader}>
+            <PartnersComponent />
+        </Suspense>
+    )
+}
 export default function Home() {
     const newsObject = []
     for (let index = 0; index <= 2; index++) {
@@ -53,15 +63,15 @@ export default function Home() {
                         alt="service-image"
                     />
                 </div>
-                <div className="card-body p-0">
+                <div className="card-body p-0" style={{minHeight: "16vh"}}>
                     <div className="text-left pl-2">
                         <p className="card-text mx-2 mb-0">{homeObjectItem.p1}</p>
                         <p className="card-text mx-2 mb-0">{homeObjectItem.p2}</p>
                         <p className="card-text mx-2 mb-0">{homeObjectItem.p3}</p>
                     </div>
-                    <Link to="/about-us/" className="btn btn-secondary translateY-25">
+                    {/* <Link to="/about-us/" className="btn btn-secondary translateY-25">
                         更多
-                    </Link>
+                    </Link> */}
                 </div>
             </div>
         </div>
@@ -182,6 +192,7 @@ export default function Home() {
                         </div>
                     </section>
                     {/* blog  */}
+                    <Partners />
                     <section className="section bg-gray border-bottom">
                         <div className="container">
                             <div className="row justify-content-center">

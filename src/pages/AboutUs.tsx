@@ -1,257 +1,127 @@
 /** @format */
 
-import React, {useState} from "react"
+import React, {useState, Suspense, lazy} from "react"
+import {Link} from "react-router-dom"
 import {LazyImage} from "react-lazy-images"
 import Layout from "../components/layout"
+import Flow from "../components/Flow"
 import imagePreloader from "../images/preloader.gif"
-import imageAbout from "../images/aboutus/aboutus.jpg"
-import imageCeo from "../images/aboutus/ceo.jpg"
-import imageFlow from "../images/aboutus/ls.jpg"
-import logoAsb from "../images/aboutus/logo-asb.svg"
-import logoPwc from "../images/aboutus/logo-pwc.png"
-import logoPublicTrust from "../images/aboutus/logo-public-trust.png"
-import logoMinterEllison from "../images/aboutus/logo-minter-ellison.png"
-const ceoStyle = {
-    backgroundImage: `url(${imageCeo})`,
+import imageCompanyDetails from "../images/aboutus/company-details.jpg"
+import imageCompanyTeam from "../images/aboutus/company-team.jpg"
+import imagePhilosophy from "../images/aboutus/company-philosophy.jpg"
+
+const Preloader = () => {
+    return <img src={imagePreloader} alt="loading..." />
+}
+const PartnersComponent = lazy(() => import("../components/Partners"))
+const Partners = () => {
+    return (
+        <Suspense fallback={Preloader}>
+            <PartnersComponent />
+        </Suspense>
+    )
 }
 export default function AboutUs() {
-    const [activeState, setActiveState] = useState()
-    // const toggleAccordion = (id: number) => {
-    //     setActiveState(activeState === "collapse" ? "collapse show" : "collapse")
-    // }
-    const toggleAccordion = () => {
-        setActiveState(activeState === "collapse" ? "collapse show" : "collapse")
-    }
     return (
         <>
             <Layout>
                 <section className="section">
                     <div className="container">
                         <div className="row">
-                            <div className="col-lg-7 order-2 order-lg-1">
-                                <h5 className="section-title-sm">Know About</h5>
-                                <h2 className="section-title section-title-border-half">我们的历史</h2>
-                                <p>
-                                    欢迎来到Carrick Just Asset Management
-                                    Limited（凯利资产管理有限公司），我们旨在帮助您实现您的投资目标与财富梦想。凯利资产管理将为全球资产配置、税务规划、资产增值等一系列与财富管理相关的不同需求提供专业的金融服务。
-                                </p>
-                                <p>
-                                    Carrick Just Asset Management Limited
-                                    是一家被新西兰政府授权提供投资管理计划的基金公司，金融服务牌照编号是690391。公司总部位于新西兰最繁华的商业金融中心奥克兰，凭借着作为南半球经济金融中心的市场地位和地利优势，本公司旗下凝聚了一批高端复合型投资人才，涵盖金融投资、地产投资、产业投资、股权投资以及投融资并购等方面精英，人才结构充分体现了多元化的特点，团队成员来自世界上不同国家和地区，宽阔的投资视野充分展现了团队国际化的特征。公司理念和宗旨是在稳健安全的投资前提下，利用信息优势和前沿科技优势，为投资者提供长期稳定且高于行业基准的投资回报。在此目标导向下，公司投研团队和投资管理团队会积极探索创新型投资模式，并在投资实践中充分利用大数据和人工智能等技术手段，一方面不断打磨和完善传统投资模型，另一方面根据当今市场最新发展趋势的动态演化，及时调整投资策略和投资方向，充分挖掘潜在的组合型投资机会。公司提供的系列基金产品，可满足不同类型的投资者需求，无论您是稳健型，激进型还是混合型的投资风格都会在我们这里找到适合您的投资方案。公司也会根据特定项目和特定需求，不定期地为特定投资者打造个性化的专属投资基金产品。
-                                </p>
-                            </div>
-                            {/* philosophy image */}
-                            <div className="col-lg-5 align-self-center order-1 order-lg-2 mb-md-50">
-                                <LazyImage
-                                    src={imageAbout}
-                                    alt="philosophy-image"
-                                    placeholder={({imageProps, ref}) => (
-                                        <img ref={ref} src={imagePreloader} alt={imageProps.alt} />
-                                    )}
-                                    actual={({imageProps}) => <img className="img-fluid w-100" {...imageProps} />}
-                                />
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section className="clients section bg-secondary overlay-dark" style={ceoStyle}>
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-6">
-                                {/* <h5 className="section-title-sm text-color">Our Some</h5> */}
-                                <h2 className="text-white mb-20">合作机构</h2>
-                                <p className="text-white">
-                                    Carrick Just Asset Management
-                                    Limited（凯利资产管理）在追求投资收益的同时，合规文化一直在公司经营发展过程中被放在首要位置。公司符合新西兰政府及金融市场管理部门的相关监管要求，并具备相应的金融牌照资质，可以合法合规的提供旗下基金产品给合格的投资者。
-                                </p>
-                                <p className="text-white">与我们合作的外部机构均为新西兰乃至国际一流专业机构：</p>
-                                <p className="text-white">
-                                    <strong>运营合作银行</strong>：ASB Bank---新西兰当地主流银行
-                                </p>
-                                <p className="text-white">
-                                    <strong>信托托管机构</strong>：Public
-                                    Trust---新西兰政府机构信托，确保客户资金安全并不受公司自身经营状况的影响，真正实现客户资金与本公司资金的完全分离。
-                                </p>
-                                <p className="text-white">
-                                    <strong>审计合作机构</strong>：PwC（普华永道）---全球顶级会计师事务所
-                                </p>
-                                <p className="text-white">
-                                    <strong>法务合作机 </strong>：Minter Ellison（铭德律师事务所）---国际知名律所，2017
-                                    新西兰年度律师事务所
-                                </p>
-                            </div>
-                            <div className="col-lg-6 justify-content-center">
-                                <div className="row text-center">
-                                    <div className="col-lg-6 col-md-12">
-                                        <ul>
-                                            <li className="text-center mb-100 py-5">
-                                                <a href="https://www.asb.co.nz">
-                                                    <img src={logoAsb} alt="logoAsb" style={{height: "100px"}} />
-                                                </a>
-                                            </li>
-                                            <li className="text-center mb-3">
-                                                <a href="https://www.minterellison.com/">
-                                                    <img
-                                                        src={logoMinterEllison}
-                                                        alt="logoMinterEllison"
-                                                        style={{height: "100px"}}
-                                                    />
-                                                </a>
-                                            </li>
-                                        </ul>
+                            <div className="col-lg-4 col-sm-6 mb-5">
+                                <div className="card text-center">
+                                    <h4 className="card-title pt-3">公司简介</h4>
+                                    <div className="card-img-wrapper">
+                                        <LazyImage
+                                            src={imageCompanyDetails}
+                                            alt="image of Company Details"
+                                            placeholder={({imageProps, ref}) => (
+                                                <img ref={ref} src={imagePreloader} alt={imageProps.alt} />
+                                            )}
+                                            actual={({imageProps}) => (
+                                                <img
+                                                    className="card-img-top rounded-0"
+                                                    height="200px"
+                                                    {...imageProps}
+                                                />
+                                            )}
+                                        />
                                     </div>
+                                    <div className="card-body p-0">
+                                        <p className="card-text mx-2 mb-0 pt-5">
+                                            我们旨在帮助您实现您的投资目标与财富梦想
+                                        </p>
+                                        <Link
+                                            to="/about-us/company-details"
+                                            className="btn btn-secondary translateY-25">
+                                            Read More
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
 
-                                    <div className="col-lg-6 col-md-12">
-                                        <ul>
-                                            <li className="text-center mb-100 py-5">
-                                                <a href="https://www.publictrust.co.nz/">
-                                                    <img
-                                                        src={logoPublicTrust}
-                                                        alt="logoPublicTrust"
-                                                        style={{height: "100px"}}
-                                                    />
-                                                </a>
-                                            </li>
-                                            <li className="text-center mb-3">
-                                                <a href="https://www.pwc.co.nz/">
-                                                    <img src={logoPwc} alt="logoPwc" style={{height: "100px"}} />
-                                                </a>
-                                            </li>
-                                        </ul>
+                            <div className="col-lg-4 col-sm-6 mb-5">
+                                <div className="card text-center">
+                                    <h4 className="card-title pt-3">精英团队</h4>
+                                    <div className="card-img-wrapper">
+                                        <LazyImage
+                                            src={imageCompanyTeam}
+                                            alt="image of company team"
+                                            placeholder={({imageProps, ref}) => (
+                                                <img ref={ref} src={imagePreloader} alt={imageProps.alt} />
+                                            )}
+                                            actual={({imageProps}) => (
+                                                <img
+                                                    className="card-img-top rounded-0"
+                                                    height="200px"
+                                                    {...imageProps}
+                                                />
+                                            )}
+                                        />
+                                    </div>
+                                    <div className="card-body p-0">
+                                        <p className="card-text mx-2 mb-0 pt-5">经验丰富 理性投资</p>
+                                        <Link to="/about-us/team" className="btn btn-secondary translateY-25">
+                                            Read More
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="col-lg-4 col-sm-6 mb-5">
+                                <div className="card text-center">
+                                    <h4 className="card-title pt-3">投资理念</h4>
+                                    <div className="card-img-wrapper">
+                                        <LazyImage
+                                            src={imagePhilosophy}
+                                            alt="image of company Philosophy"
+                                            placeholder={({imageProps, ref}) => (
+                                                <img ref={ref} src={imagePreloader} alt={imageProps.alt} />
+                                            )}
+                                            actual={({imageProps}) => (
+                                                <img
+                                                    className="card-img-top rounded-0"
+                                                    height="200px"
+                                                    {...imageProps}
+                                                />
+                                            )}
+                                        />
+                                    </div>
+                                    <div className="card-body p-0">
+                                        <p className="card-text mx-2 mb-0 pt-5">为您创建最佳的投资组合</p>
+                                        <Link
+                                            to="/about-us/carrick-Investment-philosophy"
+                                            className="btn btn-secondary translateY-25">
+                                            Read More
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-
-                {/* <section>
-                    <div className="container">
-                        <div className="row rounded bg-secondary">
-                            <div className="col-lg-5 rounded-left ceo-image" style={ceoStyle}></div>
-                            <div className="col-lg-7">
-                                <div className="p-5">
-                                    <h2 className="section-title section-title-border-half-white text-white">
-                                        Carrick Investment Fund
-                                        <br />
-                                        投资理念
-                                    </h2>
-                                    <p className="text-white">•长期投资</p>
-                                    <p className="text-white">•积极管理基金以获得最佳回报</p>
-                                    <p className="text-white">•每次投资前都要进行详尽详尽的研究和分析</p>
-                                    <p className="text-white">•关于风险管理的纪律立场</p>
-                                    <p className="text-white">•灵活的投资方法</p>
-                                    <p className="text-white">•进行适当的投资组合多元化</p>
-                                    <a href="/about-us/carrick-Investment-philosophy" className="btn btn-info">
-                                        Explore More
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section> */}
-                {/* ceo section */}
-
-                {/* skill */}
-                <section className="section bg-gray">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12">
-                                <h5 className="section-title-sm">Best Reason</h5>
-                                <h2 className="section-title section-title-border-half">选择我们</h2>
-                            </div>
-                            {/* accordion */}
-                            <div className="col-lg-6">
-                                <div id="accordion" className="mb-md-50">
-                                    <div className="card border-0 mb-4 bg-gray">
-                                        <div id="0" className="card-header bg-white border p-0">
-                                            <p
-                                                className="card-link h5 d-block tex-dark mb-0 py-10 px-4"
-                                                data-toggle="collapse show">
-                                                投资思路
-                                            </p>
-                                        </div>
-                                        <div className={activeState} data-parent="#accordion">
-                                            <div className="card-body font-secondary text-color bg-gray pl-0 pb-0">
-                                                投资过程的第一阶段涉及投资理念的产生。
-                                                我们的投资经理人提出的想法是什么产品在许多可投资的产品中是我们可以投资的，以实现基金的目标之间的产品。
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="card border-0 mb-4 bg-gray">
-                                        <div id="1" className="card-header bg-white border p-0">
-                                            <p
-                                                className="collapsed card-link h5 d-block tex-dark mb-0 py-10 px-4"
-                                                data-toggle="collapse show">
-                                                研究与分析
-                                            </p>
-                                        </div>
-                                        <div className={activeState} data-parent="#accordion">
-                                            <div className="card-body font-secondary text-color bg-gray pl-0 pb-0">
-                                                然后，我们会对要投资的证券进行详细分析。该分析可能包括价格预测，技术分析，定量分析，行业和公司特定的研究与分析。
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="card border-0 mb-4 bg-gray">
-                                        <div id="2" className="card-header bg-white border p-0">
-                                            <p
-                                                className="collapsed card-link h5 d-block tex-dark mb-0 py-10 px-4"
-                                                data-toggle="collapse show">
-                                                投资组合建设
-                                            </p>
-                                        </div>
-                                        <div className={activeState} data-parent="#accordion">
-                                            <div className="card-body font-secondary text-color bg-gray pl-0 pb-0">
-                                                决定要投资的证券后，我们会考虑资产分配和限额要求，将证券添加到投资组合中。
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="card border-0 mb-4 bg-gray">
-                                        <div id="3" className="card-header bg-white border p-0">
-                                            <p
-                                                className="collapsed card-link h5 d-block tex-dark mb-0 py-10 px-4"
-                                                data-toggle="collapse show">
-                                                投资组合监控
-                                            </p>
-                                        </div>
-                                        <div className={activeState} data-parent="#accordion">
-                                            <div className="card-body font-secondary text-color bg-gray pl-0 pb-0">
-                                                持续监控建筑组合的绩效，以使我们能够评估其绩效，并确保投资符合 SIPO
-                                                的要求。
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="card border-0 mb-4 bg-gray">
-                                        <div id="4" className="card-header bg-white border p-0">
-                                            <p
-                                                className="collapsed card-link h5 d-block tex-dark mb-0 py-10 px-4"
-                                                data-toggle="collapse show">
-                                                战术分配和平衡
-                                            </p>
-                                        </div>
-                                        <div className={activeState} data-parent="#accordion">
-                                            <div className="card-body font-secondary text-color bg-gray pl-0 pb-0">
-                                                我们积极管理投资。
-                                                我们致力于调整和平衡投资组合中的成分的策略，以为我们的客户实现最佳结果并遵守资产分配限制。
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-6">
-                                <LazyImage
-                                    src={imageFlow}
-                                    alt="philosophy-image"
-                                    placeholder={({imageProps, ref}) => (
-                                        <img ref={ref} src={imagePreloader} alt={imageProps.alt} />
-                                    )}
-                                    actual={({imageProps}) => <img className="img-fluid w-100" {...imageProps} />}
-                                />
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                <Flow />
+                <Partners />
             </Layout>
         </>
     )
