@@ -80,9 +80,9 @@ function Footer() {
                                     <li>
                                         <Link to="/news">业内新闻</Link>
                                     </li>
-                                    <li>
+                                    {/* <li>
                                         <Link to="/industry">行业发展</Link>
-                                    </li>
+                                    </li> */}
                                     <li>
                                         <Link to="/contact-us">联系我们</Link>
                                     </li>

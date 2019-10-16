@@ -91,12 +91,12 @@ function FundsComponent(isShowId: number) {
             <>
                 <div>
                     <h4 className="mb-30">目标投资组合</h4>
-                    <LazyImage
+                    {/* <LazyImage
                         src={imageCoreCompetence}
                         alt="image of combo"
                         placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
                         actual={({imageProps}) => <img className="img-fluid w-100 mb-40" {...imageProps} />}
-                    />
+                    /> */}
                     <div className="row">
                         <div className="col-lg-6 bg-gray p-5 rounded mb-60">
                             <h4 className="mb-10">投资组合</h4>
@@ -128,9 +128,15 @@ function FundsComponent(isShowId: number) {
             <>
                 <div>
                     <h4 className="mb-30">分红</h4>
-                    <LazyImage
+                    {/* <LazyImage
                         src={imageCoreCompetence}
                         alt="image of combo"
+                        placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
+                        actual={({imageProps}) => <img className="img-fluid w-100 mb-40" {...imageProps} />}
+                    /> */}
+                    <LazyImage
+                        src={imageCalculate}
+                        alt="image of Strategy"
                         placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
                         actual={({imageProps}) => <img className="img-fluid w-100 mb-40" {...imageProps} />}
                     />
@@ -149,12 +155,7 @@ function FundsComponent(isShowId: number) {
             <>
                 <div>
                     <h4 className="mb-30">投资优势</h4>
-                    <LazyImage
-                        src={imageCalculate}
-                        alt="image of Strategy"
-                        placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
-                        actual={({imageProps}) => <img className="img-fluid w-100 mb-40" {...imageProps} />}
-                    />
+
                     <div className="bg-gray p-5 rounded mb-60">
                         <ul className="d-inline-block pl-0 mb-10">
                             <li className="font-secondary mb-10">
@@ -228,12 +229,7 @@ export default function FundDividedYield() {
                 <section className="section">
                     <div className="container">
                         <div className="row">
-                            <h3 className="mb-10">Carrick Dividend Yield Fund</h3>
-                            <p className="mb-40">
-                                该基金的目标是取得长期平均每年3％的正绝对收益。 这是绝对回报基金。
-                                它打算通过产生股息形式的回报以及保持每年的基金资本价值来实现这一目标。
-                                策略是投资于股息收益率高且有增长机会维持价值的NZX上市证券
-                            </p>
+                            <h3 className="mb-10">Carrick NZ&AU Dividend Yield Fund</h3>
 
                             <div className="mb-md-50">
                                 <div className="row">
@@ -244,15 +240,12 @@ export default function FundDividedYield() {
                                                 <ul className="d-inline-block pl-0">
                                                     <li className="font-secondary mb-10">
                                                         <i className="text-primary mr-2 ti-arrow-circle-right"></i>
-                                                        1. 该策略是每年以股息的形式产生回报，并保持基金的资本价值
+                                                        基金投资经过精心研究NZX和ASX的股票投资组合，该投资组合与长期投资者的投资的目标一致：高股息收益率以及保持稳定的高股息收益率和自身资本价值。
                                                     </li>
                                                     <li className="font-secondary mb-10">
-                                                        <i className="text-primary mr-2 ti-arrow-circle-right"></i>2.
-                                                        它的目标是投资具有高股息收益率并有增长机会保持价值的NZX上市证券
-                                                    </li>
-                                                    <li className="font-secondary mb-10">
-                                                        <i className="text-primary mr-2 ti-arrow-circle-right"></i>3.
-                                                        基金可以投资多种证券。 基金也可能持有现金
+                                                        <i className="text-primary mr-2 ti-arrow-circle-right"></i>
+                                                        该绝对回报基金通过产生股息形式的回报以及保持每年的基金资本价值来实现这一目标。
+                                                        策略是投资于股息收益率高且有增长机会维持价值的NZX和ASX上市证券。
                                                     </li>
                                                     <li className="font-secondary mb-10"></li>
                                                 </ul>
