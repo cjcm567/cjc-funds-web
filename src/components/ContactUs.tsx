@@ -21,7 +21,7 @@ export default function ContactUs() {
     }
     return (
         <>
-            <section className="contact-us section bg-secondary overlay" style={ceoStyle}>
+            <section className="contact-us section bg-secondary overlay-dark" style={ceoStyle}>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 text-left"></div>
@@ -32,15 +32,18 @@ export default function ContactUs() {
                                 <ul className="pl-0 px-5">
                                     {/* contact items */}
                                     <li className="d-flex mb-30">
-                                        {/* <img className="round-icon" height="12px" src={imagePhone} alt="imagePhone" /> */}
                                         <div className="align-self-center">
-                                            <h4 className="text-white">+64 9 2803716</h4>
+                                            <a href="tel:+64 9 2803716" className="h4 text-white">
+                                                +64 9 2803716
+                                            </a>
                                         </div>
                                     </li>
                                     <li className="d-flex mb-30">
                                         {/* <img className="round-icon" height="12px" src={imageEmail} alt="imageEmail" /> */}
                                         <div className="align-self-center font-primary">
-                                            <h4 className="text-white">mark.fan@cariickassets.com</h4>
+                                            <a href="mailto:mark.fan@cariickassets.com" className="h4 text-white">
+                                                mark.fan@cariickassets.com
+                                            </a>
                                         </div>
                                     </li>
                                     <li className="d-flex mb-30">
@@ -51,9 +54,13 @@ export default function ContactUs() {
                                             alt="imageAddress"
                                         /> */}
                                         <div className="align-self-center font-primary">
-                                            <h4 className="text-white">Carrick Just Asset Management Limited</h4>
-                                            <h4 className="text-white">Level 2, 3 Margot Street, Epsom</h4>
-                                            <h4 className="text-white">Auckland 1051</h4>
+                                            <address className="h4 text-white">
+                                                Carrick Just Asset Management Limited
+                                                <br />
+                                                Level 2, 3 Margot Street, Epsom
+                                                <br />
+                                                Auckland 1051
+                                            </address>
                                         </div>
                                     </li>
                                 </ul>

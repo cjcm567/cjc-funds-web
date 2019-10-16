@@ -119,6 +119,11 @@ function HeaderComponent() {
                                             </Link>
                                         </div>
                                     </li>
+                                    <li className="nav-item">
+                                        <Link to="/partnership" className="nav-link">
+                                            合作机构
+                                        </Link>
+                                    </li>
                                     <li className="nav-item dropdown">
                                         <Link
                                             to="/funds"

@@ -162,6 +162,15 @@ const ManagerTeam = () => {
         </Suspense>
     )
 }
+
+const PartnershipComponent = lazy(() => import("./pages/Partnership"))
+const Partnership = () => {
+    return (
+        <Suspense fallback={Preloader}>
+            <PartnershipComponent />
+        </Suspense>
+    )
+}
 ReactDOM.render(
     <Router>
         <ScrollToTop>
@@ -169,6 +178,7 @@ ReactDOM.render(
                 <Route path="/" exact component={Home} />
                 <Route path="/contact-us" component={ContactUs} />
                 <Route path="/industry" component={Industry} />
+                <Route path="/partnership" component={Partnership} />
                 <Route path="/funds" exact component={Funds} />
                 <Route path="/funds/fund-of-funds" exact component={FundOfFunds} />
                 <Route path="/funds/carrick-dividend-yield-fund" exact component={FundDividedYield} />

@@ -91,7 +91,7 @@ export default function CompanyDetails() {
                                         </div>
                                         <div className={activeState} data-parent="#accordion">
                                             <div className="card-body font-secondary text-color bg-gray pl-0 pb-0">
-                                                然后，我们会对要投资的证券进行详细分析。该分析可能包括价格预测，技术分析，定量分析，行业和公司特定的研究与分析。
+                                                然后，我们会对要投资的产品进行详细分析。该分析可能包括价格预测，技术分析，定量分析，行业和公司特定的研究与分析。
                                             </div>
                                         </div>
                                     </div>
@@ -105,7 +105,7 @@ export default function CompanyDetails() {
                                         </div>
                                         <div className={activeState} data-parent="#accordion">
                                             <div className="card-body font-secondary text-color bg-gray pl-0 pb-0">
-                                                决定要投资的证券后，我们会考虑资产分配和限额要求，将证券添加到投资组合中。
+                                                决定要投资的产品后，我们会考虑资产分配和限额要求，将产品添加到投资组合中。
                                             </div>
                                         </div>
                                     </div>
@@ -119,7 +119,7 @@ export default function CompanyDetails() {
                                         </div>
                                         <div className={activeState} data-parent="#accordion">
                                             <div className="card-body font-secondary text-color bg-gray pl-0 pb-0">
-                                                持续监控建筑组合的绩效，以使我们能够评估其绩效，并确保投资符合 SIPO
+                                                持续监控投资组合的绩效，以使我们能够评估其绩效，并确保投资符合 SIPO
                                                 的要求。
                                             </div>
                                         </div>

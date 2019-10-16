@@ -17,69 +17,29 @@ function ContactUs() {
                                     <li className="d-flex mb-30">
                                         <i className="round-icon mr-3 ti-mobile"></i>
                                         <div className="align-self-center font-primary">
-                                            <p>+64 9 2803716</p>
+                                            <a href="tel:+64 9 2803716" className="text-dark">
+                                                +64 9 2803716
+                                            </a>
                                         </div>
                                     </li>
                                     <li className="d-flex mb-30">
                                         <i className="round-icon mr-3 ti-email"></i>
                                         <div className="align-self-center font-primary">
-                                            <p>xyz@abc.com</p>
+                                            <a href="mailto:mark.fan@cariickassets.com" className="text-dark">
+                                                mark.fan@cariickassets.com
+                                            </a>
                                         </div>
                                     </li>
                                     <li className="d-flex mb-30">
                                         <i className="round-icon mr-3 ti-map-alt"></i>
                                         <div className="align-self-center font-primary">
-                                            <p>Carrick Just Asset Management Limited</p>
-                                            <p>Level 2, 3 Margot Street, Epsom</p>
-                                            <p>Auckland 1051</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <h2 className="section-title">Contact Us</h2>
-                                <ul className="pl-0">
-                                    {/* contact items */}
-                                    <li className="d-flex mb-30">
-                                        <i className="round-icon mr-3 ti-mobile"></i>
-                                        <div className="align-self-center font-primary">
-                                            <p>+64 9 2803716</p>
-                                        </div>
-                                    </li>
-                                    <li className="d-flex mb-30">
-                                        <i className="round-icon mr-3 ti-email"></i>
-                                        <div className="align-self-center font-primary">
-                                            <p>xyz@abc.com</p>
-                                        </div>
-                                    </li>
-                                    <li className="d-flex mb-30">
-                                        <i className="round-icon mr-3 ti-map-alt"></i>
-                                        <div className="align-self-center font-primary">
-                                            <p>Carrick Just Asset Management Limited</p>
-                                            <p>Level 2, 3 Margot Street, Epsom</p>
-                                            <p>Auckland 1051</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <h2 className="section-title">Contact Us</h2>
-                                <ul className="pl-0">
-                                    {/* contact items */}
-                                    <li className="d-flex mb-30">
-                                        <i className="round-icon mr-3 ti-mobile"></i>
-                                        <div className="align-self-center font-primary">
-                                            <p>+64 9 2803716</p>
-                                        </div>
-                                    </li>
-                                    <li className="d-flex mb-30">
-                                        <i className="round-icon mr-3 ti-email"></i>
-                                        <div className="align-self-center font-primary">
-                                            <p>xyz@abc.com</p>
-                                        </div>
-                                    </li>
-                                    <li className="d-flex mb-30">
-                                        <i className="round-icon mr-3 ti-map-alt"></i>
-                                        <div className="align-self-center font-primary">
-                                            <p>Carrick Just Asset Management Limited</p>
-                                            <p>Level 2, 3 Margot Street, Epsom</p>
-                                            <p>Auckland 1051</p>
+                                            <address className="text-dark">
+                                                Carrick Just Asset Management Limited
+                                                <br />
+                                                Level 2, 3 Margot Street, Epsom
+                                                <br />
+                                                Auckland 1051
+                                            </address>
                                         </div>
                                     </li>
                                 </ul>
