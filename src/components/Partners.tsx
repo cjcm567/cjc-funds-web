@@ -18,7 +18,7 @@ export default function Partner() {
             <section className="clients section bg-secondary overlay-dark" style={ceoStyle}>
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-6">
+                        <div className="col-lg-6 text-left">
                             {/* <h5 className="section-title-sm text-color">Our Some</h5> */}
                             <h2 className="text-white mb-20">合作机构</h2>
                             <p className="text-white">
@@ -43,9 +43,9 @@ export default function Partner() {
                         </div>
                         <div className="col-lg-6 justify-content-center">
                             <div className="row justify-content-center">
-                                <div className="col-lg-6 col-md-12">
+                                <div className="col-lg-6 col-md-12 mb-50">
                                     <ul>
-                                        <li className="text-center mb-100 py-5">
+                                        <li className="text-center mb-50 py-5">
                                             <a href="https://www.asb.co.nz">
                                                 <LazyImage
                                                     src={logoAsb}

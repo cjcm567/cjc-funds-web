@@ -8,7 +8,7 @@ import serviceImage04 from "../images/service/service-4.jpg"
 import AboutUsImage from "../images/background/about-bg.jpg"
 import imagePreloader from "../images/preloader.gif"
 import newsData from "../data/newsData.json"
-import homeData from "../data/Home/homeData.json"
+import homeData from "../data/fundsData.json"
 import aboutListData from "../data/Home/HomeAboutListData.json"
 const sectionStyle = {
     backgroundImage: `url(${AboutUsImage})`,
@@ -21,6 +21,15 @@ const Partners = () => {
     return (
         <Suspense fallback={Preloader}>
             <PartnersComponent />
+        </Suspense>
+    )
+}
+
+const ContactUsComponent = lazy(() => import("../components/ContactUs"))
+const ContactUs = () => {
+    return (
+        <Suspense fallback={Preloader}>
+            <ContactUsComponent />
         </Suspense>
     )
 }
@@ -46,32 +55,30 @@ export default function Home() {
             </div>
         </li>
     ))
-    const homeObject = []
-    for (let index = 0; index <= 2; index++) {
-        homeObject.push(homeData[index])
-    }
+    // const homeObject = []
+    // for (let index = 0; index <= 2; index++) {
+    //     homeObject.push(homeData[index])
+    // }
 
-    const HomeRender = homeObject.map(homeObjectItem => (
-        <div className="col-lg-4 col-sm-6 mb-4 mb-lg-0" key={homeObjectItem.Dickey}>
+    const HomeRender = homeData.map(homeObjectItem => (
+        <div className="col-lg-4 col-sm-6 mb-4 mb-lg-0" key={homeObjectItem.props}>
             <div className="card text-center mb-4">
                 <h4 className="card-title pt-3">{homeObjectItem.title}</h4>
                 <div className="card-img-wrapper mb-20">
                     <img
                         className="card-img-top rounded-0"
                         height="200px"
-                        src={require(`../images/service/${homeObjectItem.imageUri}.jpg`)}
+                        src={require(`../images/funds/${homeObjectItem.props}.jpg`)}
                         alt="service-image"
                     />
                 </div>
                 <div className="card-body p-0" style={{minHeight: "16vh"}}>
                     <div className="text-left pl-2">
-                        <p className="card-text mx-2 mb-0">{homeObjectItem.p1}</p>
-                        <p className="card-text mx-2 mb-0">{homeObjectItem.p2}</p>
-                        <p className="card-text mx-2 mb-0">{homeObjectItem.p3}</p>
+                        <p className="card-text mx-2 mb-0">{homeObjectItem.desc}</p>
                     </div>
-                    {/* <Link to="/about-us/" className="btn btn-secondary translateY-25">
-                        更多
-                    </Link> */}
+                    <Link to={`/funds/${homeObjectItem.props}`} className="btn btn-secondary translateY-25">
+                        Read More
+                    </Link>
                 </div>
             </div>
         </div>
@@ -144,14 +151,14 @@ export default function Home() {
                                 <div className="row justify-content-center">
                                     <div className="col-lg-12 text-center">
                                         <h5 className="section-title-sm">优质服务</h5>
-                                        <h2 className="section-title section-title-border">服务内容</h2>
+                                        <h2 className="section-title section-title-border">基金产品</h2>
                                     </div>
                                     {HomeRender}
                                 </div>
                             </div>
                         </section>
                     </div>
-                    <section className="about section-sm overlay" style={sectionStyle}>
+                    {/* <section className="about section-sm overlay" style={sectionStyle}>
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-6 ml-auto">
@@ -169,9 +176,9 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                    </section>
+                    </section> */}
                     {/* skill  */}
-                    <section className="section">
+                    {/* <section className="section">
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-5">
@@ -190,7 +197,7 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                    </section>
+                    </section> */}
                     {/* blog  */}
                     <Partners />
                     <section className="section bg-gray border-bottom">
@@ -199,7 +206,7 @@ export default function Home() {
                                 <div className="col-lg-12 text-center">
                                     <h5 className="section-title-sm">最新新闻</h5>
                                     <Link to="/news">
-                                        <h2 className="section-title section-title-border-gray">公司时讯</h2>
+                                        <h2 className="section-title section-title-border-gray">行业时讯</h2>
                                     </Link>
                                 </div>
                                 {newsExampleRender}
@@ -209,6 +216,7 @@ export default function Home() {
                             </div>
                         </div>
                     </section>
+                    <ContactUs />
                 </div>
             </Layout>
         </>

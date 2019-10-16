@@ -35,6 +35,54 @@ function ContactUs() {
                                         </div>
                                     </li>
                                 </ul>
+                                <h2 className="section-title">Contact Us</h2>
+                                <ul className="pl-0">
+                                    {/* contact items */}
+                                    <li className="d-flex mb-30">
+                                        <i className="round-icon mr-3 ti-mobile"></i>
+                                        <div className="align-self-center font-primary">
+                                            <p>+64 9 2803716</p>
+                                        </div>
+                                    </li>
+                                    <li className="d-flex mb-30">
+                                        <i className="round-icon mr-3 ti-email"></i>
+                                        <div className="align-self-center font-primary">
+                                            <p>xyz@abc.com</p>
+                                        </div>
+                                    </li>
+                                    <li className="d-flex mb-30">
+                                        <i className="round-icon mr-3 ti-map-alt"></i>
+                                        <div className="align-self-center font-primary">
+                                            <p>Carrick Just Asset Management Limited</p>
+                                            <p>Level 2, 3 Margot Street, Epsom</p>
+                                            <p>Auckland 1051</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <h2 className="section-title">Contact Us</h2>
+                                <ul className="pl-0">
+                                    {/* contact items */}
+                                    <li className="d-flex mb-30">
+                                        <i className="round-icon mr-3 ti-mobile"></i>
+                                        <div className="align-self-center font-primary">
+                                            <p>+64 9 2803716</p>
+                                        </div>
+                                    </li>
+                                    <li className="d-flex mb-30">
+                                        <i className="round-icon mr-3 ti-email"></i>
+                                        <div className="align-self-center font-primary">
+                                            <p>xyz@abc.com</p>
+                                        </div>
+                                    </li>
+                                    <li className="d-flex mb-30">
+                                        <i className="round-icon mr-3 ti-map-alt"></i>
+                                        <div className="align-self-center font-primary">
+                                            <p>Carrick Just Asset Management Limited</p>
+                                            <p>Level 2, 3 Margot Street, Epsom</p>
+                                            <p>Auckland 1051</p>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                             {/* form */}
                             <div className="col-lg-6 col-md-7">

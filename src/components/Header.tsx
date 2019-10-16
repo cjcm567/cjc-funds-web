@@ -43,14 +43,14 @@ function HeaderComponent() {
     return (
         <>
             <header className="box-shadow">
-                {/* <div className="container">
+                <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
                             <ul className="list-inline text-lg-right text-center" />
                         </div>
                     </div>
                 </div>
-                <div className="top-header" style={{background: "#000", opacity: "0.6"}}>
+                {/* <div className="top-header overlay">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
@@ -127,9 +127,6 @@ function HeaderComponent() {
                                             基金产品
                                         </Link>
                                         <div className={dropdownMenuStatus}>
-                                            {/* <Link to="/funds/fund-of-funds" className="dropdown-item">
-                                                Fund of Funds
-                                            </Link> */}
                                             <Link to="/funds/carrick-dividend-yield-fund" className="dropdown-item">
                                                 Carrick Dividend Yield Fund
                                             </Link>

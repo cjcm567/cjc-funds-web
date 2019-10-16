@@ -1769,6 +1769,32 @@ img.arrow-bottom {
     background: #303032;
 }
 
+/* 14.5 clients */
+.contact-us {
+    background-position: center left;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 991px) {
+    .contact-us {
+        background-size: cover !important;
+        background-position: center center;
+        text-align: center;
+    }
+}
+
+.contact-us ul li {
+    height: 66px;
+}
+
+.contact-us ul li img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+}
+
 /* service single end */
 /* 15. work section */
 .work {
