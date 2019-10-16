@@ -15,27 +15,6 @@ function FundsComponent(isShowId: number) {
         return (
             <>
                 <div>
-                    <h4 className="mb-30">产品描述</h4>
-                    <div className="bg-gray p-5 rounded mb-60">
-                        <ul className="d-inline-block pl-0 mb-10">
-                            <li className="font-secondary mb-10">
-                                <i className="text-primary mr-2 ti-arrow-circle-right"></i>
-                                1. 凯利纽澳地产基金提供全方位投资服务。
-                            </li>
-                            <li className="font-secondary mb-10">
-                                <i className="text-primary mr-2 ti-arrow-circle-right"></i>
-                                2. 向合格投资者集资，选择黄金地段商业地产作为投资标。
-                            </li>
-                            <li className="font-secondary mb-10">
-                                <i className="text-primary mr-2 ti-arrow-circle-right"></i>
-                                3. 寻求服务周到尽责的物业管理公司和长期稳定的租赁客源。
-                            </li>
-                            <li className="font-secondary mb-10">
-                                <i className="text-primary mr-2 ti-arrow-circle-right"></i>
-                                4. 及时发送给投资者利益报告和未来资产转售服务。
-                            </li>
-                        </ul>
-                    </div>
                     <h4 className="mb-30">战略</h4>
                     <div className="bg-gray p-5 rounded mb-60">
                         <ul className="d-inline-block pl-0 mb-10">
@@ -195,7 +174,7 @@ function FundsComponent(isShowId: number) {
 
 export default function FundProperty() {
     const fundsDict = [
-        {id: 0, content: "产品描述与战略", style: "active border-bottom"},
+        {id: 0, content: "产品战略", style: "active border-bottom"},
         {id: 1, content: "风险指标", style: "border-bottom"},
         {id: 2, content: "目标投资组合", style: "border-bottom"},
         {id: 3, content: "分红", style: "border-bottom"},
@@ -236,24 +215,24 @@ export default function FundProperty() {
                                 <div className="row">
                                     <div className="col-lg-8 col-md-12">
                                         <div className="bg-gray p-5 rounded mb-60">
-                                            <h4 className="text-dark font-primary mb-30">战略</h4>
+                                            <h4 className="text-dark font-primary mb-30">产品描述</h4>
                                             <div>
                                                 <ul className="d-inline-block pl-0">
                                                     <li className="font-secondary mb-10">
                                                         <i className="text-primary mr-2 ti-arrow-circle-right"></i>1.
-                                                        致力于通过其自身专业投资人员多年纽澳地房地产投资经验
+                                                        凯利纽澳地产基金提供全方位投资服务。
                                                     </li>
                                                     <li className="font-secondary mb-10">
                                                         <i className="text-primary mr-2 ti-arrow-circle-right"></i>2.
-                                                        利用敏锐的洞察力精心挑选、收购和管理商业地产
+                                                        向合格投资者集资，选择黄金地段商业地产作为投资标的。
                                                     </li>
                                                     <li className="font-secondary mb-10">
                                                         <i className="text-primary mr-2 ti-arrow-circle-right"></i>3.
-                                                        寻求房地产多元化并具有潜在资本增长潜力投资组合
+                                                        寻求服务周到尽责的物业管理公司和长期稳定的租赁客源。
                                                     </li>
                                                     <li className="font-secondary mb-10">
                                                         <i className="text-primary mr-2 ti-arrow-circle-right"></i>4.
-                                                        为合格投资者提供最佳收益回报并实现投资者财富
+                                                        及时发送给投资者利益报告和未来资产转售服务。
                                                     </li>
                                                     <li className="font-secondary mb-10"></li>
                                                 </ul>

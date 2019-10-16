@@ -18,7 +18,7 @@ export default function Partnership() {
                         <div className="row">
                             <div className="col-lg-12">
                                 <h5 className="section-title-sm text-center"></h5>
-                                <h2 className="section-title section-title-border text-center"> 合作机构 </h2>
+                                <h2 className="section-title section-title-border text-center">合作机构</h2>
                                 <p>
                                     Carrick Just Asset Management
                                     Limited（凯利资产管理）在追求投资收益的同时，合规文化一直在公司经营发展过程中被放在首要位置。

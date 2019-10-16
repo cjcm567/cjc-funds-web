@@ -15,15 +15,6 @@ function FundsComponent(isShowId: number) {
         return (
             <>
                 <div>
-                    <h4 className="mb-30">产品描述</h4>
-                    <div className="bg-gray p-5 rounded mb-60">
-                        <ul className="d-inline-block pl-0 mb-10">
-                            <li className="font-secondary mb-10">
-                                凯利纽澳股息收益基金是由大约25-35只新西兰和澳大利亚上市公司高分红股票组成的精选组合。
-                                选择这些股票是因为它们具有诱人的高股息收益率和未来增长前景。该基金选择保持高水准股息收益率和股票自身的资本价值的优质纽澳上市股票。该基金的目标是取得长期平均年化大于3％的绝对收益。
-                            </li>
-                        </ul>
-                    </div>
                     <h4 className="mb-30">战略</h4>
                     <div className="bg-gray p-5 rounded mb-60">
                         <ul className="d-inline-block pl-0 mb-10">
@@ -186,7 +177,7 @@ function FundsComponent(isShowId: number) {
 
 export default function FundDividedYield() {
     const fundsDict = [
-        {id: 0, content: "产品描述与战略", style: "active border-bottom"},
+        {id: 0, content: "产品战略", style: "active border-bottom"},
         {id: 1, content: "风险指标与费用", style: "border-bottom"},
         {id: 2, content: "目标投资组合", style: "border-bottom"},
         {id: 3, content: "分红", style: "border-bottom"},
@@ -223,19 +214,17 @@ export default function FundDividedYield() {
                                 <div className="row">
                                     <div className="col-lg-8 col-md-12">
                                         <div className="bg-gray p-5 rounded mb-60">
-                                            <h4 className="text-dark font-primary mb-30">战略</h4>
+                                            <h4 className="text-dark font-primary mb-30">产品描述</h4>
                                             <div>
                                                 <ul className="d-inline-block pl-0">
                                                     <li className="font-secondary mb-10">
                                                         1.
-                                                        基金投资经过精心研究NZX和ASX的股票投资组合，该投资组合与长期投资者的投资的目标一致：高股息收益率以及保持稳定的高股息收益率和自身资本价值。
+                                                        凯利纽澳股息收益基金是由大约25-35只新西兰和澳大利亚上市公司高分红股票组成的精选组合。
                                                     </li>
                                                     <li className="font-secondary mb-10">
                                                         2.
-                                                        该绝对回报基金通过产生股息形式的回报以及保持每年的基金资本价值来实现这一目标。
-                                                        策略是投资于股息收益率高且有增长机会维持价值的NZX和ASX上市证券。
+                                                        选择这些股票是因为它们具有诱人的高股息收益率和未来增长前景。该基金选择保持高水准股息收益率和股票自身的资本价值的优质纽澳上市股票。该基金的目标是取得长期平均年化大于3％的绝对收益。
                                                     </li>
-                                                    <li className="font-secondary mb-10"></li>
                                                 </ul>
                                             </div>
                                         </div>

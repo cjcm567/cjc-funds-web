@@ -76,7 +76,7 @@ export default function CompanyDetails() {
                                         </div>
                                         <div className={activeState} data-parent="#accordion">
                                             <div className="card-body font-secondary text-color bg-gray pl-0 pb-0">
-                                                投资过程的第一阶段涉及投资理念的产生。
+                                                投资流程的第一阶段涉及投资理念的产生。
                                                 我们的投资经理人提出的想法是什么产品在许多可投资的产品中是我们可以投资的，以实现基金的目标之间的产品。
                                             </div>
                                         </div>

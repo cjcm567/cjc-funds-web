@@ -16,7 +16,7 @@ export default function Flow() {
                     <div className="row justify-content-center">
                         <div className="col-lg-12 text-center">
                             <h5 className="section-title-sm">我们倾向于投资易于理解和管理的证券</h5>
-                            <h2 className="section-title section-title-border mb-xl-150-lg-100">投资过程</h2>
+                            <h2 className="section-title section-title-border mb-xl-150-lg-100">投资流程</h2>
                         </div>
                         {/* process step1 */}
                         <div className="col-lg-4 col-sm-6 mb-md-50">

@@ -35,15 +35,15 @@ export default function ContactUs() {
                                         <img src={imagePhone} alt="image Phone" className="pr-5" />
                                         <div className="align-self-center">
                                             <a href="tel:+64 9 2803716" className="h4 text-white">
-                                                +64 9 2803716
+                                                🇳🇿 +64 9 2803716
                                             </a>
                                         </div>
                                     </li>
                                     <li className="d-flex mb-30">
                                         <img src={imageEmail} alt="image email" className="pr-5" />
                                         <div className="align-self-center font-primary">
-                                            <a href="mailto:mark.fan@cariickassets.com" className="h4 text-white">
-                                                mark.fan@cariickassets.com
+                                            <a href="mailto:mark.fan@carrickassets.com" className="h4 text-white">
+                                                mark.fan@carrickassets.com
                                             </a>
                                         </div>
                                     </li>
@@ -55,7 +55,7 @@ export default function ContactUs() {
                                                 <br />
                                                 Level 2, 3 Margot Street, Epsom
                                                 <br />
-                                                Auckland 1051
+                                                Auckland 1051, New Zealand
                                             </address>
                                         </div>
                                     </li>

@@ -22,7 +22,7 @@ function ContactUs() {
                                         </div>
                                         <div className="align-self-center font-primary">
                                             <a href="tel:+64 9 2803716" className="text-dark">
-                                                +64 9 2803716
+                                                🇳🇿 +64 9 2803716
                                             </a>
                                         </div>
                                     </li>
@@ -31,8 +31,8 @@ function ContactUs() {
                                             <img src={imageEmail} alt="imagePhone" />
                                         </div>
                                         <div className="align-self-center font-primary">
-                                            <a href="mailto:mark.fan@cariickassets.com" className="text-dark">
-                                                mark.fan@cariickassets.com
+                                            <a href="mailto:mark.fan@carrickassets.com" className="text-dark">
+                                                mark.fan@carrickassets.com
                                             </a>
                                         </div>
                                     </li>
@@ -46,7 +46,7 @@ function ContactUs() {
                                                 <br />
                                                 Level 2, 3 Margot Street, Epsom
                                                 <br />
-                                                Auckland 1051
+                                                Auckland 1051, New Zealand
                                             </address>
                                         </div>
                                     </li>

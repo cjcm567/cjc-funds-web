@@ -126,7 +126,7 @@ export default function AboutUs() {
                     <div className="container">
                         <div className="row justify-content-center">
                             <div className="col-12 text-center">
-                                <h2 className="section-title section-title-border">投资过程</h2>
+                                <h2 className="section-title section-title-border">投资流程</h2>
                             </div>
                             <div className="col-12 text-center">
                                 <LazyImage
@@ -168,7 +168,7 @@ export default function AboutUs() {
                                         <div className="process-item-number">2</div>
                                         <h5 className="text-primary">研究公司具体情况</h5>
                                         <p>预测财务</p>
-                                        <p>进行情景分析,现场调研</p>
+                                        <p>进行情景分析，现场调研</p>
                                         <p>评估业务质量，清单得分和流动性</p>
                                         <p>将折价/合理估值与同业和历史进行比较</p>
                                         <p>建立价格目标和排名</p>
