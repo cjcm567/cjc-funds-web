@@ -124,7 +124,6 @@ export default function Funds() {
                                         <p>积极监测行业发展</p>
                                     </div>
                                 </div>
-
                                 <div className="col-lg-3 col-sm-6 mb-md-50">
                                     <div className="process-item-two py-xl-4 pl-xl-5 pt-5 px-4 rounded border position-relative">
                                         <div className="process-item-number">5</div>
@@ -135,7 +134,6 @@ export default function Funds() {
                                         <p>选择合适的时机买入</p>
                                     </div>
                                 </div>
-
                                 <div className="col-lg-3 col-sm-6 mb-md-50">
                                     <div className="process-item-two py-xl-4 pl-xl-5 pt-5 px-4 rounded border position-relative">
                                         <div className="process-item-number">6</div>
