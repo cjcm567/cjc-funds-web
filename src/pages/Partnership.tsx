@@ -48,6 +48,13 @@ export default function Partnership() {
                                 <div className="testimonial-slider p-5">
                                     <div className="outline-0">
                                         {/* <i className="testimonial-icon ti-quote-left"></i> */}
+                                        <a
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            href="https://www.publictrust.co.nz/">
+                                            <h4 className="font-weight-normal">Public Trust</h4>
+                                        </a>
+                                        <h6 className="font-secondary text-color">信托托管机构</h6>
                                         <p className="text-dark">
                                             新西兰政府机构信托，自从1873年成立以来，Public
                                             Trust一直秉承着照顾新西兰人利益的悠久传统。
@@ -57,13 +64,6 @@ export default function Partnership() {
                                             托管的基金产品，资本金和利息收益均由新西兰政府担保，确保客户资金安全并不受公司自身经营状况的影响，真正实现客户资金与本公司资金的完全分离。
                                         </p>
                                         <p className="text-dark">Public Trust 同时是新西兰最大的信托管理服务提供商。</p>
-                                        <a
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            href="https://www.publictrust.co.nz/">
-                                            <h4 className="font-weight-normal">Public Trust</h4>
-                                        </a>
-                                        <h6 className="font-secondary text-color">信托托管机构</h6>
                                     </div>
                                 </div>
                             </div>
@@ -87,13 +87,13 @@ export default function Partnership() {
                                 <div className="testimonial-slider p-5">
                                     <div className="outline-0">
                                         {/* <i className="testimonial-icon ti-quote-left"></i> */}
-                                        <p className="text-dark">
-                                            全球顶级会计师事务所，是四大国际会计师事务所之一，行业专业知识的深度是无可置疑。
-                                        </p>
                                         <a target="_blank" rel="noopener noreferrer" href="https://www.pwc.co.nz/">
                                             <h4 className="font-weight-normal">PwC 普华永道</h4>
                                         </a>
                                         <h6 className="font-secondary text-color">审计合作机构</h6>
+                                        <p className="text-dark">
+                                            全球顶级会计师事务所，是四大国际会计师事务所之一，行业专业知识的深度是无可置疑。
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -115,6 +115,10 @@ export default function Partnership() {
                                 <div className="testimonial-slider p-5">
                                     <div className="outline-0">
                                         {/* <i className="testimonial-icon ti-quote-left"></i> */}
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.asb.co.nz">
+                                            <h4 className="font-weight-normal">ASB Bank</h4>
+                                        </a>
+                                        <h6 className="font-secondary text-color">运营合作银行</h6>
                                         <p className="text-dark">
                                             新西兰当地主流银行，新西兰四大银行之一，全称是Auckland Saving Bank
                                             即奥克兰储蓄银行。
@@ -122,10 +126,6 @@ export default function Partnership() {
                                         <p className="text-dark">
                                             ASB银行是被澳大利亚联邦银行拥有和控股的在新西兰营业的银行。
                                         </p>
-                                        <a target="_blank" rel="noopener noreferrer" href="https://www.asb.co.nz">
-                                            <h4 className="font-weight-normal">ASB Bank</h4>
-                                        </a>
-                                        <h6 className="font-secondary text-color">运营合作银行</h6>
                                     </div>
                                 </div>
                             </div>
@@ -147,9 +147,6 @@ export default function Partnership() {
                                 <div className="testimonial-slider p-5">
                                     <div className="outline-0">
                                         {/* <i className="testimonial-icon ti-quote-left"></i> */}
-                                        <p className="text-dark">
-                                            国际知名律所，2017新西兰年度律师事务所，该公司庞大的团队为客户提供丰富多方面的经验和技能，包括能源和资源，基础设施，政府，卫生，银行和金融服务，管理基金，技术和TMT。
-                                        </p>
                                         <a
                                             target="_blank"
                                             rel="noopener noreferrer"
@@ -157,6 +154,9 @@ export default function Partnership() {
                                             <h4 className="font-weight-normal">Minter Ellison 铭德律师事务所</h4>
                                         </a>
                                         <h6 className="font-secondary text-color">法务合作机构</h6>
+                                        <p className="text-dark">
+                                            国际知名律所，2017新西兰年度律师事务所，该公司庞大的团队为客户提供丰富多方面的经验和技能，包括能源和资源，基础设施，政府，卫生，银行和金融服务，管理基金，技术和TMT。
+                                        </p>
                                     </div>
                                 </div>
                             </div>

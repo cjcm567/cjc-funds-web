@@ -32,6 +32,7 @@ export default function ContactUs() {
                                 <ul className="pl-0 px-5">
                                     {/* contact items */}
                                     <li className="d-flex mb-30">
+                                        <img src={imagePhone} alt="image Phone" className="pr-5" />
                                         <div className="align-self-center">
                                             <a href="tel:+64 9 2803716" className="h4 text-white">
                                                 +64 9 2803716
@@ -39,7 +40,7 @@ export default function ContactUs() {
                                         </div>
                                     </li>
                                     <li className="d-flex mb-30">
-                                        {/* <img className="round-icon" height="12px" src={imageEmail} alt="imageEmail" /> */}
+                                        <img src={imageEmail} alt="image email" className="pr-5" />
                                         <div className="align-self-center font-primary">
                                             <a href="mailto:mark.fan@cariickassets.com" className="h4 text-white">
                                                 mark.fan@cariickassets.com
@@ -47,12 +48,7 @@ export default function ContactUs() {
                                         </div>
                                     </li>
                                     <li className="d-flex mb-30">
-                                        {/* <img
-                                            className="round-icon"
-                                            height="12px"
-                                            src={imageAddress}
-                                            alt="imageAddress"
-                                        /> */}
+                                        <img src={imageAddress} alt="image address" className="pr-5" />
                                         <div className="align-self-center font-primary">
                                             <address className="h4 text-white">
                                                 Carrick Just Asset Management Limited
