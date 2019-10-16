@@ -30,7 +30,7 @@ export default function AboutUs() {
             <Layout>
                 <section className="section">
                     <div className="container">
-                        <div className="row">
+                        <div className="row justify-content-center">
                             <div className="col-lg-4 col-sm-6 mb-5">
                                 <div className="card text-center">
                                     <h4 className="card-title pt-3">公司简介</h4>

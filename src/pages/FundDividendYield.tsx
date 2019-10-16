@@ -127,6 +127,22 @@ function FundsComponent(isShowId: number) {
             </>
         )
     }
+    if (isShowId === 4) {
+        return (
+            <>
+                <div>
+                    <h4 className="mb-30">其他相关信息</h4>
+                    <p className="font-secondary mb-10">
+                        凯利资产管理是 Carrick Direct Property Fund
+                        直接基金的单位发行人。如果您对本基金投资有兴趣，请与我们联系以获取基金产品说明的副本。
+                    </p>
+                    <p className="font-secondary mb-10">
+                        所有的潜在投资者在投资前请先仔细阅读产品说明，其中应包含财产和投资的详细信息。投资者必须填写并签署申请表，并在付款时提供适用的身份验证（根据反洗钱（AML）法规的要求）。
+                    </p>
+                </div>
+            </>
+        )
+    }
     // if (isShowId === 4) {
     //     return (
     //         <>
@@ -174,6 +190,7 @@ export default function FundDividedYield() {
         {id: 1, content: "风险指标与费用", style: "border-bottom"},
         {id: 2, content: "目标投资组合", style: "border-bottom"},
         {id: 3, content: "分红", style: "border-bottom"},
+        {id: 4, content: "其他相关信息", style: "border-bottom"},
     ]
     const [defaultActive, setDefaultActive] = useState(0)
     const [activePart, setActivePart] = useState(fundsDict)
@@ -210,9 +227,11 @@ export default function FundDividedYield() {
                                             <div>
                                                 <ul className="d-inline-block pl-0">
                                                     <li className="font-secondary mb-10">
+                                                        1.
                                                         基金投资经过精心研究NZX和ASX的股票投资组合，该投资组合与长期投资者的投资的目标一致：高股息收益率以及保持稳定的高股息收益率和自身资本价值。
                                                     </li>
                                                     <li className="font-secondary mb-10">
+                                                        2.
                                                         该绝对回报基金通过产生股息形式的回报以及保持每年的基金资本价值来实现这一目标。
                                                         策略是投资于股息收益率高且有增长机会维持价值的NZX和ASX上市证券。
                                                     </li>

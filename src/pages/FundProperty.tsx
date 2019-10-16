@@ -8,7 +8,7 @@ import imageProperty from "../images/funds/carrick-nz-au-property-fund.jpg"
 import imageRiskFigure from "../images/funds/risk-figure-dividend.jpg"
 import imageCoreCompetence from "../images/funds/core-competence.png"
 import imageCalculate from "../images/funds/calculate.jpg"
-import imageDividendYield from "../images/funds/carrick-dividend-yield-fund.jpg"
+import imageBonus from "../images/funds/bonus.jpg"
 
 function FundsComponent(isShowId: number) {
     if (isShowId == 0) {
@@ -116,6 +116,12 @@ function FundsComponent(isShowId: number) {
             <>
                 <div>
                     <h4 className="mb-30">分红</h4>
+                    <LazyImage
+                        src={imageBonus}
+                        alt="image of bonus"
+                        placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
+                        actual={({imageProps}) => <img className="img-fluid w-100 mb-40" {...imageProps} />}
+                    />
                     <p className="font-secondary mb-10">
                         Carrick Direct Property Fund每年支付一次红利。分红是从基金的净收入中得出的，可能会有所波动。
                         支付给您的分红金额将取决于您持有的单位数量。 所有分红均由我们自行决定。
@@ -175,11 +181,11 @@ function FundsComponent(isShowId: number) {
                 <div>
                     <h4 className="mb-30">其他相关信息</h4>
                     <p className="font-secondary mb-10">
-                        凯利资产管理是Carrick Direct Property
-                        Fund直接基金的单位发行人。如果您对本基金投资有兴趣，请与我们联系以获取基金产品说明的副本。
+                        凯利资产管理是 Carrick Direct Property Fund
+                        直接基金的单位发行人。如果您对本基金投资有兴趣，请与我们联系以获取基金产品说明的副本。
                     </p>
                     <p className="font-secondary mb-10">
-                        所有的潜在投资者在投资前请先仔细阅读产品披露声明，其中应包含财产和投资的详细信息。投资者必须填写并签署申请表，并在付款时提供适用的身份验证（根据反洗钱（AML）法规的要求）。
+                        所有的潜在投资者在投资前请先仔细阅读产品说明，其中应包含财产和投资的详细信息。投资者必须填写并签署申请表，并在付款时提供适用的身份验证（根据反洗钱（AML）法规的要求）。
                     </p>
                 </div>
             </>

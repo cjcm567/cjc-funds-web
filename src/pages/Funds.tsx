@@ -44,7 +44,7 @@ export default function Funds() {
             <Layout>
                 <section className="section">
                     <div className="container">
-                        <div className="row">{fundsCard}</div>
+                        <div className="row justify-content-center">{fundsCard}</div>
                     </div>
                 </section>
             </Layout>
