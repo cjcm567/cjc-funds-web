@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import {LazyImage} from "react-lazy-images"
 import imagePreloader from "../images/preloader.gif"
 import imageProperty from "../images/funds/carrick-nz-au-property-fund.jpg"
-import imageRiskFigure from "../images/funds/risk-figure-property.jpg"
+import imageRiskFigure from "../images/funds/risk-figure-dividend.jpg"
 import imageCoreCompetence from "../images/funds/core-competence.png"
 import imageCalculate from "../images/funds/calculate.jpg"
 import imageDividendYield from "../images/funds/carrick-dividend-yield-fund.jpg"
@@ -88,13 +88,13 @@ function FundsComponent(isShowId: number) {
                             <p className="mb-20">优质租户和长期稳定的租约</p>
                             <p className="mb-20">是一款收益稳中有升的优质基金产品</p>
                             <h4 className="mb-10">投资范围</h4>
-                            <h6 className="mb-10">
+                            <p className="mb-10">
                                 在物业管理领域，凯利资产将自身经验、个性化服务和创新发展理念完美结合，旨在最大程度地提高客户资产的价值和回报。我们的物业管理服务包括：
-                            </h6>
-                            <p className="mb-20">全面的资产、财务、设施和项目管理</p>
-                            <p className="mb-20">专业的零售物业咨询和租赁</p>
-                            <p className="mb-20">分红收益结算和转售标的资产</p>
-                            <p className="mb-20">零售管理和开发服务</p>
+                            </p>
+                            <p className="mb-20">1. 全面的资产、财务、设施和项目管理</p>
+                            <p className="mb-20">2. 专业的零售物业咨询和租赁</p>
+                            <p className="mb-20">3. 分红收益结算和转售标的资产</p>
+                            <p className="mb-20">4. 零售管理和开发服务</p>
                         </div>
                         <div className="col-lg-6 bg-gray p-5 rounded mb-60">
                             <h4 className="mb-10">最低建议投资期限</h4>
@@ -175,11 +175,11 @@ function FundsComponent(isShowId: number) {
                 <div>
                     <h4 className="mb-30">其他相关信息</h4>
                     <p className="font-secondary mb-10">
-                        凯利资产管理是Carrick NZ Property
+                        凯利资产管理是Carrick Direct Property
                         Fund直接基金的单位发行人。如果您对本基金投资有兴趣，请与我们联系以获取基金产品说明的副本。
                     </p>
                     <p className="font-secondary mb-10">
-                        所有的潜在投资者在投资前请先仔细阅读产品披露声明，其中应包含财产和投资的详细信息。投资者必须填写并签署产品披露声明中的申请表，并在付款时提供适用的身份验证（根据反洗钱（AML）法规的要求）。
+                        所有的潜在投资者在投资前请先仔细阅读产品披露声明，其中应包含财产和投资的详细信息。投资者必须填写并签署申请表，并在付款时提供适用的身份验证（根据反洗钱（AML）法规的要求）。
                     </p>
                 </div>
             </>
@@ -234,7 +234,7 @@ export default function FundProperty() {
                                             <div>
                                                 <ul className="d-inline-block pl-0">
                                                     <li className="font-secondary mb-10">
-                                                        <i className="text-primary mr-2 ti-arrow-circle-right"></i>
+                                                        <i className="text-primary mr-2 ti-arrow-circle-right"></i>1.
                                                         致力于通过其自身专业投资人员多年纽澳地房地产投资经验
                                                     </li>
                                                     <li className="font-secondary mb-10">
@@ -246,7 +246,7 @@ export default function FundProperty() {
                                                         寻求房地产多元化并具有潜在资本增长潜力投资组合
                                                     </li>
                                                     <li className="font-secondary mb-10">
-                                                        <i className="text-primary mr-2 ti-arrow-circle-right"></i>3.
+                                                        <i className="text-primary mr-2 ti-arrow-circle-right"></i>4.
                                                         为合格投资者提供最佳收益回报并实现投资者财富
                                                     </li>
                                                     <li className="font-secondary mb-10"></li>

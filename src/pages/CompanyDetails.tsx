@@ -57,7 +57,7 @@ export default function CompanyDetails() {
                     </div>
                 </section>
                 <Partners />
-                <section className="section bg-gray">
+                {/* <section className="section bg-gray">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
@@ -153,7 +153,7 @@ export default function CompanyDetails() {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
             </Layout>
         </>
     )

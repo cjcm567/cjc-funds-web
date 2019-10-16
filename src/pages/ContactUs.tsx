@@ -2,6 +2,9 @@
 
 import React, {Suspense} from "react"
 import Layout from "../components/layout"
+import imagePhone from "../images/aboutus/phone.svg"
+import imageAddress from "../images/aboutus/address.svg"
+import imageEmail from "../images/aboutus/email.svg"
 
 function ContactUs() {
     return (
@@ -13,9 +16,10 @@ function ContactUs() {
                             <div className="col-lg-4 offset-lg-1 col-md-5">
                                 <h2 className="section-title">Contact Us</h2>
                                 <ul className="pl-0">
-                                    {/* contact items */}
                                     <li className="d-flex mb-30">
-                                        <i className="round-icon mr-3 ti-mobile"></i>
+                                        <div className="round-icon mr-3">
+                                            <img src={imagePhone} alt="imagePhone" />
+                                        </div>
                                         <div className="align-self-center font-primary">
                                             <a href="tel:+64 9 2803716" className="text-dark">
                                                 +64 9 2803716
@@ -23,7 +27,9 @@ function ContactUs() {
                                         </div>
                                     </li>
                                     <li className="d-flex mb-30">
-                                        <i className="round-icon mr-3 ti-email"></i>
+                                        <div className="round-icon mr-3">
+                                            <img src={imageEmail} alt="imagePhone" />
+                                        </div>
                                         <div className="align-self-center font-primary">
                                             <a href="mailto:mark.fan@cariickassets.com" className="text-dark">
                                                 mark.fan@cariickassets.com
@@ -31,7 +37,9 @@ function ContactUs() {
                                         </div>
                                     </li>
                                     <li className="d-flex mb-30">
-                                        <i className="round-icon mr-3 ti-map-alt"></i>
+                                        <div className="round-icon mr-3">
+                                            <img src={imageAddress} alt="imagePhone" />
+                                        </div>
                                         <div className="align-self-center font-primary">
                                             <address className="text-dark">
                                                 Carrick Just Asset Management Limited

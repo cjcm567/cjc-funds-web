@@ -56,17 +56,21 @@ function Footer() {
                             {/* footer links */}
                             <div className="col-lg-3 col-md-4 col-6 text-md-left">
                                 <Link to="/funds">
-                                    <h4 className="mb-4">基金</h4>
+                                    <h4 className="mb-4">基金产品</h4>
                                 </Link>
                                 <ul className="footer-links text-left">
                                     {/* <li>
                                         <Link to="/funds/fund-of-funds">Fund of Funds</Link>
                                     </li> */}
                                     <li>
-                                        <Link to="/funds/carrick-dividend-yield-fund">NZ&AU Dividend Yield Fund</Link>
+                                        <Link to="/funds/carrick-dividend-yield-fund">
+                                            Carrick NZ&AU Dividend Yield Fund
+                                        </Link>
                                     </li>
                                     <li>
-                                        <Link to="/funds/carrick-nz-au-property-fund">Direct Property Fund</Link>
+                                        <Link to="/funds/carrick-nz-au-property-fund">
+                                            Carrick Direct Property Fund
+                                        </Link>
                                     </li>
                                 </ul>
                             </div>
@@ -116,7 +120,8 @@ function Footer() {
                         <div className="row">
                             <div className="col-lg-6 col-md-5">
                                 <p className="text-center text-md-left">
-                                    <code>Carrick Funds</code> &copy; {copyrightYear} All Right Reserved
+                                    <code>Carrick Just Asset Management Limited</code> &copy; {copyrightYear} All Right
+                                    Reserved
                                 </p>
                             </div>
                         </div>

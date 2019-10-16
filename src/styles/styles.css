@@ -1692,8 +1692,8 @@ button {
     }
 }
 .process-item-two {
-    width: 10vw;
-    min-height: 44vh;
+    width: 14vw;
+    min-height: 46vh;
 }
 @media (max-width: 1199px) {
     .process-item-two {
