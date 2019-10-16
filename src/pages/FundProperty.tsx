@@ -72,10 +72,6 @@ function FundsComponent(isShowId: number) {
                         placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
                         actual={({imageProps}) => <img className="img-fluid w-100 mb-40" {...imageProps} />}
                     />
-                    <h4 className="mb-30">费用</h4>
-                    <p className="font-secondary mb-10">
-                        1.49％ （估计的年度费用。 这些费用是根据基金资产净值（NAV）的百分比估算的，并包括GST。）
-                    </p>
                 </div>
             </>
         )
@@ -121,9 +117,8 @@ function FundsComponent(isShowId: number) {
                 <div>
                     <h4 className="mb-30">分红</h4>
                     <p className="font-secondary mb-10">
-                        Carrick NZ Property Fund每年支付一次红利。您可以选择将分红重新投资到基金中或记入您的银行帐户。
-                        分红是从基金的净收入中得出的，可能会有所波动。 支付给您的分红金额将取决于您持有的单位数量。
-                        所有分红均由我们自行决定。
+                        Carrick Direct Property Fund每年支付一次红利。分红是从基金的净收入中得出的，可能会有所波动。
+                        支付给您的分红金额将取决于您持有的单位数量。 所有分红均由我们自行决定。
                     </p>
                 </div>
             </>
@@ -195,7 +190,7 @@ function FundsComponent(isShowId: number) {
 export default function FundProperty() {
     const fundsDict = [
         {id: 0, content: "产品描述与战略", style: "active border-bottom"},
-        {id: 1, content: "风险指标与费用", style: "border-bottom"},
+        {id: 1, content: "风险指标", style: "border-bottom"},
         {id: 2, content: "目标投资组合", style: "border-bottom"},
         {id: 3, content: "分红", style: "border-bottom"},
         {id: 4, content: "投资影响因素", style: "border-bottom"},
@@ -226,7 +221,7 @@ export default function FundProperty() {
                 <section className="section">
                     <div className="container">
                         <div className="row">
-                            <h3 className="mb-10">Carrick NZ&AU Property Fund</h3>
+                            <h3 className="mb-10">Carrick Direct Property Fund</h3>
                             <p className="mb-40">
                                 凯利纽澳地产基金提供全方位投资服务，包括向合格投资者集资，选择黄金地段商业地产作为投资标的，寻求服务周到尽责的物业管理公司和长期稳定的租赁客源，以及及时发送给投资者利益报告和未来资产转售服务
                             </p>
