@@ -69,7 +69,9 @@ function InvestClassComponent(isShowId: number) {
         return (
             <>
                 <div>
-                    <h4 className="mb-30">单位净值是什么？</h4>
+                    <h4 className="mb-30">
+                        <b>单位净值是什么？</b>
+                    </h4>
                     <img className="img-fluid w-100 mb-40" src={imageStrategy} alt="image of Strategy" />
                     <div className="bg-gray p-5 rounded mb-60">
                         <p className="text-dark mb-30">策略选择原则：</p>
@@ -82,47 +84,45 @@ function InvestClassComponent(isShowId: number) {
         )
     }
     if (isShowId === 3) {
+        const word = "总回报=(Ne÷Nb)×(1+D1÷N1)×(1+D2÷N2)×......×(1+Dn÷Nn)-1其中："
         return (
             <>
                 <div>
-                    <h4 className="mb-30">如何计算基金的总回报率</h4>
+                    <h4 className="mb-30">
+                        <b>如何计算基金的总回报率</b>
+                    </h4>
                     <img className="img-fluid w-100 mb-40" src={imageCalculate} alt="image of Strategy" />
                     <div className="bg-gray p-5 rounded mb-60">
-                        <ul className="d-inline-block pl-0 mb-10 text-dark">
-                            <li className="mb-10">
-                                <p className="text-dark">
-                                    我们把基金在一定时期内的收益定义为总回报，作为衡量基金以往表现的最基本方法。总回报的来源有两部分，一是收入回报，即基金在一定时期内收到的分红和利息收入，例如股息、债券利息和银行存款利息等;二是资本回报，反映基金所持有的股票与债券价格涨跌的幅度
-                                </p>
-                            </li>
-                            <li className="mb-10">
-                                <p className="text-dark">
-                                    首先要了解基金资产净值，这是计算总回报的基础，总回报表现为该时期单位基金资产净值的增长率。
-                                </p>
-                            </li>
-                            <li className="mb-10">
-                                <p className="text-dark">
-                                    基金资产净值是在某一时点上，基金资产的总市值扣除负债后的余额，代表了基金持有人的权益。单位基金资产净值，即每一基金单位代表的基金资产的净值
-                                </p>
-                            </li>
-                            <li className="mb-10">
-                                <b>单位基金资产净值=(总资产-总负债)/基金单位总数</b>
-                            </li>
-                            <li className="mb-10">
-                                <p className="text-dark">
-                                    基金通常会把已经实现的收益向投资人进行分配。分红的基础为「基金净收益」，即基金的收入回报和通过卖出证券实现的资本回报，减去依法可以在基金收益中扣除的费用后的余额。按照目前有关规定，分红有两个约束条件：一是基金投资要有已实现的净收益，二是分红比例在一年中不得低于已实现净收益的90%。
-                                </p>
-                            </li>
-                            <li className="mb-10">
-                                <p className="text-dark">
-                                    对于分红方式，投资人有两种选择，一是分配现金;二是再投资，即将分得的收益再投资于基金，并折算成相应数量的基金单位
-                                </p>
-                            </li>
-                            <li className="mb-10">
-                                <p className="text-dark">
-                                    分红后，单位基金资产净值会下降。假设分红前单位净值1.06元，单位分红金额0.05元，则分红后单位净值降至1.01元。考虑了分红因素后，我们再来计算总回报。总回报=(Ne÷Nb)×(1+D1÷N1)×(1+D2÷N2)×......×(1+Dn÷Nn)-1其中：Ne和Nb分别为期末和期初单位资产净值;D1、D2、Dn分别为第1次、第2次、第n次单位分红金额;N1、N2、Nn分别为第1次、第2次、第n次分红再投资日的单位净值。
-                                </p>
-                            </li>
-                        </ul>
+                        <Paragraph>
+                            <ul className="d-inline-block pl-0 mb-10">
+                                <li className="font-secondary mb-10">
+                                    <p className="text-dark">
+                                        我们把基金在一定时期内的收益定义为总回报，作为衡量基金以往表现的最基本方法。总回报的来源有两部分，一是收入回报，即基金在一定时期内收到的分红和利息收入，例如股息、债券利息和银行存款利息等;二是资本回报，反映基金所持有的股票与债券价格涨跌的幅度
+                                    </p>
+                                </li>
+                                <li className="mb-10">
+                                    <p className="text-dark">
+                                        首先要了解基金资产净值，这是计算总回报的基础，总回报表现为该时期单位基金资产净值的增长率。
+                                    </p>
+                                </li>
+                                <li className="mb-10">
+                                    <p className="text-dark">
+                                        基金资产净值是在某一时点上，基金资产的总市值扣除负债后的余额，代表了基金持有人的权益。单位基金资产净值，即每一基金单位代表的基金资产的净值
+                                    </p>
+                                </li>
+                                <li className="mb-10">
+                                    <b>单位基金资产净值=(总资产-总负债)/基金单位总数</b>
+                                </li>
+                                <li className="mb-10">
+                                    <p className="text-dark">
+                                        基金通常会把已经实现的收益向投资人进行分配。分红的基础为「基金净收益」，即基金的收入回报和通过卖出证券实现的资本回报，减去依法可以在基金收益中扣除的费用后的余额。按照目前有关规定，分红有两个约束条件：一是基金投资要有已实现的净收益，二是分红比例在一年中不得低于已实现净收益的90%。
+                                    </p>
+                                </li>
+                            </ul>
+                            <p className="text-dark">
+                                对于分红方式，投资人有两种选择，一是分配现金;二是再投资，即将分得的收益再投资于基金，并折算成相应数量的基金单位
+                            </p>
+                        </Paragraph>
                     </div>
                 </div>
             </>

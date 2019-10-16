@@ -5,8 +5,6 @@ import {Link} from "react-router-dom"
 import Layout from "../components/layout"
 import {LazyImage} from "react-lazy-images"
 import imagePreloader from "../images/preloader.gif"
-import imageArrowTop from "../images/funds/arrow-top.png"
-import imageArrowBottom from "../images/funds/arrow-bottom.png"
 import imageProcess from "../images/funds/process.png"
 import fundsOverview from "../data/fundsData.json"
 
