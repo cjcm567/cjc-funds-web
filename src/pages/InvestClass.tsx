@@ -69,7 +69,9 @@ function InvestClassComponent(isShowId: number) {
         return (
             <>
                 <div>
-                    <h4 className="mb-30">单位净值是什么？</h4>
+                    <h4 className="mb-30">
+                        <b>单位净值是什么？</b>
+                    </h4>
                     <img className="img-fluid w-100 mb-40" src={imageStrategy} alt="image of Strategy" />
                     <div className="bg-gray p-5 rounded mb-60">
                         <p className="text-dark mb-30">策略选择原则：</p>
@@ -85,7 +87,9 @@ function InvestClassComponent(isShowId: number) {
         return (
             <>
                 <div>
-                    <h4 className="mb-30">如何计算基金的总回报率</h4>
+                    <h4 className="mb-30">
+                        <b>如何计算基金的总回报率</b>
+                    </h4>
                     <img className="img-fluid w-100 mb-40" src={imageCalculate} alt="image of Strategy" />
                     <div className="bg-gray p-5 rounded mb-60">
                         <ul className="d-inline-block pl-0 mb-10 text-dark">

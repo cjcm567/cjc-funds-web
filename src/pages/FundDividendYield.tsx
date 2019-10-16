@@ -19,7 +19,6 @@ function FundsComponent(isShowId: number) {
                     <div className="bg-gray p-5 rounded mb-60">
                         <ul className="d-inline-block pl-0 mb-10">
                             <li className="font-secondary mb-10">
-                                <i className="text-primary mr-2 ti-arrow-circle-right"></i>
                                 凯利纽澳股息收益基金是由大约25-35只新西兰和澳大利亚上市公司高分红股票组成的精选组合。
                                 选择这些股票是因为它们具有诱人的高股息收益率和未来增长前景。该基金选择保持高水准股息收益率和股票自身的资本价值的优质纽澳上市股票。该基金的目标是取得长期平均年化大于3％的绝对收益。
                             </li>
@@ -29,12 +28,11 @@ function FundsComponent(isShowId: number) {
                     <div className="bg-gray p-5 rounded mb-60">
                         <ul className="d-inline-block pl-0 mb-10">
                             <li className="font-secondary mb-10">
-                                <i className="text-primary mr-2 ti-arrow-circle-right"></i>
+                                1.
                                 基金投资经过精心研究NZX和ASX的股票投资组合，该投资组合与长期投资者的投资的目标一致：高股息收益率以及保持稳定的高股息收益率和自身资本价值。
                             </li>
                             <li className="font-secondary mb-10">
-                                <i className="text-primary mr-2 ti-arrow-circle-right"></i>
-                                该绝对回报基金通过产生股息形式的回报以及保持每年的基金资本价值来实现这一目标。
+                                2. 该绝对回报基金通过产生股息形式的回报以及保持每年的基金资本价值来实现这一目标。
                                 策略是投资于股息收益率高且有增长机会维持价值的NZX和ASX上市证券。
                             </li>
                         </ul>
@@ -129,45 +127,45 @@ function FundsComponent(isShowId: number) {
             </>
         )
     }
-    if (isShowId === 4) {
-        return (
-            <>
-                <div>
-                    <h4 className="mb-30">投资优势</h4>
+    // if (isShowId === 4) {
+    //     return (
+    //         <>
+    //             <div>
+    //                 <h4 className="mb-30">投资优势</h4>
 
-                    <div className="bg-gray p-5 rounded mb-60">
-                        <ul className="d-inline-block pl-0 mb-10">
-                            <li className="font-secondary mb-10">
-                                <i className="text-primary mr-2 ti-arrow-circle-right"></i>
-                                <p className="h5">专业管理</p>
-                                我们为投资者提供专业经理人的专业知识和资源。个人可能没有时间，技能或资源来管理他或她的投资。通过为您执行投资流程，我们可以节省您的时间和资源。
-                            </li>
-                            <li className="font-secondary mb-10">
-                                <i className="text-primary mr-2 ti-arrow-circle-right"></i>
-                                <p className="h5">多样化</p>
-                                资金是集合投资。这使投资者可以投资更广泛的资产，而他或她个人可能无法投资。投资于各种资产的能力对于任何多元化战略都很重要。
-                            </li>
-                            <li className="font-secondary mb-10">
-                                <i className="text-primary mr-2 ti-arrow-circle-right"></i>
-                                <p className="h5">即时更新</p>
-                                基金的业绩会在我们的网站上定期更新。我们还为您提供季度更新，年度报告和年度税收证明。这些将使您与投资保持最新，并提供有关投资的相关税收信息。
-                            </li>
-                            <li className="font-secondary mb-10">
-                                <i className="text-primary mr-2 ti-arrow-circle-right"></i>
-                                <p className="h5">获得投资</p>
-                                我们的资金可让您投资可能无法自给自足的资产。我们能够进入一个市场，在这个市场中个人可能很难进行投资。
-                            </li>
-                            <li className="font-secondary mb-10">
-                                <i className="text-primary mr-2 ti-arrow-circle-right"></i>
-                                <p className="h5">管理优势</p>
-                                基金的优势之一是我们代表您进行投资管理。我们提供的服务包括有关买卖，付款给您，利息，簿记和其他报告的文档。
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </>
-        )
-    }
+    //                 <div className="bg-gray p-5 rounded mb-60">
+    //                     <ul className="d-inline-block pl-0 mb-10">
+    //                         <li className="font-secondary mb-10">
+    //                             <i className="text-primary mr-2 ti-arrow-circle-right"></i>
+    //                             <p className="h5">专业管理</p>
+    //                             我们为投资者提供专业经理人的专业知识和资源。个人可能没有时间，技能或资源来管理他或她的投资。通过为您执行投资流程，我们可以节省您的时间和资源。
+    //                         </li>
+    //                         <li className="font-secondary mb-10">
+    //                             <i className="text-primary mr-2 ti-arrow-circle-right"></i>
+    //                             <p className="h5">多样化</p>
+    //                             资金是集合投资。这使投资者可以投资更广泛的资产，而他或她个人可能无法投资。投资于各种资产的能力对于任何多元化战略都很重要。
+    //                         </li>
+    //                         <li className="font-secondary mb-10">
+    //                             <i className="text-primary mr-2 ti-arrow-circle-right"></i>
+    //                             <p className="h5">即时更新</p>
+    //                             基金的业绩会在我们的网站上定期更新。我们还为您提供季度更新，年度报告和年度税收证明。这些将使您与投资保持最新，并提供有关投资的相关税收信息。
+    //                         </li>
+    //                         <li className="font-secondary mb-10">
+    //                             <i className="text-primary mr-2 ti-arrow-circle-right"></i>
+    //                             <p className="h5">获得投资</p>
+    //                             我们的资金可让您投资可能无法自给自足的资产。我们能够进入一个市场，在这个市场中个人可能很难进行投资。
+    //                         </li>
+    //                         <li className="font-secondary mb-10">
+    //                             <i className="text-primary mr-2 ti-arrow-circle-right"></i>
+    //                             <p className="h5">管理优势</p>
+    //                             基金的优势之一是我们代表您进行投资管理。我们提供的服务包括有关买卖，付款给您，利息，簿记和其他报告的文档。
+    //                         </li>
+    //                     </ul>
+    //                 </div>
+    //             </div>
+    //         </>
+    //     )
+    // }
 }
 
 export default function FundDividedYield() {
@@ -176,7 +174,6 @@ export default function FundDividedYield() {
         {id: 1, content: "风险指标与费用", style: "border-bottom"},
         {id: 2, content: "目标投资组合", style: "border-bottom"},
         {id: 3, content: "分红", style: "border-bottom"},
-        {id: 4, content: "投资优势", style: "border-bottom"},
     ]
     const [defaultActive, setDefaultActive] = useState(0)
     const [activePart, setActivePart] = useState(fundsDict)
@@ -213,11 +210,9 @@ export default function FundDividedYield() {
                                             <div>
                                                 <ul className="d-inline-block pl-0">
                                                     <li className="font-secondary mb-10">
-                                                        <i className="text-primary mr-2 ti-arrow-circle-right"></i>
                                                         基金投资经过精心研究NZX和ASX的股票投资组合，该投资组合与长期投资者的投资的目标一致：高股息收益率以及保持稳定的高股息收益率和自身资本价值。
                                                     </li>
                                                     <li className="font-secondary mb-10">
-                                                        <i className="text-primary mr-2 ti-arrow-circle-right"></i>
                                                         该绝对回报基金通过产生股息形式的回报以及保持每年的基金资本价值来实现这一目标。
                                                         策略是投资于股息收益率高且有增长机会维持价值的NZX和ASX上市证券。
                                                     </li>
