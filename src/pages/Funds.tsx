@@ -38,7 +38,7 @@ const fundsCard = fundsOverview.map(fundsItem => (
         </div>
     </div>
 ))
-function FundsProssComponent(isShowId: number) {}
+
 export default function Funds() {
     return (
         <>
