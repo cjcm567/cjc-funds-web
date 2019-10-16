@@ -4,15 +4,10 @@ import React, {lazy, Suspense} from "react"
 import {Link} from "react-router-dom"
 import Layout from "../components/layout"
 import Carousel from "../components/Carousel"
-import serviceImage04 from "../images/service/service-4.jpg"
-import AboutUsImage from "../images/background/about-bg.jpg"
 import imagePreloader from "../images/preloader.gif"
 import newsData from "../data/newsData.json"
 import homeData from "../data/fundsData.json"
-import aboutListData from "../data/Home/HomeAboutListData.json"
-const sectionStyle = {
-    backgroundImage: `url(${AboutUsImage})`,
-}
+
 const Preloader = () => {
     return <img src={imagePreloader} alt="loading..." />
 }
@@ -55,11 +50,6 @@ export default function Home() {
             </div>
         </li>
     ))
-    // const homeObject = []
-    // for (let index = 0; index <= 2; index++) {
-    //     homeObject.push(homeData[index])
-    // }
-
     const HomeRender = homeData.map(homeObjectItem => (
         <div className="col-lg-4 col-sm-6 mb-4 mb-lg-0" key={homeObjectItem.props}>
             <div className="card text-center mb-4">
@@ -117,27 +107,6 @@ export default function Home() {
         </div>
     ))
 
-    const aboutListObj = []
-    for (let index = 0; index < aboutListData.length; index++) {
-        aboutListObj.push(aboutListData[index])
-    }
-
-    const AboutListRender = aboutListObj.map(aboutListObjItem => (
-        <ul className="d-inline-block pl-0" key={aboutListObjItem.p1}>
-            <li className="font-secondary mb-10 text-white float-sm-left mr-sm-5">
-                <i className="text-primary mr-2 ti-arrow-circle-right"></i>
-                {aboutListObjItem.p1}
-            </li>
-            <li className="font-secondary mb-10 text-white">
-                <i className="text-primary mr-2 ti-arrow-circle-right"></i>
-                {aboutListObjItem.p2}
-            </li>
-            <li className="font-secondary mb-10 text-white">
-                <i className="text-primary mr-2 ti-arrow-circle-right"></i>
-                {aboutListObjItem.p3}
-            </li>
-        </ul>
-    ))
     return (
         <>
             <Layout>
@@ -158,47 +127,6 @@ export default function Home() {
                             </div>
                         </section>
                     </div>
-                    {/* <section className="about section-sm overlay" style={sectionStyle}>
-                        <div className="container">
-                            <div className="row">
-                                <div className="col-lg-6 ml-auto">
-                                    <div className="rounded p-sm-5 px-3 py-5 bg-secondary">
-                                        <h3 className="section-title section-title-border-half text-white">关于我们</h3>
-                                        <p className="text-white mb-40">
-                                            Carrick Just Asset Management Limited
-                                            是一家被基金经理授权提供管理投资计划的基金公司。
-                                        </p>
-                                        {AboutListRender}
-                                        <a href="/about-us" className="btn btn-primary mt-4">
-                                            更多
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section> */}
-                    {/* skill  */}
-                    {/* <section className="section">
-                        <div className="container">
-                            <div className="row">
-                                <div className="col-lg-5">
-                                    <div className="serviceJ">
-                                        <h5 className="section-title-sm">Best Service</h5>
-                                        <h2 className="section-title section-title-border-half">核心优势</h2>
-                                    </div>
-                                    <div className="mb-40">
-                                        <p className="text-dark mb-30">对大类资产的配置能力</p>
-                                        <p className="text-dark mb-30">对量化投资顾问的筛选及合作能力</p>
-                                        <p className="text-dark mb-30">对不同类型量化策略的筛选及配置能力</p>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6 offset-lg-1">
-                                    <img src={serviceImage04} width="100%" className="img-fluid mb-60 rounded-top" />
-                                </div>
-                            </div>
-                        </div>
-                    </section> */}
-                    {/* blog  */}
                     <Partners />
                     <section className="section bg-gray border-bottom">
                         <div className="container">

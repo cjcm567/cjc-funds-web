@@ -88,7 +88,7 @@ export default function AboutUs() {
                                 </div>
                             </div>
 
-                            <div className="col-lg-4 col-sm-6 mb-5">
+                            {/* <div className="col-lg-4 col-sm-6 mb-5">
                                 <div className="card text-center">
                                     <h4 className="card-title pt-3">投资理念</h4>
                                     <div className="card-img-wrapper">
@@ -116,7 +116,7 @@ export default function AboutUs() {
                                         </Link>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </section>

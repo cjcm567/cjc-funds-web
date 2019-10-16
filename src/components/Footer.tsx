@@ -66,7 +66,7 @@ function Footer() {
                                         <Link to="/funds/carrick-dividend-yield-fund">NZ&AU Dividend Yield Fund</Link>
                                     </li>
                                     <li>
-                                        <Link to="/funds/carrick-nz-au-property-fund">NZ&AU Property Fund</Link>
+                                        <Link to="/funds/carrick-nz-au-property-fund">Direct Property Fund</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -80,9 +80,9 @@ function Footer() {
                                     <li>
                                         <Link to="/news">业内新闻</Link>
                                     </li>
-                                    {/* <li>
-                                        <Link to="/industry">行业发展</Link>
-                                    </li> */}
+                                    <li>
+                                        <Link to="/partnership">合作机构</Link>
+                                    </li>
                                     <li>
                                         <Link to="/contact-us">联系我们</Link>
                                     </li>

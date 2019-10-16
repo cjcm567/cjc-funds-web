@@ -112,11 +112,11 @@ function HeaderComponent() {
                                             <Link to="/about-us/team" className="dropdown-item">
                                                 精英团队
                                             </Link>
-                                            <Link
+                                            {/* <Link
                                                 to="/about-us/carrick-Investment-philosophy"
                                                 className="dropdown-item">
                                                 投资理念
-                                            </Link>
+                                            </Link> */}
                                         </div>
                                     </li>
                                     <li className="nav-item">
@@ -136,7 +136,7 @@ function HeaderComponent() {
                                                 Carrick NZ&AU Dividend Yield Fund
                                             </Link>
                                             <Link to="/funds/carrick-nz-au-property-fund" className="dropdown-item">
-                                                Carrick NZ&AU Property Fund
+                                                Carrick Direct Property Fund
                                             </Link>
                                         </div>
                                     </li>
@@ -145,11 +145,7 @@ function HeaderComponent() {
                                             业内新闻
                                         </Link>
                                     </li>
-                                    {/* <li className="nav-item">
-                                        <Link to="/industry" className="nav-link">
-                                            行业发展
-                                        </Link>
-                                    </li> */}
+
                                     <li className="nav-item">
                                         <Link to="/InvestClass" className="nav-link">
                                             投资学堂

@@ -30,7 +30,9 @@ const fundsCard = fundsOverview.map(fundsItem => (
                     alt={fundsItem.props}
                 />
                 {/* <i className="square-icon translateY-33 rounded rounded ti-bar-chart"></i> */}
-                <p className="card-text mx-2 mb-0">{fundsItem.desc}</p>
+                <p className="card-text mx-2 mb-0" style={{minHeight: "16vh"}}>
+                    {fundsItem.desc}
+                </p>
                 <Link to={`/funds/${fundsItem.props}`} className="btn btn-secondary translateY-25">
                     Read More
                 </Link>
@@ -52,7 +54,7 @@ export default function Funds() {
                     <div className="container">
                         <div className="row justify-content-center">
                             <div className="col-lg-12 text-center">
-                                <h2 className="section-title section-title-border mb-xl-150-lg-100">投资过程</h2>
+                                <h2 className="section-title section-title-border">投资过程</h2>
                                 <LazyImage
                                     src={imageProcess}
                                     alt="image of Arrow Top"
