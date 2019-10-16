@@ -54,7 +54,7 @@ function Footer() {
                                 </div>
                             </div>
                             {/* footer links */}
-                            <div className="col-lg-2 col-md-4 col-6 text-md-left">
+                            <div className="col-lg-3 col-md-4 col-6 text-md-left">
                                 <Link to="/funds">
                                     <h4 className="mb-4">基金</h4>
                                 </Link>
@@ -63,7 +63,7 @@ function Footer() {
                                         <Link to="/funds/fund-of-funds">Fund of Funds</Link>
                                     </li> */}
                                     <li>
-                                        <Link to="/funds/carrick-dividend-yield-fund">Dividend Yield Fund</Link>
+                                        <Link to="/funds/carrick-dividend-yield-fund">NZ&AU Dividend Yield Fund</Link>
                                     </li>
                                     <li>
                                         <Link to="/funds/carrick-nz-au-property-fund">NZ&AU Property Fund</Link>
