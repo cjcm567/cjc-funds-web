@@ -72,8 +72,8 @@ export default function Home() {
                         alt="service-image"
                     />
                 </div>
-                <div className="card-body p-0" style={{minHeight: "16vh"}}>
-                    <div className="text-left pl-2">
+                <div className="card-body p-0">
+                    <div className="text-left pl-2" style={{minHeight: "16vh"}}>
                         <p className="card-text mx-2 mb-0">{homeObjectItem.desc}</p>
                     </div>
                     <Link to={`/funds/${homeObjectItem.props}`} className="btn btn-secondary translateY-25">
