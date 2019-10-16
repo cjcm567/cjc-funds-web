@@ -20,46 +20,22 @@ function FundsComponent(isShowId: number) {
                         <ul className="d-inline-block pl-0 mb-10">
                             <li className="font-secondary mb-10">
                                 <i className="text-primary mr-2 ti-arrow-circle-right"></i>
-                                1. 信该基金的目标是取得长期平均每年3％的正绝对收益。
-                            </li>
-                            <li className="font-secondary mb-10">
-                                <i className="text-primary mr-2 ti-arrow-circle-right"></i>
-                                2. 这是绝对回报基金。
-                            </li>
-                            <li className="font-secondary mb-10">
-                                <i className="text-primary mr-2 ti-arrow-circle-right"></i>
-                                3. 它打算通过产生股息形式的回报以及保持每年的基金资本价值来实现这一目标。
-                            </li>
-                            <li className="font-secondary mb-10">
-                                <i className="text-primary mr-2 ti-arrow-circle-right"></i>
-                                4. 策略是投资于股息收益率高且有增长机会维持价值的NZX上市证券。
+                                凯利纽澳股息收益基金是由大约25-35只新西兰和澳大利亚上市公司高分红股票组成的精选组合。
+                                选择这些股票是因为它们具有诱人的高股息收益率和未来增长前景。该基金选择保持高水准股息收益率和股票自身的资本价值的优质纽澳上市股票。该基金的目标是取得长期平均年化大于3％的绝对收益。
                             </li>
                         </ul>
                     </div>
-                    <LazyImage
-                        src={imageCrossPlatform}
-                        alt="image of Core Competence"
-                        placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
-                        actual={({imageProps}) => <img className="img-fluid w-100 mb-40" {...imageProps} />}
-                    />
                     <h4 className="mb-30">战略</h4>
                     <div className="bg-gray p-5 rounded mb-60">
                         <ul className="d-inline-block pl-0 mb-10">
                             <li className="font-secondary mb-10">
                                 <i className="text-primary mr-2 ti-arrow-circle-right"></i>
-                                1. 该策略是每年以股息的形式产生回报，并保持基金的资本价值。
+                                基金投资经过精心研究NZX和ASX的股票投资组合，该投资组合与长期投资者的投资的目标一致：高股息收益率以及保持稳定的高股息收益率和自身资本价值。
                             </li>
                             <li className="font-secondary mb-10">
                                 <i className="text-primary mr-2 ti-arrow-circle-right"></i>
-                                2. 它的目标是投资具有高股息收益率并有增长机会保持价值的NZX上市证券。
-                            </li>
-                            <li className="font-secondary mb-10">
-                                <i className="text-primary mr-2 ti-arrow-circle-right"></i>
-                                3. 基金可以投资多种证券。
-                            </li>
-                            <li className="font-secondary mb-10">
-                                <i className="text-primary mr-2 ti-arrow-circle-right"></i>
-                                4.基金也可能持有现金。
+                                该绝对回报基金通过产生股息形式的回报以及保持每年的基金资本价值来实现这一目标。
+                                策略是投资于股息收益率高且有增长机会维持价值的NZX和ASX上市证券。
                             </li>
                         </ul>
                     </div>
@@ -80,7 +56,7 @@ function FundsComponent(isShowId: number) {
                     />
                     <h4 className="mb-30">费用</h4>
                     <p className="font-secondary mb-10">
-                        1.49％ （估计的年度费用。 这些费用是根据基金资产净值（NAV）的百分比估算的，并包括GST。）
+                        2％ （估计的年度费用。 该费用是根据基金资产净值（NAV）的百分比估算得出）
                     </p>
                 </div>
             </>
@@ -91,31 +67,34 @@ function FundsComponent(isShowId: number) {
             <>
                 <div>
                     <h4 className="mb-30">目标投资组合</h4>
-                    <LazyImage
+                    {/* <LazyImage
                         src={imageCoreCompetence}
                         alt="image of combo"
                         placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
                         actual={({imageProps}) => <img className="img-fluid w-100 mb-40" {...imageProps} />}
-                    />
+                    /> */}
                     <div className="row">
                         <div className="col-lg-6 bg-gray p-5 rounded mb-60">
                             <h4 className="mb-10">投资组合</h4>
-                            <p className="mb-20">90％ 的新西兰证券</p>
-                            <p className="mb-20">10％ 现金或现金等价物</p>
+                            <p className="mb-20">90％的新西兰、澳洲证券</p>
+                            <p className="mb-20">10％现金或现金等价物</p>
                             <h4 className="mb-10">投资范围</h4>
-                            <p className="mb-20">0–100％ 新西兰股票</p>
-                            <p className="mb-20">0-25％ 现金或现金等价物</p>
-                            <p className="mb-20">每个证券不超过 20％</p>
+                            <p className="mb-20">0 – 100％新西兰和澳洲股票</p>
+                            <p className="mb-20">0-25％现金或现金等价物</p>
+                            <p className="mb-20">每个证券不超过20％</p>
                         </div>
                         <div className="col-lg-6 bg-gray p-5 rounded mb-60">
                             <h4 className="mb-10">最低建议投资期限</h4>
-                            <p className="mb-20">3 年</p>
-                            <h4 className="mb-10">基准</h4>
-                            <p className="mb-20">无</p>
+                            <p className="mb-20">
+                                由于该基金适合希望对新西兰和澳大利亚股票市场进行积极管理，集中投资的合格投资者。
+                                鉴于这项投资的性质，我们建议最短投资期限至少为三年。
+                            </p>
+                            <h4 className="mb-10">最低投资额</h4>
+                            <p className="mb-20">75万纽币</p>
                             <h4 className="mb-10">货币对冲</h4>
                             <p className="mb-20">0%</p>
                             <h4 className="mb-10">授权投资</h4>
-                            <p className="mb-20">在NZX上市的证券和衍生品</p>
+                            <p className="mb-20">在NZX和ASX上市的证券和衍生品</p>
                             <p className="mb-20">现金存款和短期债券</p>
                         </div>
                     </div>
@@ -128,9 +107,15 @@ function FundsComponent(isShowId: number) {
             <>
                 <div>
                     <h4 className="mb-30">分红</h4>
-                    <LazyImage
+                    {/* <LazyImage
                         src={imageCoreCompetence}
                         alt="image of combo"
+                        placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
+                        actual={({imageProps}) => <img className="img-fluid w-100 mb-40" {...imageProps} />}
+                    /> */}
+                    <LazyImage
+                        src={imageCalculate}
+                        alt="image of Strategy"
                         placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
                         actual={({imageProps}) => <img className="img-fluid w-100 mb-40" {...imageProps} />}
                     />
@@ -149,12 +134,7 @@ function FundsComponent(isShowId: number) {
             <>
                 <div>
                     <h4 className="mb-30">投资优势</h4>
-                    <LazyImage
-                        src={imageCalculate}
-                        alt="image of Strategy"
-                        placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
-                        actual={({imageProps}) => <img className="img-fluid w-100 mb-40" {...imageProps} />}
-                    />
+
                     <div className="bg-gray p-5 rounded mb-60">
                         <ul className="d-inline-block pl-0 mb-10">
                             <li className="font-secondary mb-10">
@@ -176,11 +156,6 @@ function FundsComponent(isShowId: number) {
                                 <i className="text-primary mr-2 ti-arrow-circle-right"></i>
                                 <p className="h5">获得投资</p>
                                 我们的资金可让您投资可能无法自给自足的资产。我们能够进入一个市场，在这个市场中个人可能很难进行投资。
-                            </li>
-                            <li className="font-secondary mb-10">
-                                <i className="text-primary mr-2 ti-arrow-circle-right"></i>
-                                <p className="h5">税收优势</p>
-                                我们的基金已注册为证券投资实体（PIE）。与PIE相关联的优点。请与您的税务顾问联系以获取信息。
                             </li>
                             <li className="font-secondary mb-10">
                                 <i className="text-primary mr-2 ti-arrow-circle-right"></i>
@@ -228,12 +203,7 @@ export default function FundDividedYield() {
                 <section className="section">
                     <div className="container">
                         <div className="row">
-                            <h3 className="mb-10">Carrick Dividend Yield Fund</h3>
-                            <p className="mb-40">
-                                该基金的目标是取得长期平均每年3％的正绝对收益。 这是绝对回报基金。
-                                它打算通过产生股息形式的回报以及保持每年的基金资本价值来实现这一目标。
-                                策略是投资于股息收益率高且有增长机会维持价值的NZX上市证券
-                            </p>
+                            <h3 className="mb-10">Carrick NZ&AU Dividend Yield Fund</h3>
 
                             <div className="mb-md-50">
                                 <div className="row">
@@ -244,15 +214,12 @@ export default function FundDividedYield() {
                                                 <ul className="d-inline-block pl-0">
                                                     <li className="font-secondary mb-10">
                                                         <i className="text-primary mr-2 ti-arrow-circle-right"></i>
-                                                        1. 该策略是每年以股息的形式产生回报，并保持基金的资本价值
+                                                        基金投资经过精心研究NZX和ASX的股票投资组合，该投资组合与长期投资者的投资的目标一致：高股息收益率以及保持稳定的高股息收益率和自身资本价值。
                                                     </li>
                                                     <li className="font-secondary mb-10">
-                                                        <i className="text-primary mr-2 ti-arrow-circle-right"></i>2.
-                                                        它的目标是投资具有高股息收益率并有增长机会保持价值的NZX上市证券
-                                                    </li>
-                                                    <li className="font-secondary mb-10">
-                                                        <i className="text-primary mr-2 ti-arrow-circle-right"></i>3.
-                                                        基金可以投资多种证券。 基金也可能持有现金
+                                                        <i className="text-primary mr-2 ti-arrow-circle-right"></i>
+                                                        该绝对回报基金通过产生股息形式的回报以及保持每年的基金资本价值来实现这一目标。
+                                                        策略是投资于股息收益率高且有增长机会维持价值的NZX和ASX上市证券。
                                                     </li>
                                                     <li className="font-secondary mb-10"></li>
                                                 </ul>
