@@ -85,22 +85,20 @@ function FundsComponent(isShowId: number) {
             <>
                 <div>
                     <h4 className="mb-30">目标投资组合</h4>
-                    <LazyImage
-                        src={imageCoreCompetence}
-                        alt="image of combo"
-                        placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
-                        actual={({imageProps}) => <img className="img-fluid w-100 mb-40" {...imageProps} />}
-                    />
                     <div className="row">
                         <div className="col-lg-6 bg-gray p-5 rounded mb-60">
                             <h4 className="mb-10">投资组合</h4>
                             <p className="mb-20">高租金回报率的商业地产(不受海外买家的竞价限制约束)</p>
                             <p className="mb-20">优质租户和长期稳定的租约</p>
+                            <p className="mb-20">是一款收益稳中有升的优质基金产品</p>
                             <h4 className="mb-10">投资范围</h4>
-                            <p className="mb-20">以优质地段高租金回报的商业地产为主</p>
-                            <p className="mb-20">周边配套设施完善、租约期长</p>
-                            <p className="mb-20">租金收入稳定</p>
-                            <p className="mb-20">未来可转售并享受更高增值收益</p>
+                            <h6 className="mb-10">
+                                在物业管理领域，凯利资产将自身经验、个性化服务和创新发展理念完美结合，旨在最大程度地提高客户资产的价值和回报。我们的物业管理服务包括：
+                            </h6>
+                            <p className="mb-20">全面的资产、财务、设施和项目管理</p>
+                            <p className="mb-20">专业的零售物业咨询和租赁</p>
+                            <p className="mb-20">分红收益结算和转售标的资产</p>
+                            <p className="mb-20">零售管理和开发服务</p>
                         </div>
                         <div className="col-lg-6 bg-gray p-5 rounded mb-60">
                             <h4 className="mb-10">最低建议投资期限</h4>
@@ -122,12 +120,6 @@ function FundsComponent(isShowId: number) {
             <>
                 <div>
                     <h4 className="mb-30">分红</h4>
-                    <LazyImage
-                        src={imageCoreCompetence}
-                        alt="image of combo"
-                        placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
-                        actual={({imageProps}) => <img className="img-fluid w-100 mb-40" {...imageProps} />}
-                    />
                     <p className="font-secondary mb-10">
                         Carrick NZ Property Fund每年支付一次红利。您可以选择将分红重新投资到基金中或记入您的银行帐户。
                         分红是从基金的净收入中得出的，可能会有所波动。 支付给您的分红金额将取决于您持有的单位数量。
@@ -141,63 +133,7 @@ function FundsComponent(isShowId: number) {
         return (
             <>
                 <div>
-                    <h4 className="mb-30">投资优势</h4>
-                    <LazyImage
-                        src={imageCalculate}
-                        alt="image of Strategy"
-                        placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
-                        actual={({imageProps}) => <img className="img-fluid w-100 mb-40" {...imageProps} />}
-                    />
-                    <div className="bg-gray p-5 rounded mb-60">
-                        <ul className="d-inline-block pl-0 mb-10">
-                            <li className="font-secondary mb-10">
-                                <i className="text-primary mr-2 ti-arrow-circle-right"></i>
-                                <p className="h4">专业管理</p>
-                                我们为投资者提供专业经理人的专业知识和资源。个人可能没有时间，技能或资源来管理他或她的投资。通过为您执行投资流程，我们可以节省您的时间和资源。
-                            </li>
-                            <li className="font-secondary mb-10">
-                                <i className="text-primary mr-2 ti-arrow-circle-right"></i>
-                                <p className="h4">多样化</p>
-                                资金是集合投资。这使投资者可以投资更广泛的资产，而他或她个人可能无法投资。投资于各种资产的能力对于任何多元化战略都很重要。
-                            </li>
-                            <li className="font-secondary mb-10">
-                                <i className="text-primary mr-2 ti-arrow-circle-right"></i>
-                                <p className="h4">即时更新</p>
-                                基金的业绩会在我们的网站上定期更新。我们还为您提供季度更新，年度报告和年度税收证明。这些将使您与投资保持最新，并提供有关投资的相关税收信息。
-                            </li>
-                            <li className="font-secondary mb-10">
-                                <i className="text-primary mr-2 ti-arrow-circle-right"></i>
-                                <p className="h4">获得投资</p>
-                                我们的资金可让您投资可能无法自给自足的资产。我们能够进入一个市场，在这个市场中个人可能很难进行投资。
-                            </li>
-                            <li className="font-secondary mb-10">
-                                <i className="text-primary mr-2 ti-arrow-circle-right"></i>
-                                <p className="h4">税收优势</p>
-                                我们的基金已注册为证券投资实体（PIE）。与PIE相关联的优点。请与您的税务顾问联系以获取信息。
-                            </li>
-                            <li className="font-secondary mb-10">
-                                <i className="text-primary mr-2 ti-arrow-circle-right"></i>
-                                <p className="h4">管理优势</p>
-                                基金的优势之一是我们代表您进行投资管理。我们提供的服务包括有关买卖，付款给您，利息，簿记和其他报告的文档。
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </>
-        )
-    }
-    if (isShowId === 5) {
-        return (
-            <>
-                <div>
                     <h4 className="mb-30">投资影响因素</h4>
-                    <LazyImage
-                        src={imageCoreCompetence}
-                        alt="image of combo"
-                        placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
-                        actual={({imageProps}) => <img className="img-fluid w-100 mb-40" {...imageProps} />}
-                    />
-
                     <div className="row">
                         <div className="col-lg-6 col-md-12 bg-gray p-5 rounded mb-60">
                             <h4 className="mb-20">环境因素</h4>
@@ -238,17 +174,11 @@ function FundsComponent(isShowId: number) {
             </>
         )
     }
-    if (isShowId === 6) {
+    if (isShowId === 5) {
         return (
             <>
                 <div>
                     <h4 className="mb-30">其他相关信息</h4>
-                    <LazyImage
-                        src={imageCoreCompetence}
-                        alt="image of combo"
-                        placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
-                        actual={({imageProps}) => <img className="img-fluid w-100 mb-40" {...imageProps} />}
-                    />
                     <p className="font-secondary mb-10">
                         凯利资产管理是Carrick NZ Property
                         Fund直接基金的单位发行人。如果您对本基金投资有兴趣，请与我们联系以获取基金产品说明的副本。
@@ -268,9 +198,8 @@ export default function FundProperty() {
         {id: 1, content: "风险指标与费用", style: "border-bottom"},
         {id: 2, content: "目标投资组合", style: "border-bottom"},
         {id: 3, content: "分红", style: "border-bottom"},
-        {id: 4, content: "投资优势", style: "border-bottom"},
-        {id: 5, content: "投资影响因素", style: "border-bottom"},
-        {id: 6, content: "其他相关信息", style: "border-bottom"},
+        {id: 4, content: "投资影响因素", style: "border-bottom"},
+        {id: 5, content: "其他相关信息", style: "border-bottom"},
     ]
     const [defaultActive, setDefaultActive] = useState(0)
     const [activePart, setActivePart] = useState(fundsDict)
