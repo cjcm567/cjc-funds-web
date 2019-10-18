@@ -1,6 +1,7 @@
 /** @format */
 
 import React, {Suspense} from "react"
+import {Helmet} from "react-helmet"
 import Layout from "../components/layout"
 import imagePhone from "../images/aboutus/phone.svg"
 import imageAddress from "../images/aboutus/address.svg"
@@ -9,6 +10,10 @@ import imageEmail from "../images/aboutus/email.svg"
 function ContactUs() {
     return (
         <>
+            <Helmet>
+                <title>Contact Us | Carrick Asset</title>
+                <meta name="description" content="Carrick Asset 联系我们页面" />
+            </Helmet>
             <Layout>
                 <section className="section">
                     <div className="container">

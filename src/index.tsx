@@ -176,9 +176,9 @@ ReactDOM.render(
         <ScrollToTop>
             <Switch>
                 <Route path="/" exact component={Home} />
-                <Route path="/contact-us" component={ContactUs} />
-                <Route path="/industry" component={Industry} />
-                <Route path="/partnership" component={Partnership} />
+                <Route path="/contact-us" exact component={ContactUs} />
+                <Route path="/industry" exact component={Industry} />
+                <Route path="/partnership" exact component={Partnership} />
                 <Route path="/funds" exact component={Funds} />
                 <Route path="/funds/fund-of-funds" exact component={FundOfFunds} />
                 <Route path="/funds/carrick-dividend-yield-fund" exact component={FundDividedYield} />
@@ -190,9 +190,9 @@ ReactDOM.render(
                 <Route path="/about-us/carrick-responsibility" exact component={CarrickResponsibility} />
                 <Route path="/about-us/carrick-Investment-philosophy" exact component={CarrickInvestmentPhilosophy} />
                 <Route path="/news" exact component={News} />
-                <Route path="/InvestClass" exact component={InvestClass} />
+                <Route path="/invest-class" exact component={InvestClass} />
                 <Route path="/news/:props" exact component={NewsSingle} />
-                <Route path="/login-or-join" component={LoginOrJoin} />
+                <Route path="/login-or-join" exact component={LoginOrJoin} />
                 <Route path="/404" component={NotFound} />
                 <Route path="*" component={NotFound} />
                 <Route component={NotFound} />

@@ -2,6 +2,7 @@
 
 import React, {useState, Suspense, lazy} from "react"
 import {Link} from "react-router-dom"
+import {Helmet} from "react-helmet"
 import {LazyImage} from "react-lazy-images"
 import Layout from "../components/layout"
 import Flow from "../components/Flow"
@@ -27,6 +28,10 @@ const Partners = () => {
 export default function AboutUs() {
     return (
         <>
+            <Helmet>
+                <title>公司简介 | Carrick Asset</title>
+                <meta name="description" content="我们旨在帮助您实现您的投资目标与财富梦想" />
+            </Helmet>
             <Layout>
                 <section className="section">
                     <div className="container">

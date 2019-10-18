@@ -2,6 +2,7 @@
 
 import React from "react"
 import {Link} from "react-router-dom"
+import {Helmet} from "react-helmet"
 import Layout from "../components/layout"
 import {LazyImage} from "react-lazy-images"
 import imagePreloader from "../images/preloader.gif"
@@ -11,6 +12,13 @@ import imageph2 from "../images/aboutus/ph2.jpg"
 export default function CarrickInvestmentPhilosophy() {
     return (
         <>
+            <Helmet>
+                <title>投资理念 | Carrick Asset</title>
+                <meta
+                    name="description"
+                    content="Carrick Just Asset Management Limited 依赖于我们自己的价值评估，而不是市场评估。"
+                />
+            </Helmet>
             <Layout>
                 <section className="section">
                     <div className="container">
@@ -22,13 +30,12 @@ export default function CarrickInvestmentPhilosophy() {
                                 <p>
                                     通常来说市场和价格会受许多因素影响。Carrick Just Asset Management
                                     Limited专注于可以预测和理解的因素，例如特定公司的质量和竞争优势，而不是诸如汇率和中央银行政策之类的不可预测的因素。
-                                    Just Asset Management Limited是投
                                 </p>
                                 <p>
                                     Carrick Just Asset Management
                                     Limited是投资者而不是投机者。如果我们不能对投资的价值做出明智的判断，我们将等到可以判断投资价值之后再进行投资。我们了解价格与价值之间的差异，并且我们知道市场有时会出现估计错误。
                                 </p>
-                                <p>Carrick Just Asset Management Limited依赖于我们自己的价值评估，而不是市场评估。</p>
+                                <p>Carrick Just Asset Management Limited 依赖于我们自己的价值评估，而不是市场评估。</p>
                             </div>
                             <div className="col-lg-5">
                                 <LazyImage

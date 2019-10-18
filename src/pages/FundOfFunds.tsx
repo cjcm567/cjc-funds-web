@@ -3,6 +3,7 @@
 import React, {useState} from "react"
 import Layout from "../components/layout"
 import {LazyImage} from "react-lazy-images"
+import {Helmet} from "react-helmet"
 import imagePreloader from "../images/preloader.gif"
 import imageCoreCompetence from "../images/funds/core-competence.png"
 import imageStrategy from "../images/funds/strategy.png"
@@ -271,6 +272,13 @@ export default function FundOfFunds() {
     ))
     return (
         <>
+            <Helmet>
+                <title>FOF（Fund of Funds，基金中的基金） | Carrick Asset</title>
+                <meta
+                    name="description"
+                    content="FOF（Fund of Funds，基金中的基金）指投资于基金组合的基金。在欧美市场，FOF 已发展成为数量规模占比均较大的一类成熟的理财产品，相比而言，在我国 FOF 仍具有较大的发展空间（家族理财机构及对冲基金）。"
+                />
+            </Helmet>
             <Layout>
                 <section className="section">
                     <div className="container">

@@ -1,6 +1,7 @@
 /** @format */
 
 import React, {useState} from "react"
+import {Helmet} from "react-helmet"
 import Layout from "../components/layout"
 import logo from "../images/logo.svg"
 import imageSignUpBg from "../images/background/signup-bg.jpg"
@@ -37,6 +38,10 @@ export default function LoginOrJoin() {
     }
     return (
         <>
+            <Helmet>
+                <title>Login or Join | Carrick Asset</title>
+                <meta name="description" content="Login or Signup page of Carrick Asset" />
+            </Helmet>
             <Layout>
                 <section className="d-flex align-items-center justify-content-center py-5 my-5">
                     <div className="container">
