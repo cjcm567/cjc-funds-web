@@ -147,13 +147,15 @@ function HeaderComponent() {
                                     </li>
 
                                     <li className="nav-item">
-                                        <Link to="/InvestClass" className="nav-link">
+                                        <Link to="/invest-class" className="nav-link">
                                             投资学堂
                                         </Link>
                                     </li>
 
                                     <li className="nav-item text-center">
-                                        <Link to="/login-or-join" className="btn btn-primary btn-sm text-white">
+                                        <Link
+                                            to="/login-or-join"
+                                            className="btn btn-primary text-uppercase btn-sm text-white">
                                             Invest now
                                         </Link>
                                     </li>

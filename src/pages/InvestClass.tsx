@@ -1,5 +1,6 @@
 /** @format */
 import React, {useState} from "react"
+import {Helmet} from "react-helmet"
 import Layout from "../components/layout"
 import imageCoreCompetence from "../images/investclass/fund01.jpg"
 import imageStrategy from "../images/investclass/fund02.jpg"
@@ -157,6 +158,10 @@ export default function InvestClass() {
     ))
     return (
         <>
+            <Helmet>
+                <title>投资课堂 | Carrick Asset</title>
+                <meta name="description" content="Carrick Asset 投资课堂" />
+            </Helmet>
             <Layout>
                 <section className="section">
                     <div className="container">

@@ -1,31 +1,27 @@
 /** @format */
 
-import React, {lazy, Suspense, useState} from "react"
-import {Link, RouteComponentProps, Redirect} from "react-router-dom"
-import {LazyImage} from "react-lazy-images"
-import Layout from "../components/layout"
-import imageProfile from "../images/aboutus/profile.jpg"
-import imagePreloader from "../images/preloader.gif"
+import React from "react"
+import {Helmet} from "react-helmet"
 import teamObject from "../data/teamData.json"
+import {RouteComponentProps, Redirect} from "react-router-dom"
+import Layout from "../components/layout"
 
 type TParams = {props: string}
 
-export default function Manager(props: RouteComponentProps<TParams>) {
-    const [nonValidProps, setNonValidProps] = useState(true)
+function Page(props: string) {
+    let validProps = true
     const managerProfile = {props: "", name: "", title: "", desc: "", content: ""}
-    for (let index = 0; index < teamObject.length; index++) {
-        if (props.match.params.props === teamObject[index]["props"]) {
-            managerProfile["props"] = teamObject[index]["props"]
-            managerProfile["name"] = teamObject[index]["name"]
-            managerProfile["title"] = teamObject[index]["title"]
-            managerProfile["desc"] = teamObject[index]["desc"]
-            managerProfile["content"] = teamObject[index]["content"]
+    teamObject.forEach(teamObjectItem => {
+        if (props === teamObjectItem["props"]) {
+            validProps = false
+            console.log(validProps)
+            managerProfile["props"] = teamObjectItem["props"]
+            managerProfile["name"] = teamObjectItem["name"]
+            managerProfile["title"] = teamObjectItem["title"]
+            managerProfile["desc"] = teamObjectItem["desc"]
+            managerProfile["content"] = teamObjectItem["content"]
         }
-    }
-    // if (managerProfile.props.length !== 0) {
-    //     setNonValidProps(false)
-    // }
-    // setNonValidProps(false)
+    })
     const managerTitles = managerProfile.content.split("\n").map((i, key) => {
         return (
             <div className="py-3 border-bottom" key={key}>
@@ -42,30 +38,26 @@ export default function Manager(props: RouteComponentProps<TParams>) {
         )
     })
 
-    return (
-        <>
-            {/* {nonValidProps ? <Redirect to="/404" /> : null} */}
-            <Layout>
+    if (!validProps) {
+        return (
+            <>
+                <Helmet>
+                    <title>{managerProfile.name} | 精英团队 | Carrick Asset</title>
+                    <meta name="description" content="Carrick Asset 精英团队的个人档案" />
+                </Helmet>
                 <section className="section">
                     <div className="container">
                         <div className="row">
-                            {/* sidebar */}
                             <aside className="col-lg-4">
-                                {/* team member info */}
                                 <div className="bg-gray rounded mb-50">
-                                    <LazyImage
+                                    <img
+                                        className="img-fluid w-100 rounded-top"
                                         src={require(`../images/team/${managerProfile.props}.jpg`)}
                                         alt={managerProfile.name}
-                                        placeholder={({imageProps, ref}) => (
-                                            <img ref={ref} src={imagePreloader} alt={imageProps.alt} />
-                                        )}
-                                        actual={({imageProps}) => (
-                                            <img className="img-fluid w-100 rounded-top" {...imageProps} />
-                                        )}
                                     />
                                     <div className="py-2 px-4 pb-3">{managerTitles}</div>
                                 </div>
-                                {/* Brochure */}
+
                                 <div className="rounded border py-3 px-4 mb-50">
                                     <i
                                         className="d-inline-block mr-1 text-dark ti-files"
@@ -74,7 +66,7 @@ export default function Manager(props: RouteComponentProps<TParams>) {
                                     <a className="font-secondary text-color d-block ml-4">Download pdf</a>
                                 </div>
                             </aside>
-                            {/* sidebar team member details */}
+
                             <div className="col-lg-8">
                                 <div>
                                     <h2>{managerProfile.name}</h2>
@@ -87,7 +79,18 @@ export default function Manager(props: RouteComponentProps<TParams>) {
                         </div>
                     </div>
                 </section>
-            </Layout>
+            </>
+        )
+    } else {
+        return <Redirect to="/404" />
+    }
+}
+
+export default function Manager(props: RouteComponentProps<TParams>) {
+    const pathProps = props.match.params.props
+    return (
+        <>
+            <Layout>{Page(pathProps)}</Layout>
         </>
     )
 }

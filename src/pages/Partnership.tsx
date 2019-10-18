@@ -3,6 +3,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import {LazyImage} from "react-lazy-images"
+import {Helmet} from "react-helmet"
 import imagePreloader from "../images/preloader.gif"
 import logoAsb from "../images/partnership/asb-logo.png"
 import logoMinterEllison from "../images/partnership/minter-ellison-logo.png"
@@ -12,6 +13,13 @@ import logoPublicTrust from "../images/partnership/public-trust-logo.png"
 export default function Partnership() {
     return (
         <>
+            <Helmet>
+                <title>合作机构 | Carrick Asset</title>
+                <meta
+                    name="description"
+                    content="Carrick Just Asset Management Limited（凯利资产管理）在追求投资收益的同时，合规文化一直在公司经营发展过程中被放在首要位置。"
+                />
+            </Helmet>
             <Layout>
                 <section className="section pb-0 mb-50">
                     <div className="container">

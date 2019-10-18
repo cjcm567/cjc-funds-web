@@ -1,7 +1,8 @@
 /** @format */
 
-import React, {lazy, Suspense} from "react"
+import React from "react"
 import {Link} from "react-router-dom"
+import {Helmet} from "react-helmet"
 import Layout from "../components/layout"
 import Carousel from "../components/Carousel"
 import Partners from "../components/Partners"
@@ -91,6 +92,10 @@ export default function Home() {
 
     return (
         <>
+            <Helmet>
+                <title>首页 | Carrick Asset</title>
+                <meta name="description" content="Carrick Asset" />
+            </Helmet>
             <Layout>
                 <div className="App">
                     <div className="mb-50">

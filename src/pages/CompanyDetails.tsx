@@ -2,6 +2,7 @@
 
 import React, {useState, Suspense, lazy} from "react"
 import {LazyImage} from "react-lazy-images"
+import {Helmet} from "react-helmet"
 import Layout from "../components/layout"
 import imagePreloader from "../images/preloader.gif"
 import imageAbout from "../images/aboutus/aboutus.jpg"
@@ -27,6 +28,13 @@ export default function CompanyDetails() {
     }
     return (
         <>
+            <Helmet>
+                <title>公司简介 | Carrick Asset</title>
+                <meta
+                    name="description"
+                    content="欢迎来到Carrick Just Asset Management Limited（凯利资产管理有限公司），我们旨在帮助您实现您的投资目标与财富梦想凯利资产管理有限公司），我们旨在帮助您实现您的投资目标与财富梦想凯利资产管理有限公司），我们旨在帮助您实现您的投资目标与财富梦想。凯利资产管理将为全球资产配置、税务规划、资产增值等一系列与财富管理相关的不同需求提供专业的金融服务。"
+                />
+            </Helmet>
             <Layout>
                 <section className="section">
                     <div className="container">

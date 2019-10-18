@@ -4,6 +4,7 @@ import React from "react"
 import {Link} from "react-router-dom"
 import Layout from "../components/layout"
 import {LazyImage} from "react-lazy-images"
+import {Helmet} from "react-helmet"
 import imagePreloader from "../images/preloader.gif"
 import fundsOverview from "../data/fundsData.json"
 
@@ -41,6 +42,10 @@ const fundsCard = fundsOverview.map(fundsItem => (
 export default function Funds() {
     return (
         <>
+            <Helmet>
+                <title>Funds | Carrick Asset</title>
+                <meta name="description" content="Carrick Asset 基金产品" />
+            </Helmet>
             <Layout>
                 <section className="section">
                     <div className="container">

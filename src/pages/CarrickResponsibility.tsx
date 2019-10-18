@@ -2,6 +2,7 @@
 
 import React, {useState} from "react"
 import {Link} from "react-router-dom"
+import {Helmet} from "react-helmet"
 import Layout from "../components/layout"
 import imageAbout from "../images/aboutus/aboutus.jpg"
 import imageCeo from "../images/aboutus/ceo.jpg"
@@ -12,6 +13,13 @@ const ceoStyle = {
 export default function CarrickResponsibility() {
     return (
         <>
+            <Helmet>
+                <title>社会责任 | Carrick Asset</title>
+                <meta
+                    name="description"
+                    content="Carrick Just Asset Management Limited 认真对待作为企业公民的责任，并制定了许多确保道德和可持续投资的政策。"
+                />
+            </Helmet>
             <Layout>
                 <section className="section">
                     <div className="container">

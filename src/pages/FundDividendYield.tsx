@@ -3,6 +3,7 @@
 import React, {useState} from "react"
 import Layout from "../components/layout"
 import {LazyImage} from "react-lazy-images"
+import {Helmet} from "react-helmet"
 import imagePreloader from "../images/preloader.gif"
 import imageCoreCompetence from "../images/funds/core-competence.png"
 import imageCalculate from "../images/funds/calculate.jpg"
@@ -204,6 +205,10 @@ export default function FundDividedYield() {
     ))
     return (
         <>
+            <Helmet>
+                <title>Carrick NZ&AU Dividend Yield Fund | Carrick Asset</title>
+                <meta name="description" content="" />
+            </Helmet>
             <Layout>
                 <section className="section">
                     <div className="container">

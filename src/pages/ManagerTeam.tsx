@@ -2,6 +2,7 @@
 
 import React from "react"
 import {Link} from "react-router-dom"
+import {Helmet} from "react-helmet"
 import {LazyImage} from "react-lazy-images"
 import Layout from "../components/layout"
 import imagePreloader from "../images/preloader.gif"
@@ -54,6 +55,13 @@ export default function ManagerTeam() {
     ))
     return (
         <>
+            <Helmet>
+                <title>精英团队 | Carrick Asset</title>
+                <meta
+                    name="description"
+                    content="凯利资本投资研究团队长期并肩从事投资工作，具有丰富的投资经验。团队及个人潜力均得到了的充分发挥。"
+                />
+            </Helmet>
             <Layout>
                 <section className="section">
                     <div className="container">

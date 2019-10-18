@@ -4,6 +4,7 @@ import React from "react"
 import {Link} from "react-router-dom"
 import Layout from "../components/layout"
 import {LazyImage} from "react-lazy-images"
+import {Helmet} from "react-helmet"
 import imagePreloader from "../images/preloader.gif"
 import imageBackground from "../images/news/background.jpg"
 import newsObject from "../data/newsData.json"
@@ -44,6 +45,10 @@ export default function News() {
     ))
     return (
         <>
+            <Helmet>
+                <title>News | Carrick Asset</title>
+                <meta name="description" content="Carrick Asset News" />
+            </Helmet>
             <Layout>
                 <section className="page-title overlay" style={sectionStyle}>
                     <div className="container">
