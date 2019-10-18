@@ -9,7 +9,6 @@ import Partners from "../components/Partners"
 import ContactUs from "../components/ContactUs"
 import newsData from "../data/newsData.json"
 import homeData from "../data/fundsData.json"
-import "../fonts/IconFont/iconfont.css"
 
 export default function Home() {
     const newsObject = []
@@ -20,7 +19,7 @@ export default function Home() {
     const newsRender = newsObject.map(newsObjectItem => (
         <li className="d-flex border-bottom" key={newsObjectItem.props}>
             <div className="py-3 px-4 border-right text-center">
-                <h3 className="text-primary mb-0" style={{width: 30}}>
+                <h3 className="text-primary mb-0" style={{width: 32}}>
                     {newsObjectItem.date.substr(0, 2).trim()}
                 </h3>
                 <p className="mb-2">{newsObjectItem.date.split(" ").pop()}</p>
@@ -76,7 +75,9 @@ export default function Home() {
                     <div className="card-body p-0">
                         <div className="d-flex">
                             <div className="py-3 px-4 border-right text-center">
-                                <h3 className="text-primary mb-0">{newsExampleObjectItem.date.substr(0, 2).trim()}</h3>
+                                <h3 className="text-primary mb-0" style={{width: 32}}>
+                                    {newsExampleObjectItem.date.substr(0, 2).trim()}
+                                </h3>
                                 <p className="mb-0">{newsExampleObjectItem.date.split(" ").pop()}</p>
                             </div>
                             <div className="p-3">

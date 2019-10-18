@@ -2,9 +2,7 @@
 
 import React from "react"
 import Layout from "../components/layout"
-import {LazyImage} from "react-lazy-images"
 import {Helmet} from "react-helmet"
-import imagePreloader from "../images/preloader.gif"
 import logoAsb from "../images/partnership/asb-logo.png"
 import logoMinterEllison from "../images/partnership/minter-ellison-logo.png"
 import logoPwc from "../images/partnership/pwc-logo.png"
@@ -38,24 +36,15 @@ export default function Partnership() {
                                 <p>与我们合作的外部机构均为新西兰乃至国际一流专业机构，具体合作方如下：</p>
                             </div>
                         </div>
-
                         <div className="row mb-50">
                             <div className="col-lg-5 col-md-5 pr-0 align-self-center">
                                 <a target="_blank" rel="noopener noreferrer" href="https://www.publictrust.co.nz/">
-                                    <LazyImage
-                                        src={logoPublicTrust}
-                                        alt="logo of Public Trust"
-                                        placeholder={({imageProps, ref}) => (
-                                            <img ref={ref} src={imagePreloader} alt={imageProps.alt} />
-                                        )}
-                                        actual={({imageProps}) => <img className="img-fluid w-75" {...imageProps} />}
-                                    />
+                                    <img src={logoPublicTrust} alt="logo of Public Trust" />
                                 </a>
                             </div>
                             <div className="col-lg-7 col-md-7 align-self-center pl-0">
                                 <div className="testimonial-slider p-5">
                                     <div className="outline-0">
-                                        {/* <i className="testimonial-icon ti-quote-left"></i> */}
                                         <a
                                             target="_blank"
                                             rel="noopener noreferrer"
@@ -79,16 +68,7 @@ export default function Partnership() {
                         <div className="row mb-50">
                             <div className="col-lg-5 col-md-5 pr-0 align-self-center">
                                 <a target="_blank" rel="noopener noreferrer" href="https://www.pwc.co.nz/">
-                                    <LazyImage
-                                        src={logoPwc}
-                                        alt="logo of PwC"
-                                        placeholder={({imageProps, ref}) => (
-                                            <img ref={ref} src={imagePreloader} alt={imageProps.alt} />
-                                        )}
-                                        actual={({imageProps}) => (
-                                            <img className="img-fluid w-75 text-right" {...imageProps} />
-                                        )}
-                                    />
+                                    <img src={logoPwc} alt="logo of PwC" />
                                 </a>
                             </div>
                             <div className="col-lg-7 col-md-7 align-self-center pl-0">
@@ -109,14 +89,7 @@ export default function Partnership() {
                         <div className="row mb-50">
                             <div className="col-lg-5 col-md-5 pr-0 align-self-center">
                                 <a target="_blank" rel="noopener noreferrer" href="https://www.asb.co.nz">
-                                    <LazyImage
-                                        src={logoAsb}
-                                        alt="logo of ASB"
-                                        placeholder={({imageProps, ref}) => (
-                                            <img ref={ref} src={imagePreloader} alt={imageProps.alt} />
-                                        )}
-                                        actual={({imageProps}) => <img className="img-fluid w-75" {...imageProps} />}
-                                    />
+                                    <img src={logoAsb} alt="logo of ASB" />
                                 </a>
                             </div>
                             <div className="col-lg-7 col-md-7 align-self-center pl-0">
@@ -141,20 +114,12 @@ export default function Partnership() {
                         <div className="row mb-50">
                             <div className="col-lg-5 col-md-5 pr-0 align-self-center">
                                 <a target="_blank" rel="noopener noreferrer" href="https://www.minterellison.com/">
-                                    <LazyImage
-                                        src={logoMinterEllison}
-                                        alt="logo of Minter Ellison"
-                                        placeholder={({imageProps, ref}) => (
-                                            <img ref={ref} src={imagePreloader} alt={imageProps.alt} />
-                                        )}
-                                        actual={({imageProps}) => <img className="img-fluid w-75" {...imageProps} />}
-                                    />
+                                    <img src={logoMinterEllison} alt="logo of Minter Ellison" />
                                 </a>
                             </div>
                             <div className="col-lg-7 col-md-7 align-self-center pl-0">
                                 <div className="testimonial-slider p-5">
                                     <div className="outline-0">
-                                        {/* <i className="testimonial-icon ti-quote-left"></i> */}
                                         <a
                                             target="_blank"
                                             rel="noopener noreferrer"

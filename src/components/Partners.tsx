@@ -36,7 +36,7 @@ export default function Partner() {
                             <div className="row justify-content-center">
                                 <div className="col-lg-6 col-md-12 mb-50">
                                     <ul style={{padding: "0 2rem 0 2rem"}}>
-                                        <li className="text-center mb-50 py-5">
+                                        <li className="text-center mb-100 py-5">
                                             <a target="_blank" rel="noopener noreferrer" href="https://www.asb.co.nz">
                                                 <LazyImage
                                                     src={logoAsb}
@@ -57,10 +57,9 @@ export default function Partner() {
                                         </li>
                                     </ul>
                                 </div>
-
                                 <div className="col-lg-6 col-md-12">
                                     <ul style={{padding: "0 2rem 0 2rem"}}>
-                                        <li className="text-center mb-50 py-5">
+                                        <li className="text-center mb-100 py-5">
                                             <a
                                                 target="_blank"
                                                 rel="noopener noreferrer"
