@@ -2655,11 +2655,11 @@ ul.tag-list li a:hover {
     position: absolute;
     right: 5px;
     top: 5px;
+    border: 0;
     height: 40px;
     width: 40px;
     border-radius: 50%;
     color: #666;
-    font-size: 1rem;
     border: 1px solid #0057b8;
     background: none;
     transition: all linear 0.2s;
@@ -2687,7 +2687,6 @@ ul.tag-list li a:hover {
     text-align: center;
     display: block;
     transition: 0.2s ease;
-    font-size: 2rem;
 }
 
 .back-to-top span {

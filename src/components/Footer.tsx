@@ -5,8 +5,6 @@
 import React, {Suspense} from "react"
 import {Link} from "react-router-dom"
 import logo from "../images/logoicon.png"
-import iconArrowRight from "../images/icons/arrow-right.svg"
-import iconArrowUp from "../images/icons/arrow-up.svg"
 
 function Footer() {
     const backToTop = () => {
@@ -15,9 +13,6 @@ function Footer() {
     }
     const bannerBgStyle = {
         color: "#ffffff",
-        // background: "rgb(0,98,204)",
-        // background: "-moz-linear-gradient(90deg, rgba(0,98,204,1) 0%, rgba(39,141,202,1) 50%);",
-        // background: "-webkit-linear-gradient(90deg, rgba(0,98,204,1) 0%, rgba(39,141,202,1) 50%)",
         background: "linear-gradient(90deg, rgba(0,98,204,1) 0%, rgba(39,141,202,1) 50%)",
         filter:
             "progid:DXImageTransform.Microsoft.gradient(startColorstr='#0062cc',endColorstr='#278dca',GradientType=1)",
@@ -116,7 +111,9 @@ function Footer() {
                                             placeholder="请输入您的邮箱"
                                         />
                                         <button className="btn-subscribe" type="submit" value="send">
-                                            <i className="ri-arrow-right-line" style={{color: "#666666"}}></i>
+                                            <span
+                                                className="iconfont icon-arrow-right"
+                                                style={{color: "#666666", fontWeight: 600}}></span>
                                         </button>
                                     </form>
                                 </div>
@@ -140,7 +137,7 @@ function Footer() {
                     </div>
                     {/* back to top */}
                     <button className="back-to-top" onClick={backToTop}>
-                        <i className="ri-arrow-up-s-line" style={{color: "#ffffff"}}></i>
+                        <span className="iconfont icon-arrow-up" style={{color: "#ffffff", fontWeight: 700}}></span>
                     </button>
                 </div>
             </footer>
