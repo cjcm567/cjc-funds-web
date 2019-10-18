@@ -3,6 +3,7 @@
 import React, {useState} from "react"
 import Layout from "../components/layout"
 import logo from "../images/logo.svg"
+import imageSignUpBg from "../images/background/signup-bg.jpg"
 
 export default function LoginOrJoin() {
     const [loginOrJoin, setLoginOrJoin] = useState("Login")
@@ -31,27 +32,30 @@ export default function LoginOrJoin() {
         setSignUpVisibility({display: "none"})
         alert("Congrats!")
     }
+    const bgImageStyle = {
+        backgroundImage: `url(${imageSignUpBg})`,
+    }
     return (
         <>
             <Layout>
-                <section className="d-flex align-items-center justify-content-center" style={{height: "100vh"}}>
+                <section className="d-flex align-items-center justify-content-center py-5 my-5">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-8 mx-auto">
                                 <div className="signup">
                                     <div className="row">
-                                        <div
-                                            className="col-md-5 signup-greeting overlay"
-                                            style={{backgroundImage: "url(images/background/signup.jpg);"}}>
+                                        <div className="col-md-6 signup-greeting overlay-dark" style={bgImageStyle}>
                                             <img src={logo} alt="logo" style={{height: "10vh"}} />
-                                            <h4>欢迎！</h4>
+                                            <h4 className="text-white">欢迎</h4>
                                             <p>
-                                                Carrick基金管理公司
+                                                Carrick Just Asset Management Limited
+                                                <br />
+                                                凯利资产管理有限公司
                                                 <br />
                                                 期待与您共同发展
                                             </p>
                                         </div>
-                                        <div className="col-md-7">
+                                        <div className="col-md-6">
                                             <div className="signup-form">
                                                 <div className="row">
                                                     <div className="col-lg-12">

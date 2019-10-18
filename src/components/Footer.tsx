@@ -7,6 +7,7 @@ import {Link} from "react-router-dom"
 import logo from "../images/logoicon.png"
 import iconArrowRight from "../images/icons/arrow-right.svg"
 import iconArrowUp from "../images/icons/arrow-up.svg"
+
 function Footer() {
     const backToTop = () => {
         window.scrollTo(0, 0)
@@ -49,7 +50,7 @@ function Footer() {
                         <div className="row">
                             <div className="col-lg-4 col-md-4">
                                 <div className="mb-5 mb-md-0 text-center text-md-left">
-                                    <Link to="/" className="mb-30">
+                                    <Link to="/">
                                         <img src={logo} alt="logo" style={{height: "9vh"}} />
                                     </Link>
                                     <p className="mb-30 text-left">
@@ -115,7 +116,7 @@ function Footer() {
                                             placeholder="请输入您的邮箱"
                                         />
                                         <button className="btn-subscribe" type="submit" value="send">
-                                            <img src={iconArrowRight} alt="icon of arrow right" />
+                                            <i className="ri-arrow-right-line" style={{color: "#666666"}}></i>
                                         </button>
                                     </form>
                                 </div>
@@ -139,7 +140,7 @@ function Footer() {
                     </div>
                     {/* back to top */}
                     <button className="back-to-top" onClick={backToTop}>
-                        <img src={iconArrowUp} alt="icon of arrow up" />
+                        <i className="ri-arrow-up-s-line" style={{color: "#ffffff"}}></i>
                     </button>
                 </div>
             </footer>

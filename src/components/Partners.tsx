@@ -19,7 +19,7 @@ export default function Partner() {
             <section className="clients section bg-secondary overlay-dark" style={ceoStyle}>
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-6  mb-30">
+                        <div className="col-lg-6 mb-30">
                             {/* <h5 className="section-title-sm text-color">Our Some</h5> */}
                             <h2 className="text-white mb-20 text-center text-md-left">合作机构</h2>
                             <p className="text-white mb-50 text-left ">
