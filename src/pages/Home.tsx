@@ -9,6 +9,7 @@ import ContactUs from "../components/ContactUs"
 import imagePreloader from "../images/preloader.gif"
 import newsData from "../data/newsData.json"
 import homeData from "../data/fundsData.json"
+import "../fonts/RemixIcon/remixicon.css"
 
 const Preloader = () => {
     return <img src={imagePreloader} alt="loading..." />
