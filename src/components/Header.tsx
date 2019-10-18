@@ -152,7 +152,7 @@ function HeaderComponent() {
                                         </Link>
                                     </li>
 
-                                    <li className="nav-item">
+                                    <li className="nav-item text-center">
                                         <Link to="/login-or-join" className="btn btn-primary btn-sm text-white">
                                             Invest now
                                         </Link>

@@ -172,10 +172,12 @@
 
 /* 1.1 typography */
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Work+Sans:400,500,600");
+
 @font-face {
     font-family: "Public Sans";
     src: local("Public Sans"), url("../fonts/PublicSans/PublicSans-Regular.woff") format("woff");
 }
+
 body {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -209,6 +211,7 @@ h1,
 }
 
 @media (max-width: 400px) {
+
     h1,
     .h1 {
         font-size: 30px;
@@ -989,6 +992,7 @@ button {
         top: 24px;
         background: none;
     }
+
     .navigation .navbar-brand img {
         height: 50px;
         width: auto;
@@ -1015,7 +1019,7 @@ button {
 .navigation .navbar .nav-item .nav-link {
     padding: 15px 10px;
     font-family: "Poppins", sans-serif;
-    font-weight: 600;
+    /* font-weight: 600; */
     color: #222;
     text-transform: uppercase;
     transition: 0.2s ease;
@@ -1137,6 +1141,7 @@ button {
     .navigation .navbar .dropdown-item {
         text-align: center;
     }
+
     .navigation .navbar .dropdown-item::before {
         display: none;
     }
@@ -1246,6 +1251,7 @@ button {
 }
 
 @media (max-width: 575px) {
+
     .hero-slider .prevArrow,
     .hero-slider .nextArrow {
         display: none;
@@ -1675,12 +1681,14 @@ button {
 .clients ul li {
     height: 66px;
 }
+
 .clients ul li img {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
     display: inline-block;
 }
+
 /* 14.4 process */
 .process-item {
     width: 330px;
@@ -1691,15 +1699,18 @@ button {
         width: unset;
     }
 }
+
 .process-item-two {
     width: 14vw;
     min-height: 46vh;
 }
+
 @media (max-width: 1199px) {
     .process-item-two {
         width: unset;
     }
 }
+
 .process-item-number {
     position: absolute;
     left: -35px;
@@ -2648,7 +2659,7 @@ ul.tag-list li a:hover {
     width: 40px;
     border-radius: 50%;
     color: #666;
-    font-size: 1.2rem;
+    font-size: 1rem;
     border: 1px solid #0057b8;
     background: none;
     transition: all linear 0.2s;

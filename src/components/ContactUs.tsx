@@ -34,7 +34,7 @@ export default function ContactUs() {
                                     <li className="d-flex mb-30">
                                         <img src={imagePhone} alt="image Phone" className="pr-5" />
                                         <div className="align-self-center">
-                                            <a href="tel:+64 9 2803716" className="h4 text-white">
+                                            <a href="tel:+64 9 2803716" className="h4 text-white text-left">
                                                 🇳🇿 +64 9 2803716
                                             </a>
                                         </div>
@@ -42,7 +42,9 @@ export default function ContactUs() {
                                     <li className="d-flex mb-30">
                                         <img src={imageEmail} alt="image email" className="pr-5" />
                                         <div className="align-self-center font-primary">
-                                            <a href="mailto:mark.fan@carrickassets.com" className="h4 text-white">
+                                            <a
+                                                href="mailto:mark.fan@carrickassets.com"
+                                                className="h4 text-white text-left">
                                                 mark.fan@carrickassets.com
                                             </a>
                                         </div>
@@ -50,7 +52,7 @@ export default function ContactUs() {
                                     <li className="d-flex mb-30">
                                         <img src={imageAddress} alt="image address" className="pr-5" />
                                         <div className="align-self-center font-primary">
-                                            <address className="h4 text-white">
+                                            <address className="h4 text-white text-left">
                                                 Carrick Just Asset Management Limited
                                                 <br />
                                                 Level 2, 3 Margot Street, Epsom

@@ -5,7 +5,8 @@
 import React, {Suspense} from "react"
 import {Link} from "react-router-dom"
 import logo from "../images/logoicon.png"
-
+import iconArrowRight from "../images/icons/arrow-right.svg"
+import iconArrowUp from "../images/icons/arrow-up.svg"
 function Footer() {
     const backToTop = () => {
         window.scrollTo(0, 0)
@@ -28,7 +29,11 @@ function Footer() {
                 <div className="container">
                     <div className="row justify-content-between">
                         <div className="col-lg-6 align-self-center">
-                            <h3 className="text-white">See how we can help. Contact us today</h3>
+                            <h3 className="text-white text-center text-md-left">
+                                See how we can help.
+                                <br />
+                                Contact us today
+                            </h3>
                         </div>
                         <div className="col-lg-6 text-lg-center text-center align-self-center">
                             <Link to="/contact-us" className="btn-sm btn-light" style={{textTransform: "uppercase"}}>
@@ -42,14 +47,15 @@ function Footer() {
                 <div className="py-50 border-bottom" style={{borderColor: "#454547 !important"}}>
                     <div className="container">
                         <div className="row">
-                            <div className="col-lg-3 col-md-4">
+                            <div className="col-lg-4 col-md-4">
                                 <div className="mb-5 mb-md-0 text-center text-md-left">
                                     <Link to="/" className="mb-30">
                                         <img src={logo} alt="logo" style={{height: "9vh"}} />
                                     </Link>
-                                    <p className="mb-30">
-                                        欢迎来到 Carrick Just Asset Management
-                                        Limited（凯利资产管理有限公司），我们旨在帮助您实现您的投资目标与财富梦想。凯利资产管理将为全球资产配置、税务规划、资产增值等一系列与财富管理相关的不同需求提供专业的金融服务。
+                                    <p className="mb-30 text-left">
+                                        欢迎来到
+                                        <br /> Carrick Just Asset Management Limited
+                                        （凯利资产管理有限公司），我们旨在帮助您实现您的投资目标与财富梦想。凯利资产管理将为全球资产配置、税务规划、资产增值等一系列与财富管理相关的不同需求提供专业的金融服务。
                                     </p>
                                 </div>
                             </div>
@@ -93,10 +99,14 @@ function Footer() {
                                 </ul>
                             </div>
                             {/* subscribe form */}
-                            <div className="col-lg-3 col-md-12 offset-lg-1">
+                            <div className="col-lg-3 col-md-12">
                                 <div className="mt-5 mt-lg-0 text-center text-md-left">
                                     <h4 className="mb-4 ">欢迎订阅</h4>
-                                    <p className="mb-4">Carrick Just Asset Management Limited 您最好的选择</p>
+                                    <p className="mb-4">
+                                        Carrick Just Asset Management Limited
+                                        <br />
+                                        您最好的选择
+                                    </p>
                                     <form action="#" className="position-relative">
                                         <input
                                             type="text"
@@ -106,7 +116,7 @@ function Footer() {
                                             placeholder="请输入您的邮箱"
                                         />
                                         <button className="btn-subscribe" type="submit" value="send">
-                                            <span>&#8594;</span>
+                                            <img src={iconArrowRight} alt="icon of arrow right" />
                                         </button>
                                     </form>
                                 </div>
@@ -120,7 +130,9 @@ function Footer() {
                         <div className="row">
                             <div className="col-lg-6 col-md-5">
                                 <p className="text-center text-md-left">
-                                    <code>Carrick Just Asset Management Limited</code> &copy; {copyrightYear} All Right
+                                    <code>Carrick Just Asset Management Limited</code>
+                                    <br />
+                                    All Right &copy; {copyrightYear}
                                     Reserved
                                 </p>
                             </div>
@@ -128,8 +140,7 @@ function Footer() {
                     </div>
                     {/* back to top */}
                     <button className="back-to-top" onClick={backToTop}>
-                        {/* <i className="ti-angle-up"></i> */}
-                        <span>&#8963;</span>
+                        <img src={iconArrowUp} alt="icon of arrow up" />
                     </button>
                 </div>
             </footer>

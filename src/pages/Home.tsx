@@ -3,13 +3,21 @@
 import React, {lazy, Suspense} from "react"
 import {Link} from "react-router-dom"
 import Layout from "../components/layout"
-import Carousel from "../components/Carousel"
 import imagePreloader from "../images/preloader.gif"
 import newsData from "../data/newsData.json"
 import homeData from "../data/fundsData.json"
 
 const Preloader = () => {
     return <img src={imagePreloader} alt="loading..." />
+}
+
+const CarouselComponent = lazy(() => import("../components/Carousel"))
+const Carousel = () => {
+    return (
+        <Suspense fallback={Preloader}>
+            <CarouselComponent />
+        </Suspense>
+    )
 }
 const PartnersComponent = lazy(() => import("../components/Partners"))
 const Partners = () => {
