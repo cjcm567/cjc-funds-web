@@ -214,12 +214,8 @@ export default function FundProperty() {
                 <section className="section">
                     <div className="container">
                         <div className="row">
-                            <h3 className="mb-10">Carrick Direct Property Fund</h3>
-                            <p className="mb-40">
-                                凯利纽澳地产基金提供全方位投资服务，包括向合格投资者集资，选择黄金地段商业地产作为投资标的，寻求服务周到尽责的物业管理公司和长期稳定的租赁客源，以及及时发送给投资者利益报告和未来资产转售服务
-                            </p>
-
-                            <div className="mb-md-50">
+                            <h3 className="mb-10 px-3">Carrick Direct Property Fund</h3>
+                            <div className="mb-md-50 px-3">
                                 <div className="row">
                                     <div className="col-lg-8 col-md-12">
                                         <div className="bg-gray p-5 rounded mb-60">

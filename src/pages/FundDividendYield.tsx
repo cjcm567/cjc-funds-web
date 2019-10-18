@@ -213,9 +213,9 @@ export default function FundDividedYield() {
                 <section className="section">
                     <div className="container">
                         <div className="row">
-                            <h3 className="mb-10">Carrick NZ&AU Dividend Yield Fund</h3>
+                            <h3 className="mb-10 px-3">Carrick NZ&AU Dividend Yield Fund</h3>
 
-                            <div className="mb-md-50">
+                            <div className="mb-md-50 px-3">
                                 <div className="row">
                                     <div className="col-lg-8 col-md-12">
                                         <div className="bg-gray p-5 rounded mb-60">

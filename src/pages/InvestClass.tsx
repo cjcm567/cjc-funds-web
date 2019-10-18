@@ -166,10 +166,8 @@ export default function InvestClass() {
                 <section className="section">
                     <div className="container">
                         <div className="row">
-                            <h3 className="mb-10">投资课堂</h3>
-                            <p className="mb-40"></p>
-
-                            <div className="mb-md-50">
+                            <h3 className="mb-10 px-3">投资课堂</h3>
+                            <div className="mb-md-50 px-3">
                                 <div className="row">
                                     <div className="col-lg-8 col-md-12">
                                         <div className="bg-gray p-5 rounded mb-60">
