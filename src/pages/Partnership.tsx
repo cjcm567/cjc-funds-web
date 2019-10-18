@@ -39,7 +39,7 @@ export default function Partnership() {
                         <div className="row mb-50">
                             <div className="col-lg-5 col-md-5 pr-0 align-self-center">
                                 <a target="_blank" rel="noopener noreferrer" href="https://www.publictrust.co.nz/">
-                                    <img src={logoPublicTrust} alt="logo of Public Trust" />
+                                    <img src={logoPublicTrust} className="img-fluid w-75" alt="logo of Public Trust" />
                                 </a>
                             </div>
                             <div className="col-lg-7 col-md-7 align-self-center pl-0">
@@ -68,7 +68,7 @@ export default function Partnership() {
                         <div className="row mb-50">
                             <div className="col-lg-5 col-md-5 pr-0 align-self-center">
                                 <a target="_blank" rel="noopener noreferrer" href="https://www.pwc.co.nz/">
-                                    <img src={logoPwc} alt="logo of PwC" />
+                                    <img src={logoPwc} alt="logo of PwC" className="img-fluid w-75 text-right" />
                                 </a>
                             </div>
                             <div className="col-lg-7 col-md-7 align-self-center pl-0">
@@ -89,7 +89,7 @@ export default function Partnership() {
                         <div className="row mb-50">
                             <div className="col-lg-5 col-md-5 pr-0 align-self-center">
                                 <a target="_blank" rel="noopener noreferrer" href="https://www.asb.co.nz">
-                                    <img src={logoAsb} alt="logo of ASB" />
+                                    <img src={logoAsb} alt="logo of ASB" className="img-fluid w-75" />
                                 </a>
                             </div>
                             <div className="col-lg-7 col-md-7 align-self-center pl-0">
@@ -114,7 +114,11 @@ export default function Partnership() {
                         <div className="row mb-50">
                             <div className="col-lg-5 col-md-5 pr-0 align-self-center">
                                 <a target="_blank" rel="noopener noreferrer" href="https://www.minterellison.com/">
-                                    <img src={logoMinterEllison} alt="logo of Minter Ellison" />
+                                    <img
+                                        src={logoMinterEllison}
+                                        alt="logo of Minter Ellison"
+                                        className="img-fluid w-75"
+                                    />
                                 </a>
                             </div>
                             <div className="col-lg-7 col-md-7 align-self-center pl-0">
