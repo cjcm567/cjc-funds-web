@@ -36,13 +36,13 @@ export default function Partnership() {
                                 <p>与我们合作的外部机构均为新西兰乃至国际一流专业机构，具体合作方如下：</p>
                             </div>
                         </div>
-                        <div className="row mb-50">
+                        <div className="row mb-50 text-center">
                             <div className="col-lg-5 col-md-5 pr-0 align-self-center">
                                 <a target="_blank" rel="noopener noreferrer" href="https://www.publictrust.co.nz/">
                                     <img src={logoPublicTrust} className="img-fluid w-75" alt="logo of Public Trust" />
                                 </a>
                             </div>
-                            <div className="col-lg-7 col-md-7 align-self-center pl-0">
+                            <div className="col-lg-7 col-md-7 align-self-center pl-0 text-left">
                                 <div className="testimonial-slider p-5">
                                     <div className="outline-0">
                                         <a
@@ -65,13 +65,13 @@ export default function Partnership() {
                                 </div>
                             </div>
                         </div>
-                        <div className="row mb-50">
+                        <div className="row mb-50 text-center">
                             <div className="col-lg-5 col-md-5 pr-0 align-self-center">
                                 <a target="_blank" rel="noopener noreferrer" href="https://www.pwc.co.nz/">
                                     <img src={logoPwc} alt="logo of PwC" className="img-fluid w-75 text-right" />
                                 </a>
                             </div>
-                            <div className="col-lg-7 col-md-7 align-self-center pl-0">
+                            <div className="col-lg-7 col-md-7 align-self-center pl-0 text-left">
                                 <div className="testimonial-slider p-5">
                                     <div className="outline-0">
                                         {/* <i className="testimonial-icon ti-quote-left"></i> */}
@@ -86,13 +86,13 @@ export default function Partnership() {
                                 </div>
                             </div>
                         </div>
-                        <div className="row mb-50">
+                        <div className="row mb-50 text-center">
                             <div className="col-lg-5 col-md-5 pr-0 align-self-center">
                                 <a target="_blank" rel="noopener noreferrer" href="https://www.asb.co.nz">
                                     <img src={logoAsb} alt="logo of ASB" className="img-fluid w-75" />
                                 </a>
                             </div>
-                            <div className="col-lg-7 col-md-7 align-self-center pl-0">
+                            <div className="col-lg-7 col-md-7 align-self-center pl-0 text-left">
                                 <div className="testimonial-slider p-5">
                                     <div className="outline-0">
                                         {/* <i className="testimonial-icon ti-quote-left"></i> */}
@@ -111,7 +111,7 @@ export default function Partnership() {
                                 </div>
                             </div>
                         </div>
-                        <div className="row mb-50">
+                        <div className="row mb-50 text-center">
                             <div className="col-lg-5 col-md-5 pr-0 align-self-center">
                                 <a target="_blank" rel="noopener noreferrer" href="https://www.minterellison.com/">
                                     <img
@@ -121,7 +121,7 @@ export default function Partnership() {
                                     />
                                 </a>
                             </div>
-                            <div className="col-lg-7 col-md-7 align-self-center pl-0">
+                            <div className="col-lg-7 col-md-7 align-self-center pl-0 text-left">
                                 <div className="testimonial-slider p-5">
                                     <div className="outline-0">
                                         <a
