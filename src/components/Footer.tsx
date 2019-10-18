@@ -5,6 +5,7 @@
 import React, {Suspense} from "react"
 import {Link} from "react-router-dom"
 import logo from "../images/logoicon.png"
+import "../fonts/IconFont/iconfont.css"
 
 function Footer() {
     const backToTop = () => {

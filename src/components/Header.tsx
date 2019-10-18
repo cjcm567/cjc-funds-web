@@ -90,7 +90,6 @@ function HeaderComponent() {
                                 aria-label="Toggle navigation">
                                 <span className="navbar-toggler-icon" onClick={handleNavCollapse} />
                             </button>
-
                             <div className={collapseStatus} id="navbarSupportedContent">
                                 <ul className="navbar-nav ml-auto">
                                     <li className="nav-item">

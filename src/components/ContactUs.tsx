@@ -1,20 +1,8 @@
 /** @format */
 
-import React, {CSSProperties} from "react"
-import {LazyImage} from "react-lazy-images"
-import imagePreloader from "../images/preloader.gif"
-import logoAsb from "../images/aboutus/logo-asb.svg"
-import logoPwc from "../images/aboutus/logo-pwc.png"
-import logoPublicTrust from "../images/aboutus/logo-public-trust.png"
-import logoMinterEllison from "../images/aboutus/logo-minter-ellison.png"
+import React from "react"
 import imageAuckland from "../images/banner/auckland.jpg"
-import imagePhone from "../images/aboutus/phone.svg"
-import imageAddress from "../images/aboutus/address.svg"
-import imageEmail from "../images/aboutus/email.svg"
-// function Iframe(props: any) {
-//     return <div dangerouslySetInnerHTML={{__html: props.iframe ? props.iframe : ""}} />
-// }
-
+import "../fonts/IconFont/iconfont.css"
 export default function ContactUs() {
     const ceoStyle = {
         backgroundImage: `url(${imageAuckland})`,
