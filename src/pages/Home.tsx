@@ -3,6 +3,9 @@
 import React, {lazy, Suspense} from "react"
 import {Link} from "react-router-dom"
 import Layout from "../components/layout"
+import Carousel from "../components/Carousel"
+import Partners from "../components/Partners"
+import ContactUs from "../components/ContactUs"
 import imagePreloader from "../images/preloader.gif"
 import newsData from "../data/newsData.json"
 import homeData from "../data/fundsData.json"
@@ -11,31 +14,6 @@ const Preloader = () => {
     return <img src={imagePreloader} alt="loading..." />
 }
 
-const CarouselComponent = lazy(() => import("../components/Carousel"))
-const Carousel = () => {
-    return (
-        <Suspense fallback={Preloader}>
-            <CarouselComponent />
-        </Suspense>
-    )
-}
-const PartnersComponent = lazy(() => import("../components/Partners"))
-const Partners = () => {
-    return (
-        <Suspense fallback={Preloader}>
-            <PartnersComponent />
-        </Suspense>
-    )
-}
-
-const ContactUsComponent = lazy(() => import("../components/ContactUs"))
-const ContactUs = () => {
-    return (
-        <Suspense fallback={Preloader}>
-            <ContactUsComponent />
-        </Suspense>
-    )
-}
 export default function Home() {
     const newsObject = []
     for (let index = 0; index <= 2; index++) {
