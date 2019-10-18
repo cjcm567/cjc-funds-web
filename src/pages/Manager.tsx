@@ -66,13 +66,13 @@ export default function Manager(props: RouteComponentProps<TParams>) {
                                     <div className="py-2 px-4 pb-3">{managerTitles}</div>
                                 </div>
                                 {/* Brochure */}
-                                <div className="rounded border py-3 px-4 mb-50">
+                                {/* <div className="rounded border py-3 px-4 mb-50">
                                     <i
                                         className="d-inline-block mr-1 text-dark ti-files"
                                         style={{fontSize: "20px;"}}></i>
                                     <h4 className="mb-1 d-inline-block">Professional CV</h4>
                                     <a className="font-secondary text-color d-block ml-4">Download pdf</a>
-                                </div>
+                                </div> */}
                             </aside>
                             {/* sidebar team member details */}
                             <div className="col-lg-8">
