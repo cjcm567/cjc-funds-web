@@ -3,39 +3,18 @@
 import React, {lazy, Suspense} from "react"
 import {Link} from "react-router-dom"
 import Layout from "../components/layout"
+import Carousel from "../components/Carousel"
+import Partners from "../components/Partners"
+import ContactUs from "../components/ContactUs"
 import imagePreloader from "../images/preloader.gif"
 import newsData from "../data/newsData.json"
 import homeData from "../data/fundsData.json"
+import "../fonts/RemixIcon/remixicon.css"
 
 const Preloader = () => {
     return <img src={imagePreloader} alt="loading..." />
 }
 
-const CarouselComponent = lazy(() => import("../components/Carousel"))
-const Carousel = () => {
-    return (
-        <Suspense fallback={Preloader}>
-            <CarouselComponent />
-        </Suspense>
-    )
-}
-const PartnersComponent = lazy(() => import("../components/Partners"))
-const Partners = () => {
-    return (
-        <Suspense fallback={Preloader}>
-            <PartnersComponent />
-        </Suspense>
-    )
-}
-
-const ContactUsComponent = lazy(() => import("../components/ContactUs"))
-const ContactUs = () => {
-    return (
-        <Suspense fallback={Preloader}>
-            <ContactUsComponent />
-        </Suspense>
-    )
-}
 export default function Home() {
     const newsObject = []
     for (let index = 0; index <= 2; index++) {
@@ -44,7 +23,7 @@ export default function Home() {
 
     const newsRender = newsObject.map(newsObjectItem => (
         <li className="d-flex border-bottom" key={newsObjectItem.props}>
-            <div className="py-3 px-5 border-right text-center">
+            <div className="py-3 px-4 border-right text-center">
                 <h3 className="text-primary mb-0" style={{width: 30}}>
                     {newsObjectItem.date.substr(0, 2).trim()}
                 </h3>
