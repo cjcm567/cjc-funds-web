@@ -32,7 +32,7 @@ export default function ContactUs() {
                                 <ul className="pl-0 px-5">
                                     {/* contact items */}
                                     <li className="d-flex mb-30">
-                                        <img src={imagePhone} alt="image Phone" className="pr-5" />
+                                        <img src={imagePhone} alt="image Phone" className="mr-1" />
                                         <div className="align-self-center">
                                             <a href="tel:+64 9 2803716" className="h4 text-white text-left">
                                                 🇳🇿 +64 9 2803716
@@ -40,7 +40,7 @@ export default function ContactUs() {
                                         </div>
                                     </li>
                                     <li className="d-flex mb-30">
-                                        <img src={imageEmail} alt="image email" className="pr-5" />
+                                        <img src={imageEmail} alt="image email" className="mr-1" />
                                         <div className="align-self-center font-primary">
                                             <a
                                                 href="mailto:mark.fan@carrickassets.com"
@@ -50,7 +50,7 @@ export default function ContactUs() {
                                         </div>
                                     </li>
                                     <li className="d-flex mb-30">
-                                        <img src={imageAddress} alt="image address" className="pr-5" />
+                                        <img src={imageAddress} alt="image address" className="mr-1" />
                                         <div className="align-self-center font-primary">
                                             <address className="h4 text-white text-left">
                                                 Carrick Just Asset Management Limited

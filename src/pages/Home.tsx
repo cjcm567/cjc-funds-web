@@ -22,7 +22,7 @@ export default function Home() {
 
     const newsRender = newsObject.map(newsObjectItem => (
         <li className="d-flex border-bottom" key={newsObjectItem.props}>
-            <div className="py-3 px-5 border-right text-center">
+            <div className="py-3 px-4 border-right text-center">
                 <h3 className="text-primary mb-0" style={{width: 30}}>
                     {newsObjectItem.date.substr(0, 2).trim()}
                 </h3>
