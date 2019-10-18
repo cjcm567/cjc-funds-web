@@ -53,8 +53,7 @@ function Footer() {
                                         <img src={logo} alt="logo" style={{height: "9vh"}} />
                                     </Link>
                                     <p className="mb-30 text-left">
-                                        欢迎来到
-                                        <br /> Carrick Just Asset Management Limited
+                                        欢迎来到 Carrick Just Asset Management Limited
                                         （凯利资产管理有限公司），我们旨在帮助您实现您的投资目标与财富梦想。凯利资产管理将为全球资产配置、税务规划、资产增值等一系列与财富管理相关的不同需求提供专业的金融服务。
                                     </p>
                                 </div>
