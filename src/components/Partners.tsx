@@ -38,16 +38,7 @@ export default function Partner() {
                                     <ul style={{padding: "0 2rem 0 2rem"}}>
                                         <li className="text-center mb-100 py-5">
                                             <a target="_blank" rel="noopener noreferrer" href="https://www.asb.co.nz">
-                                                <LazyImage
-                                                    src={logoAsb}
-                                                    alt="ASB Bank Logo"
-                                                    placeholder={({imageProps, ref}) => (
-                                                        <img ref={ref} src={imagePreloader} alt={imageProps.alt} />
-                                                    )}
-                                                    actual={({imageProps}) => (
-                                                        <img className="card-img-top w-75" {...imageProps} />
-                                                    )}
-                                                />
+                                                <img src={logoAsb} alt="ASB Bank Logo" className="card-img-top w-75" />
                                             </a>
                                         </li>
                                         <li className="text-center">

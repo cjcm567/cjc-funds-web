@@ -17,11 +17,11 @@ export default function News() {
         <div className="col-lg-4 col-sm-6 mb-4" key={newsObjectItem.props}>
             <div className="card">
                 <div className="card-img-wrapper overlay-rounded-top">
-                    <LazyImage
+                    <img
                         src={require(`../images/news/${newsObjectItem.props}.jpg`)}
                         alt={newsObjectItem.title}
-                        placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
-                        actual={({imageProps}) => <img className="card-img-top" height="200px" {...imageProps} />}
+                        className="card-img-top"
+                        height="200px"
                     />
                 </div>
                 <div className="card-body p-0">

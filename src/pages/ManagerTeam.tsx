@@ -21,12 +21,12 @@ export default function ManagerTeam() {
         <div className="col-lg-4 col-sm-6 mb-4" key={teamObjectItem.props}>
             <Link to={`/about-us/team/${teamObjectItem.props}`}>
                 <div className="card text-center">
-                    <LazyImage
+                    <img
                         src={require(`../images/team/${teamObjectItem.props}.jpg`)}
                         alt={teamObjectItem.name}
-                        placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
-                        actual={({imageProps}) => <img className="card-img-top" {...imageProps} />}
+                        className="card-img-top"
                     />
+
                     <div className="card-body card-body-2 pb-0 px-4">
                         <h5 className="card-title">{teamObjectItem.name}</h5>
                         <h6 className="text-color mb-30">{teamObjectItem.title}</h6>
@@ -39,12 +39,12 @@ export default function ManagerTeam() {
         <div className="col-lg-4 col-sm-6 mb-4" key={teamObjectItem.props}>
             <Link to={`/about-us/team/${teamObjectItem.props}`}>
                 <div className="card text-center">
-                    <LazyImage
+                    <img
                         src={require(`../images/team/${teamObjectItem.props}.jpg`)}
                         alt={teamObjectItem.name}
-                        placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
-                        actual={({imageProps}) => <img className="card-img-top" {...imageProps} />}
+                        className="card-img-top"
                     />
+
                     <div className="card-body card-body-2 pb-0 px-4">
                         <h5 className="card-title">{teamObjectItem.name}</h5>
                         <h6 className="text-color mb-30">{teamObjectItem.title}</h6>

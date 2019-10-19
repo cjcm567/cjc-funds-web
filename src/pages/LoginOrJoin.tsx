@@ -71,79 +71,82 @@ export default function LoginOrJoin() {
                                                                 {joinButton}
                                                             </a>
                                                         </p>
+                                                        <form id="loginForm" name="loginForm" style={loginVisibility}>
+                                                            <div className="col-lg-12">
+                                                                <input
+                                                                    type="email"
+                                                                    className="form-control"
+                                                                    id="email"
+                                                                    name="email"
+                                                                    placeholder="Email Address"
+                                                                />
+                                                            </div>
+                                                            <div className="col-lg-12">
+                                                                <input
+                                                                    type="password"
+                                                                    className="form-control"
+                                                                    id="pass"
+                                                                    name="pass"
+                                                                    placeholder="Password"
+                                                                />
+                                                            </div>
+                                                            <div className="col-sm-4">
+                                                                <button
+                                                                    className="btn btn-primary btn-sm"
+                                                                    onClick={handleSignUpButton}>
+                                                                    {loginOrJoin}
+                                                                </button>
+                                                            </div>
+                                                        </form>
+                                                        <form
+                                                            id="signUpForm"
+                                                            name="signUpForm"
+                                                            style={signUpVisibility}>
+                                                            <div className="col-lg-12">
+                                                                <input
+                                                                    type="text"
+                                                                    className="form-control"
+                                                                    id="name"
+                                                                    name="name"
+                                                                    placeholder="Name"
+                                                                />
+                                                            </div>
+                                                            <div className="col-lg-12">
+                                                                <input
+                                                                    type="email"
+                                                                    className="form-control"
+                                                                    id="email"
+                                                                    name="email"
+                                                                    placeholder="Email Address"
+                                                                />
+                                                            </div>
+                                                            <div className="col-lg-12">
+                                                                <input
+                                                                    type="password"
+                                                                    className="form-control"
+                                                                    id="pass"
+                                                                    name="pass"
+                                                                    placeholder="Password"
+                                                                />
+                                                            </div>
+                                                            <div className="col-lg-12">
+                                                                <input
+                                                                    type="password"
+                                                                    className="form-control"
+                                                                    id="re-pass"
+                                                                    name="re-pass"
+                                                                    placeholder="Confirm Password"
+                                                                />
+                                                            </div>
+                                                            <div className="col-sm-4">
+                                                                <button
+                                                                    className="btn btn-primary btn-sm"
+                                                                    onClick={handleSignUpButton}>
+                                                                    {loginOrJoin}
+                                                                </button>
+                                                            </div>
+                                                        </form>
                                                     </div>
-                                                    <form id="loginForm" name="loginForm" style={loginVisibility}>
-                                                        <div className="col-lg-12">
-                                                            <input
-                                                                type="email"
-                                                                className="form-control"
-                                                                id="email"
-                                                                name="email"
-                                                                placeholder="Email Address"
-                                                            />
-                                                        </div>
-                                                        <div className="col-lg-12">
-                                                            <input
-                                                                type="password"
-                                                                className="form-control"
-                                                                id="pass"
-                                                                name="pass"
-                                                                placeholder="Password"
-                                                            />
-                                                        </div>
-                                                        <div className="col-sm-4">
-                                                            <button
-                                                                className="btn btn-primary btn-sm"
-                                                                onClick={handleSignUpButton}>
-                                                                {loginOrJoin}
-                                                            </button>
-                                                        </div>
-                                                    </form>
-                                                    <form id="signUpForm" name="signUpForm" style={signUpVisibility}>
-                                                        <div className="col-lg-12">
-                                                            <input
-                                                                type="text"
-                                                                className="form-control"
-                                                                id="name"
-                                                                name="name"
-                                                                placeholder="Name"
-                                                            />
-                                                        </div>
-                                                        <div className="col-lg-12">
-                                                            <input
-                                                                type="email"
-                                                                className="form-control"
-                                                                id="email"
-                                                                name="email"
-                                                                placeholder="Email Address"
-                                                            />
-                                                        </div>
-                                                        <div className="col-lg-12">
-                                                            <input
-                                                                type="password"
-                                                                className="form-control"
-                                                                id="pass"
-                                                                name="pass"
-                                                                placeholder="Password"
-                                                            />
-                                                        </div>
-                                                        <div className="col-lg-12">
-                                                            <input
-                                                                type="password"
-                                                                className="form-control"
-                                                                id="re-pass"
-                                                                name="re-pass"
-                                                                placeholder="Confirm Password"
-                                                            />
-                                                        </div>
-                                                        <div className="col-sm-4">
-                                                            <button
-                                                                className="btn btn-primary btn-sm"
-                                                                onClick={handleSignUpButton}>
-                                                                {loginOrJoin}
-                                                            </button>
-                                                        </div>
-                                                    </form>
                                                 </div>
                                             </div>
                                         </div>

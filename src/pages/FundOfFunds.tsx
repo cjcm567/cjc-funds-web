@@ -18,12 +18,8 @@ function FundsComponent(isShowId: number) {
             <>
                 <div>
                     <h4 className="mb-30">量化 FOF 基金经营</h4>
-                    <LazyImage
-                        src={imageCoreCompetence}
-                        alt="image of Core Competence"
-                        placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
-                        actual={({imageProps}) => <img className="img-fluid w-100 mb-40" {...imageProps} />}
-                    />
+                    <img src={imageCoreCompetence} alt="image of Core Competence" className="img-fluid w-100 mb-40" />
+
                     <div className="row">
                         <div className="col-lg-6 bg-gray p-5 rounded mb-60">
                             <div className="row">
@@ -83,12 +79,8 @@ function FundsComponent(isShowId: number) {
             <>
                 <div>
                     <h4 className="mb-30">量化投顾的遴选流程</h4>
-                    <LazyImage
-                        src={imageCrossPlatform}
-                        alt="image of cross platform"
-                        placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
-                        actual={({imageProps}) => <img className="img-fluid w-100 mb-40" {...imageProps} />}
-                    />
+                    <img src={imageCrossPlatform} alt="image of cross platform" className="img-fluid w-100 mb-40" />
+
                     <div className="bg-gray p-5 rounded mb-60">
                         <ul className="d-inline-block pl-0 mb-10">
                             <li className="font-secondary mb-10">
@@ -127,12 +119,8 @@ function FundsComponent(isShowId: number) {
             <>
                 <div>
                     <h4 className="mb-30">量化策略的特点及策略类型</h4>
-                    <LazyImage
-                        src={imageStrategy}
-                        alt="image of Strategy"
-                        placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
-                        actual={({imageProps}) => <img className="img-fluid w-100 mb-40" {...imageProps} />}
-                    />
+                    <img src={imageStrategy} alt="image of Strategy" className="img-fluid w-100 mb-40" />
+
                     <div className="bg-gray p-5 rounded mb-60">
                         <ul className="d-inline-block pl-0 mb-10">
                             <li className="font-secondary mb-10">
@@ -179,12 +167,8 @@ function FundsComponent(isShowId: number) {
             <>
                 <div>
                     <h4 className="mb-30">量化机构风控体系</h4>
-                    <LazyImage
-                        src={imageCalculate}
-                        alt="image of calculate"
-                        placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
-                        actual={({imageProps}) => <img className="img-fluid w-100 mb-40" {...imageProps} />}
-                    />
+                    <img src={imageCalculate} alt="image of calculate" className="img-fluid w-100 mb-40" />
+
                     <div className="bg-gray p-5 rounded mb-60">
                         <ul className="d-inline-block pl-0 mb-10">
                             <li className="font-secondary mb-10">
@@ -213,12 +197,8 @@ function FundsComponent(isShowId: number) {
             <>
                 <div>
                     <h4 className="mb-30">量化机构 IT 体系</h4>
-                    <LazyImage
-                        src={imageMobile}
-                        alt="image of mobile"
-                        placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
-                        actual={({imageProps}) => <img className="img-fluid w-100 mb-40" {...imageProps} />}
-                    />
+                    <img src={imageMobile} alt="image of mobile" className="img-fluid w-100 mb-40" />
+
                     <div className="bg-gray p-5 rounded mb-60">
                         <ul className="d-inline-block pl-0 mb-10">
                             <li className="font-secondary mb-10">
@@ -310,15 +290,10 @@ export default function FundOfFunds() {
                                         </div>
                                     </div>
                                     <div className="col-lg-4">
-                                        <LazyImage
+                                        <img
                                             src={imageFundOfFunds}
                                             alt="image of benefit"
-                                            placeholder={({imageProps, ref}) => (
-                                                <img ref={ref} src={imagePreloader} alt={imageProps.alt} />
-                                            )}
-                                            actual={({imageProps}) => (
-                                                <img className="img-fluid rounded" {...imageProps} />
-                                            )}
+                                            className="img-fluid rounded"
                                         />
                                     </div>
                                 </div>

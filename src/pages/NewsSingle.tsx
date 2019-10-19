@@ -56,16 +56,12 @@ function Page(props: string) {
                             <div className="row">
                                 <div className="col-lg-8 py-100">
                                     <div className="border rounded bg-white">
-                                        <LazyImage
+                                        <img
                                             src={require(`../images/news/${newsRender.imageUri}.jpg`)}
                                             alt={newsRender.title}
-                                            placeholder={({imageProps, ref}) => (
-                                                <img ref={ref} src={imagePreloader} alt={imageProps.alt} />
-                                            )}
-                                            actual={({imageProps}) => (
-                                                <img className="img-fluid w-100 rounded-top" {...imageProps} />
-                                            )}
+                                            className="img-fluid w-100 rounded-top"
                                         />
+
                                         <div className="p-4">
                                             <h3>{newsRender.title}</h3>
                                             <ul className="list-inline d-block pb-4 border-bottom mb-3">

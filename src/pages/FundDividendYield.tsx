@@ -38,12 +38,8 @@ function FundsComponent(isShowId: number) {
             <>
                 <div>
                     <h4 className="mb-30">风险指标</h4>
-                    <LazyImage
-                        src={imageRiskFigure}
-                        alt="image of risk figure"
-                        placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
-                        actual={({imageProps}) => <img className="img-fluid w-100 mb-40" {...imageProps} />}
-                    />
+                    <img src={imageRiskFigure} alt="image of risk figure" className="img-fluid w-100 mb-40" />
+
                     <h4 className="mb-30">费用</h4>
                     <p className="font-secondary mb-10">
                         2％ （估计的年度费用。 该费用是根据基金资产净值（NAV）的百分比估算得出）
@@ -103,12 +99,7 @@ function FundsComponent(isShowId: number) {
                         placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
                         actual={({imageProps}) => <img className="img-fluid w-100 mb-40" {...imageProps} />}
                     /> */}
-                    <LazyImage
-                        src={imageCalculate}
-                        alt="image of Strategy"
-                        placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
-                        actual={({imageProps}) => <img className="img-fluid w-100 mb-40" {...imageProps} />}
-                    />
+                    <img src={imageCalculate} alt="image of Strategy" className="img-fluid w-100 mb-40" />
                     <p className="font-secondary mb-10">
                         Carrick Dividend Yield Fund每半年支付一次分红。
                         您可以选择将分红重新投资到基金中或记入您的银行帐户。
@@ -235,15 +226,10 @@ export default function FundDividedYield() {
                                         </div>
                                     </div>
                                     <div className="col-lg-4">
-                                        <LazyImage
+                                        <img
                                             src={imageDividendYield}
                                             alt="image of benefit"
-                                            placeholder={({imageProps, ref}) => (
-                                                <img ref={ref} src={imagePreloader} alt={imageProps.alt} />
-                                            )}
-                                            actual={({imageProps}) => (
-                                                <img className="img-fluid rounded" {...imageProps} />
-                                            )}
+                                            className="img-fluid rounded"
                                         />
                                     </div>
                                 </div>

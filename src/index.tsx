@@ -7,8 +7,11 @@ import Home from "./pages/Home"
 import Test from "./pages/test"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "./styles/styles.css"
+import "babel-polyfill"
 import gifPreloader from "./images/preloader.gif"
 import ScrollToTop from "./components/ScrollToTop"
+import "react-app-polyfill/ie11"
+import "react-app-polyfill/stable"
 import * as serviceWorker from "./serviceWorker"
 
 const Preloader = () => {

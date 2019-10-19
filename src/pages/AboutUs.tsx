@@ -40,19 +40,11 @@ export default function AboutUs() {
                                 <div className="card text-center">
                                     <h4 className="card-title pt-3">公司简介</h4>
                                     <div className="card-img-wrapper">
-                                        <LazyImage
+                                        <img
                                             src={imageCompanyDetails}
                                             alt="image of Company Details"
-                                            placeholder={({imageProps, ref}) => (
-                                                <img ref={ref} src={imagePreloader} alt={imageProps.alt} />
-                                            )}
-                                            actual={({imageProps}) => (
-                                                <img
-                                                    className="card-img-top rounded-0"
-                                                    height="200px"
-                                                    {...imageProps}
-                                                />
-                                            )}
+                                            className="card-img-top rounded-0"
+                                            height="200px"
                                         />
                                     </div>
                                     <div className="card-body p-0">
@@ -72,19 +64,11 @@ export default function AboutUs() {
                                 <div className="card text-center">
                                     <h4 className="card-title pt-3">精英团队</h4>
                                     <div className="card-img-wrapper">
-                                        <LazyImage
+                                        <img
                                             src={imageCompanyTeam}
                                             alt="image of company team"
-                                            placeholder={({imageProps, ref}) => (
-                                                <img ref={ref} src={imagePreloader} alt={imageProps.alt} />
-                                            )}
-                                            actual={({imageProps}) => (
-                                                <img
-                                                    className="card-img-top rounded-0"
-                                                    height="200px"
-                                                    {...imageProps}
-                                                />
-                                            )}
+                                            className="card-img-top rounded-0"
+                                            height="200px"
                                         />
                                     </div>
                                     <div className="card-body p-0">
@@ -134,14 +118,7 @@ export default function AboutUs() {
                                 <h2 className="section-title section-title-border">投资流程</h2>
                             </div>
                             <div className="col-12 text-center">
-                                <LazyImage
-                                    src={imageProcess}
-                                    alt="image of process of investment"
-                                    placeholder={({imageProps, ref}) => (
-                                        <img ref={ref} src={imagePreloader} alt={imageProps.alt} />
-                                    )}
-                                    actual={({imageProps}) => <img width="80%" {...imageProps} />}
-                                />
+                                <img src={imageProcess} alt="image of process of investment" width="80%" />
                             </div>
                             <div className="row mt-5">
                                 <div className="col-lg-4 col-sm-6 mb-md-50">

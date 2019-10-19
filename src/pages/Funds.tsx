@@ -13,11 +13,11 @@ const fundsCard = fundsOverview.map(fundsItem => (
         <div className="card text-center">
             <h4 className="card-title pt-3">{fundsItem.title}</h4>
             <div className="card-img-wrapper">
-                <LazyImage
+                <img
                     src={require(`../images/funds/${fundsItem.props}.jpg`)}
                     alt={fundsItem.props}
-                    placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
-                    actual={({imageProps}) => <img className="card-img-top rounded-0" height="200px" {...imageProps} />}
+                    className="card-img-top rounded-0"
+                    height="200px"
                 />
             </div>
             <div className="card-body p-0">

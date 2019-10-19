@@ -46,12 +46,7 @@ function FundsComponent(isShowId: number) {
             <>
                 <div>
                     <h4 className="mb-30">风险指标</h4>
-                    <LazyImage
-                        src={imageRiskFigure}
-                        alt="image of risk figure"
-                        placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
-                        actual={({imageProps}) => <img className="img-fluid w-100 mb-40" {...imageProps} />}
-                    />
+                    <img src={imageRiskFigure} alt="image of risk figure" className="img-fluid w-100 mb-40" />
                 </div>
             </>
         )
@@ -96,12 +91,8 @@ function FundsComponent(isShowId: number) {
             <>
                 <div>
                     <h4 className="mb-30">分红</h4>
-                    <LazyImage
-                        src={imageBonus}
-                        alt="image of bonus"
-                        placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
-                        actual={({imageProps}) => <img className="img-fluid w-100 mb-40" {...imageProps} />}
-                    />
+                    <img src={imageBonus} alt="image of bonus" className="img-fluid w-100 mb-40" />
+
                     <p className="font-secondary mb-10">
                         Carrick Direct Property Fund每年支付一次红利。分红是从基金的净收入中得出的，可能会有所波动。
                         支付给您的分红金额将取决于您持有的单位数量。 所有分红均由我们自行决定。
@@ -244,15 +235,10 @@ export default function FundProperty() {
                                         </div>
                                     </div>
                                     <div className="col-lg-4">
-                                        <LazyImage
+                                        <img
                                             src={imageProperty}
                                             alt="image of Core Competence"
-                                            placeholder={({imageProps, ref}) => (
-                                                <img ref={ref} src={imagePreloader} alt={imageProps.alt} />
-                                            )}
-                                            actual={({imageProps}) => (
-                                                <img className="img-fluid w-100 mb-40" {...imageProps} />
-                                            )}
+                                            className="img-fluid w-100 mb-40"
                                         />
                                     </div>
                                 </div>

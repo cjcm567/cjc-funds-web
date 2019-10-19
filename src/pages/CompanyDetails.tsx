@@ -52,14 +52,7 @@ export default function CompanyDetails() {
                                 </p>
                             </div>
                             <div className="col-lg-5 align-self-center order-1 order-lg-2 mb-md-50">
-                                <LazyImage
-                                    src={imageAbout}
-                                    alt="philosophy-image"
-                                    placeholder={({imageProps, ref}) => (
-                                        <img ref={ref} src={imagePreloader} alt={imageProps.alt} />
-                                    )}
-                                    actual={({imageProps}) => <img className="img-fluid w-100" {...imageProps} />}
-                                />
+                                <img src={imageAbout} alt="philosophy-image" className="img-fluid w-100" />
                             </div>
                         </div>
                     </div>
