@@ -183,7 +183,7 @@ body {
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     font-size: 15px;
-    overflow-x: hidden !important;
+    /* overflow-x: hidden !important; */
 }
 
 p,

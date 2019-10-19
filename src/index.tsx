@@ -3,6 +3,8 @@
 import React, {lazy, Suspense} from "react"
 import ReactDOM from "react-dom"
 import {BrowserRouter as Router, Route, Switch, RouteComponentProps} from "react-router-dom"
+import Home from "./pages/Home"
+import Test from "./pages/test"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "./styles/styles.css"
 import gifPreloader from "./images/preloader.gif"
@@ -22,14 +24,6 @@ const InvestClass = () => {
     )
 }
 
-const HomeComponent = lazy(() => import("./pages/Home"))
-const Home = () => {
-    return (
-        <Suspense fallback={Preloader}>
-            <HomeComponent />
-        </Suspense>
-    )
-}
 const IndustryComponent = lazy(() => import("./pages/IndustryDevelopment"))
 const Industry = () => {
     return (
@@ -190,6 +184,7 @@ ReactDOM.render(
                 <Route path="/about-us/carrick-responsibility" exact component={CarrickResponsibility} />
                 <Route path="/about-us/carrick-Investment-philosophy" exact component={CarrickInvestmentPhilosophy} />
                 <Route path="/news" exact component={News} />
+                <Route path="/test" exact component={Test} />
                 <Route path="/invest-class" exact component={InvestClass} />
                 <Route path="/news/:props" exact component={NewsSingle} />
                 <Route path="/login-or-join" exact component={LoginOrJoin} />
