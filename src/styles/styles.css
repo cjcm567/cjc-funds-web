@@ -212,7 +212,6 @@ h1,
 }
 
 @media (max-width: 400px) {
-
     h1,
     .h1 {
         font-size: 30px;
@@ -1252,7 +1251,6 @@ button {
 }
 
 @media (max-width: 575px) {
-
     .hero-slider .prevArrow,
     .hero-slider .nextArrow {
         display: none;
