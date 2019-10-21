@@ -2,11 +2,16 @@
 
 import React from "react"
 import {Link} from "react-router-dom"
+import {Helmet} from "react-helmet"
 import "../styles/404.css"
 
 export default function NotFound() {
     return (
         <>
+            <Helmet>
+                <title>Page Not Found | Carrick Asset</title>
+                <meta name="description" content="Page Not Found. Please return to the homepage." />
+            </Helmet>
             <Link to="/">
                 <div className="NotFound">
                     <div className="svg">

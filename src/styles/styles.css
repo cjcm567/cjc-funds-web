@@ -171,16 +171,19 @@
  */
 
 /* 1.1 typography */
-@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Work+Sans:400,500,600");
+/* @import url("https://fonts.googleapis.com/css?family=Public Sans:300,400,500,600,700|Work+Sans:400,500,600"); */
+
 @font-face {
     font-family: "Public Sans";
     src: local("Public Sans"), url("../fonts/PublicSans/PublicSans-Regular.woff") format("woff");
 }
+
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Public Sans", sans-serif;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     font-size: 15px;
+    /* overflow-x: hidden !important; */
 }
 
 p,
@@ -200,7 +203,7 @@ h5,
 h6 {
     color: #222;
     font-weight: 500;
-    font-family: "Poppins", sans-serif;
+    font-family: "Public Sans", sans-serif;
 }
 
 h1,
@@ -309,6 +312,17 @@ h6,
 }
 
 .btn-outline:hover {
+    background: #303032;
+    color: #fff;
+}
+
+.btn-outline-light {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.btn-outline-light:hover {
     background: #303032;
     color: #fff;
 }
@@ -448,7 +462,7 @@ button {
     top: 0;
     left: 0;
     background: #000;
-    opacity: 0.6;
+    opacity: 0.3;
 }
 
 .overlay-dark {
@@ -628,7 +642,7 @@ button {
 .breadcrumb li,
 .breadcrumb a {
     color: #fff;
-    font-family: "Poppins", sans-serif;
+    font-family: "Public Sans", sans-serif;
     font-weight: 600;
     font-size: 12px;
     margin: 0 10px;
@@ -801,7 +815,7 @@ button {
 }
 
 .font-primary {
-    font-family: "Poppins", sans-serif;
+    font-family: "Public Sans", sans-serif;
 }
 
 .font-secondary {
@@ -978,6 +992,7 @@ button {
         top: 24px;
         background: none;
     }
+
     .navigation .navbar-brand img {
         height: 50px;
         width: auto;
@@ -1003,8 +1018,8 @@ button {
 
 .navigation .navbar .nav-item .nav-link {
     padding: 15px 10px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
+    font-family: "Public Sans", sans-serif;
+    /* font-weight: 600; */
     color: #222;
     text-transform: uppercase;
     transition: 0.2s ease;
@@ -1126,6 +1141,7 @@ button {
     .navigation .navbar .dropdown-item {
         text-align: center;
     }
+
     .navigation .navbar .dropdown-item::before {
         display: none;
     }
@@ -1559,7 +1575,6 @@ button {
     transition: 0.2s ease;
     border-top: 1px solid #dee2e6;
     border-right: 1px solid #dee2e6;
-
 }
 
 .card:hover .card-img-wrapper::before {
@@ -1684,6 +1699,17 @@ button {
     }
 }
 
+.process-item-two {
+    width: 14vw;
+    min-height: 46vh;
+}
+
+@media (max-width: 1199px) {
+    .process-item-two {
+        width: unset;
+    }
+}
+
 .process-item-number {
     position: absolute;
     left: -35px;
@@ -1768,6 +1794,32 @@ img.arrow-bottom {
 .service-menu li:hover a {
     color: #fff !important;
     background: #303032;
+}
+
+/* 14.5 clients */
+.contact-us {
+    background-position: center left;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 991px) {
+    .contact-us {
+        background-size: cover !important;
+        background-position: center center;
+        text-align: center;
+    }
+}
+
+.contact-us ul li {
+    height: 66px;
+}
+
+.contact-us ul li img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
 }
 
 /* service single end */
@@ -2004,7 +2056,7 @@ img.arrow-bottom {
     color: #222;
     transition: 0.2s ease;
     font-size: 16px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Public Sans", sans-serif;
 }
 
 .nav-tabs .nav-item .active {
@@ -2286,7 +2338,7 @@ ul.tag-list li a:hover {
 
 @media (max-width: 575px) {
     .signup-greeting {
-        padding-top: 400px;
+        padding-top: 80px;
     }
 }
 
@@ -2595,6 +2647,7 @@ ul.tag-list li a:hover {
     border: 1px solid grey;
     padding: 0 20px !important;
     height: 50px;
+    font-size: 400;
 }
 
 /* subscribe button */
@@ -2602,11 +2655,11 @@ ul.tag-list li a:hover {
     position: absolute;
     right: 5px;
     top: 5px;
+    border: 0;
     height: 40px;
     width: 40px;
     border-radius: 50%;
     color: #666;
-    font-size: 1.2rem;
     border: 1px solid #0057b8;
     background: none;
     transition: all linear 0.2s;
@@ -2634,7 +2687,6 @@ ul.tag-list li a:hover {
     text-align: center;
     display: block;
     transition: 0.2s ease;
-    font-size: 2rem;
 }
 
 .back-to-top span {

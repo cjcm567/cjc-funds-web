@@ -1,12 +1,12 @@
 /** @format */
 import React, {useState} from "react"
+import {Helmet} from "react-helmet"
 import Layout from "../components/layout"
 import imageCoreCompetence from "../images/investclass/fund01.jpg"
 import imageStrategy from "../images/investclass/fund02.jpg"
 import imageCalculate from "../images/funds/calculate.jpg"
 import imageCrossPlatform from "../images/funds/cross-platform.jpg"
 import imageFundOfFunds from "../images/funds/fund-of-funds.jpg"
-import Paragraph from "antd/lib/typography/Paragraph"
 
 function InvestClassComponent(isShowId: number) {
     if (isShowId == 0) {
@@ -18,9 +18,9 @@ function InvestClassComponent(isShowId: number) {
                     </h4>
                     <img className="img-fluid w-100 mb-40" src={imageCoreCompetence} alt="image of Core Competence" />
                     <div className="bg-gray p-5 rounded mb-60">
-                        <Paragraph>
+                        <p>
                             作为一种投资工具，证券投资基金把众多投资人的资金汇集起来，由基金托管人(例如银行)托管，由专业的基金管理公司管理和运作，通过投资于股票和债券等证券，获取收益。对于个人投资者而言，倘若你有1万元打算用于投资，但其数额不足以买入一系列不同类型的股票和债券，或者你根本没有时间和精力去挑选股票和债券，购买基金是不错的选择。例如申购某只开放式基金，你就成为该基金的持有人，上述1万元扣除申购费后折算成一定份额的基金单位。所有持有人的投资一起构成该基金的资产，基金管理公司的专业团队运用基金资产购买股票和债券，形成基金的投资组合。你所持有的基金份额，就是上述投资组合的缩影。专家理财是基金投资的重要特色。基金管理公司配备的投资专家，一般都具有深厚的投资分析理论功底和丰富的实践经验，以科学的方法研究股票、债券等金融产品，组合投资，规避风险。
-                        </Paragraph>
+                        </p>
                     </div>
                 </div>
             </>
@@ -69,7 +69,9 @@ function InvestClassComponent(isShowId: number) {
         return (
             <>
                 <div>
-                    <h4 className="mb-30">单位净值是什么？</h4>
+                    <h4 className="mb-30">
+                        <b>单位净值是什么？</b>
+                    </h4>
                     <img className="img-fluid w-100 mb-40" src={imageStrategy} alt="image of Strategy" />
                     <div className="bg-gray p-5 rounded mb-60">
                         <p className="text-dark mb-30">策略选择原则：</p>
@@ -82,14 +84,17 @@ function InvestClassComponent(isShowId: number) {
         )
     }
     if (isShowId === 3) {
+        const word = "总回报=(Ne÷Nb)×(1+D1÷N1)×(1+D2÷N2)×......×(1+Dn÷Nn)-1其中："
         return (
             <>
                 <div>
-                    <h4 className="mb-30">如何计算基金的总回报率</h4>
+                    <h4 className="mb-30">
+                        <b>如何计算基金的总回报率</b>
+                    </h4>
                     <img className="img-fluid w-100 mb-40" src={imageCalculate} alt="image of Strategy" />
                     <div className="bg-gray p-5 rounded mb-60">
-                        <ul className="d-inline-block pl-0 mb-10 text-dark">
-                            <li className="mb-10">
+                        <ul className="d-inline-block pl-0 mb-10">
+                            <li className="font-secondary mb-10">
                                 <p className="text-dark">
                                     我们把基金在一定时期内的收益定义为总回报，作为衡量基金以往表现的最基本方法。总回报的来源有两部分，一是收入回报，即基金在一定时期内收到的分红和利息收入，例如股息、债券利息和银行存款利息等;二是资本回报，反映基金所持有的股票与债券价格涨跌的幅度
                                 </p>
@@ -112,17 +117,10 @@ function InvestClassComponent(isShowId: number) {
                                     基金通常会把已经实现的收益向投资人进行分配。分红的基础为「基金净收益」，即基金的收入回报和通过卖出证券实现的资本回报，减去依法可以在基金收益中扣除的费用后的余额。按照目前有关规定，分红有两个约束条件：一是基金投资要有已实现的净收益，二是分红比例在一年中不得低于已实现净收益的90%。
                                 </p>
                             </li>
-                            <li className="mb-10">
-                                <p className="text-dark">
-                                    对于分红方式，投资人有两种选择，一是分配现金;二是再投资，即将分得的收益再投资于基金，并折算成相应数量的基金单位
-                                </p>
-                            </li>
-                            <li className="mb-10">
-                                <p className="text-dark">
-                                    分红后，单位基金资产净值会下降。假设分红前单位净值1.06元，单位分红金额0.05元，则分红后单位净值降至1.01元。考虑了分红因素后，我们再来计算总回报。总回报=(Ne÷Nb)×(1+D1÷N1)×(1+D2÷N2)×......×(1+Dn÷Nn)-1其中：Ne和Nb分别为期末和期初单位资产净值;D1、D2、Dn分别为第1次、第2次、第n次单位分红金额;N1、N2、Nn分别为第1次、第2次、第n次分红再投资日的单位净值。
-                                </p>
-                            </li>
                         </ul>
+                        <p className="text-dark">
+                            对于分红方式，投资人有两种选择，一是分配现金;二是再投资，即将分得的收益再投资于基金，并折算成相应数量的基金单位
+                        </p>
                     </div>
                 </div>
             </>
@@ -157,14 +155,16 @@ export default function InvestClass() {
     ))
     return (
         <>
+            <Helmet>
+                <title>投资课堂 | Carrick Asset</title>
+                <meta name="description" content="Carrick Asset 投资课堂" />
+            </Helmet>
             <Layout>
                 <section className="section">
                     <div className="container">
                         <div className="row">
-                            <h3 className="mb-10">投资课堂</h3>
-                            <p className="mb-40"></p>
-
-                            <div className="mb-md-50">
+                            <h3 className="mb-10 px-3">投资课堂</h3>
+                            <div className="mb-md-50 px-3">
                                 <div className="row">
                                     <div className="col-lg-8 col-md-12">
                                         <div className="bg-gray p-5 rounded mb-60">

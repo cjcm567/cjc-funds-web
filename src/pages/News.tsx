@@ -4,6 +4,7 @@ import React from "react"
 import {Link} from "react-router-dom"
 import Layout from "../components/layout"
 import {LazyImage} from "react-lazy-images"
+import {Helmet} from "react-helmet"
 import imagePreloader from "../images/preloader.gif"
 import imageBackground from "../images/news/background.jpg"
 import newsObject from "../data/newsData.json"
@@ -16,20 +17,22 @@ export default function News() {
         <div className="col-lg-4 col-sm-6 mb-4" key={newsObjectItem.props}>
             <div className="card">
                 <div className="card-img-wrapper overlay-rounded-top">
-                    <LazyImage
+                    <img
                         src={require(`../images/news/${newsObjectItem.props}.jpg`)}
                         alt={newsObjectItem.title}
-                        placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
-                        actual={({imageProps}) => <img className="card-img-top" height="200px" {...imageProps} />}
+                        className="card-img-top"
+                        height="200px"
                     />
                 </div>
                 <div className="card-body p-0">
                     <div className="d-flex">
                         <div className="py-3 px-4 border-right text-center">
-                            <h3 className="text-primary mb-0">{newsObjectItem.date.substr(0, 2).trim()}</h3>
+                            <h3 className="text-primary mb-0" style={{width: 40}}>
+                                {newsObjectItem.date.substr(0, 2).trim()}
+                            </h3>
                             <p className="mb-0">{newsObjectItem.date.split(" ").pop()}</p>
                         </div>
-                        <div className="p-3">
+                        <div className="p-3" style={{minHeight: "14vh"}}>
                             <Link to={`/news/${newsObjectItem.props}`} className="h4 font-primary text-dark">
                                 {newsObjectItem.title}
                             </Link>
@@ -42,6 +45,10 @@ export default function News() {
     ))
     return (
         <>
+            <Helmet>
+                <title>News | Carrick Asset</title>
+                <meta name="description" content="Carrick Asset News" />
+            </Helmet>
             <Layout>
                 <section className="page-title overlay" style={sectionStyle}>
                     <div className="container">

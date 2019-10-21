@@ -3,10 +3,15 @@
 import React, {lazy, Suspense} from "react"
 import ReactDOM from "react-dom"
 import {BrowserRouter as Router, Route, Switch, RouteComponentProps} from "react-router-dom"
+import Home from "./pages/Home"
+import Test from "./pages/test"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "./styles/styles.css"
+import "babel-polyfill"
 import gifPreloader from "./images/preloader.gif"
 import ScrollToTop from "./components/ScrollToTop"
+import "react-app-polyfill/ie11"
+import "react-app-polyfill/stable"
 import * as serviceWorker from "./serviceWorker"
 
 const Preloader = () => {
@@ -22,14 +27,6 @@ const InvestClass = () => {
     )
 }
 
-const HomeComponent = lazy(() => import("./pages/Home"))
-const Home = () => {
-    return (
-        <Suspense fallback={Preloader}>
-            <HomeComponent />
-        </Suspense>
-    )
-}
 const IndustryComponent = lazy(() => import("./pages/IndustryDevelopment"))
 const Industry = () => {
     return (
@@ -38,7 +35,6 @@ const Industry = () => {
         </Suspense>
     )
 }
-
 const ContactUsComponent = lazy(() => import("./pages/ContactUs"))
 const ContactUs = () => {
     return (
@@ -71,7 +67,14 @@ const AboutUs = () => {
         </Suspense>
     )
 }
-
+const CompanyDetailsComponent = lazy(() => import("./pages/CompanyDetails"))
+const CompanyDetails = () => {
+    return (
+        <Suspense fallback={Preloader}>
+            <CompanyDetailsComponent />
+        </Suspense>
+    )
+}
 const CarrickResponsibilityComponent = lazy(() => import("./pages/CarrickResponsibility"))
 const CarrickResponsibility = () => {
     return (
@@ -131,12 +134,37 @@ const FundDividedYield = () => {
         </Suspense>
     )
 }
-
-const ManagerComponent = lazy(() => import("./pages/Manager"))
-const Manager = () => {
+const FundPropertyComponent = lazy(() => import("./pages/FundProperty"))
+const FundProperty = () => {
     return (
         <Suspense fallback={Preloader}>
-            <ManagerComponent />
+            <FundPropertyComponent />
+        </Suspense>
+    )
+}
+
+const ManagerComponent = lazy(() => import("./pages/Manager"))
+const Manager = (props: RouteComponentProps<TParams>) => {
+    return (
+        <Suspense fallback={Preloader}>
+            <ManagerComponent {...props} />
+        </Suspense>
+    )
+}
+const ManagerTeamComponent = lazy(() => import("./pages/ManagerTeam"))
+const ManagerTeam = () => {
+    return (
+        <Suspense fallback={Preloader}>
+            <ManagerTeamComponent />
+        </Suspense>
+    )
+}
+
+const PartnershipComponent = lazy(() => import("./pages/Partnership"))
+const Partnership = () => {
+    return (
+        <Suspense fallback={Preloader}>
+            <PartnershipComponent />
         </Suspense>
     )
 }
@@ -145,19 +173,24 @@ ReactDOM.render(
         <ScrollToTop>
             <Switch>
                 <Route path="/" exact component={Home} />
-                <Route path="/contact-us" component={ContactUs} />
-                <Route path="/industry" component={Industry} />
+                <Route path="/contact-us" exact component={ContactUs} />
+                <Route path="/industry" exact component={Industry} />
+                <Route path="/partnership" exact component={Partnership} />
                 <Route path="/funds" exact component={Funds} />
                 <Route path="/funds/fund-of-funds" exact component={FundOfFunds} />
                 <Route path="/funds/carrick-dividend-yield-fund" exact component={FundDividedYield} />
+                <Route path="/funds/carrick-nz-au-property-fund" exact component={FundProperty} />
                 <Route path="/about-us" exact component={AboutUs} />
-                <Route path="/about-us/manager" exact component={Manager} />
+                <Route path="/about-us/company-details" exact component={CompanyDetails} />
+                <Route path="/about-us/team" exact component={ManagerTeam} />
+                <Route path="/about-us/team/:props" exact component={Manager} />
                 <Route path="/about-us/carrick-responsibility" exact component={CarrickResponsibility} />
                 <Route path="/about-us/carrick-Investment-philosophy" exact component={CarrickInvestmentPhilosophy} />
                 <Route path="/news" exact component={News} />
-                <Route path="/InvestClass" exact component={InvestClass} />
+                <Route path="/test" exact component={Test} />
+                <Route path="/invest-class" exact component={InvestClass} />
                 <Route path="/news/:props" exact component={NewsSingle} />
-                <Route path="/login-or-join" component={LoginOrJoin} />
+                <Route path="/login-or-join" exact component={LoginOrJoin} />
                 <Route path="/404" component={NotFound} />
                 <Route path="*" component={NotFound} />
                 <Route component={NotFound} />

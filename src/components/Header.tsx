@@ -50,6 +50,30 @@ function HeaderComponent() {
                         </div>
                     </div>
                 </div>
+                {/* <div className="top-header overlay">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-12">
+                                <ul className="list-inline text-lg-right text-center">
+                                    <li className="list-inline-item">
+                                        <a href="mailto:info@companyname.com">info@companyname.com</a>
+                                    </li>
+                                    <li className="list-inline-item">
+                                        <a href="callto:1234565523">
+                                            Call Us Now:
+                                            <span className="ml-2"> 123 456 5523</span>
+                                        </a>
+                                    </li>
+                                    <li className="list-inline-item">
+                                        <a href="#" id="searchOpen">
+                                            <i className="ti-search"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div> */}
                 <div className="navigation">
                     <div className="container">
                         <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -66,7 +90,6 @@ function HeaderComponent() {
                                 aria-label="Toggle navigation">
                                 <span className="navbar-toggler-icon" onClick={handleNavCollapse} />
                             </button>
-
                             <div className={collapseStatus} id="navbarSupportedContent">
                                 <ul className="navbar-nav ml-auto">
                                     <li className="nav-item">
@@ -82,21 +105,23 @@ function HeaderComponent() {
                                             关于我们
                                         </Link>
                                         <div className={aboutUsDropdownMenuStatus}>
-                                            <Link to="/about-us" className="dropdown-item">
-                                                关于我们
+                                            <Link to="/about-us/company-details" className="dropdown-item">
+                                                公司简介
                                             </Link>
-                                            <Link to="/about-us/manager" className="dropdown-item">
-                                                基金经理人
-                                            </Link>
-                                            <Link to="/about-us/carrick-responsibility" className="dropdown-item">
-                                                我们的责任
+                                            <Link to="/about-us/team" className="dropdown-item">
+                                                精英团队
                                             </Link>
                                             <Link
                                                 to="/about-us/carrick-Investment-philosophy"
                                                 className="dropdown-item">
-                                                我们的投资理念
+                                                投资理念
                                             </Link>
                                         </div>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link to="/partnership" className="nav-link">
+                                            合作机构
+                                        </Link>
                                     </li>
                                     <li className="nav-item dropdown">
                                         <Link
@@ -110,7 +135,10 @@ function HeaderComponent() {
                                                 Fund of Funds
                                             </Link>
                                             <Link to="/funds/carrick-dividend-yield-fund" className="dropdown-item">
-                                                Carrick Dividend Yield Fund
+                                                Carrick NZ&AU Dividend Yield Fund
+                                            </Link>
+                                            <Link to="/funds/carrick-nz-au-property-fund" className="dropdown-item">
+                                                Carrick Direct Property Fund
                                             </Link>
                                         </div>
                                     </li>
@@ -119,19 +147,17 @@ function HeaderComponent() {
                                             业内新闻
                                         </Link>
                                     </li>
+
                                     <li className="nav-item">
-                                        <Link to="/industry" className="nav-link">
-                                            行业发展
-                                        </Link>
-                                    </li>
-                                    <li className="nav-item">
-                                        <Link to="/InvestClass" className="nav-link">
+                                        <Link to="/invest-class" className="nav-link">
                                             投资学堂
                                         </Link>
                                     </li>
 
-                                    <li className="nav-item">
-                                        <Link to="/login-or-join" className="btn btn-primary btn-sm text-white">
+                                    <li className="nav-item text-center">
+                                        <Link
+                                            to="/login-or-join"
+                                            className="btn btn-primary text-uppercase btn-sm text-white">
                                             Invest now
                                         </Link>
                                     </li>

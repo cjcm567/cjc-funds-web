@@ -2,8 +2,7 @@
 
 import React, {useState} from "react"
 import Layout from "../components/layout"
-import {LazyImage} from "react-lazy-images"
-import imagePreloader from "../images/preloader.gif"
+import {Helmet} from "react-helmet"
 import imageCoreCompetence from "../images/funds/core-competence.png"
 import imageStrategy from "../images/funds/strategy.png"
 import imageCalculate from "../images/funds/calculate.jpg"
@@ -17,12 +16,8 @@ function FundsComponent(isShowId: number) {
             <>
                 <div>
                     <h4 className="mb-30">量化 FOF 基金经营</h4>
-                    <LazyImage
-                        src={imageCoreCompetence}
-                        alt="image of Core Competence"
-                        placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
-                        actual={({imageProps}) => <img className="img-fluid w-100 mb-40" {...imageProps} />}
-                    />
+                    <img src={imageCoreCompetence} alt="image of Core Competence" className="img-fluid w-100 mb-40" />
+
                     <div className="row">
                         <div className="col-lg-6 bg-gray p-5 rounded mb-60">
                             <div className="row">
@@ -82,12 +77,8 @@ function FundsComponent(isShowId: number) {
             <>
                 <div>
                     <h4 className="mb-30">量化投顾的遴选流程</h4>
-                    <LazyImage
-                        src={imageCrossPlatform}
-                        alt="image of cross platform"
-                        placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
-                        actual={({imageProps}) => <img className="img-fluid w-100 mb-40" {...imageProps} />}
-                    />
+                    <img src={imageCrossPlatform} alt="image of cross platform" className="img-fluid w-100 mb-40" />
+
                     <div className="bg-gray p-5 rounded mb-60">
                         <ul className="d-inline-block pl-0 mb-10">
                             <li className="font-secondary mb-10">
@@ -126,12 +117,8 @@ function FundsComponent(isShowId: number) {
             <>
                 <div>
                     <h4 className="mb-30">量化策略的特点及策略类型</h4>
-                    <LazyImage
-                        src={imageStrategy}
-                        alt="image of Strategy"
-                        placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
-                        actual={({imageProps}) => <img className="img-fluid w-100 mb-40" {...imageProps} />}
-                    />
+                    <img src={imageStrategy} alt="image of Strategy" className="img-fluid w-100 mb-40" />
+
                     <div className="bg-gray p-5 rounded mb-60">
                         <ul className="d-inline-block pl-0 mb-10">
                             <li className="font-secondary mb-10">
@@ -178,12 +165,8 @@ function FundsComponent(isShowId: number) {
             <>
                 <div>
                     <h4 className="mb-30">量化机构风控体系</h4>
-                    <LazyImage
-                        src={imageCalculate}
-                        alt="image of calculate"
-                        placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
-                        actual={({imageProps}) => <img className="img-fluid w-100 mb-40" {...imageProps} />}
-                    />
+                    <img src={imageCalculate} alt="image of calculate" className="img-fluid w-100 mb-40" />
+
                     <div className="bg-gray p-5 rounded mb-60">
                         <ul className="d-inline-block pl-0 mb-10">
                             <li className="font-secondary mb-10">
@@ -212,12 +195,8 @@ function FundsComponent(isShowId: number) {
             <>
                 <div>
                     <h4 className="mb-30">量化机构 IT 体系</h4>
-                    <LazyImage
-                        src={imageMobile}
-                        alt="image of mobile"
-                        placeholder={({imageProps, ref}) => <img ref={ref} src={imagePreloader} alt={imageProps.alt} />}
-                        actual={({imageProps}) => <img className="img-fluid w-100 mb-40" {...imageProps} />}
-                    />
+                    <img src={imageMobile} alt="image of mobile" className="img-fluid w-100 mb-40" />
+
                     <div className="bg-gray p-5 rounded mb-60">
                         <ul className="d-inline-block pl-0 mb-10">
                             <li className="font-secondary mb-10">
@@ -271,6 +250,13 @@ export default function FundOfFunds() {
     ))
     return (
         <>
+            <Helmet>
+                <title>FOF（Fund of Funds，基金中的基金） | Carrick Asset</title>
+                <meta
+                    name="description"
+                    content="FOF（Fund of Funds，基金中的基金）指投资于基金组合的基金。在欧美市场，FOF 已发展成为数量规模占比均较大的一类成熟的理财产品，相比而言，在我国 FOF 仍具有较大的发展空间（家族理财机构及对冲基金）。"
+                />
+            </Helmet>
             <Layout>
                 <section className="section">
                     <div className="container">
@@ -302,15 +288,10 @@ export default function FundOfFunds() {
                                         </div>
                                     </div>
                                     <div className="col-lg-4">
-                                        <LazyImage
+                                        <img
                                             src={imageFundOfFunds}
                                             alt="image of benefit"
-                                            placeholder={({imageProps, ref}) => (
-                                                <img ref={ref} src={imagePreloader} alt={imageProps.alt} />
-                                            )}
-                                            actual={({imageProps}) => (
-                                                <img className="img-fluid rounded" {...imageProps} />
-                                            )}
+                                            className="img-fluid rounded"
                                         />
                                     </div>
                                 </div>
