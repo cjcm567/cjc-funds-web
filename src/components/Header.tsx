@@ -111,11 +111,11 @@ function HeaderComponent() {
                                             <Link to="/about-us/team" className="dropdown-item">
                                                 精英团队
                                             </Link>
-                                            {/* <Link
+                                            <Link
                                                 to="/about-us/carrick-Investment-philosophy"
                                                 className="dropdown-item">
                                                 投资理念
-                                            </Link> */}
+                                            </Link>
                                         </div>
                                     </li>
                                     <li className="nav-item">
@@ -131,6 +131,9 @@ function HeaderComponent() {
                                             基金产品
                                         </Link>
                                         <div className={dropdownMenuStatus}>
+                                            <Link to="/funds/fund-of-funds" className="dropdown-item">
+                                                Fund of Funds
+                                            </Link>
                                             <Link to="/funds/carrick-dividend-yield-fund" className="dropdown-item">
                                                 Carrick NZ&AU Dividend Yield Fund
                                             </Link>
