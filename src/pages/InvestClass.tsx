@@ -52,13 +52,13 @@ function InvestClassComponent(isShowId: number) {
                                 <b>3. 保本基金：</b>
                                 保本基金的最大特点是其招募说明书中明确规定相关的担保条款，即在满足一定的持有期限后，为投资人提供本金或收益的保障。
                             </li>
-                            <li className="font-secondary mb-10">
+                            {/* <li className="font-secondary mb-10">
                                 <i className="text-primary mr-2 ti-arrow-circle-right"></i>
                                 <b>4. 基金的基金：</b>
                                 基金的基金是以基金为投资对象的基金。一般的基金以股票、债券等投资工具“”为投资对象，而
                                 基金的基金
                                 投资对象是一般的基金，其适宜那些初涉证券市场、投资经验较少的投资者，或者是工作繁忙而没有时间管理投资组合的投资者
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
                 </div>
