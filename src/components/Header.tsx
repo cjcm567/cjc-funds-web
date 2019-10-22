@@ -131,9 +131,9 @@ function HeaderComponent() {
                                             基金产品
                                         </Link>
                                         <div className={dropdownMenuStatus}>
-                                            <Link to="/funds/fund-of-funds" className="dropdown-item">
+                                            {/* <Link to="/funds/fund-of-funds" className="dropdown-item">
                                                 Fund of Funds
-                                            </Link>
+                                            </Link> */}
                                             <Link to="/funds/carrick-dividend-yield-fund" className="dropdown-item">
                                                 Carrick NZ&AU Dividend Yield Fund
                                             </Link>
