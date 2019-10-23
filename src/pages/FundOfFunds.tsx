@@ -113,86 +113,34 @@ function FundsComponent(isShowId: number) {
                 <h4 className="mb-30">风险控制</h4>
                 <div is="fof">
                     <div className="pricing-box-container">
-                        <div className="pricing-box text-center">
-                            <h3>Free</h3>
-                            <p className="price">
-                                <sup>$</sup>0<sub>/mo</sub>
-                            </p>
+                        <div className="pricing-box text-center has-same-height">
+                            <p className="price">策略风控</p>
                             <ul className="features-list">
-                                <li>
-                                    <strong>1</strong> Project
-                                </li>
-                                <li>
-                                    <strong>5</strong> Team Members
-                                </li>
-                                <li>
-                                    <strong>50</strong> Personal Projects
-                                </li>
-                                <li>
-                                    <strong>5,000</strong> Messages
-                                </li>
+                                <li>单策略设置止盈 止损指标</li>
+                                <li>组合策略单日最大亏损比例和单日持仓比例限制</li>
                             </ul>
                         </div>
 
-                        <div className="pricing-box text-center">
-                            <h3>Premium</h3>
-                            <p className="price">
-                                <sup>$</sup>39<sub>/mo</sub>
-                            </p>
+                        <div className="pricing-box text-center has-same-height">
+                            <p className="price">交易风控</p>
                             <ul className="features-list">
-                                <li>
-                                    <strong>5</strong> Project
-                                </li>
-                                <li>
-                                    <strong>20</strong> Team Members
-                                </li>
-                                <li>
-                                    <strong>100</strong> Personal Projects
-                                </li>
-                                <li>
-                                    <strong>15,000</strong> Messages
-                                </li>
+                                <li>交易过程的实时监测、比较验证和自动报警</li>
+                                <li>熔断机制：心跳连接中断或触及风控警戒线，程序立刻停止交易</li>
                             </ul>
                         </div>
 
-                        <div className="pricing-box text-center">
-                            <h3>Platinum</h3>
-                            <p className="price">
-                                <sup>$</sup>89<sub>/mo</sub>
-                            </p>
+                        <div className="pricing-box text-center has-same-height">
+                            <p className="price">风险总控</p>
                             <ul className="features-list">
-                                <li>
-                                    <strong>25</strong> Project
-                                </li>
-                                <li>
-                                    <strong>50</strong> Team Members
-                                </li>
-                                <li>
-                                    <strong>500</strong> Personal Projects
-                                </li>
-                                <li>
-                                    <strong>50,000</strong> Messages
-                                </li>
+                                <li>实时监测总的风险敞口和 VaR</li>
+                                <li>整个 IT 系统运行状态的实时监控和预警</li>
                             </ul>
                         </div>
-                        <div className="pricing-box text-center">
-                            <h3>Platinum</h3>
-                            <p className="price">
-                                <sup>$</sup>89<sub>/mo</sub>
-                            </p>
+                        <div className="pricing-box text-center has-same-height">
+                            <p className="price">合规总控</p>
                             <ul className="features-list">
-                                <li>
-                                    <strong>25</strong> Project
-                                </li>
-                                <li>
-                                    <strong>50</strong> Team Members
-                                </li>
-                                <li>
-                                    <strong>500</strong> Personal Projects
-                                </li>
-                                <li>
-                                    <strong>50,000</strong> Messages
-                                </li>
+                                <li>券商终端权限管理</li>
+                                <li>资金账户风险阀值设置</li>
                             </ul>
                         </div>
                     </div>

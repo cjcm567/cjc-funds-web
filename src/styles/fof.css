@@ -5,7 +5,10 @@
 .text-center {
 	text-align: center;
 }
-
+.has-same-height {
+    height: 320px;
+    overflow: hidden;
+}
 .pricing-box-container {
 	display: flex;
 	align-items: center;
@@ -24,6 +27,12 @@
 	max-width: 350px;
 }
 
+.pricing-box:hover {
+    box-shadow: 0 12px 30px 0 rgba(0,0,0,.2);
+    -webkit-transform: translate3d(0,-4px,0);
+    transform: translate3d(0,-4px,0);
+}
+
 .pricing-box h5 {
 	text-transform: uppercase;
 }
@@ -32,6 +41,7 @@
 	margin: 24px 0;
 	font-size: 36px;
 	font-weight: 900;
+	padding-top: 40px;
 }
 
 .price sub, .price sup {
@@ -48,6 +58,7 @@
 	font-weight: 100;
 	padding: 12px 0;
 	font-weight: 100;
+	text-align: left;
 }
 
 .features-list li:not(:last-of-type) {
