@@ -177,7 +177,7 @@ ReactDOM.render(
                 <Route path="/industry" exact component={Industry} />
                 <Route path="/partnership" exact component={Partnership} />
                 <Route path="/funds" exact component={Funds} />
-                <Route path="/funds/fund-of-funds" exact component={FundOfFunds} />
+                <Route path="/funds/carrick-fund-of-funds" exact component={FundOfFunds} />
                 <Route path="/funds/carrick-dividend-yield-fund" exact component={FundDividedYield} />
                 <Route path="/funds/carrick-nz-au-property-fund" exact component={FundProperty} />
                 <Route path="/about-us" exact component={AboutUs} />
