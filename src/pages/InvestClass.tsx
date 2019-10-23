@@ -6,7 +6,7 @@ import imageCoreCompetence from "../images/investclass/fund01.jpg"
 import imageStrategy from "../images/investclass/fund02.jpg"
 import imageCalculate from "../images/funds/calculate.jpg"
 import imageCrossPlatform from "../images/funds/cross-platform.jpg"
-import imageFundOfFunds from "../images/funds/fund-of-funds.jpg"
+import imageFundOfFunds from "../images/funds/carrick-fund-of-funds.jpg"
 
 function InvestClassComponent(isShowId: number) {
     if (isShowId == 0) {
