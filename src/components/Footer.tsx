@@ -62,7 +62,7 @@ function Footer() {
                                 </Link>
                                 <ul className="footer-links text-left">
                                     <li>
-                                        <Link to="/funds/fund-of-funds">Fund of Funds</Link>
+                                        <Link to="/funds/carrick-fund-of-funds">Fund of Funds</Link>
                                     </li>
                                     <li>
                                         <Link to="/funds/carrick-dividend-yield-fund">
