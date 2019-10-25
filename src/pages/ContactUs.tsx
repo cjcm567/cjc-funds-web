@@ -36,8 +36,8 @@ function ContactUs() {
                                             <img src={imageEmail} alt="imagePhone" />
                                         </div>
                                         <div className="align-self-center font-primary">
-                                            <a href="mailto:mark.fan@carrickassets.com" className="text-dark">
-                                                mark.fan@carrickassets.com
+                                            <a href="mailto:customer@carrickassets.com" className="text-dark">
+                                                customer@carrickassets.com
                                             </a>
                                         </div>
                                     </li>

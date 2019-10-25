@@ -33,9 +33,9 @@ export default function ContactUs() {
                                             style={{fontSize: "1.6rem", color: "#0057b8"}}></span>
                                         <div className="align-self-center font-primary">
                                             <a
-                                                href="mailto:mark.fan@carrickassets.com"
+                                                href="mailto:customer@carrickassets.com"
                                                 className="h4 text-white text-left">
-                                                mark.fan@carrickassets.com
+                                                customer@carrickassets.com
                                             </a>
                                         </div>
                                     </li>
