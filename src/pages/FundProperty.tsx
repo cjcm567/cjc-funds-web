@@ -262,7 +262,8 @@ export default function FundProperty() {
                                 {/* Consultation */}
                                 <div className="mb-50">
                                     <h4 className="mb-20">Request Consultation</h4>
-                                    <form action="#" className="row">
+                                    <form name="fundcontact" method="post" className="row">
+                                        <input type="hidden" name="form-name" value="fundcontact" />
                                         <div className="col-lg-12">
                                             <input
                                                 type="text"

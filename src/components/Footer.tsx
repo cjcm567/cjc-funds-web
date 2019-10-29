@@ -4,6 +4,7 @@
 
 import React, {Suspense} from "react"
 import {Link} from "react-router-dom"
+import logoImage from "../images/logo.png"
 import logo from "../images/logoicon.png"
 import "../fonts/IconFont/iconfont.css"
 
@@ -47,7 +48,7 @@ function Footer() {
                             <div className="col-lg-4 col-md-4">
                                 <div className="mb-5 mb-md-0 text-center text-md-left">
                                     <Link to="/">
-                                        <img src={logo} alt="logo" style={{height: "9vh"}} />
+                                        <img src={logoImage} alt="logo" style={{height: "9vh"}} />
                                     </Link>
                                     <p className="mb-30 text-left">
                                         欢迎来到 Carrick Just Asset Management Limited
@@ -64,11 +65,11 @@ function Footer() {
                                     <li>
                                         <Link to="/funds/carrick-fund-of-funds">Fund of Funds</Link>
                                     </li>
-                                    <li>
+                                    {/* <li>
                                         <Link to="/funds/carrick-dividend-yield-fund">
                                             Carrick NZ&AU Dividend Yield Fund
                                         </Link>
-                                    </li>
+                                    </li> */}
                                     <li>
                                         <Link to="/funds/carrick-nz-au-property-fund">
                                             Carrick Direct Property Fund
@@ -103,7 +104,8 @@ function Footer() {
                                         <br />
                                         您最好的选择
                                     </p>
-                                    <form action="#" className="position-relative">
+                                    <form name="newsletter" method="post" className="position-relative">
+                                        <input type="hidden" name="form-name" value="newsletter" />
                                         <input
                                             type="text"
                                             className="form-control subscribe"
@@ -117,6 +119,27 @@ function Footer() {
                                                 style={{color: "#666666", fontWeight: 600}}></span>
                                         </button>
                                     </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-lg-8">
+                                <div className="mb-5 mb-md-0 text-center text-md-left">
+                                    <p className="mb-10 text-left">
+                                        The information and use of this website is governed by our terms and conditions.
+                                        Carrick Just Asset Management Ltd may change these terms and conditions at any
+                                        time without notification. If you proceed to any other page of this website, you
+                                        acknowledge that you have read and accepted the terms and conditions.
+                                    </p>
+                                    <p className="mb-10 text-left">
+                                        Offer restricted to “wholesale investors” under clauses 3(2) and 3(3)(a) of
+                                        schedule 1 to the
+                                        <a href="http://www.legislation.govt.nz/act/public/2013/0069/latest/whole.html">
+                                            {" "}
+                                            FINANCIAL MARKETS CONDUCT ACT 2013
+                                        </a>
+                                        .
+                                    </p>
                                 </div>
                             </div>
                         </div>

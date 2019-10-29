@@ -43,37 +43,32 @@ function HeaderComponent() {
     return (
         <>
             <header className="box-shadow">
-                <div className="container">
+                {/* <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
                             <ul className="list-inline text-lg-right text-center" />
                         </div>
                     </div>
-                </div>
-                {/* <div className="top-header overlay">
+                </div> */}
+                <div className="top-header">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
                                 <ul className="list-inline text-lg-right text-center">
                                     <li className="list-inline-item">
-                                        <a href="mailto:info@companyname.com">info@companyname.com</a>
+                                        <a href="mailto:info@carrickasset.com">info@carrickasset.com</a>
                                     </li>
                                     <li className="list-inline-item">
-                                        <a href="callto:1234565523">
+                                        <a href="callto:0064092803716">
                                             Call Us Now:
-                                            <span className="ml-2"> 123 456 5523</span>
-                                        </a>
-                                    </li>
-                                    <li className="list-inline-item">
-                                        <a href="#" id="searchOpen">
-                                            <i className="ti-search"></i>
+                                            <span className="ml-2"> +64 9 2803716</span>
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                </div> */}
+                </div>
                 <div className="navigation">
                     <div className="container">
                         <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -134,9 +129,9 @@ function HeaderComponent() {
                                             <Link to="/funds/carrick-fund-of-funds" className="dropdown-item">
                                                 Carrick Fund of Funds
                                             </Link>
-                                            <Link to="/funds/carrick-dividend-yield-fund" className="dropdown-item">
+                                            {/* <Link to="/funds/carrick-dividend-yield-fund" className="dropdown-item">
                                                 Carrick NZ&AU Dividend Yield Fund
-                                            </Link>
+                                            </Link> */}
                                             <Link to="/funds/carrick-nz-au-property-fund" className="dropdown-item">
                                                 Carrick Direct Property Fund
                                             </Link>

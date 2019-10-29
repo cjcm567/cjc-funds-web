@@ -199,7 +199,8 @@ export default function InvestClass() {
                                 <ul className="service-menu pl-0 border rounded mb-50">{listSidebar}</ul>
                                 <div className="mb-50">
                                     <h5 className="mb-20">Request Consultation</h5>
-                                    <form action="#" className="row">
+                                    <form name="fundcontact" method="post" className="row">
+                                        <input type="hidden" name="form-name" value="fundcontact" />
                                         <div className="col-lg-12">
                                             <input
                                                 type="text"

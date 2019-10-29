@@ -253,7 +253,8 @@ export default function FundDividedYield() {
                                 {/* Consultation */}
                                 <div className="mb-50">
                                     <h5 className="mb-20">Request Consultation</h5>
-                                    <form action="#" className="row">
+                                    <form name="fundcontact" method="post" className="row">
+                                        <input type="hidden" name="form-name" value="fundcontact" />
                                         <div className="col-lg-12">
                                             <input
                                                 type="text"

@@ -933,7 +933,7 @@ button {
 }
 
 .top-header ul li {
-    margin: 15px 0;
+    margin: 10px 0;
 }
 
 @media (max-width: 575px) {
@@ -968,7 +968,7 @@ button {
     padding: 0;
     background: #fff !important;
     position: relative;
-    margin-top: 30px;
+    margin-top: 3px;
 }
 
 .navigation .navbar-brand {

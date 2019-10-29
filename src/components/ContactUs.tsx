@@ -19,7 +19,7 @@ export default function ContactUs() {
                                 <ul className="pl-0 px-5">
                                     <li className="d-flex">
                                         <span
-                                            className="iconfont icon-hotelphone align-self-center pt-1 mr-1"
+                                            className="iconfont icon-hotelphone align-self-center pt-1 mr-2"
                                             style={{fontSize: "1.6rem", color: "#0057b8"}}></span>
                                         <div className="align-self-center">
                                             <a href="tel:+64 9 2803716" className="h4 text-white text-left">
@@ -29,21 +29,19 @@ export default function ContactUs() {
                                     </li>
                                     <li className="d-flex mb-40">
                                         <span
-                                            className="iconfont icon-Email align-self-center pt-1 mr-1"
+                                            className="iconfont icon-Email align-self-center pt-1 mr-2"
                                             style={{fontSize: "1.6rem", color: "#0057b8"}}></span>
                                         <div className="align-self-center font-primary">
-                                            <a
-                                                href="mailto:customer@carrickassets.com"
-                                                className="h4 text-white text-left">
-                                                customer@carrickassets.com
+                                            <a href="mailto:info@carrickasset.com" className="h4 text-white text-left">
+                                                info@carrickasset.com
                                             </a>
                                         </div>
                                     </li>
                                     <li className="d-flex mb-30">
                                         <span
-                                            className="iconfont icon-address align-self-center mr-1"
-                                            style={{fontSize: "1.6rem", color: "#0057b8"}}></span>
-                                        <div className="align-self-center font-primary">
+                                            className="iconfont icon-address mr-2"
+                                            style={{fontSize: "1.6rem", color: "#0057b8", marginTop: "-4px"}}></span>
+                                        <div className="font-primary">
                                             <address className="h4 text-white text-left">
                                                 Carrick Just Asset Management Limited
                                                 <br />
