@@ -54,7 +54,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "format": "prettier --write \"**/*.{js,jsx,json,md,tsx,ts,css}\"",
+    "format": "prettier --write \"**/*.{js,jsx,json,md,tsx,ts,css,html}\"",
     "analyze": "source-map-explorer 'build/static/js/*.js'"
   },
   "eslintConfig": {

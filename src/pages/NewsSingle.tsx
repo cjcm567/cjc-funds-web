@@ -89,7 +89,8 @@ function Page(props: string) {
                                         {/* Widget Newsletter */}
                                         <div className="newsletter">
                                             <h4 className="mb-3">Stay Updated</h4>
-                                            <form action="#">
+                                            <form name="newscontact" method="post">
+                                                <input type="hidden" name="form-name" value="newscontact" />
                                                 <input
                                                     type="text"
                                                     name="name"

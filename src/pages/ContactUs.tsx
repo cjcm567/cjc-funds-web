@@ -36,8 +36,8 @@ function ContactUs() {
                                             <img src={imageEmail} alt="imagePhone" />
                                         </div>
                                         <div className="align-self-center font-primary">
-                                            <a href="mailto:customer@carrickassets.com" className="text-dark">
-                                                customer@carrickassets.com
+                                            <a href="mailto:info@carrickasset.com" className="text-dark">
+                                                info@carrickasset.com
                                             </a>
                                         </div>
                                     </li>
@@ -60,7 +60,8 @@ function ContactUs() {
                             {/* form */}
                             <div className="col-lg-6 col-md-7">
                                 <div className="p-5 rounded box-shadow">
-                                    <form action="#" className="row">
+                                    <form name="contactus" method="post" className="row">
+                                        <input type="hidden" name="form-name" value="contactus" />
                                         <div className="col-lg-12">
                                             <h3>Contact Form</h3>
                                         </div>

@@ -315,7 +315,8 @@ export default function FundOfFunds() {
                                 {/* Consultation */}
                                 <div className="mb-50">
                                     <h3 className="mb-20">Request Consultation</h3>
-                                    <form action="#" className="row">
+                                    <form name="fundcontact" method="post" className="row">
+                                        <input type="hidden" name="form-name" value="fundcontact" />
                                         <div className="col-lg-12">
                                             <input
                                                 type="text"
