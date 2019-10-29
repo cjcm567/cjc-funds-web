@@ -50,7 +50,7 @@ function Footer() {
                                     <Link to="/">
                                         <img src={logoImage} alt="logo" style={{height: "9vh"}} />
                                     </Link>
-                                    <p className="mb-30 text-left">
+                                    <p className="mb-30 text-left mt-2">
                                         欢迎来到 Carrick Just Asset Management Limited
                                         （凯利资产管理有限公司），我们旨在帮助您实现您的投资目标与财富梦想。凯利资产管理将为全球资产配置、税务规划、资产增值等一系列与财富管理相关的不同需求提供专业的金融服务。
                                     </p>
@@ -122,16 +122,16 @@ function Footer() {
                                 </div>
                             </div>
                         </div>
-                        <div className="row">
-                            <div className="col-lg-8">
+                        <div className="row mt-3">
+                            <div className="col-lg-12">
                                 <div className="mb-5 mb-md-0 text-center text-md-left">
-                                    <p className="mb-10 text-left">
+                                    <p className="mb-10 text-left" style={{fontSize: "12px"}}>
                                         The information and use of this website is governed by our terms and conditions.
                                         Carrick Just Asset Management Ltd may change these terms and conditions at any
                                         time without notification. If you proceed to any other page of this website, you
                                         acknowledge that you have read and accepted the terms and conditions.
                                     </p>
-                                    <p className="mb-10 text-left">
+                                    <p className="mb-10 text-left" style={{fontSize: "12px"}}>
                                         Offer restricted to “wholesale investors” under clauses 3(2) and 3(3)(a) of
                                         schedule 1 to the
                                         <a href="http://www.legislation.govt.nz/act/public/2013/0069/latest/whole.html">
@@ -139,6 +139,11 @@ function Footer() {
                                             FINANCIAL MARKETS CONDUCT ACT 2013
                                         </a>
                                         .
+                                    </p>
+                                    <p className="mb-10 text-left" style={{fontSize: "12px"}}>
+                                        Please note that past performance is not necessarily indicative of future
+                                        returns. Returns can be positive or negative, and returns over different time
+                                        periods may vary. No returns are promised or guaranteed.
                                     </p>
                                 </div>
                             </div>

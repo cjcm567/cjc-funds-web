@@ -58,10 +58,10 @@ function HeaderComponent() {
                                     <li className="list-inline-item">
                                         <a href="mailto:info@carrickasset.com">info@carrickasset.com</a>
                                     </li>
-                                    <li className="list-inline-item">
+                                    <li className="list-inline-item text-uppercase">
                                         <a href="callto:0064092803716">
-                                            Call Us Now:
-                                            <span className="ml-2"> +64 9 2803716</span>
+                                            Call Us today:
+                                            <span className="ml-2 text-white bold"> +64 9 2803716</span>
                                         </a>
                                     </li>
                                 </ul>
