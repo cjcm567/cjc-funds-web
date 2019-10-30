@@ -8,12 +8,26 @@ import imageStrategy from "../images/funds/strategy.png"
 import imageCalculate from "../images/funds/calculate.jpg"
 import imageCrossPlatform from "../images/funds/cross-platform.jpg"
 import imageFundOfFunds from "../images/funds/carrick-fund-of-funds.jpg"
+import imageFofTo from "../images/funds/fof-to.png"
 import imageFofStrategy from "../images/funds/fof-flow.png"
+import imageFofInvestment from "../images/funds/fof-investment.png"
+import logoHeiyi from "../images/funds/logo/logo-heiyi.jpeg"
+import logoHuanfang from "../images/funds/logo/logo-huanfang.png"
+import logoPingfanghe from "../images/funds/logo/logo-pingfanghe.png"
+import logoQianxiang from "../images/funds/logo/logo-qianxiang.png"
+import logoTaoli from "../images/funds/logo/logo-taoli.png"
+import logoZhiyuan from "../images/funds/logo/logo-zhiyuan.png"
 import imageFofFlow from "../images/funds/fof-strategy.png"
 import imageMobile from "../images/funds/mobile.jpg"
 import "../styles/fof.css"
 
 function FundsComponent(isShowId: number) {
+    const circleStyle = {
+        width: "200px",
+        height: "200px",
+        background: "rgba(0, 87, 184, 0.8)",
+        borderRadius: "50%",
+    }
     if (isShowId === 0) {
         return (
             <>
@@ -34,15 +48,15 @@ function FundsComponent(isShowId: number) {
                                 <p className="mb-20">中国 A 股二级市场</p>
                                 <h4 className="mb-10">基金类型</h4>
                                 <p className="mb-20">开放式</p>
+                                <h4 className="mb-10">开放期</h4>
+                                <p className="mb-20">封闭期满后每个月末</p>
+                                <h4 className="mb-10">封闭期</h4>
+                                <p className="mb-20">基金成立日（含）起的6个月内</p>
                             </div>
                         </div>
                     </div>
 
                     <div className="col-lg-6 bg-gray p-5 rounded mb-60">
-                        <h4 className="mb-10">开放期</h4>
-                        <p className="mb-20">封闭期满后每个月末</p>
-                        <h4 className="mb-10">封闭期</h4>
-                        <p className="mb-20">基金成立日（含）起的6个月内</p>
                         <h4 className="mb-10">认购/申购费率</h4>
                         <p className="mb-20">0.5%</p>
                         <h4 className="mb-10">赎回费率</h4>
@@ -77,12 +91,43 @@ function FundsComponent(isShowId: number) {
                             <i className="text-primary mr-2 ti-arrow-circle-right"></i>
                             3. 每日、每周计算子基金表现数据，确保多周期多维度跟踪子基金业绩与数据
                         </li>
+                        <li className="font-secondary mb-10">
+                            <i className="text-primary mr-2 ti-arrow-circle-right"></i>
+                            4.
+                            产品要素仅供参考，管理人可能视情况调整部分要素，任何商业条款应以正式签署的资产管理合同为准
+                        </li>
+                        <li className="font-secondary mb-10">
+                            <i className="text-primary mr-2 ti-arrow-circle-right"></i>
+                            5. 本产品并不适合所有投资者，只向符合资格的投资者开放
+                        </li>
                     </ul>
                 </p>
             </>
         )
     }
     if (isShowId === 1) {
+        return (
+            <>
+                <h4 className="mb-30">投研架构</h4>
+                <div className="row justify-content-center">
+                    <div className="col-lg-12">
+                        <img src={imageFofInvestment} alt="image of cross platform" className="img-fluid w-100 mb-40" />
+                    </div>
+                    <div className="col-lg-12">
+                        <div className="bg-gray p-5 rounded mb-60">
+                            <ul className="d-inline-block pl-0 mb-10">
+                                <li className="font-secondary mb-50">
+                                    投资经理跟投机制：确保投资经理与持有人利益<strong>高度一致</strong>。
+                                </li>
+                                <li className="font-secondary mb-10">投资人才股权激励：以人为本立足企业投研文化。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </>
+        )
+    }
+    if (isShowId === 2) {
         return (
             <>
                 <h4 className="mb-30">投资理念</h4>
@@ -107,40 +152,112 @@ function FundsComponent(isShowId: number) {
             </>
         )
     }
-    if (isShowId === 2) {
+    if (isShowId === 3) {
         return (
             <>
-                <h4 className="mb-30">风险控制</h4>
-                <div is="fof">
+                <h4 className="mb-30 mt-5">风险管理理念</h4>
+                <div className="row">
+                    <div className="col-lg-6 bg-gray p-4 rounded">
+                        <ul className="d-inline-block pl-0 mb-10">
+                            <li className="font-secondary mb-10 pl-2">1. 以保护投资者利益为导向</li>
+                            <li className="font-secondary mb-10 pl-2">2. 以资金曲线为总纲</li>
+                            <li className="font-secondary mb-10 pl-2">3. 多维度多层级严控风险</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h4 className="mb-30 mt-5">风险管理的三道防线</h4>
+                <div className="row">
+                    <div className="col-12">
+                        <ul className="list-inline text-lg-center text-center">
+                            <li className="list-inline-item">
+                                <div id="pointer">
+                                    <p className="h3 text-white text-center align-content-center">投研部门</p>
+                                </div>
+                            </li>
+                            <li className="list-inline-item text-uppercase ml-4 mr-4">
+                                <div id="pointer-grey">
+                                    <p className="h3 text-white text-center align-content-center">运营风控部</p>
+                                </div>
+                            </li>
+                            <li className="list-inline-item text-uppercase">
+                                <div id="pointer" style={{width: "260px"}}>
+                                    <p className="h3 text-white text-center align-content-center">风险管理委员会</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <h4 className="mb-30 mt-5">投资风险管理</h4>
+                <div className="row justify-content-center">
+                    <div className="col-lg-4">
+                        <h5 className="mb-30 mt-1 text-center">投前风控</h5>
+                        <div style={circleStyle} className="justify-content-center text-center">
+                            <div className="pt-4">
+                                <h5 className="text-center text-white">投研策略管理</h5>
+                                <h5 className="text-center text-white">投资权限管理</h5>
+                                <h5 className="text-center text-white">风险指标管理</h5>
+                                <h5 className="text-center text-white">总体风险决策</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-4">
+                        <h5 className="mb-30 mt-1 text-center">投中风控</h5>
+                        <div style={circleStyle} className="justify-content-center text-center">
+                            <div className="pt-5">
+                                <h5 className="text-center text-white">策略/标的投资评级</h5>
+                                <h5 className="text-center text-white">交易执行合规</h5>
+                                <h5 className="text-center text-white">持续跟踪反馈</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-4">
+                        <h5 className="mb-30 mt-1 text-center">投后风控</h5>
+                        <div style={circleStyle} className="justify-content-center text-center">
+                            <div className="pt-4">
+                                <h5 className="text-center text-white">风险敞口评估</h5>
+                                <h5 className="text-center text-white">组合压力测试</h5>
+                                <h5 className="text-center text-white">严格的预警止损机制</h5>
+                                <h5 className="text-center text-white">业绩归因</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 className="mb-30 mt-5">多维风控</h4>
+                <div id="fof">
                     <div className="pricing-box-container">
                         <div className="pricing-box text-center has-same-height">
-                            <p className="price">策略风控</p>
+                            <p className="price">风险管理理念</p>
                             <ul className="features-list">
-                                <li>单策略设置止盈 止损指标</li>
-                                <li>组合策略单日最大亏损比例和单日持仓比例限制</li>
+                                <li>以保护投资者利益为导向，以资金曲线为总纲</li>
+                                <li>多维度、多层级严控风险。</li>
                             </ul>
                         </div>
 
                         <div className="pricing-box text-center has-same-height">
-                            <p className="price">交易风控</p>
+                            <p className="price">产品整体风险管理</p>
                             <ul className="features-list">
-                                <li>交易过程的实时监测、比较验证和自动报警</li>
-                                <li>熔断机制：心跳连接中断或触及风控警戒线，程序立刻停止交易</li>
+                                <li>权益类市值占比、期货轧差及固收杠杆控制管理相结合。</li>
+                                <li>股票+期货净市值≤150%</li>
+                                <li>债券类杠杆率≤2</li>
                             </ul>
                         </div>
 
                         <div className="pricing-box text-center has-same-height">
-                            <p className="price">风险总控</p>
+                            <p className="price">流动性风险管理</p>
                             <ul className="features-list">
-                                <li>实时监测总的风险敞口和 VaR</li>
-                                <li>整个 IT 系统运行状态的实时监控和预警</li>
+                                <li>形成由投资管理委员会和风险管理委员会为主的投资风险管理体系</li>
+                                <li>
+                                    根据市场情况定期或不定期对各类资产比例做限制及调整，妥善进行现金管理，保证产品流动性
+                                </li>
                             </ul>
                         </div>
                         <div className="pricing-box text-center has-same-height">
-                            <p className="price">合规总控</p>
+                            <p className="price">投资经理风险管理</p>
                             <ul className="features-list">
-                                <li>券商终端权限管理</li>
-                                <li>资金账户风险阀值设置</li>
+                                <li>根据业绩评价体系对投资经理投资能力进行客观评价</li>
+                                <li>实行分级管理，根据级别分配资金及设定对应风控指标，严格控制投资经理资金回撤</li>
                             </ul>
                         </div>
                     </div>
@@ -148,12 +265,15 @@ function FundsComponent(isShowId: number) {
             </>
         )
     }
-    if (isShowId === 3) {
+    if (isShowId === 4) {
         return (
             <>
-                <h4 className="mb-30">程序化 T0 策略</h4>
+                <h4 className="mb-10">程序化 T0 策略</h4>
                 <div className="row">
-                    <div className="col-lg-6 bg-gray p-5 rounded mb-60">
+                    <div className="col-lg-12">
+                        <img src={imageFofTo} alt="image of TO strategy" className="img-fluid w-100 mb-40" />
+                    </div>
+                    {/* <div className="col-lg-6 bg-gray p-5 rounded mb-60">
                         <div className="row">
                             <div className="col-lg-11 col-md-7">
                                 <h4 className="mb-10">流动性高/容量大</h4>
@@ -168,7 +288,7 @@ function FundsComponent(isShowId: number) {
                         <p className="mb-20">技术投入大，周期较长，竞争对手难以复制</p>
                         <h4 className="mb-10">竞争压力小/政策优势大</h4>
                         <p className="mb-20"> 机构不能做，外资不敢做</p>
-                    </div>
+                    </div> */}
                 </div>
                 <h4 className="mb-30">绝对收益 T0 策略</h4>
                 <div className="row">
@@ -206,10 +326,41 @@ function FundsComponent(isShowId: number) {
             </>
         )
     }
-    if (isShowId === 4) {
+    if (isShowId === 5) {
         return (
             <>
-                <h4 className="mb-30">其他相关信息</h4>
+                <h4 className="mb-30">拟投资情况</h4>
+
+                <div className="row justify-content-center">
+                    <div className="col-lg-6 col-md-12 mb-50">
+                        <ul style={{padding: "0 2rem 0 2rem"}}>
+                            <li className="text-center mb-50">
+                                <img src={logoHuanfang} alt="ASB Bank Logo" className="img-fluid w-50" />
+                            </li>
+                            <li className="text-center mb-50">
+                                <img src={logoZhiyuan} alt="logoPwc" className="img-fluid w-50" />
+                            </li>
+                            <li className="text-center">
+                                <img src={logoHeiyi} alt="logoPwc" className="img-fluid w-50" />
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="col-lg-6 col-md-12">
+                        <ul style={{padding: "0 2rem 0 2rem"}}>
+                            <li className="text-center mb-50">
+                                <img src={logoPingfanghe} alt="logoPublicTrust" className="img-fluid w-50" />
+                            </li>
+                            <li className="text-center mb-50">
+                                <img src={logoQianxiang} alt="logoMinterEllison" className="img-fluid w-50" />
+                            </li>
+                            <li className="text-center">
+                                <img src={logoTaoli} alt="logoPwc" className="img-fluid w-50" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h4 className="mb-30 mt-5">其他相关信息</h4>
                 <p className="font-secondary mb-10">
                     凯利资产管理是 Fund of Funds
                     直接基金的单位发行人。如果您对本基金投资有兴趣，请与我们联系以获取基金产品说明的副本。
@@ -224,10 +375,11 @@ function FundsComponent(isShowId: number) {
 export default function FundOfFunds() {
     const fundsDict = [
         {id: 0, content: "产品要素", style: "active border-bottom"},
-        {id: 1, content: "投资理念", style: "border-bottom"},
-        {id: 2, content: "风险控制", style: "border-bottom"},
-        {id: 3, content: "投资策略: T+0 高频交易", style: "border-bottom"},
-        {id: 4, content: "其他相关信息", style: "border-bottom"},
+        {id: 1, content: "投研架构", style: "border-bottom"},
+        {id: 2, content: "投资理念", style: "border-bottom"},
+        {id: 3, content: "风险控制", style: "border-bottom"},
+        {id: 4, content: "投资策略: T+0 高频交易", style: "border-bottom"},
+        {id: 5, content: "其他相关信息", style: "border-bottom"},
     ]
     const [defaultActive, setDefaultActive] = useState(0)
     const [activePart, setActivePart] = useState(fundsDict)
@@ -304,13 +456,23 @@ export default function FundOfFunds() {
                                 <ul className="service-menu pl-0 border rounded mb-50">{listSidebar}</ul>
                                 {/* Brochure */}
                                 <div className="rounded border py-3 px-4 mb-50">
-                                    <i
-                                        className="d-inline-block mr-1 text-dark ti-files"
-                                        style={{fontSize: "20px"}}></i>
-                                    <h4 className="mb-1 d-inline-block">Service Brochure</h4>
-                                    <a className="font-secondary text-color d-block ml-4" href="#">
-                                        Download pdf
-                                    </a>
+                                    <div className="row">
+                                        <div className="col-10">
+                                            <h4 className="mb-1 d-inline-block">Service Brochure</h4>
+                                            <a
+                                                className="font-secondary text-color d-block"
+                                                href="/media/documents/Carrick Just Asset Management Limited - FOF.pdf">
+                                                Download PDF
+                                            </a>
+                                        </div>
+                                        <div className="col-2">
+                                            <a
+                                                className="font-secondary text-color d-block"
+                                                href="/media/documents/Carrick Just Asset Management Limited - FOF.pdf">
+                                                <span className="iconfont icon-pdf1" style={{fontSize: "30px"}}></span>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                                 {/* Consultation */}
                                 <div className="mb-50">
