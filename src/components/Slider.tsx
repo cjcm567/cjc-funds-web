@@ -8,6 +8,7 @@ import imageBanner2 from "../images/banner/banner-2.jpg"
 import imageBanner3 from "../images/banner/banner-3.jpg"
 import imageBanner5 from "../images/banner/banner-5.jpg"
 import imageBanner6 from "../images/banner/banner-6.jpg"
+import imageBanner7 from "../images/banner/banner-7.jpg"
 
 export default function Slider() {
     const legendLeftStyle: CSSProperties = {
@@ -72,6 +73,13 @@ export default function Slider() {
                         <h1 className="text-white">诚信开启未来</h1>
                     </div>
                 </div>
+                {/* <div className="overlay">
+                    <img src={imageBanner7} height="600px" width="100%" style={{objectFit: "cover"}} />
+                    <div style={legendRightStyle}>
+                        <h1 className="text-white">专业创造财富</h1>
+                        <h1 className="text-white">诚信开启未来</h1>
+                    </div>
+                </div> */}
             </Carousel>
         </>
     )

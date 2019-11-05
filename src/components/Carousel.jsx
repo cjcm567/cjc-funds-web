@@ -8,6 +8,7 @@ import imageBanner2 from "../images/banner/banner-2.jpg"
 import imageBanner3 from "../images/banner/banner-3.jpg"
 import imageBanner5 from "../images/banner/banner-5.jpg"
 import imageBanner6 from "../images/banner/banner-6.jpg"
+import imageBanner7 from "../images/banner/banner-7.jpg"
 
 export default function ControlledCarousel() {
     const [index, setIndex] = useState(0)
@@ -65,6 +66,13 @@ export default function ControlledCarousel() {
                     <Carousel.Caption className="text-left" style={{paddingBottom: "8rem"}}>
                         <h1 className="text-white">专业创造财富</h1>
                         <h1 className="text-white">诚信开启未来</h1>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item style={carouselItemStyle} className="overlay">
+                    <img src={imageBanner7} alt="banner image 7" style={carouselImgStyle} />
+                    <Carousel.Caption className="text-right" style={{paddingBottom: "10rem"}}>
+                        <h1 className="text-white">智信相伴</h1>
+                        <h1 className="text-white">共赢未来</h1>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
