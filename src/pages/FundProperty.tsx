@@ -215,21 +215,12 @@ export default function FundProperty() {
                                                 <ul className="d-inline-block pl-0">
                                                     <li className="font-secondary mb-10">
                                                         <i className="text-primary mr-2 ti-arrow-circle-right"></i>1.
-                                                        凯利纽澳地产基金提供全方位投资服务。
+                                                        凯利纽澳地产基金提供全方位投资服务，向合格投资者集资，选择黄金地段商业地产作为投资标的。
                                                     </li>
                                                     <li className="font-secondary mb-10">
                                                         <i className="text-primary mr-2 ti-arrow-circle-right"></i>2.
-                                                        向合格投资者集资，选择黄金地段商业地产作为投资标的。
+                                                        寻求服务周到尽责的物业管理公司和长期稳定的租赁客源，及时发送给投资者利益报告和未来资产转售服务。
                                                     </li>
-                                                    <li className="font-secondary mb-10">
-                                                        <i className="text-primary mr-2 ti-arrow-circle-right"></i>3.
-                                                        寻求服务周到尽责的物业管理公司和长期稳定的租赁客源。
-                                                    </li>
-                                                    <li className="font-secondary mb-10">
-                                                        <i className="text-primary mr-2 ti-arrow-circle-right"></i>4.
-                                                        及时发送给投资者利益报告和未来资产转售服务。
-                                                    </li>
-                                                    <li className="font-secondary mb-10"></li>
                                                 </ul>
                                             </div>
                                         </div>
