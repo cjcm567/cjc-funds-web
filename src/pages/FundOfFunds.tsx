@@ -77,9 +77,7 @@ function FundsComponent(isShowId: number) {
                         <h4 className="mb-10">最大回撤</h4>
                         <p className="mb-20">1.37</p>
                         <h4 className="mb-10">认购起点</h4>
-                        <p className="mb-20">
-                            75 万纽币（1 万纽币整数倍追加）或符合 wholesale 客户资格（详情请洽销售经理）
-                        </p>
+                        <p className="mb-20">符合 wholesale 客户资格（详情咨询产品经理）</p>
                     </div>
                     <div className="col-lg-12 bg-gray px-5 py-2 rounded mb-60">
                         <p className="mb-20">
@@ -446,7 +444,10 @@ export default function FundOfFunds() {
                                                     <li className="font-secondary mb-10">
                                                         <i className="text-primary mr-2 ti-arrow-circle-right"></i>2.
                                                         不直接以债券，股票等有价证券为投资标，通过投资其它基金间接持有资产。
+                                                        <br />
+                                                        <br />
                                                     </li>
+                                                    <li className="font-secondary mb-10"></li>
                                                     <li className="font-secondary mb-10"></li>
                                                 </ul>
                                             </div>
