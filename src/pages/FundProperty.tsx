@@ -238,7 +238,7 @@ export default function FundProperty() {
                                         <img
                                             src={imageProperty}
                                             alt="image of Core Competence"
-                                            className="img-fluid w-100 mb-40"
+                                            className="img-fluid rounded"
                                         />
                                     </div>
                                 </div>
@@ -250,7 +250,7 @@ export default function FundProperty() {
                                 {/* service menu */}
                                 <ul className="service-menu pl-0 border rounded mb-50">{listSidebar}</ul>
                                 {/* Brochure */}
-                                <div className="rounded border py-3 px-4 mb-50">
+                                {/* <div className="rounded border py-3 px-4 mb-50">
                                     <i
                                         className="d-inline-block mr-1 text-dark ti-files"
                                         style={{fontSize: "20px"}}></i>
@@ -258,7 +258,7 @@ export default function FundProperty() {
                                     <a className="font-secondary text-color d-block ml-4" href="#">
                                         Download pdf
                                     </a>
-                                </div>
+                                </div> */}
                                 {/* Consultation */}
                                 <div className="mb-50">
                                     <h4 className="mb-20">Request Consultation</h4>

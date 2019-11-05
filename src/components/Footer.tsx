@@ -99,10 +99,10 @@ function Footer() {
                             <div className="col-lg-3 col-md-12">
                                 <div className="mt-5 mt-lg-0 text-center text-md-left">
                                     <h4 className="mb-4 ">欢迎订阅</h4>
-                                    <p className="mb-4">
+                                    <p className="mb-4 mt-2">
                                         Carrick Just Asset Management Limited
                                         <br />
-                                        您最好的选择
+                                        您身边最好的投资选择！
                                     </p>
                                     <form name="newsletter" method="post" className="position-relative">
                                         <input type="hidden" name="form-name" value="newsletter" />

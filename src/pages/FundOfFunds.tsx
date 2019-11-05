@@ -35,44 +35,57 @@ function FundsComponent(isShowId: number) {
                 <img src={imageCrossPlatform} alt="image of Core Competence" className="img-fluid w-100 mb-40" />
 
                 <div className="row">
-                    <div className="col-lg-6 bg-gray p-5 rounded mb-60">
+                    <div className="col-lg-6 bg-gray p-5 rounded">
                         <div className="row">
-                            <div className="col-lg-9 col-md-7">
+                            <div className="col-lg-10 col-md-7">
                                 <h4 className="mb-10">基金名称</h4>
                                 <p className="mb-20">凯利量化投资基金</p>
                                 <h4 className="mb-10">基金管理人</h4>
                                 <p className="mb-20">凯利资产管理有限公司</p>
                                 <h4 className="mb-10">基金托管人</h4>
                                 <p className="mb-20">Public Trust Ltd</p>
-                                <h4 className="mb-10">目标市场</h4>
-                                <p className="mb-20">中国 A 股二级市场</p>
                                 <h4 className="mb-10">基金类型</h4>
                                 <p className="mb-20">开放式</p>
                                 <h4 className="mb-10">开放期</h4>
-                                <p className="mb-20">封闭期满后每个月末</p>
+                                <p className="mb-20">
+                                    产品封闭期为六个月，自成立起至封闭期结束期间，每个月的 15
+                                    号开放计划份额的参与。封闭期结束之后，每月的 15 日接受计划份额的参与和退出
+                                </p>
                                 <h4 className="mb-10">封闭期</h4>
-                                <p className="mb-20">基金成立日（含）起的6个月内</p>
+                                <p className="mb-20">从投资者加入日起，6个月内</p>
+                                <h4 className="mb-10">风险等级</h4>
+                                <p className="mb-20">低风险</p>
                             </div>
                         </div>
                     </div>
 
-                    <div className="col-lg-6 bg-gray p-5 rounded mb-60">
-                        <h4 className="mb-10">认购/申购费率</h4>
-                        <p className="mb-20">0.5%</p>
-                        <h4 className="mb-10">赎回费率</h4>
-                        <p className="mb-20">0.5%</p>
-                        <h4 className="mb-10">销售服务费</h4>
-                        <p className="mb-20">1.0%/年</p>
-                        <h4 className="mb-10">托管费</h4>
-                        <p className="mb-20">0.05%/年</p>
+                    <div className="col-lg-6 bg-gray p-5 rounded">
+                        <h4 className="mb-10">固定管理费</h4>
+                        <p className="mb-20">2%/年</p>
+
                         <h4 className="mb-10">行政服务费</h4>
-                        <p className="mb-20">0.05%/年</p>
-                        <h4 className="mb-10">业绩报酬</h4>
-                        <p className="mb-20">高水位法，20%</p>
+                        <p className="mb-20">1%/年</p>
+                        <h4 className="mb-10">业绩表现费</h4>
+                        <p className="mb-20">
+                            单人单笔高水位法份额年化收益率超过5%以上部分收取20%，在分红日、退出日和终止日计提
+                        </p>
+
                         <h4 className="mb-10">投资策略</h4>
-                        <p className="mb-20">以成份股对冲，T+0策略为主</p>
+                        <p className="mb-20">以成份股对冲，T+0 策略为主</p>
                         <h4 className="mb-10">预警/止损</h4>
-                        <p className="mb-20">预警线0.95，止损线0.91，最大风险仅为9%</p>
+                        <p className="mb-20">预警线 0.95，止损线 0.91</p>
+                        <h4 className="mb-10">最大回撤</h4>
+                        <p className="mb-20">1.37</p>
+                        <h4 className="mb-10">认购起点</h4>
+                        <p className="mb-20">
+                            75 万纽币（1 万纽币整数倍追加）或符合 wholesale 客户资格（详情请洽销售经理）
+                        </p>
+                    </div>
+                    <div className="col-lg-12 bg-gray px-5 py-2 rounded mb-60">
+                        <p className="mb-20">
+                            具体产品细则及费率详情，请参考 Information Memorandum
+                            ；或请留下您的联系方式，我们的产品经理将及时与您联系。
+                        </p>
                     </div>
                 </div>
 
@@ -89,7 +102,7 @@ function FundsComponent(isShowId: number) {
                         </li>
                         <li className="font-secondary mb-10">
                             <i className="text-primary mr-2 ti-arrow-circle-right"></i>
-                            3. 每日、每周计算子基金表现数据，确保多周期多维度跟踪子基金业绩与数据
+                            3. 每周计算子基金表现数据，确保多周期多维度跟踪子基金业绩与数据
                         </li>
                         <li className="font-secondary mb-10">
                             <i className="text-primary mr-2 ti-arrow-circle-right"></i>
@@ -316,7 +329,7 @@ function FundsComponent(isShowId: number) {
                         <h4 className="mb-10">预期费后收益</h4>
                         <p className="mb-20">13%~20%</p>
                         <h4 className="mb-10">最大回撤</h4>
-                        <p className="mb-20">2%</p>
+                        <p className="mb-20">1.37%</p>
                         <h4 className="mb-10">可拓展性强</h4>
                         <p className="mb-20">产品业绩一致性强</p>
                         <h4 className="mb-10">市场容量</h4>
@@ -406,7 +419,7 @@ export default function FundOfFunds() {
                 <title>Carrick Fund of Funds | Carrick Asset</title>
                 <meta
                     name="description"
-                    content="FOF（Fund of Funds，基金中的基金）指投资于基金组合的基金。在欧美市场，FOF 已发展成为数量规模占比均较大的一类成熟的理财产品，相比而言，在我国 FOF 仍具有较大的发展空间（家族理财机构及对冲基金）。"
+                    content="FOF（Fund of Funds，基金中的基金）指投资于基金组合的基金。在欧美市场，FOF 已发展成为数量规模占比均较大的一类成熟的理财产品，相比而言，在亚太地区 FOF 仍具有较大的发展空间（家族理财机构及对冲基金）。"
                 />
             </Helmet>
             <Layout>
@@ -416,7 +429,7 @@ export default function FundOfFunds() {
                             <h3 className="mb-10">Carrick Fund of Funds</h3>
                             <p className="mb-40">
                                 FOF（Fund of Funds，基金中的基金）指投资于基金组合的基金。在欧美市场，FOF
-                                已发展成为数量规模占比均较大的一类成熟的理财产品，相比而言，在我国 FOF
+                                已发展成为数量规模占比均较大的一类成熟的理财产品，相比而言，在亚太地区 FOF
                                 仍具有较大的发展空间。
                             </p>
                             <div className="mb-md-50">
@@ -455,7 +468,7 @@ export default function FundOfFunds() {
                                 {/* service menu */}
                                 <ul className="service-menu pl-0 border rounded mb-50">{listSidebar}</ul>
                                 {/* Brochure */}
-                                <div className="rounded border py-3 px-4 mb-50">
+                                {/* <div className="rounded border py-3 px-4 mb-50">
                                     <div className="row">
                                         <div className="col-10">
                                             <h4 className="mb-1 d-inline-block">Service Brochure</h4>
@@ -473,7 +486,7 @@ export default function FundOfFunds() {
                                             </a>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                                 {/* Consultation */}
                                 <div className="mb-50">
                                     <h3 className="mb-20">Request Consultation</h3>
