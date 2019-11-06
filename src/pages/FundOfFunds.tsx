@@ -46,15 +46,17 @@ function FundsComponent(isShowId: number) {
                                 <p className="mb-20">Public Trust Ltd</p>
                                 <h4 className="mb-10">基金类型</h4>
                                 <p className="mb-20">开放式</p>
+                                <h4 className="mb-10">风险等级</h4>
+                                <p className="mb-20">低风险</p>
+                                <h4 className="mb-10">投资策略</h4>
+                                <p className="mb-20">以成份股对冲，T+0 策略为主</p>
+                                <h4 className="mb-10">封闭期</h4>
+                                <p className="mb-20">从投资者加入日起，6个月内</p>
                                 <h4 className="mb-10">开放期</h4>
                                 <p className="mb-20">
                                     产品封闭期为六个月，自成立起至封闭期结束期间，每个月的 15
                                     号开放计划份额的参与。封闭期结束之后，每月的 15 日接受计划份额的参与和退出
                                 </p>
-                                <h4 className="mb-10">封闭期</h4>
-                                <p className="mb-20">从投资者加入日起，6个月内</p>
-                                <h4 className="mb-10">风险等级</h4>
-                                <p className="mb-20">低风险</p>
                             </div>
                         </div>
                     </div>
@@ -69,15 +71,24 @@ function FundsComponent(isShowId: number) {
                         <p className="mb-20">
                             单人单笔高水位法份额年化收益率超过5%以上部分收取20%，在分红日、退出日和终止日计提
                         </p>
-
-                        <h4 className="mb-10">投资策略</h4>
-                        <p className="mb-20">以成份股对冲，T+0 策略为主</p>
                         <h4 className="mb-10">预警/止损</h4>
                         <p className="mb-20">预警线 0.95，止损线 0.91</p>
                         <h4 className="mb-10">最大回撤</h4>
                         <p className="mb-20">1.37</p>
                         <h4 className="mb-10">认购起点</h4>
-                        <p className="mb-20">符合 wholesale 客户资格（详情咨询产品经理）</p>
+                        <p className="mb-20">
+                            符合 wholesale 客户资格:
+                            <br />
+                            1. 投资人一次性实际支付基金投资份额最低$750,000新西兰元
+                            <br />
+                            2. 最近两个完整财政年度，该投资人及其控制的实体的净资产或总合并营业额超过$500万新西兰元
+                            <br />
+                            3. 可提供授权财务顾问，特许会计师或律师签署的书面证明书，以证明投资人为合格投资者
+                            <br />
+                            4. 基金产品要约人的近亲属或商业合作伙伴
+                            <br />
+                            （详情咨询产品经理）
+                        </p>
                     </div>
                     <div className="col-lg-12 bg-gray px-5 py-2 rounded mb-60">
                         <p className="mb-20">
