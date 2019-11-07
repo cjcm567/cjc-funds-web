@@ -39,11 +39,11 @@ function FundsComponent(isShowId: number) {
                         <div className="row">
                             <div className="col-lg-10 col-md-7">
                                 <h4 className="mb-10">基金名称</h4>
-                                <p className="mb-20">凯利量化投资基金</p>
+                                <p className="mb-20">凯利安泰量化投资基金</p>
                                 <h4 className="mb-10">基金管理人</h4>
-                                <p className="mb-20">凯利资产管理有限公司</p>
+                                <p className="mb-20">新西兰凯利资产管理有限公司</p>
                                 <h4 className="mb-10">基金托管人</h4>
-                                <p className="mb-20">Public Trust Ltd</p>
+                                <p className="mb-20">New Zealand Public Trust Limited</p>
                                 <h4 className="mb-10">基金类型</h4>
                                 <p className="mb-20">开放式</p>
                                 <h4 className="mb-10">风险等级</h4>
@@ -54,46 +54,52 @@ function FundsComponent(isShowId: number) {
                                 <p className="mb-20">从投资者加入日起，6个月内</p>
                                 <h4 className="mb-10">开放期</h4>
                                 <p className="mb-20">
-                                    产品封闭期为六个月，自成立起至封闭期结束期间，每个月的 15
-                                    号开放计划份额的参与。封闭期结束之后，每月的 15 日接受计划份额的参与和退出
+                                    产品封闭期为六个月，封闭期结束之后，每个月的 15
+                                    号为开放日，接受基金份额的认购和赎回。
                                 </p>
+
+                                <h4 className="mb-10">最大回撤</h4>
+                                <p className="mb-20">1.37%</p>
                             </div>
                         </div>
                     </div>
 
                     <div className="col-lg-6 bg-gray p-5 rounded">
                         <h4 className="mb-10">固定管理费</h4>
-                        <p className="mb-20">2%/年</p>
+                        <p className="mb-20">1.99%/年</p>
 
                         <h4 className="mb-10">行政服务费</h4>
-                        <p className="mb-20">1%/年</p>
+                        <p className="mb-20">0.99%/年</p>
                         <h4 className="mb-10">业绩表现费</h4>
                         <p className="mb-20">
-                            单人单笔高水位法份额年化收益率超过5%以上部分收取20%，在分红日、退出日和终止日计提
+                            年化收益率5%及以下不收取任何业绩管理费
+                            年化收益率超过5%以上部分收取20%，在分红日、退出日和终止日计提
                         </p>
                         <h4 className="mb-10">预警/止损</h4>
-                        <p className="mb-20">预警线 0.95，止损线 0.91</p>
-                        <h4 className="mb-10">最大回撤</h4>
-                        <p className="mb-20">1.37</p>
-                        <h4 className="mb-10">认购起点</h4>
                         <p className="mb-20">
-                            符合 wholesale 客户资格:
+                            预警线为基金净值0.95
                             <br />
-                            1. 投资人一次性实际支付基金投资份额最低$750,000新西兰元
+                            清仓线为基金净值0.91
+                        </p>
+                        <h4 className="mb-10">认购资格</h4>
+                        <p className="mb-20">
+                            1.
+                            最近两个完整新西兰财政年度，投资人及其控制的实体净资产或总合并营业额超过$500万新西兰元；或
                             <br />
-                            2. 最近两个完整财政年度，该投资人及其控制的实体的净资产或总合并营业额超过$500万新西兰元
+                            2. 提供持牌金融服务顾问、特许会计师或律师签署的书面证明书，以证明投资人为合格投资者；或
                             <br />
-                            3. 可提供授权财务顾问，特许会计师或律师签署的书面证明书，以证明投资人为合格投资者
+                            3. 基金产品要约人的近亲属或商业合作伙伴；或
                             <br />
-                            4. 基金产品要约人的近亲属或商业合作伙伴
+                            4. 一次性认购基金份额价值达到75万新西兰元
                             <br />
-                            （详情咨询产品经理）
+                            <br />
+                            （只要满足以上任何一个条件即可，具体详情请咨询销售顾问）
                         </p>
                     </div>
                     <div className="col-lg-12 bg-gray px-5 py-2 rounded mb-60">
                         <p className="mb-20">
                             具体产品细则及费率详情，请参考 Information Memorandum
-                            ；或请留下您的联系方式，我们的产品经理将及时与您联系。
+                            ；或请留下您的联系方式，我们的销售顾问将及时与您联系。
                         </p>
                     </div>
                 </div>
@@ -454,7 +460,7 @@ export default function FundOfFunds() {
                                                     </li>
                                                     <li className="font-secondary mb-10">
                                                         <i className="text-primary mr-2 ti-arrow-circle-right"></i>2.
-                                                        不直接以债券，股票等有价证券为投资标，通过投资其它基金间接持有资产。
+                                                        不直接以债券和股票等有价证券为投资标的，通过投资相关基金产品间接持有资产。
                                                         <br />
                                                         <br />
                                                     </li>
