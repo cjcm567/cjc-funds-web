@@ -143,7 +143,7 @@ function Footer() {
                                     <p className="mb-10 text-left" style={{fontSize: "12px"}}>
                                         Please note that past performance is not necessarily indicative of future
                                         returns. Returns can be positive or negative, and returns over different time
-                                        periods may vary. No returns are promised or guaranteed.
+                                        periods may vary.
                                     </p>
                                 </div>
                             </div>
@@ -158,8 +158,7 @@ function Footer() {
                                 <p className="text-center text-md-left">
                                     <code>Carrick Just Asset Management Limited</code>
                                     <br />
-                                    All Right &copy; {copyrightYear}
-                                    Reserved
+                                    All Right &copy; {copyrightYear} Reserved
                                 </p>
                             </div>
                         </div>

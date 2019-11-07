@@ -56,8 +56,8 @@ export default function Partnership() {
                                             一直秉承着照顾新西兰人利益的悠久传统。
                                         </p>
                                         <p className="text-dark">
-                                            作为一家政府机构，由 Public Trust
-                                            托管的基金产品，资本金和利息收益均由新西兰政府担保，确保客户资金安全并不受公司自身经营状况的影响，真正实现客户资金与本公司资金的完全分离。
+                                            作为一家政府机构，Public Trust
+                                            用安全说话，确保客户资金安全并不受公司自身经营状况的影响，真正实现客户资金与本公司资金的完全分离。
                                         </p>
                                         <p className="text-dark">Public Trust 同时是新西兰最大的信托管理服务提供商。</p>
                                     </div>
@@ -132,8 +132,7 @@ export default function Partnership() {
                                         <h6 className="font-secondary text-color">法务合作机构</h6>
                                         <p className="text-dark">
                                             国际知名律所，2017
-                                            新西兰年度律师事务所，该公司庞大的团队为客户提供丰富多方面的经验和技能，包括能源和资源，基础设施，政府，卫生，银行和金融服务，管理基金，技术和
-                                            TMT。
+                                            年新西兰最佳年度律师事务所，拥有众多的专业持牌律师和丰富的行业经验，尤其擅长提供纽澳金融领域方面的法律服务。
                                         </p>
                                     </div>
                                 </div>
