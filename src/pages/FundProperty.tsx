@@ -8,8 +8,8 @@ import imagePreloader from "../images/preloader.gif"
 import imageProperty from "../images/funds/carrick-nz-au-property-fund.jpg"
 import imageRiskFigure from "../images/funds/risk-figure-dividend.jpg"
 import imageIncrease from "../images/funds/carrick-increase.jpg"
-import imageWallet from "../images/funds/carrick-wallet.jpg"
-import imageBonus from "../images/funds/bonus.jpg"
+import imageWallet from "../images/funds/carrick-building.jpg"
+import imageMall from "../images/funds/carrick-mall.jpg"
 
 function FundsComponent(isShowId: number) {
     if (isShowId == 0) {
@@ -21,7 +21,7 @@ function FundsComponent(isShowId: number) {
                         <img src={imageWallet} alt="image of risk figure" className="img-fluid w-100 mb-20" />
                         <ul className="d-inline-block pl-0 mb-10">
                             <li className="font-secondary mb-10">
-                                随着新西兰央行利率的进一步下调，纽澳一线城市的商业地产迎来了价格和租金的上升周期，尤其受到投资者的青睐。截至今年，纽澳的商业地产投资基金的资产回报率已经达到了金融资产回报率的最高水平。
+                                随着新西兰央行利率的进一步下调，纽澳一线城市的商业地产迎来了价格和租金的上升周期，并尤其受到投资者的青睐。截至今年，纽澳的商业地产投资基金的资产回报率已经达到了金融资产回报率的最高水平。
                             </li>
                             <li className="font-secondary mb-10">
                                 凯利纽澳地产基金为投资者提供全方位地产投资服务，包括向合格投资者集资，选择黄金地段地产投资标的，寻求服务周到尽责的物业管理公司，以及及时发送给投资者利益报告和未来资产转售服务等。
@@ -39,6 +39,7 @@ function FundsComponent(isShowId: number) {
                     <h4 className="mb-30">产品战略</h4>
                     <div className="bg-gray p-5 rounded mb-60">
                         <ul className="d-inline-block pl-0 mb-10">
+                            <img src={imageMall} alt="image of risk figure" className="img-fluid w-100 mb-20" />
                             <li className="font-secondary mb-10">
                                 凯利纽澳地产基金旨在通过整合纽澳商业房地产资源，选择优质的纽澳商业地产产业，最大程度地提高客户资产的价值和回报。
                             </li>
@@ -167,7 +168,7 @@ function FundsComponent(isShowId: number) {
 
 export default function FundProperty() {
     const fundsDict = [
-        {id: 0, content: "凯利地产基金简介", style: "active border-bottom"},
+        {id: 0, content: "凯利纽澳地产基金简介", style: "active border-bottom"},
         {id: 1, content: "产品战略", style: "border-bottom"},
         // {id: 2, content: "目标投资组合", style: "border-bottom"},
         {id: 2, content: "预期投资回报", style: "border-bottom"},
