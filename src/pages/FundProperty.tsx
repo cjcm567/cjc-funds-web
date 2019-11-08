@@ -21,7 +21,6 @@ function FundsComponent(isShowId: number) {
                         <img src={imageWallet} alt="image of risk figure" className="img-fluid w-100 mb-20" />
                         <ul className="d-inline-block pl-0 mb-10">
                             <li className="font-secondary mb-10">
-                                100
                                 随着新西兰央行利率的进一步下调，纽澳一线城市的商业地产迎来了价格和租金的上升周期，并尤其受到投资者的青睐。截至今年，纽澳的商业地产投资基金的资产回报率已经达到了金融资产回报率的最高水平。
                             </li>
                             <li className="font-secondary mb-30">
@@ -105,16 +104,22 @@ function FundsComponent(isShowId: number) {
             <>
                 <div>
                     <h4 className="mb-30">预期投资回报</h4>
-                    <img src={imageIncrease} alt="image of bonus" className="img-fluid w-100 mb-40" />
-
-                    <p className="font-secondary mb-10">
-                        Carrick Direct Property Fund 每年支付一次红利。
-                        筹资资金的初始锁定期为五年，预期固定租金年化收益为6%，考虑到未来租金增长和出售地产后的增值收益，预期年化总收益将高达15%以上。
-                    </p>
-                    <p className="font-secondary mb-10">
-                        新西兰凯利资产管理有限公司是Carrick Direct Property
-                        Fund直接基金的单位发行人。如果您对本基金投资有兴趣，请与我们联系以获取基金产品说明的副本。
-                    </p>
+                    <div className="bg-gray p-5 rounded mb-60">
+                        <ul className="d-inline-block pl-0 mb-10">
+                            <img src={imageIncrease} alt="image of bonus" className="img-fluid w-100 mb-20" />
+                            <li className="font-secondary mb-10">
+                                Carrick Direct Property Fund 每年支付一次红利。
+                                筹资资金的初始锁定期为五年，预期固定租金年化收益为6%，考虑到未来租金增长和出售地产后的增值收益，预期年化总收益将高达15%以上。
+                            </li>
+                            <li className="font-secondary mb-10">
+                                新西兰凯利资产管理有限公司是Carrick Direct Property
+                                Fund直接基金的单位发行人。如果您对本基金投资有兴趣，请与我们联系以获取基金产品说明的副本。
+                            </li>
+                            <li className="font-secondary mb-10">
+                                凯利纽澳地产基金创建以来，其遵从的核心原则即是透明度、合规性、以及关注投资回报。凯利纽澳地产基金通过与投资者拥有共同目标以及诚恳真实的交流建立长期合作关系。
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </>
         )
