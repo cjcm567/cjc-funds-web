@@ -8,6 +8,7 @@ import {LazyImage} from "react-lazy-images"
 import imagePreloader from "../images/preloader.gif"
 import imageph1 from "../images/aboutus/ph1.jpg"
 import imageph2 from "../images/aboutus/ph2.jpg"
+import imageph4 from "../images/aboutus/ph4.jpg"
 
 export default function CarrickInvestmentPhilosophy() {
     return (
@@ -24,64 +25,59 @@ export default function CarrickInvestmentPhilosophy() {
                     <div className="container">
                         <div className="row">
                             {/* <!-- Social Responsibility  */}
-                            <div className="col-lg-7">
+                            <div className="col-lg-8">
                                 <h5 className="section-title-sm">Philosophy</h5>
                                 <h2 className="section-title section-title-border-half">投资理念</h2>
                                 <p>
-                                    通常来说市场和价格会受许多因素影响。Carrick Just Asset Management
-                                    Limited专注于可以预测和理解的因素，例如特定公司的质量和竞争优势，而不是诸如汇率和中央银行政策之类的不可预测的因素。
+                                    通常来说，市场价格会受许多因素影响。 Carrick Just Asset Management
+                                    Limited专注于量化投资分析，在对价格分析的基础上，利用安全稳健的量化交易方式，把握市场机会已获得超额收益。通过科学、量化的分析方法进行证券买卖价格的定量分析与风险管理，实现在低风险的投资环境下达到价值最大化的目标。同时，通过完善的量化交易策略，达到尽量消除非系统风险的目的。
                                 </p>
-                                <p>
-                                    Carrick Just Asset Management
-                                    Limited是投资者而不是投机者。如果我们不能对投资的价值做出明智的判断，我们将等到可以判断投资价值之后再进行投资。我们了解价格与价值之间的差异，并且我们知道市场有时会出现估计错误。
-                                </p>
-                                <p>Carrick Just Asset Management Limited 依赖于我们自己的价值评估，而不是市场评估。</p>
                             </div>
-                            <div className="col-lg-5">
-                                <LazyImage
-                                    src={imageph1}
-                                    alt="image of risk figure"
-                                    placeholder={({imageProps, ref}) => (
-                                        <img ref={ref} src={imagePreloader} alt={imageProps.alt} />
-                                    )}
-                                    actual={({imageProps}) => <img className="img-fluid w-100 mb-40" {...imageProps} />}
-                                />
+                            <div className="col-lg-4 text-right">
+                                <img className="img-fluid w-100 text-right" alt="image of risk figure" src={imageph1} />
                             </div>
                         </div>
                     </div>
                 </section>
-                {/* philosophy */}
-
                 <section className=" section-sm bg-gray">
                     <div className="container ">
                         <div className="row">
-                            <div className="col-lg-6">
-                                <LazyImage
-                                    src={imageph2}
-                                    alt="image of risk figure"
-                                    placeholder={({imageProps, ref}) => (
-                                        <img ref={ref} src={imagePreloader} alt={imageProps.alt} />
-                                    )}
-                                    actual={({imageProps}) => <img className="img-fluid w-100 mb-40" {...imageProps} />}
-                                />
+                            <div className="col-lg-4">
+                                <img className="img-fluid w-100 mb-40" alt="image of risk figure" src={imageph2} />
                             </div>
-                            <div className="col-lg-6 ml-auto">
+                            <div className="col-lg-8 ml-auto">
                                 <h4 className="section-title section-title-border-half text-dark">
-                                    Carrick Just Asset Management Limited
+                                    量化为本，立足长远
                                 </h4>
                                 <p className="text-dark mb-40">
-                                    相信尝试我们评估过的赌注，而不是冒险尝试一些可能失败的“确定赌注”
-                                    来危害客户的资金利益。在我们的每个投资组合中，我们在业务，部门和地区之间进行多元化投资，因此，没有一项单独投资会对我们的整体回报产生不当影响。
+                                    凯利资产基金管理坚持以专业的量化研究为立足点，不断寻找量化交易机会，剖析证券市场上的价格动力和本质，选择合适的时点投资布局，分享量化快速稳健交易带来的利益。我们相信，深入、前瞻、专业的量化研究是超越市场平均回报并获取可持续收益，进而为基金持有人实现价值最大化的基础。同时，公司注重量化调研，通过技术更新，量化策略的提升，紧密跟踪市场趋势，持续动态评估，防范风险。
+                                </p>
+                                {/* <Link className="btn btn-primary mt-4" to="/about-us">
+                                    更多
+                                </Link> */}
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section className=" section-sm">
+                    <div className="container ">
+                        <div className="row">
+                            <div className="col-lg-8 mr-auto">
+                                <h4 className="section-title section-title-border-half text-dark">
+                                    坚守价值，稳健投资
+                                </h4>
+                                <p className="text-dark mb-40">
+                                    凯利资产基金管理坚持以专业的量化研究为立足点，不断寻找量化交易机会，剖析证券市场上的价格动力和本质，选择合适的时点投资布局，分享量化快速稳健交易带来的利益。我们相信，深入、前瞻、专业的量化研究是超越市场平均回报并获取可持续收益，进而为基金持有人实现价值最大化的基础。同时，公司注重量化调研，通过技术更新，量化策略的提升，紧密跟踪市场趋势，持续动态评估，防范风险。
                                 </p>
                                 <p className="text-dark mb-40">
-                                    Carrick Just Asset Management
-                                    Limited是长期投资者，因此当我们做出我们的投资决定，我们希望可以保持长期的投资年限。我们希望我们的客户知道可以在期望Carrick
-                                    Just Asset Management
-                                    Limited什么。我们在网站上总结了广泛的投资方法，并鼓励您访问。我们还会在相关资讯中为您提供最新信息，方便您做出投资选择
+                                    为了帮助您了解量化投资，我们还会在相关资讯中持续为您提供最新信息，方便您做出投资选择。
                                 </p>
-                                <Link className="btn btn-primary mt-4" to="/about-us">
+                                <Link className="btn btn-primary" to="/about-us">
                                     更多
                                 </Link>
+                            </div>
+                            <div className="col-lg-4">
+                                <img className="img-fluid w-100 mb-40" alt="image of risk figure" src={imageph4} />
                             </div>
                         </div>
                     </div>
