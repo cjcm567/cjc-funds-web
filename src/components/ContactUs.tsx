@@ -15,7 +15,7 @@ export default function ContactUs() {
                         <div className="col-lg-6 text-left"></div>
                         <div className="col-lg-6 justify-content-center px-5">
                             <div className="row justify-content-center">
-                                <h2 className="section-title text-white">Contact Us</h2>
+                                <h2 className="section-title text-white">联系我们</h2>
                                 <ul className="pl-0 px-5">
                                     <li className="d-flex">
                                         <span

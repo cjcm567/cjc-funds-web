@@ -57,10 +57,10 @@ export default function News() {
                                 <h2 className="text-white font-weight-bold">News</h2>
                                 <ol className="breadcrumb">
                                     <li>
-                                        <Link to="/">Home</Link>
+                                        <Link to="/">主页</Link>
                                     </li>
                                     <li>
-                                        <Link to="/news">News Overview</Link>
+                                        <Link to="/news">业内新闻概览</Link>
                                     </li>
                                 </ol>
                             </div>
