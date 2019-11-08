@@ -4,6 +4,7 @@ import React, {useState} from "react"
 import Layout from "../components/layout"
 import {LazyImage} from "react-lazy-images"
 import {Helmet} from "react-helmet"
+import RequestForm from "../components/RequestForm"
 import imagePreloader from "../images/preloader.gif"
 import imageProperty from "../images/funds/carrick-nz-au-property-fund.jpg"
 import imageRiskFigure from "../images/funds/risk-figure-dividend.jpg"
@@ -24,7 +25,7 @@ function FundsComponent(isShowId: number) {
                                 随着新西兰央行利率的进一步下调，纽澳一线城市的商业地产迎来了价格和租金的上升周期，并尤其受到投资者的青睐。截至今年，纽澳的商业地产投资基金的资产回报率已经达到了金融资产回报率的最高水平。
                             </li>
                             <li className="font-secondary mb-30">
-                                凯利纽澳地产基金为投资者提供全方位地产投资服务，包括向合格投资者集资，选择黄金地段地产投资标的，寻求服务周到尽责的物业管理公司，以及及时发送给投资者利益报告和未来资产转售服务等。
+                                凯利纽澳地产基金为投资者提供全方位地产投资服务，包括向合格投资者提供优质的商业地产投资标的、寻求服务周到尽职尽责的物业管理公司、定期发送投资者利益报告和资产转售增值服务等。
                             </li>
                             <li className="font-secondary  font-weight-bolder">
                                 如果你想要投资纽澳商业房产但预算受限；
@@ -52,11 +53,11 @@ function FundsComponent(isShowId: number) {
                                 凯利纽澳地产基金旨在通过整合纽澳商业房地产资源，选择优质的纽澳商业地产产业，最大程度地提高客户资产的价值和回报。
                             </li>
                             <li className="font-secondary mb-10">
-                                它将众多投资人聚集到一起，来购买这个商业地产，大大降低了投资门槛，让中小投资人也可以成为这座商业综合楼的房东,
-                                当然，这类基金投资的房产将主要投放于中心地段的商业综合体，还可能是酒店、办公楼、购物中心、仓储地产、养老地产等稳定、优质的多元化商业地产。
+                                通过基金组合投资的方式，大大降低了投资门槛，让中小投资人也可以成为优质商业地产的所有者,
+                                凯利地产基金投资标的将主要集中于中心地段的商业综合体，还可能是酒店、办公楼、购物中心、仓储地产、养老地产等稳定、优质的多元化商业地产。
                             </li>
                             <li className="font-secondary mb-10">
-                                这种投资方式使得普通投资者在承担有限责任的同时，可以间接获得大规模房地产投资的利益。
+                                这种投资方式使得普通投资者通过专业化的运作方式可以安全稳健地取得纽澳地产在长期上升周期中所带来的投资红利。
                             </li>
                         </ul>
                     </div>
@@ -108,15 +109,15 @@ function FundsComponent(isShowId: number) {
                         <ul className="d-inline-block pl-0 mb-10">
                             <img src={imageIncrease} alt="image of bonus" className="img-fluid w-100 mb-20" />
                             <li className="font-secondary mb-10">
-                                Carrick Direct Property Fund 每年支付一次红利。
-                                筹资资金的初始锁定期为五年，预期固定租金年化收益为6%，考虑到未来租金增长和出售地产后的增值收益，预期年化总收益将高达15%以上。
+                                Carrick Direct Property Fund
+                                每年支付红利，在投资期最初5年内，每年最低保底分红高达6%，再结合所持投资标的资本增值所带来的收益，预期年化收益率将达16%以上。
                             </li>
                             <li className="font-secondary mb-10">
-                                新西兰凯利资产管理有限公司是Carrick Direct Property
-                                Fund直接基金的单位发行人。如果您对本基金投资有兴趣，请与我们联系以获取基金产品说明的副本。
+                                新西兰凯利资产管理有限公司是 Carrick Direct Property Fund
+                                发行人，如果您对本基金投资有兴趣，请与我们销售经理联系以获取基金产品投资的详细信息。
                             </li>
                             <li className="font-secondary mb-10">
-                                凯利纽澳地产基金创建以来，其遵从的核心原则即是透明度、合规性、以及关注投资回报。凯利纽澳地产基金通过与投资者拥有共同目标以及诚恳真实的交流建立长期合作关系。
+                                新西兰凯利资产管理有限公司自创建以来，其遵从的核心原则一直是保持高度透明、合规稳健、极其关注投资回报率。正因于此，越来越多的投资者已与我们建立了长期的合作关系。
                             </li>
                         </ul>
                     </div>
@@ -175,11 +176,11 @@ function FundsComponent(isShowId: number) {
                 <div>
                     <h4 className="mb-30">其他相关信息</h4>
                     <p className="font-secondary mb-10">
-                        凯利资产管理是 Carrick Direct Property Fund
-                        直接基金的单位发行人。如果您对本基金投资有兴趣，请与我们联系以获取基金产品说明的副本。
+                        新西兰凯利资产管理有限公司是Carrick Direct Property
+                        Fund发行人，如果您对本基金投资有兴趣，请与我们销售经理联系以获取基金产品投资的详细信息。
                     </p>
                     <p className="font-secondary mb-10">
-                        所有的潜在投资者在投资前请先仔细阅读产品说明，其中应包含财产和投资的详细信息。投资者必须填写并签署申请表，并在付款时提供适用的身份验证（根据反洗钱（AML）法规的要求）。
+                        所有投资者在投资前请先仔细阅读产品说明，并请填写签署基金认购申请表，同时需满足新西兰反洗钱（AML）合规要求。
                     </p>
                 </div>
             </>
@@ -238,7 +239,7 @@ export default function FundProperty() {
                                                 <ul className="d-inline-block pl-0">
                                                     <li className="font-secondary mb-10">
                                                         Carrick Just Asset Management
-                                                        Limited（凯利资产管理有限公司）致力于通过其自身专业投资人员多年的新西兰和澳大利亚房地产投资经验，利用敏锐的洞察力精心挑选商业地产以及寻求房地产多元化，为合格投资者提供最佳收益回报并实现投资者财富。
+                                                        Limited（凯利资产管理有限公司）致力于通过其自身专业投资人员多年的新西兰和澳大利亚房地产投资经验，利用敏锐的洞察力精心挑选商业地产优质投资标的并构建房地产多元化组合投资方式，为投资者提供最佳收益回报，力求使投资者财富在安全稳健的前提下持续保值增值。
                                                     </li>
                                                 </ul>
                                             </div>
@@ -270,55 +271,7 @@ export default function FundProperty() {
                                     </a>
                                 </div> */}
                                 {/* Consultation */}
-                                <div className="mb-50">
-                                    <h4 className="mb-20">Request Consultation</h4>
-                                    <form name="fundcontact" method="post" className="row">
-                                        <input type="hidden" name="form-name" value="fundcontact" />
-                                        <div className="col-lg-12">
-                                            <input
-                                                type="text"
-                                                className="form-control"
-                                                name="name"
-                                                id="name"
-                                                placeholder="Name"
-                                                required
-                                            />
-                                        </div>
-                                        <div className="col-lg-12">
-                                            <input
-                                                type="email"
-                                                className="form-control"
-                                                name="email"
-                                                id="email"
-                                                placeholder="Email Address"
-                                                required
-                                            />
-                                        </div>
-                                        <div className="col-lg-12">
-                                            <input
-                                                type="text"
-                                                className="form-control"
-                                                name="subject"
-                                                id="subject"
-                                                placeholder="Subject"
-                                                required
-                                            />
-                                        </div>
-                                        <div className="col-lg-12">
-                                            <textarea
-                                                name="question"
-                                                id="question"
-                                                className="form-control p-2"
-                                                placeholder="Your Question Here..."
-                                                style={{height: "150px"}}></textarea>
-                                        </div>
-                                        <div className="col-lg-12">
-                                            <button className="btn btn-primary" type="submit" value="send">
-                                                Submit Request
-                                            </button>
-                                        </div>
-                                    </form>
-                                </div>
+                                <RequestForm />
                             </aside>
                             <div className="col-lg-8 order-lg-2 order-1">{FundsComponent(defaultActive)}</div>
                         </div>

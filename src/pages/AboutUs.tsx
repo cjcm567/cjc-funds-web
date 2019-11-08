@@ -54,7 +54,7 @@ export default function AboutUs() {
                                         <Link
                                             to="/about-us/company-details"
                                             className="btn btn-secondary translateY-25">
-                                            Read More
+                                            点击了解更多
                                         </Link>
                                     </div>
                                 </div>
@@ -74,7 +74,7 @@ export default function AboutUs() {
                                     <div className="card-body p-0">
                                         <p className="card-text mx-2 mb-0 pt-5">经验丰富 理性投资</p>
                                         <Link to="/about-us/team" className="btn btn-secondary translateY-25">
-                                            Read More
+                                            点击了解更多
                                         </Link>
                                     </div>
                                 </div>
@@ -103,7 +103,7 @@ export default function AboutUs() {
                                         <Link
                                             to="/about-us/carrick-Investment-philosophy"
                                             className="btn btn-secondary translateY-25">
-                                            Read More
+                                            点击了解更多
                                         </Link>
                                     </div>
                                 </div>

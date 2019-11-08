@@ -49,7 +49,7 @@ export default function Home() {
                         <p className="card-text mx-2 mb-0">{homeObjectItem.desc}</p>
                     </div>
                     <Link to={`/funds/${homeObjectItem.props}`} className="btn btn-secondary translateY-25">
-                        Read More
+                        点击了解更多
                     </Link>
                 </div>
             </div>
