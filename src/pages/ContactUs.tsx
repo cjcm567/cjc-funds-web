@@ -11,7 +11,7 @@ function ContactUs() {
     return (
         <>
             <Helmet>
-                <title>Contact Us | Carrick Asset</title>
+                <title>联系我们 | Carrick Asset</title>
                 <meta name="description" content="Carrick Asset 联系我们页面" />
             </Helmet>
             <Layout>
@@ -19,7 +19,7 @@ function ContactUs() {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-4 offset-lg-1 col-md-5">
-                                <h2 className="section-title">Contact Us</h2>
+                                <h2 className="section-title">联系我们</h2>
                                 <ul className="pl-0">
                                     <li className="d-flex mb-30">
                                         <div className="round-icon mr-3">
@@ -63,7 +63,7 @@ function ContactUs() {
                                     <form name="contactus" method="post" className="row">
                                         <input type="hidden" name="form-name" value="contactus" />
                                         <div className="col-lg-12">
-                                            <h3>Contact Form</h3>
+                                            <h4 className="mb-10">敬请留下您的联系方式，我们会尽快与您取得联系</h4>
                                         </div>
                                         <div className="col-lg-6">
                                             <input
@@ -71,7 +71,7 @@ function ContactUs() {
                                                 name="name"
                                                 id="name"
                                                 className="form-control"
-                                                placeholder="Name"
+                                                placeholder="姓名"
                                                 required
                                             />
                                         </div>
@@ -81,7 +81,7 @@ function ContactUs() {
                                                 className="form-control"
                                                 name="email"
                                                 id="email"
-                                                placeholder="Email Address"
+                                                placeholder="邮箱"
                                                 required
                                             />
                                         </div>
@@ -91,7 +91,7 @@ function ContactUs() {
                                                 name="subject"
                                                 id="subject"
                                                 className="form-control"
-                                                placeholder="Subject"
+                                                placeholder="标题"
                                                 required
                                             />
                                         </div>
@@ -102,12 +102,12 @@ function ContactUs() {
                                                 id="message"
                                                 wrap="off"
                                                 rows={5}
-                                                placeholder="Your Message Here..."
+                                                placeholder="请告诉我们您的详细问题，以便我们更快地为您提供帮助。"
                                                 required></textarea>
                                         </div>
                                         <div className="col-lg-12">
                                             <button className="btn btn-primary" type="submit" value="send">
-                                                Submit Now
+                                                提交
                                             </button>
                                         </div>
                                     </form>

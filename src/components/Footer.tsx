@@ -28,14 +28,14 @@ function Footer() {
                     <div className="row justify-content-between">
                         <div className="col-lg-6 align-self-center">
                             <h3 className="text-white text-center text-md-left">
-                                See how we can help.
+                                敬请留下您的联系方式
                                 <br />
-                                Contact us today
+                                我们会尽快与您取得联系
                             </h3>
                         </div>
                         <div className="col-lg-6 text-lg-center text-center align-self-center">
                             <Link to="/contact-us" className="btn-sm btn-light" style={{textTransform: "uppercase"}}>
-                                Get In Touch
+                                联系我们
                             </Link>
                         </div>
                     </div>

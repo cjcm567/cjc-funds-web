@@ -90,7 +90,7 @@ export default function CarrickResponsibility() {
                                     </ul>
                                 </div> */}
                                 <a href="/about-us" className="btn btn-primary mt-4">
-                                    Read More
+                                    点击了解更多
                                 </a>
                                 {/* </div> */}
                             </div>

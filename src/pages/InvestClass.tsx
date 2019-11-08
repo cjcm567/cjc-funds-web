@@ -2,6 +2,7 @@
 import React, {useState} from "react"
 import {Helmet} from "react-helmet"
 import Layout from "../components/layout"
+import RequestForm from "../components/RequestForm"
 import imageCoreCompetence from "../images/investclass/fund01.jpg"
 import imageStrategy from "../images/investclass/fund02.jpg"
 import imageCalculate from "../images/funds/calculate.jpg"
@@ -197,55 +198,7 @@ export default function InvestClass() {
                             <aside className="col-lg-4 order-lg-1 order-2">
                                 {/* service menu */}
                                 <ul className="service-menu pl-0 border rounded mb-50">{listSidebar}</ul>
-                                <div className="mb-50">
-                                    <h5 className="mb-20">Request Consultation</h5>
-                                    <form name="fundcontact" method="post" className="row">
-                                        <input type="hidden" name="form-name" value="fundcontact" />
-                                        <div className="col-lg-12">
-                                            <input
-                                                type="text"
-                                                className="form-control"
-                                                name="name"
-                                                id="name"
-                                                placeholder="Name"
-                                                required
-                                            />
-                                        </div>
-                                        <div className="col-lg-12">
-                                            <input
-                                                type="email"
-                                                className="form-control"
-                                                name="email"
-                                                id="email"
-                                                placeholder="Email Address"
-                                                required
-                                            />
-                                        </div>
-                                        <div className="col-lg-12">
-                                            <input
-                                                type="text"
-                                                className="form-control"
-                                                name="subject"
-                                                id="subject"
-                                                placeholder="Subject"
-                                                required
-                                            />
-                                        </div>
-                                        <div className="col-lg-12">
-                                            <textarea
-                                                name="question"
-                                                id="question"
-                                                className="form-control p-2"
-                                                placeholder="Your Question Here..."
-                                                style={{height: "150px"}}></textarea>
-                                        </div>
-                                        <div className="col-lg-12">
-                                            <button className="btn btn-primary" type="submit" value="send">
-                                                Submit Request
-                                            </button>
-                                        </div>
-                                    </form>
-                                </div>
+                                <RequestForm />
                             </aside>
                             {/* service single content */}
                             <div className="col-lg-8 order-lg-2 order-1">{InvestClassComponent(defaultActive)}</div>

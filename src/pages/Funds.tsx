@@ -32,7 +32,7 @@ const fundsCard = fundsOverview.map(fundsItem => (
                     {fundsItem.desc}
                 </p>
                 <Link to={`/funds/${fundsItem.props}`} className="btn btn-secondary translateY-25">
-                    Read More
+                    点击了解更多
                 </Link>
             </div>
         </div>

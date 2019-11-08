@@ -4,6 +4,7 @@ import React, {useState} from "react"
 import Layout from "../components/layout"
 import {LazyImage} from "react-lazy-images"
 import {Helmet} from "react-helmet"
+import RequestForm from "../components/RequestForm"
 import imagePreloader from "../images/preloader.gif"
 import imageProperty from "../images/funds/carrick-nz-au-property-fund.jpg"
 import imageRiskFigure from "../images/funds/risk-figure-dividend.jpg"
@@ -238,7 +239,7 @@ export default function FundProperty() {
                                                 <ul className="d-inline-block pl-0">
                                                     <li className="font-secondary mb-10">
                                                         Carrick Just Asset Management
-                                                        Limited（凯利资产管理有限公司）致力于通过其自身专业投资人员多年的新西兰和澳大利亚房地产投资经验，利用敏锐的洞察力精心挑选商业地产以及寻求房地产多元化，为合格投资者提供最佳收益回报并实现投资者财富。
+                                                        Limited（凯利资产管理有限公司）致力于通过其自身专业投资人员多年的新西兰和澳大利亚房地产投资经验，利用敏锐的洞察力精心挑选商业地产优质投资标的并构建房地产多元化组合投资方式，为投资者提供最佳收益回报，力求使投资者财富在安全稳健的前提下持续保值增值。
                                                     </li>
                                                 </ul>
                                             </div>
@@ -270,55 +271,7 @@ export default function FundProperty() {
                                     </a>
                                 </div> */}
                                 {/* Consultation */}
-                                <div className="mb-50">
-                                    <h4 className="mb-20">Request Consultation</h4>
-                                    <form name="fundcontact" method="post" className="row">
-                                        <input type="hidden" name="form-name" value="fundcontact" />
-                                        <div className="col-lg-12">
-                                            <input
-                                                type="text"
-                                                className="form-control"
-                                                name="name"
-                                                id="name"
-                                                placeholder="Name"
-                                                required
-                                            />
-                                        </div>
-                                        <div className="col-lg-12">
-                                            <input
-                                                type="email"
-                                                className="form-control"
-                                                name="email"
-                                                id="email"
-                                                placeholder="Email Address"
-                                                required
-                                            />
-                                        </div>
-                                        <div className="col-lg-12">
-                                            <input
-                                                type="text"
-                                                className="form-control"
-                                                name="subject"
-                                                id="subject"
-                                                placeholder="Subject"
-                                                required
-                                            />
-                                        </div>
-                                        <div className="col-lg-12">
-                                            <textarea
-                                                name="question"
-                                                id="question"
-                                                className="form-control p-2"
-                                                placeholder="Your Question Here..."
-                                                style={{height: "150px"}}></textarea>
-                                        </div>
-                                        <div className="col-lg-12">
-                                            <button className="btn btn-primary" type="submit" value="send">
-                                                Submit Request
-                                            </button>
-                                        </div>
-                                    </form>
-                                </div>
+                                <RequestForm />
                             </aside>
                             <div className="col-lg-8 order-lg-2 order-1">{FundsComponent(defaultActive)}</div>
                         </div>

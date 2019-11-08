@@ -28,7 +28,7 @@ export default function Partner() {
                             </p>
                             <div className="text-center text-md-left">
                                 <Link to="/partnership" className="btn btn-outline-light text-uppercase text-white">
-                                    more details
+                                    了解详情
                                 </Link>
                             </div>
                         </div>

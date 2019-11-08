@@ -3,6 +3,7 @@
 import React, {useState} from "react"
 import Layout from "../components/layout"
 import {Helmet} from "react-helmet"
+import RequestForm from "../components/RequestForm"
 import imageCoreCompetence from "../images/funds/core-competence.png"
 import imageStrategy from "../images/funds/strategy.png"
 import imageCalculate from "../images/funds/calculate.jpg"
@@ -57,17 +58,23 @@ function FundsComponent(isShowId: number) {
                                     产品封闭期为六个月，封闭期结束之后，每个月的 15
                                     号为开放日，接受基金份额的认购和赎回。
                                 </p>
-
                                 <h4 className="mb-10">最大回撤</h4>
                                 <p className="mb-20">1.37%</p>
+                                <h4 className="mb-10">预警/清仓</h4>
+                                <p className="mb-20">
+                                    预警线为基金净值0.95
+                                    <br />
+                                    清仓线为基金净值0.91
+                                </p>
                             </div>
                         </div>
                     </div>
 
                     <div className="col-lg-6 bg-gray p-5 rounded">
+                        <h4 className="mb-10">预期年化收益率(费后)</h4>
+                        <p className="mb-20">20%以上</p>
                         <h4 className="mb-10">固定管理费</h4>
                         <p className="mb-20">1.99%/年</p>
-
                         <h4 className="mb-10">行政服务费</h4>
                         <p className="mb-20">0.99%/年</p>
                         <h4 className="mb-10">业绩表现费</h4>
@@ -75,12 +82,7 @@ function FundsComponent(isShowId: number) {
                             年化收益率5%及以下不收取任何业绩管理费
                             年化收益率超过5%以上部分收取20%，在分红日、退出日和终止日计提
                         </p>
-                        <h4 className="mb-10">预警/止损</h4>
-                        <p className="mb-20">
-                            预警线为基金净值0.95
-                            <br />
-                            清仓线为基金净值0.91
-                        </p>
+
                         <h4 className="mb-10">认购资格</h4>
                         <p className="mb-20">
                             1.
@@ -329,20 +331,14 @@ function FundsComponent(isShowId: number) {
                                 <p className="mb-20">一篮子股票持股比例严格对标指数成分比例</p>
                                 <h4 className="mb-10">全对冲</h4>
                                 <p className="mb-20">每日收盘无风险敞口</p>
-                                <h4 className="mb-10">T0 交易实现</h4>
-                                <p className="mb-20">昨仓和融券，在波动中获利</p>
-                                <h4 className="mb-10">T0 交易分类</h4>
-                                <p className="mb-20">趋势类和做市类</p>
+                                <h4 className="mb-10">交易量大</h4>
+                                <p className="mb-20">年化 150~300 倍换手率</p>
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-6 bg-gray p-5 rounded mb-60">
-                        <h4 className="mb-10">最极致的交易执行</h4>
-                        <p className="mb-20">零滑点或负滑点</p>
-                        <h4 className="mb-10">交易量大</h4>
-                        <p className="mb-20">年化 150~300 倍换手率</p>
-                        <h4 className="mb-10">预期费后收益</h4>
-                        <p className="mb-20">13%~20%</p>
+                        <h4 className="mb-10">预期年化收益率(费后)</h4>
+                        <p className="mb-20">20%以上</p>
                         <h4 className="mb-10">最大回撤</h4>
                         <p className="mb-20">1.37%</p>
                         <h4 className="mb-10">可拓展性强</h4>
@@ -506,55 +502,7 @@ export default function FundOfFunds() {
                                     </div>
                                 </div> */}
                                 {/* Consultation */}
-                                <div className="mb-50">
-                                    <h3 className="mb-20">Request Consultation</h3>
-                                    <form name="fundcontact" method="post" className="row">
-                                        <input type="hidden" name="form-name" value="fundcontact" />
-                                        <div className="col-lg-12">
-                                            <input
-                                                type="text"
-                                                className="form-control"
-                                                name="name"
-                                                id="name"
-                                                placeholder="Name"
-                                                required
-                                            />
-                                        </div>
-                                        <div className="col-lg-12">
-                                            <input
-                                                type="email"
-                                                className="form-control"
-                                                name="email"
-                                                id="email"
-                                                placeholder="Email Address"
-                                                required
-                                            />
-                                        </div>
-                                        <div className="col-lg-12">
-                                            <input
-                                                type="text"
-                                                className="form-control"
-                                                name="subject"
-                                                id="subject"
-                                                placeholder="Subject"
-                                                required
-                                            />
-                                        </div>
-                                        <div className="col-lg-12">
-                                            <textarea
-                                                name="question"
-                                                id="question"
-                                                className="form-control p-2"
-                                                placeholder="Your Question Here..."
-                                                style={{height: "150px"}}></textarea>
-                                        </div>
-                                        <div className="col-lg-12">
-                                            <button className="btn btn-primary-fof" type="submit" value="send">
-                                                Submit Request
-                                            </button>
-                                        </div>
-                                    </form>
-                                </div>
+                                <RequestForm />
                             </aside>
                             {/* service single content */}
                             <div className="col-lg-8 order-lg-2 order-1">{FundsComponent(defaultActive)}</div>
