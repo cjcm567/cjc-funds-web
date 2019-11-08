@@ -3,6 +3,7 @@
 import React, {Suspense, useState} from "react"
 import {Link} from "react-router-dom"
 import logoImage from "../images/logo.png"
+import imagePhoneWhite from "../images/aboutus/phone-white.svg"
 
 function HeaderComponent() {
     const [collapseStatus, setCollapseStatus] = useState("collapse navbar-collapse")
@@ -60,7 +61,9 @@ function HeaderComponent() {
                                     </li>
                                     <li className="list-inline-item text-uppercase">
                                         <a href="callto:0064092803716">
-                                            Call Us today:
+                                            {/* Call Us today: */}
+                                            <img src={imagePhoneWhite} alt="image of a phone" />
+                                            NZ
                                             <span className="ml-2 text-white bold"> +64 9 2803716</span>
                                         </a>
                                     </li>
@@ -142,18 +145,21 @@ function HeaderComponent() {
                                             业内新闻
                                         </Link>
                                     </li>
-
                                     <li className="nav-item">
                                         <Link to="/invest-class" className="nav-link">
                                             投资学堂
                                         </Link>
                                     </li>
-
+                                    <li className="nav-item">
+                                        <Link to="/contact-us" className="nav-link">
+                                            联系我们
+                                        </Link>
+                                    </li>
                                     <li className="nav-item text-center">
                                         <Link
                                             to="/login-or-join"
                                             className="btn btn-primary text-uppercase btn-sm text-white">
-                                            Invest now
+                                            加入我们
                                         </Link>
                                     </li>
                                 </ul>

@@ -2,24 +2,47 @@
 
 import React, {Suspense} from "react"
 import {Helmet} from "react-helmet"
-import Layout from "../components/layout"
+import {Link} from "react-router-dom"
+import LayoutContact from "../components/layoutContact"
 import imagePhone from "../images/aboutus/phone.svg"
 import imageAddress from "../images/aboutus/address.svg"
 import imageEmail from "../images/aboutus/email.svg"
+import imageContactBanner from "../images/aboutus/contact-banner.jpg"
 
 function ContactUs() {
+    const sectionStyle = {
+        backgroundImage: `url(${imageContactBanner})`,
+        height: "45vh",
+    }
     return (
         <>
             <Helmet>
                 <title>联系我们 | Carrick Asset</title>
                 <meta name="description" content="Carrick Asset 联系我们页面" />
             </Helmet>
-            <Layout>
+            <LayoutContact>
+                <section className="page-title overlay" style={sectionStyle}>
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-12 text-center">
+                                <h2 className="text-white font-weight-bold">联系我们</h2>
+                                <ol className="breadcrumb">
+                                    <li>
+                                        <Link to="/">主页</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/contact-us">联系我们</Link>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <section className="section">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-4 offset-lg-1 col-md-5">
-                                <h2 className="section-title">联系我们</h2>
+                                <h2 className="section-title">竭诚为您服务</h2>
                                 <ul className="pl-0">
                                     <li className="d-flex mb-30">
                                         <div className="round-icon mr-3">
@@ -116,7 +139,17 @@ function ContactUs() {
                         </div>
                     </div>
                 </section>
-            </Layout>
+                <div>
+                    <iframe
+                        width="100%"
+                        height="400px"
+                        frameBorder="0"
+                        scrolling="no"
+                        marginHeight={0}
+                        marginWidth={0}
+                        src="https://www.openstreetmap.org/export/embed.html?bbox=174.77586954832077%2C-36.877895608302936%2C174.77941006422043%2C-36.876056856208294&amp;layer=mapnik&amp;marker=-36.87697503474282%2C174.7776398062706"></iframe>
+                </div>
+            </LayoutContact>
         </>
     )
 }
