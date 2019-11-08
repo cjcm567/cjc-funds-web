@@ -24,8 +24,16 @@ function FundsComponent(isShowId: number) {
                                 100
                                 随着新西兰央行利率的进一步下调，纽澳一线城市的商业地产迎来了价格和租金的上升周期，并尤其受到投资者的青睐。截至今年，纽澳的商业地产投资基金的资产回报率已经达到了金融资产回报率的最高水平。
                             </li>
-                            <li className="font-secondary mb-10">
+                            <li className="font-secondary mb-30">
                                 凯利纽澳地产基金为投资者提供全方位地产投资服务，包括向合格投资者集资，选择黄金地段地产投资标的，寻求服务周到尽责的物业管理公司，以及及时发送给投资者利益报告和未来资产转售服务等。
+                            </li>
+                            <li className="font-secondary  font-weight-bolder">
+                                如果你想要投资纽澳商业房产但预算受限；
+                                <br />
+                                <br /> 如果你对海外买家限购有顾虑；
+                                <br />
+                                <br />
+                                凯利纽澳地产基金将会是一个绝佳的选择!
                             </li>
                         </ul>
                     </div>
@@ -43,6 +51,13 @@ function FundsComponent(isShowId: number) {
                             <img src={imageMall} alt="image of risk figure" className="img-fluid w-100 mb-20" />
                             <li className="font-secondary mb-10">
                                 凯利纽澳地产基金旨在通过整合纽澳商业房地产资源，选择优质的纽澳商业地产产业，最大程度地提高客户资产的价值和回报。
+                            </li>
+                            <li className="font-secondary mb-10">
+                                它将众多投资人聚集到一起，来购买这个商业地产，大大降低了投资门槛，让中小投资人也可以成为这座商业综合楼的房东,
+                                当然，这类基金投资的房产将主要投放于中心地段的商业综合体，还可能是酒店、办公楼、购物中心、仓储地产、养老地产等稳定、优质的多元化商业地产。
+                            </li>
+                            <li className="font-secondary mb-10">
+                                这种投资方式使得普通投资者在承担有限责任的同时，可以间接获得大规模房地产投资的利益。
                             </li>
                         </ul>
                     </div>
