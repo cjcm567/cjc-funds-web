@@ -21,6 +21,7 @@ function FundsComponent(isShowId: number) {
                         <img src={imageWallet} alt="image of risk figure" className="img-fluid w-100 mb-20" />
                         <ul className="d-inline-block pl-0 mb-10">
                             <li className="font-secondary mb-10">
+                                100
                                 随着新西兰央行利率的进一步下调，纽澳一线城市的商业地产迎来了价格和租金的上升周期，并尤其受到投资者的青睐。截至今年，纽澳的商业地产投资基金的资产回报率已经达到了金融资产回报率的最高水平。
                             </li>
                             <li className="font-secondary mb-10">
