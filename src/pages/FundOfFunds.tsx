@@ -353,6 +353,7 @@ function FundsComponent(isShowId: number) {
     if (isShowId === 5) {
         return (
             <>
+                {/* 拟投资情况 
                 <h4 className="mb-30">拟投资情况</h4>
 
                 <div className="row justify-content-center">
@@ -382,7 +383,7 @@ function FundsComponent(isShowId: number) {
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div>*/}
 
                 <h4 className="mb-30 mt-5">其他相关信息</h4>
                 <p className="font-secondary mb-10">
