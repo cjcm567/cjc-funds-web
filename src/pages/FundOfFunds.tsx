@@ -431,7 +431,7 @@ export default function FundOfFunds() {
                 <title>Carrick Fund of Funds | Carrick Asset</title>
                 <meta
                     name="description"
-                    content="FOF（Fund of Funds，基金中的基金）指投资于基金组合的基金。在欧美市场，FOF 已发展成为数量规模占比均较大的一类成熟的理财产品，相比而言，在亚太地区 FOF 仍具有较大的发展空间（家族理财机构及对冲基金）。"
+                    content="FOF（Fund of Funds，基金中的基金）指投资于基金组合的基金。在欧美市场，FOF 基金以安全可靠，收益稳定，已发展成为数量规模占比均较大的一类成熟的理财产品。"
                 />
             </Helmet>
             <Layout>
@@ -441,8 +441,7 @@ export default function FundOfFunds() {
                             <h3 className="mb-10">Carrick Fund of Funds</h3>
                             <p className="mb-40">
                                 FOF（Fund of Funds，基金中的基金）指投资于基金组合的基金。在欧美市场，FOF
-                                已发展成为数量规模占比均较大的一类成熟的理财产品，相比而言，在亚太地区 FOF
-                                仍具有较大的发展空间。
+                                基金以安全可靠，收益稳定，已发展成为数量规模占比均较大的一类成熟的理财产品。
                             </p>
                             <div className="mb-md-50">
                                 <div className="row">

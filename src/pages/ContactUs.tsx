@@ -12,7 +12,7 @@ import imageContactBanner from "../images/aboutus/contact-banner.jpg"
 function ContactUs() {
     const sectionStyle = {
         backgroundImage: `url(${imageContactBanner})`,
-        height: "45vh",
+        // height: "45vh",
     }
     return (
         <>
@@ -50,7 +50,7 @@ function ContactUs() {
                                         </div>
                                         <div className="align-self-center font-primary">
                                             <a href="tel:+64 9 2803716" className="text-dark">
-                                                🇳🇿 +64 9 2803716
+                                                NZ +64 9 2803716
                                             </a>
                                         </div>
                                     </li>
