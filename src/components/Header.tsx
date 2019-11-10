@@ -64,7 +64,7 @@ function HeaderComponent() {
                                             {/* Call Us today: */}
                                             <img src={imagePhoneWhite} alt="image of a phone" />
                                             NZ
-                                            <span className="ml-2 text-white bold"> +64 9 2803716</span>
+                                            <span className="ml-2 text-white bold"> background-position:</span>
                                         </a>
                                     </li>
                                 </ul>

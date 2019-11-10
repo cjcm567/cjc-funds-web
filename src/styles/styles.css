@@ -630,6 +630,21 @@ button {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 160px 0 100px;
+    
+}
+
+@media (max-width: 575px) {
+    .page-title {
+        background-position: top right;
+        padding: 60px 0 60px;
+    }
+}
+
+@media (max-width: 400px) {
+    .page-title {
+        background-position: top right;
+        padding: 60px 0 60px;
+    }
 }
 
 /* breadcrumb */

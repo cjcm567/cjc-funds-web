@@ -107,7 +107,7 @@ export default function Home() {
                             <div className="container">
                                 <div className="row justify-content-center">
                                     <div className="col-lg-12 text-center">
-                                        <h5 className="section-title-sm">优质服务</h5>
+                                        <h5 className="section-title-sm">公司旗下</h5>
                                         <h2 className="section-title section-title-border">基金产品</h2>
                                     </div>
                                     {HomeRender}
