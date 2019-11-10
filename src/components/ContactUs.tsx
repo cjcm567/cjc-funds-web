@@ -23,7 +23,7 @@ export default function ContactUs() {
                                             style={{fontSize: "1.6rem", color: "#0057b8"}}></span>
                                         <div className="align-self-center">
                                             <a href="tel:+64 9 2803716" className="h4 text-white text-left">
-                                                🇳🇿 +64 9 2803716
+                                                NZ +64 9 2803716
                                             </a>
                                         </div>
                                     </li>
