@@ -32,7 +32,7 @@ export default function CompanyDetails() {
                 <title>公司简介 | Carrick Asset</title>
                 <meta
                     name="description"
-                    content="欢迎来到Carrick Just Asset Management Limited（凯利资产管理有限公司），我们旨在帮助您实现您的投资目标与财富梦想。凯利资产管理将为全球资产配置、税务规划、资产增值等一系列与财富管理相关的不同需求提供专业的金融服务。"
+                    content="欢迎来到 Carrick Just Asset Management Limited（凯利资产管理有限公司），我们旨在帮助您实现投资目标与财富梦想。凯利资产管理将为全球资产配置、资产增值等一系列与财富管理相关的不同需求提供专业的金融服务。我们希望通过高效稳健的投资方案以及优质的金融服务为您创造可观的回报。"
                 />
             </Helmet>
             <Layout>
@@ -43,8 +43,8 @@ export default function CompanyDetails() {
                                 <h5 className="section-title-sm">Know About Carrick Just Asset Management Limited</h5>
                                 <h2 className="section-title section-title-border-half">公司简介</h2>
                                 <p>
-                                    欢迎来到Carrick Just Asset Management
-                                    Limited（凯利资产管理有限公司），我们旨在帮助您实现您的投资目标与财富梦想。凯利资产管理将为全球资产配置、税务规划、资产增值等一系列与财富管理相关的不同需求提供专业的金融服务。
+                                    欢迎来到 Carrick Just Asset Management
+                                    Limited（凯利资产管理有限公司），我们旨在帮助您实现投资目标与财富梦想。凯利资产管理将为全球资产配置、资产增值等一系列与财富管理相关的不同需求提供专业的金融服务。我们希望通过高效稳健的投资方案以及优质的金融服务为您创造可观的回报。
                                 </p>
                                 <p>
                                     Carrick Just Asset Management Limited

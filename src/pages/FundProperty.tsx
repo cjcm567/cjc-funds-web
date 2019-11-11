@@ -109,8 +109,9 @@ function FundsComponent(isShowId: number) {
                         <ul className="d-inline-block pl-0 mb-10">
                             <img src={imageIncrease} alt="image of bonus" className="img-fluid w-100 mb-20" />
                             <li className="font-secondary mb-10">
-                                Carrick Direct Property Fund
-                                每年支付红利，在投资期最初5年内，每年最低保底分红高达6%，再结合所持投资标的资本增值所带来的收益，预期年化收益率将达16%以上。
+                                Carrick Direct Property Fund 每年支付红利，在投资期最初 5
+                                年内，每年最低保底分红高达6%，再结合所持投资标的资本增值所带来的收益，预期年化收益率将达
+                                16% 以上。
                             </li>
                             <li className="font-secondary mb-10">
                                 新西兰凯利资产管理有限公司是 Carrick Direct Property Fund
@@ -176,7 +177,7 @@ function FundsComponent(isShowId: number) {
                 <div>
                     <h4 className="mb-30">其他相关信息</h4>
                     <p className="font-secondary mb-10">
-                        新西兰凯利资产管理有限公司是Carrick Direct Property
+                        新西兰凯利资产管理有限公司是 Carrick Direct Property
                         Fund发行人，如果您对本基金投资有兴趣，请与我们销售经理联系以获取基金产品投资的详细信息。
                     </p>
                     <p className="font-secondary mb-10">
