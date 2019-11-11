@@ -35,8 +35,8 @@ export default function CarrickResponsibility() {
                                     Just Asset Management Limited很荣幸能够参与其中。
                                 </p>
                                 <p>
-                                    几乎所有技术都有可能会被不法分子利用，为了尽最大可能去避免Carrick Just Asset
-                                    Management Limited的技术被滥用，我们严格遵守所有反洗钱和打击资助恐怖主义行为（AML /
+                                    几乎所有技术都有可能会被不法分子利用，为了尽最大可能去避免 Carrick Just Asset
+                                    Management Limited 的技术被滥用，我们严格遵守所有反洗钱和打击资助恐怖主义行为（AML /
                                     CFT）法规并实施完整的KYC政策。
                                 </p>
                                 <p>
