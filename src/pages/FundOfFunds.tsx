@@ -62,9 +62,9 @@ function FundsComponent(isShowId: number) {
                                 <p className="mb-20">1.37%</p>
                                 <h4 className="mb-10">预警/清仓</h4>
                                 <p className="mb-20">
-                                    预警线为基金净值0.95
+                                    预警线为基金净值 0.95
                                     <br />
-                                    清仓线为基金净值0.91
+                                    清仓线为基金净值 0.91
                                 </p>
                             </div>
                         </div>
@@ -72,15 +72,15 @@ function FundsComponent(isShowId: number) {
 
                     <div className="col-lg-6 bg-gray p-5 rounded">
                         <h4 className="mb-10">预期年化收益率(费后)</h4>
-                        <p className="mb-20">20%以上</p>
+                        <p className="mb-20">20% 以上</p>
                         <h4 className="mb-10">固定管理费</h4>
                         <p className="mb-20">1.99%/年</p>
                         <h4 className="mb-10">行政服务费</h4>
                         <p className="mb-20">0.99%/年</p>
                         <h4 className="mb-10">业绩表现费</h4>
                         <p className="mb-20">
-                            年化收益率5%及以下不收取任何业绩管理费
-                            年化收益率超过5%以上部分收取20%，在分红日、退出日和终止日计提
+                            年化收益率 5% 及以下不收取任何业绩管理费 年化收益率超过 5% 以上部分收取
+                            20%，在分红日、退出日和终止日计提
                         </p>
 
                         <h4 className="mb-10">认购资格</h4>
@@ -111,7 +111,7 @@ function FundsComponent(isShowId: number) {
                     <ul className="d-inline-block pl-0">
                         <li className="font-secondary mb-10">
                             <i className="text-primary mr-2 ti-arrow-circle-right"></i>
-                            1. 通过各投顾过往同类产品的净值表现拟合出 FOF 母基金的净值表现数据，全面了解FOF的可能表现
+                            1. 通过各投顾过往同类产品的净值表现拟合出 FOF 母基金的净值表现数据，全面了解 FOF 的可能表现
                         </li>
                         <li className="font-secondary mb-10">
                             <i className="text-primary mr-2 ti-arrow-circle-right"></i>
@@ -269,8 +269,8 @@ function FundsComponent(isShowId: number) {
                             <p className="price">产品整体风险管理</p>
                             <ul className="features-list">
                                 <li>权益类市值占比、期货轧差及固收杠杆控制管理相结合。</li>
-                                <li>股票+期货净市值≤150%</li>
-                                <li>债券类杠杆率≤2</li>
+                                <li>股票+期货净市值 ≤150%</li>
+                                <li>债券类杠杆率 ≤2</li>
                             </ul>
                         </div>
 
