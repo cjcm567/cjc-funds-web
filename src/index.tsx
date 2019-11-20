@@ -118,11 +118,27 @@ const Funds = () => {
         </Suspense>
     )
 }
-const FundOfFundsComponent = lazy(() => import("./pages/FundOfFunds"))
-const FundOfFunds = () => {
+const FundOfFundsSeriesComponent = lazy(() => import("./pages/FundOfFundsSeries"))
+const FundOfFundsSeries = () => {
     return (
         <Suspense fallback={Preloader}>
-            <FundOfFundsComponent />
+            <FundOfFundsSeriesComponent />
+        </Suspense>
+    )
+}
+const AnTaiComponent = lazy(() => import("./pages/AnTai"))
+const AnTai = () => {
+    return (
+        <Suspense fallback={Preloader}>
+            <AnTaiComponent />
+        </Suspense>
+    )
+}
+const AnTai1Component = lazy(() => import("./pages/AnTai1"))
+const AnTai1 = () => {
+    return (
+        <Suspense fallback={Preloader}>
+            <AnTai1Component />
         </Suspense>
     )
 }
@@ -177,7 +193,9 @@ ReactDOM.render(
                 <Route path="/industry" exact component={Industry} />
                 <Route path="/partnership" exact component={Partnership} />
                 <Route path="/funds" exact component={Funds} />
-                <Route path="/funds/carrick-fund-of-funds" exact component={FundOfFunds} />
+                <Route path="/funds/carrick-fund-of-funds/an-tai" exact component={AnTai} />
+                <Route path="/funds/carrick-fund-of-funds/an-tai-1" exact component={AnTai1} />
+                <Route path="/funds/carrick-fund-of-funds" exact component={FundOfFundsSeries} />
                 <Route path="/funds/carrick-dividend-yield-fund" exact component={FundDividedYield} />
                 <Route path="/funds/carrick-nz-au-property-fund" exact component={FundProperty} />
                 <Route path="/about-us" exact component={AboutUs} />
