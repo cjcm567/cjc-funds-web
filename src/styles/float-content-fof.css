@@ -1,0 +1,57 @@
+@media (min-width: 1200px) {
+    .float-container {
+        margin-bottom: 30vh;
+    }
+    .float-container .img-float-right {
+        padding-left: 20px;
+    }
+
+    .float-container .img-float-left {
+        padding-right: 20px;
+    }
+    .float-container .float-content-right {
+        position: relative;
+        top: 50%;
+        margin-top: -520px;
+        color: #ffffff;
+        right: 0;
+        box-shadow: 0 0 8px 4px rgba(92, 77, 36, 0.18);
+        
+    }
+    .float-container .float-content-left {
+        position: relative;
+        top: 50%;
+        color: #ffffff;
+        box-shadow: 0 0 8px 4px rgba(92, 77, 36, 0.18);
+        left: 0;
+        background: rgba(68, 87, 107, 0.92);
+    }
+
+    .float-container #float-1 {
+        width: 340px;
+        height: 360px;
+        padding: 21px 21px;
+        margin-left: 480px;
+        margin-top: -550px; 
+        background: rgba(110, 110, 110, 0.92);
+    }
+    .float-container #float-2 {
+        width: 340px;
+        height: 360px;
+        padding: 21px 21px;
+        margin-right: 0px;
+        margin-top: -620px;
+        background: rgba(68, 87, 107, 0.92);
+    }
+    .float-container #float-3 {
+        width: 300px;
+        height: 300px;
+        padding: 21px 21px;
+        margin-left: 480px;
+        margin-top: -550px;
+        background: rgba(195,166,95,.9);
+    }
+    .float-container p {
+        color: #ffffff !important;
+    }
+}

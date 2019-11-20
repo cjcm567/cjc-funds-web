@@ -3,12 +3,12 @@ import React, {useState} from "react"
 import {Helmet} from "react-helmet"
 import Layout from "../components/layout"
 import RequestForm from "../components/RequestForm"
-import imageCoreCompetence from "../images/investclass/fund01.jpg"
 import imageStrategy from "../images/investclass/fund02.jpg"
 import imageCalculate from "../images/funds/calculate.jpg"
 import imageCrossPlatform from "../images/funds/cross-platform.jpg"
-import imageInvestClass from "../images/funds/invest-class.jpg"
-import imageWallet from "../images/funds/carrick-wallet.jpg"
+import imageSign from "../images/funds/carrick-sign.jpg"
+import imageSecurity from "../images/funds/carrick-security.jpg"
+import imageCode from "../images/funds/carrick-code.jpg"
 
 function InvestClassComponent(isShowId: number) {
     if (isShowId == 0) {
@@ -20,11 +20,7 @@ function InvestClassComponent(isShowId: number) {
                     </h4>
 
                     <div className="bg-gray p-5 rounded mb-60">
-                        <img
-                            className="img-fluid w-100 mb-40"
-                            src={imageCoreCompetence}
-                            alt="image of Core Competence"
-                        />
+                        <img className="img-fluid w-100 mb-40" src={imageCode} alt="image of Core Competence" />
                         <p>
                             量化投资是一种数据化、系统化的投资方法，该方法源自成熟的金融理论。量化投资借助现代数学、统计等基础学科的科学研究方法，运用电脑强大的数据计算能力，以策略模型为核心，以程序化交易为手段，以追求超额收益为目标的投资方法。它是投资的一种工具，从大数据中寻找能够带来超额收益的策略，并严格按照这些策略所建的量化模型指导投资，力求获得持续稳定的超额回报。
                         </p>
@@ -111,7 +107,6 @@ function InvestClassComponent(isShowId: number) {
                     <h4 className="mb-30">
                         <b>FOF 类基金的投资范围是？</b>
                     </h4>
-
                     <div className="bg-gray p-5 rounded mb-60">
                         <img className="img-fluid w-100 mb-40" src={imageCalculate} alt="image of Strategy" />
                         <ul className="d-inline-block pl-0 mb-10">
@@ -133,9 +128,8 @@ function InvestClassComponent(isShowId: number) {
                     <h4 className="mb-30">
                         <b>基金封闭期是什么？</b>
                     </h4>
-
                     <div className="bg-gray p-5 rounded mb-60">
-                        <img className="img-fluid w-100 mb-40" src={imageInvestClass} alt="image of Strategy" />
+                        <img className="img-fluid w-100 mb-40" src={imageSign} alt="image of Strategy" />
                         <ul className="d-inline-block pl-0 mb-10">
                             <li className="font-secondary mb-10">
                                 <p className="text-dark">
@@ -155,9 +149,8 @@ function InvestClassComponent(isShowId: number) {
                     <h4 className="mb-30">
                         <b>如何确保我的资金安全？</b>
                     </h4>
-
                     <div className="bg-gray p-5 rounded mb-60">
-                        <img className="img-fluid w-100 mb-40" src={imageWallet} alt="image of Strategy" />
+                        <img className="img-fluid w-100 mb-40" src={imageSecurity} alt="image of Strategy" />
                         <ul className="d-inline-block pl-0 mb-10">
                             <li className="font-secondary mb-10">
                                 <p className="text-dark">
