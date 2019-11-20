@@ -35,11 +35,11 @@ function Footer() {
                             {/* footer links */}
                             <div className="col-lg-3 col-md-4 col-6 text-md-left">
                                 <Link to="/funds">
-                                    <h4 className="mb-4">基金产品</h4>
+                                    <h4 className="mb-4">旗下产品</h4>
                                 </Link>
                                 <ul className="footer-links text-left">
                                     <li>
-                                        <Link to="/funds/carrick-fund-of-funds">Carrick Fund of Funds</Link>
+                                        <Link to="/funds/carrick-fund-of-funds">Carrick Fund of Funds 系列</Link>
                                     </li>
                                     {/* <li>
                                         <Link to="/funds/carrick-dividend-yield-fund">

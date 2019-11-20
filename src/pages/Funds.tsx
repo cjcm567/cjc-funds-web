@@ -44,7 +44,7 @@ export default function Funds() {
         <>
             <Helmet>
                 <title>Funds | Carrick Asset</title>
-                <meta name="description" content="Carrick Asset 基金产品" />
+                <meta name="description" content="Carrick Asset 旗下产品" />
             </Helmet>
             <Layout>
                 <section className="section">

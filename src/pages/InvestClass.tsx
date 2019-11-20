@@ -8,6 +8,7 @@ import imageStrategy from "../images/investclass/fund02.jpg"
 import imageCalculate from "../images/funds/calculate.jpg"
 import imageCrossPlatform from "../images/funds/cross-platform.jpg"
 import imageInvestClass from "../images/funds/invest-class.jpg"
+import imageWallet from "../images/funds/carrick-wallet.jpg"
 
 function InvestClassComponent(isShowId: number) {
     if (isShowId == 0) {
@@ -15,12 +16,17 @@ function InvestClassComponent(isShowId: number) {
             <>
                 <div>
                     <h4 className="mb-30">
-                        <b>什么是基金？</b>
+                        <b>什么是量化投资？</b>
                     </h4>
-                    <img className="img-fluid w-100 mb-40" src={imageCoreCompetence} alt="image of Core Competence" />
+
                     <div className="bg-gray p-5 rounded mb-60">
+                        <img
+                            className="img-fluid w-100 mb-40"
+                            src={imageCoreCompetence}
+                            alt="image of Core Competence"
+                        />
                         <p>
-                            作为一种投资工具，证券投资基金把众多投资人的资金汇集起来，由基金托管人(例如银行)托管，由专业的基金管理公司管理和运作，通过投资于股票和债券等证券，获取收益。对于个人投资者而言，倘若你有1万元打算用于投资，但其数额不足以买入一系列不同类型的股票和债券，或者你根本没有时间和精力去挑选股票和债券，购买基金是不错的选择。例如申购某只开放式基金，你就成为该基金的持有人，上述1万元扣除申购费后折算成一定份额的基金单位。所有持有人的投资一起构成该基金的资产，基金管理公司的专业团队运用基金资产购买股票和债券，形成基金的投资组合。你所持有的基金份额，就是上述投资组合的缩影。专家理财是基金投资的重要特色。基金管理公司配备的投资专家，一般都具有深厚的投资分析理论功底和丰富的实践经验，以科学的方法研究股票、债券等金融产品，组合投资，规避风险。
+                            量化投资是一种数据化、系统化的投资方法，该方法源自成熟的金融理论。量化投资借助现代数学、统计等基础学科的科学研究方法，运用电脑强大的数据计算能力，以策略模型为核心，以程序化交易为手段，以追求超额收益为目标的投资方法。它是投资的一种工具，从大数据中寻找能够带来超额收益的策略，并严格按照这些策略所建的量化模型指导投资，力求获得持续稳定的超额回报。
                         </p>
                     </div>
                 </div>
@@ -32,34 +38,22 @@ function InvestClassComponent(isShowId: number) {
             <>
                 <div>
                     <h4 className="mb-30 ">
-                        <b>基金类型介绍</b>
+                        <b>量化投资与传统的定性投资有什么区别？</b>
                     </h4>
-                    <img className="img-fluid w-100 mb-40" src={imageCrossPlatform} alt="image of Core Competence" />
+
                     <div className="bg-gray p-5 rounded mb-60">
+                        <img
+                            className="img-fluid w-100 mb-40"
+                            src={imageCrossPlatform}
+                            alt="image of Core Competence"
+                        />
                         <ul className="d-inline-block pl-0 mb-10">
                             <li className="font-secondary mb-10">
-                                <i className="text-primary mr-2 ti-arrow-circle-right"></i>
-                                <b>1. 指数基金：</b>
                                 指数基金采用被动式投资，选取某个指数作为模仿对象，按照该指数构成的标准，购买该指数包含的证券市场中全部或部分的证券，目的在于获得与该指数相同的收益水平。
                             </li>
                             <li className="font-secondary mb-10">
-                                <i className="text-primary mr-2 ti-arrow-circle-right"></i>
-                                <b>2. 交易所交易基金:</b> 交易所交易基金是指可以在交易所上市交易的基金，又称ETFs(Exchang
-                                Traded
-                                Funds)，其代表的是一揽子股票的投资组合。对于国内投资者而言，这还是陌生的新事物，因此我们仅就其一些基本特点进行介绍。
+                                传统定性投资较依赖对上市公司的调研，并加以基金经理的个人经验及主观判断，而量化投资则是将定性思想与定量规律进行量化应用的过程。通过借助统计方法、数学模型来指导投资，将风险降到最低，可实现在不同市场周期，各种宏观环境下都能为投资者带来长期稳定的投资收益。相对于传统的主动投资，量化投资的核心优势在于风险管理更精准，获取超额收益的概率更大。
                             </li>
-                            <li className="font-secondary mb-10">
-                                <i className="text-primary mr-2 ti-arrow-circle-right"></i>
-                                <b>3. 保本基金：</b>
-                                保本基金的最大特点是其招募说明书中明确规定相关的担保条款，即在满足一定的持有期限后，为投资人提供本金或收益的保障。
-                            </li>
-                            {/* <li className="font-secondary mb-10">
-                                <i className="text-primary mr-2 ti-arrow-circle-right"></i>
-                                <b>4. 基金的基金：</b>
-                                基金的基金是以基金为投资对象的基金。一般的基金以股票、债券等投资工具“”为投资对象，而
-                                基金的基金
-                                投资对象是一般的基金，其适宜那些初涉证券市场、投资经验较少的投资者，或者是工作繁忙而没有时间管理投资组合的投资者
-                            </li> */}
                         </ul>
                     </div>
                 </div>
@@ -71,57 +65,108 @@ function InvestClassComponent(isShowId: number) {
             <>
                 <div>
                     <h4 className="mb-30">
-                        <b>单位净值是什么？</b>
+                        <b>Carrick Asset 的 FOF 类基金产品有哪些优势？</b>
                     </h4>
-                    <img className="img-fluid w-100 mb-40" src={imageStrategy} alt="image of Strategy" />
+
                     <div className="bg-gray p-5 rounded mb-60">
-                        <p className="text-dark mb-30">策略选择原则：</p>
-                        <p className="text-dark mb-30">
-                            基金的NAV(净值)是基金单位份额的价格。净值的计算方法是，将组合中股票、债券或其他有价证券(包括现金)的价值加总，并扣除相关的费用，将余额除以总份额。例如，500000份额的基金，资产包括九百万的股票和一百万现金，其资产净值应该为20元(不考虑扣除的相关费用)。
-                        </p>
+                        <img className="img-fluid w-100 mb-40" src={imageStrategy} alt="image of Strategy" />
+                        <ul className="d-inline-block pl-0 mb-10">
+                            <li className="font-secondary mb-10">
+                                <strong>纪律性</strong>
+                                <br />
+                                量化产品的投资决策过程会严格执行量化投资模型所给出的投资建议。传统的主动投资大多数情况下由人为判断完成，而人性存在贪婪、恐惧、侥幸的弱点，难以做到完全理性。纪律化能够使得投资决策客观理性，克服人的情绪波动对基金业绩带来的负面影响。
+                            </li>
+                            <li className="font-secondary mb-10">
+                                <strong>系统性</strong>
+                                <br />
+                                量化投资可通过多层次的量化模型，多角度的观察和海量数据的处理等捕捉更多的投资机会。多层次的量化模型包括大类资产配置模型、行业选择模型、精选个股模型等；多角度的观察，包括宏观周期、市场结构、估值、成长、盈利质量、分析师预测、市场情绪等；目前A股市场
+                                3000
+                                多只股票，市场信息量复杂庞大，单靠人力主动研究的覆盖面和迅速消化是有限的，而量化投资可通过计算机技术快速处理大量数据，便于分析总结规律，提高投资决策的效率。
+                            </li>
+                            <li className="font-secondary mb-10">
+                                <strong>及时性</strong>
+                                <br />
+                                及时快速地跟踪市场变化，不断发现能够提供超额收益的统计模型，寻找新的交易机会。由于量化投资往往利用计算机进行程序化交易，它能快速搜集市场信息进行处理，相对于人脑，它反映快速更能把握投资机会。最突出的例子是高频交易，与低频交易相比，高频交易通过高速计算机，在极短时间内对市场做出迅速反应并完成交易。
+                            </li>
+                            <li className="font-secondary mb-10">
+                                <strong>准确性</strong>
+                                <br />
+                                传统投资方法，投资决策依靠投资者的经验和技术。而量化投资可准确客观评价交易机会，克服主观情绪偏差，通过全面、系统性的扫描捕捉错误定价、错误估值带来的机会。
+                            </li>
+                            <li className="font-secondary mb-10">
+                                <strong>分散性</strong>
+                                <br />
+                                与传统的投资方式不同，量化投资靠筛选出标的组合来取胜，而不是一个或几个标的取胜。实际上，量化产品在个股集中度、行业集中度上要远远低于同类其他产品，在个股、行业出现「黑天鹅」事件时，能相对较好地规避风险。从投资组合理念来看，量化投资能够有效的控制风险以获取超额收益。
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </>
         )
     }
     if (isShowId === 3) {
-        const word = "总回报=(Ne÷Nb)×(1+D1÷N1)×(1+D2÷N2)×......×(1+Dn÷Nn)-1其中："
         return (
             <>
                 <div>
                     <h4 className="mb-30">
-                        <b>如何计算基金的总回报率</b>
+                        <b>FOF 类基金的投资范围是？</b>
                     </h4>
-                    <img className="img-fluid w-100 mb-40" src={imageCalculate} alt="image of Strategy" />
+
                     <div className="bg-gray p-5 rounded mb-60">
+                        <img className="img-fluid w-100 mb-40" src={imageCalculate} alt="image of Strategy" />
                         <ul className="d-inline-block pl-0 mb-10">
                             <li className="font-secondary mb-10">
                                 <p className="text-dark">
-                                    我们把基金在一定时期内的收益定义为总回报，作为衡量基金以往表现的最基本方法。总回报的来源有两部分，一是收入回报，即基金在一定时期内收到的分红和利息收入，例如股息、债券利息和银行存款利息等;二是资本回报，反映基金所持有的股票与债券价格涨跌的幅度
-                                </p>
-                            </li>
-                            <li className="mb-10">
-                                <p className="text-dark">
-                                    首先要了解基金资产净值，这是计算总回报的基础，总回报表现为该时期单位基金资产净值的增长率。
-                                </p>
-                            </li>
-                            <li className="mb-10">
-                                <p className="text-dark">
-                                    基金资产净值是在某一时点上，基金资产的总市值扣除负债后的余额，代表了基金持有人的权益。单位基金资产净值，即每一基金单位代表的基金资产的净值
-                                </p>
-                            </li>
-                            <li className="mb-10">
-                                <b>单位基金资产净值=(总资产-总负债)/基金单位总数</b>
-                            </li>
-                            <li className="mb-10">
-                                <p className="text-dark">
-                                    基金通常会把已经实现的收益向投资人进行分配。分红的基础为「基金净收益」，即基金的收入回报和通过卖出证券实现的资本回报，减去依法可以在基金收益中扣除的费用后的余额。按照目前有关规定，分红有两个约束条件：一是基金投资要有已实现的净收益，二是分红比例在一年中不得低于已实现净收益的90%。
+                                    将主要投资于股票，债券、货币市场基金、债券逆回购、证券公司资产管理计划、基金公司（含基金子公司）特定客户资产管理计划、期货公司资产管理计划、保险公司资产管理计划、在基金业协会登记的私募基金管理人发行并由具有相关资质机构托管的契约式私募投资基金、银行理财产品以及中国证监会认可的其他投资品种。
                                 </p>
                             </li>
                         </ul>
-                        <p className="text-dark">
-                            对于分红方式，投资人有两种选择，一是分配现金;二是再投资，即将分得的收益再投资于基金，并折算成相应数量的基金单位
-                        </p>
+                    </div>
+                </div>
+            </>
+        )
+    }
+    if (isShowId === 4) {
+        return (
+            <>
+                <div>
+                    <h4 className="mb-30">
+                        <b>基金封闭期是什么？</b>
+                    </h4>
+
+                    <div className="bg-gray p-5 rounded mb-60">
+                        <img className="img-fluid w-100 mb-40" src={imageInvestClass} alt="image of Strategy" />
+                        <ul className="d-inline-block pl-0 mb-10">
+                            <li className="font-secondary mb-10">
+                                <p className="text-dark">
+                                    是指基金成功募集足够资金宣告基金合同生效后，会有一段不接受投资人赎回基金份额申请的时间段。
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </>
+        )
+    }
+    if (isShowId === 5) {
+        return (
+            <>
+                <div>
+                    <h4 className="mb-30">
+                        <b>如何确保我的资金安全？</b>
+                    </h4>
+
+                    <div className="bg-gray p-5 rounded mb-60">
+                        <img className="img-fluid w-100 mb-40" src={imageWallet} alt="image of Strategy" />
+                        <ul className="d-inline-block pl-0 mb-10">
+                            <li className="font-secondary mb-10">
+                                <p className="text-dark">
+                                    保障客户资金安全是 Carrick Asset
+                                    视为跟生命同等重要的事情，并会严格依照国家法律法规来妥善保管客户资金。在此类法规要求下，所有客户资金都存放于独立的政府信托机构内并定期接受相关部门的严格审计，存放于信托账户内的客户资金将会与公司自有营运资金完全隔离，不会受到
+                                    Carrick Asset 自身营运情况的任何影响。
+                                </p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </>
@@ -130,10 +175,12 @@ function InvestClassComponent(isShowId: number) {
 }
 export default function InvestClass() {
     const fundsDict = [
-        {id: 0, content: "什么是基金？", style: "active border-bottom"},
-        {id: 1, content: "不同的基金类型", style: "border-bottom"},
-        {id: 2, content: "基金的单位净值", style: "border-bottom"},
-        {id: 3, content: "如何计算基金的总回报率", style: "border-bottom"},
+        {id: 0, content: "什么是量化投资？", style: "active border-bottom"},
+        {id: 1, content: "量化投资与传统的定性投资有什么区别？", style: "border-bottom"},
+        {id: 2, content: "Carrick Asset 的 FOF 类基金产品有哪些优势？", style: "border-bottom"},
+        {id: 3, content: "FOF 类基金的投资范围是？", style: "border-bottom"},
+        {id: 4, content: "基金封闭期是什么？", style: "border-bottom"},
+        {id: 5, content: "如何确保我的资金安全？", style: "border-bottom"},
     ]
     const [defaultActive, setDefaultActive] = useState(0)
     const [activePart, setActivePart] = useState(fundsDict)
@@ -164,8 +211,8 @@ export default function InvestClass() {
                 <section className="section">
                     <div className="container">
                         <div className="row">
-                            <h3 className="mb-10 px-3">投资课堂</h3>
-                            <div className="mb-md-50 px-3">
+                            <h3 className="mb-10 px-3">常见问题</h3>
+                            {/* <div className="mb-md-50 px-3">
                                 <div className="row">
                                     <div className="col-lg-8 col-md-12">
                                         <div className="bg-gray p-5 rounded mb-60">
@@ -191,7 +238,7 @@ export default function InvestClass() {
                                         />
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                         <div className="row">
                             {/* sidebar */}

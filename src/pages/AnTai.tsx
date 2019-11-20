@@ -397,7 +397,7 @@ function FundsComponent(isShowId: number) {
         )
     }
 }
-export default function FundOfFunds() {
+export default function AnTai() {
     const fundsDict = [
         {id: 0, content: "产品要素", style: "active border-bottom"},
         {id: 1, content: "投研架构", style: "border-bottom"},
@@ -428,52 +428,18 @@ export default function FundOfFunds() {
     return (
         <>
             <Helmet>
-                <title>Carrick Fund of Funds | Carrick Asset</title>
+                <title>凯利安泰量化投资基金 | Carrick Asset</title>
                 <meta
                     name="description"
-                    content="FOF（Fund of Funds，基金中的基金）指投资于基金组合的基金。在欧美市场，FOF 基金以安全可靠，收益稳定，已发展成为数量规模占比均较大的一类成熟的理财产品。"
+                    content="FOF（Fund of Funds，基金中的基金）指投资于基金组合的基金。在欧美市场，FOF类基金因其安全可靠、收益稳定，已发展成为数量规模占比均较大的一类成熟的理财产品。"
                 />
             </Helmet>
             <Layout>
                 <section className="section">
                     <div className="container">
                         <div className="row">
-                            <h3 className="mb-10">Carrick Fund of Funds</h3>
-                            <p className="mb-40">
-                                FOF（Fund of Funds，基金中的基金）指投资于基金组合的基金。在欧美市场，FOF
-                                基金以安全可靠，收益稳定，已发展成为数量规模占比均较大的一类成熟的理财产品。
-                            </p>
-                            <div className="mb-md-50">
-                                <div className="row">
-                                    <div className="col-lg-8 col-md-12">
-                                        <div className="bg-gray p-5 rounded mb-60">
-                                            <h4 className="text-dark font-primary mb-30">量化 FOF 基金的原理：</h4>
-                                            <div>
-                                                <ul className="d-inline-block pl-0">
-                                                    <li className="font-secondary mb-10">
-                                                        <i className="text-primary mr-2 ti-arrow-circle-right"></i>
-                                                        1. FOF 基金是一种专门投资于其他投资基金的基金
-                                                    </li>
-                                                    <li className="font-secondary mb-10">
-                                                        <i className="text-primary mr-2 ti-arrow-circle-right"></i>2.
-                                                        不直接以债券和股票等有价证券为投资标的，通过投资相关基金产品间接持有资产。
-                                                        <br />
-                                                        <br />
-                                                    </li>
-                                                    <li className="font-secondary mb-10"></li>
-                                                    <li className="font-secondary mb-10"></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-4">
-                                        <img
-                                            src={imageFundOfFunds}
-                                            alt="image of benefit"
-                                            className="img-fluid rounded"
-                                        />
-                                    </div>
-                                </div>
+                            <div className="col-lg-12">
+                                <h2 className="section-title section-title-border text-center">凯利安泰量化投资基金</h2>
                             </div>
                         </div>
                         <div className="row">
@@ -481,26 +447,6 @@ export default function FundOfFunds() {
                             <aside className="col-lg-4 order-lg-1 order-2">
                                 {/* service menu */}
                                 <ul className="service-menu pl-0 border rounded mb-50">{listSidebar}</ul>
-                                {/* Brochure */}
-                                {/* <div className="rounded border py-3 px-4 mb-50">
-                                    <div className="row">
-                                        <div className="col-10">
-                                            <h4 className="mb-1 d-inline-block">Service Brochure</h4>
-                                            <a
-                                                className="font-secondary text-color d-block"
-                                                href="/media/documents/Carrick Just Asset Management Limited - FOF.pdf">
-                                                Download PDF
-                                            </a>
-                                        </div>
-                                        <div className="col-2">
-                                            <a
-                                                className="font-secondary text-color d-block"
-                                                href="/media/documents/Carrick Just Asset Management Limited - FOF.pdf">
-                                                <span className="iconfont icon-pdf1" style={{fontSize: "30px"}}></span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div> */}
                                 {/* Consultation */}
                                 <RequestForm />
                             </aside>

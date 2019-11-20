@@ -331,6 +331,11 @@ h6,
     padding: 13px 40px !important;
 }
 
+.btn-xsm {
+    padding: 10px 18px !important;
+    font-size: 12px !important;
+}
+
 /* 1.2 common style */
 body {
     background-color: #fff;
@@ -734,6 +739,20 @@ button {
     max-width: 70px;
     border-radius: 50%;
     border: 1px solid #e5e5e5;
+    background: #fff;
+    text-align: center;
+    line-height: 70px;
+    font-size: 30px;
+    color: #0057b8;
+    display: inline-block;
+}
+
+.round-icon-trans {
+    height: 70px;
+    min-width: 70px;
+    max-width: 70px;
+    border-radius: 50%;
+    border: none;
     background: #fff;
     text-align: center;
     line-height: 70px;
