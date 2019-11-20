@@ -58,11 +58,11 @@ export default function FundOfFundsSeries() {
                                                     </div>
                                                     <div className="align-self-center font-primary">
                                                         <address className="text-dark">
-                                                            Carrick Just Asset Management Limited
+                                                            Level 2, 3 Margot Street,
                                                             <br />
-                                                            Level 2, 3 Margot Street, Epsom
+                                                            Epsom, Auckland 1051,
                                                             <br />
-                                                            Auckland 1051, New Zealand
+                                                            New Zealand
                                                         </address>
                                                     </div>
                                                 </li>
