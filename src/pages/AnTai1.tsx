@@ -1,6 +1,6 @@
 /** @format */
 
-import React, {useState} from "react"
+import React, {useState, CSSProperties} from "react"
 import Layout from "../components/layout"
 import {Helmet} from "react-helmet"
 import RequestForm from "../components/RequestForm"
@@ -9,7 +9,11 @@ import imageCrossPlatformBtm from "../images/funds/cross-platform-btm.jpg"
 import imageFofStrategy from "../images/funds/fof-flow.png"
 import imageAnTai1Target from "../images/funds/an-tai-1-target.jpg"
 import imageAnTai1Reward from "../images/funds/an-tai-1-rewards.jpg"
-import "../styles/fof.css"
+import imageBuilding2 from "../images/funds/carrick-building-2.jpg"
+import imageDealingRoom from "../images/funds/carrick-dealing-room.jpg"
+import imageWhiteboard from "../images/funds/carrick-whiteboard.jpg"
+
+import "../styles/float-content-fof.css"
 
 function FundsComponent(isShowId: number) {
     if (isShowId === 0) {
@@ -114,10 +118,7 @@ function FundsComponent(isShowId: number) {
                             />
                             <ul className="d-inline-block pl-0 mb-10 ">
                                 <li className="font-secondary mb-50">
-                                    本基金将主要投资于股票，债券、货币市场基金、债券逆回购、证券公司资产管理计划、基金公司（含基金子公司）特定客户资产管理计划、期货公司资产管理计划、保险公司资产管理计划、在基金业协会登记的私募基金管理人发行并由具有相关资质机构托管的契约式私募投资基金、银行理财产品以及中国证监会认可的其他投资品种。
-                                </li>
-                                <li className="font-secondary mb-10">
-                                    其中，投资于固定收益类资产、权益类资产、商品及金融衍生品类资产中任一资产的投资比例均小于80%。
+                                    本基金将主要投资于股票，债券、货币市场基金、债券逆回购、证券公司资产管理计划、基金公司（含基金子公司）特定客户资产管理计划、期货公司资产管理计划、保险公司资产管理计划、在基金业协会登记的私募基金管理人发行并由具有相关资质机构托管的契约式私募投资基金、银行理财产品以及中国证监会认可的其他投资品种。其中，投资于固定收益类资产、权益类资产、商品及金融衍生品类资产中任一资产的投资比例均小于80%。
                                 </li>
                             </ul>
                         </div>
@@ -181,39 +182,54 @@ function FundsComponent(isShowId: number) {
     if (isShowId === 3) {
         return (
             <>
-                <div className="row">
-                    <div className="col-lg-12 bg-gray p-5 rounded mb-60">
-                        <h5 className="mb-30">资产配置策略</h5>
-                        <ul className="d-inline-block pl-0">
-                            <li className="font-secondary mb-10">
-                                通过构建宏观经济形势、财政政策、货币政策以及大类资产轮动的多维分析框架，对宏观经济运行状况和金融市场运行趋势进行科学、严谨的大势研判，根据整体资产配置策略动态调整大类金融资产的比例。
-                            </li>
-                            <li className="font-secondary">
-                                此外管理人根据产品资金规模的不同进行差异化投资策略匹配，包括但不限于投资混合基金策略、股票中性策略、新股申购策略、固定收益类资产策略等。
-                            </li>
-                        </ul>
+                <div className="row mb-30">
+                    <div className="float-container">
+                        <img src={imageDealingRoom} className="img-fluid overlay-dark overlay img-float-left" />
+                        <div className="float-content-right" id="float-1">
+                            <div className="col-md-12 col-sm-12">
+                                <p className="h5 mb-30 pt-2">资产配置策略</p>
+                                <ul className="d-inline-block pl-0">
+                                    <li className="font-secondary mb-10">
+                                        通过构建宏观经济形势、财政政策、货币政策以及大类资产轮动的多维分析框架，对宏观经济运行状况和金融市场运行趋势进行科学、严谨的大势研判，根据整体资产配置策略动态调整大类金融资产的比例。
+                                    </li>
+                                    <li className="font-secondary">
+                                        此外管理人根据产品资金规模的不同进行差异化投资策略匹配，包括但不限于投资混合基金策略、股票中性策略、新股申购策略、固定收益类资产策略等。
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div className="row">
-                    <div className="col-lg-12 bg-white px-5 rounded mb-60">
-                        <h5 className="mb-30">子基金投资策略</h5>
-                        <ul className="d-inline-block pl-0">
-                            <li className="font-secondary">
-                                依据量化基金投资选择方法对基金公司及其管理基金进行量化评估，坚持从基金价值出发，精选业绩优良、过往风格稳健的基金。在开放式基金的选择上，本基金筛选出部分业绩优良的基金构建基金基础池，该系统从基金管理公司综合评估、基金经理评价、基金收益分析、投资组合风格分析、择时选股能力、风险分散能力等多方面建立定量评价指标体系，并将上述指标归一化综合评估，构建基金核心池。
-                            </li>
-                        </ul>
+                <div className="row mb-30">
+                    <div className="float-container">
+                        <img src={imageBuilding2} className="img-fluid overlay-dark overlay img-float-right" />
+                        <div className="float-content-left" id="float-2">
+                            <div className="col-md-12 col-sm-12">
+                                <p className="h5 mb-30 pt-2">子基金投资策略</p>
+                                <ul className="d-inline-block pl-0">
+                                    <li className="font-secondary mb-10">
+                                        依据量化基金投资选择方法对基金公司及其管理基金进行量化评估，坚持从基金价值出发，精选业绩优良、过往风格稳健的基金。在开放式基金的选择上，本基金筛选出部分业绩优良的基金构建基金基础池，该系统从基金管理公司综合评估、基金经理评价、基金收益分析、投资组合风格分析、择时选股能力、风险分散能力等多方面建立定量评价指标体系，并将上述指标归一化综合评估，构建基金核心池。
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div className="row">
-                    <div className="col-lg-12 bg-gray p-5 rounded mb-60">
-                        <h5 className="mb-30">现金类管理工具投资策略</h5>
-                        <ul className="d-inline-block pl-0">
-                            <li className="font-secondary">
-                                本基金将投资于现金、各类银行存款（包括但不限于同业存款、协议存款、通知存款、活期存款、一年以内（含一年）定期存款和大额存单等）、开放式货币市场基金等高流动性短期金融产品来保障资产的安全性和流动性。
-                            </li>
-                        </ul>
+                <div className="row mb-30">
+                    <div className="float-container">
+                        <img src={imageWhiteboard} className="img-fluid overlay-dark overlay img-float-left" />
+                        <div className="float-content-right" id="float-3">
+                            <div className="col-md-12 col-sm-12">
+                                <p className="h5 mb-30 pt-2">现金类管理工具投资策略</p>
+                                <ul className="d-inline-block pl-0">
+                                    <li className="font-secondary mb-10">
+                                        本基金将投资于现金、各类银行存款（包括但不限于同业存款、协议存款、通知存款、活期存款、一年以内（含一年）定期存款和大额存单等）、开放式货币市场基金等高流动性短期金融产品来保障资产的安全性和流动性。
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </>
