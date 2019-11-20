@@ -126,11 +126,11 @@ function HeaderComponent() {
                                             to="/funds"
                                             className="nav-link dropdown-toggle"
                                             onClick={handleDropdownCollapse}>
-                                            基金产品
+                                            旗下产品
                                         </Link>
                                         <div className={dropdownMenuStatus}>
                                             <Link to="/funds/carrick-fund-of-funds" className="dropdown-item">
-                                                Carrick Fund of Funds
+                                                Carrick Fund of Funds 系列
                                             </Link>
                                             {/* <Link to="/funds/carrick-dividend-yield-fund" className="dropdown-item">
                                                 Carrick NZ&AU Dividend Yield Fund
@@ -147,7 +147,7 @@ function HeaderComponent() {
                                     </li>
                                     <li className="nav-item">
                                         <Link to="/invest-class" className="nav-link">
-                                            投资学堂
+                                            帮助中心
                                         </Link>
                                     </li>
                                     <li className="nav-item">
