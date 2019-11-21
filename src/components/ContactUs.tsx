@@ -45,7 +45,7 @@ export default function ContactUs() {
                                             <address className="h4 text-white text-left">
                                                 Carrick Just Asset Management Limited
                                                 <br />
-                                                Level 2, 3 Margot Street, Epsom
+                                                Level 2, 3 Margot Street, Epsom,
                                                 <br />
                                                 Auckland 1051, New Zealand
                                             </address>
