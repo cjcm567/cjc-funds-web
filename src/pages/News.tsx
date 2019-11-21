@@ -56,12 +56,8 @@ export default function News() {
                             <div className="col-lg-12 text-center">
                                 <h2 className="text-white font-weight-bold">News</h2>
                                 <ol className="breadcrumb">
-                                    <li>
-                                        <Link to="/">主页</Link>
-                                    </li>
-                                    <li>
-                                        <Link to="/news">业内新闻概览</Link>
-                                    </li>
+                                    <li>{/* <Link to="/">主页</Link> */}</li>
+                                    <li>{/* <Link to="/news">业内新闻概览</Link> */}</li>
                                 </ol>
                             </div>
                         </div>
