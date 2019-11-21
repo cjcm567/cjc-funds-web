@@ -73,13 +73,11 @@ export default function FundOfFundsSeries() {
                                 </div>
                             </div>
                             <div className="col-lg-8 py-100">
-                                <h3 className="section-title section-title-border-half mb-30">
-                                    Carrick Fund of Funds 系列
-                                </h3>
+                                <h3 className="section-title section-title-border-half mb-30">量化投资基金</h3>
                                 {/* <h3 className="mb-10"></h3> */}
                                 <p className="mb-40">
-                                    FOF（Fund of Funds，基金中的基金）指投资于基金组合的基金。在欧美市场，FOF
-                                    类基金因其安全可靠、收益稳定，已发展成为数量规模占比均较大的一类成熟的理财产品。FOF类基金旨在通过一站式投资理念，简化繁琐的投资流程，并通过广泛投资于各种类别的投资标的来分散风险，最终实现资产配置的多元化，以达到高额收益的目的。
+                                    量化投资基金是指通过数量模型的计算寻找投资机会，以此作为最终投资决策进行资产管理。量化投资在欧美国家的发展已有
+                                    30 多年的历史，其投资业绩稳定，市场规模和份额不断扩大，得到了越来越多的投资者认可。
                                 </p>
                                 <article className="bg-white rounded mb-40 shadow-sm">
                                     <Link to="/funds/carrick-fund-of-funds/an-tai" className="card">

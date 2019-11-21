@@ -27,12 +27,8 @@ function ContactUs() {
                             <div className="col-lg-12 text-center">
                                 <h2 className="text-white font-weight-bold">联系我们</h2>
                                 <ol className="breadcrumb">
-                                    <li>
-                                        <Link to="/">主页</Link>
-                                    </li>
-                                    <li>
-                                        <Link to="/contact-us">联系我们</Link>
-                                    </li>
+                                    <li>{/* <Link to="/">主页</Link> */}</li>
+                                    <li>{/* <Link to="/contact-us">联系我们</Link> */}</li>
                                 </ol>
                             </div>
                         </div>

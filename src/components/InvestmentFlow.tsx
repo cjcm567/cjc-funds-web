@@ -40,7 +40,7 @@ export default function InvestmentFlow() {
                                     <p>评估业务质量，清单得分和流动性</p>
                                     <p>将折价/合理估值与同业和历史进行比较</p>
                                     <p>建立价格目标和排名</p>
-                                    <p>与竞争对手、供应商、客户和其他利益相关者进行渠道检查</p>
+                                    <p>与竞争对手、供应商、客户和其它利益相关者进行渠道检查</p>
                                 </div>
                                 <div className="card-body card-body-2 pb-0 px-4 text-center border-top">
                                     <h5 className="card-title">研究公司具体情况</h5>

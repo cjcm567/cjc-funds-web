@@ -11,12 +11,11 @@ import newsData from "../data/newsData.json"
 import homeData from "../data/fundsData.json"
 
 export default function Home() {
-    const newsObject = []
-    for (let index = 0; index <= 2; index++) {
-        newsObject.push(newsData[index])
+    const newsListObject = []
+    for (let index = 2; index < 5; index++) {
+        newsListObject.push(newsData[index])
     }
-
-    const newsRender = newsObject.map(newsObjectItem => (
+    const newsRender = newsListObject.map(newsObjectItem => (
         <li className="d-flex border-bottom" key={newsObjectItem.props}>
             <div className="py-3 px-4 border-right text-center">
                 <h3 className="text-primary mb-0" style={{width: 32}}>
@@ -60,6 +59,7 @@ export default function Home() {
     for (let index = 0; index < 2; index++) {
         newsExampleObject.push(newsData[index])
     }
+
     const newsExampleRender = newsExampleObject.map(newsExampleObjectItem => (
         <div className="col-lg-4 col-sm-6 mb-4 mb-lg-0" key={newsExampleObjectItem.props}>
             <Link to={`/news/${newsExampleObjectItem.props}`}>
