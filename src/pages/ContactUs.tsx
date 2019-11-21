@@ -68,7 +68,7 @@ function ContactUs() {
                                             <address className="text-dark">
                                                 Carrick Just Asset Management Limited
                                                 <br />
-                                                Level 2, 3 Margot Street, Epsom
+                                                Level 2, 3 Margot Street, Epsom,
                                                 <br />
                                                 Auckland 1051, New Zealand
                                             </address>
