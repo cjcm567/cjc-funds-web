@@ -115,7 +115,7 @@ function FundsComponent(isShowId: number) {
         return (
             <>
                 <div>
-                    <h4 className="mb-30">其他相关信息</h4>
+                    <h4 className="mb-30">其它相关信息</h4>
                     <p className="font-secondary mb-10">
                         凯利资产管理是 Carrick Direct Property Fund
                         直接基金的单位发行人。如果您对本基金投资有兴趣，请与我们联系以获取基金产品说明的副本。
@@ -158,7 +158,7 @@ function FundsComponent(isShowId: number) {
     //                         <li className="font-secondary mb-10">
     //                             <i className="text-primary mr-2 ti-arrow-circle-right"></i>
     //                             <p className="h5">管理优势</p>
-    //                             基金的优势之一是我们代表您进行投资管理。我们提供的服务包括有关买卖，付款给您，利息，簿记和其他报告的文档。
+    //                             基金的优势之一是我们代表您进行投资管理。我们提供的服务包括有关买卖，付款给您，利息，簿记和其它报告的文档。
     //                         </li>
     //                     </ul>
     //                 </div>
@@ -174,7 +174,7 @@ export default function FundDividedYield() {
         {id: 1, content: "风险指标与费用", style: "border-bottom"},
         {id: 2, content: "目标投资组合", style: "border-bottom"},
         {id: 3, content: "分红", style: "border-bottom"},
-        {id: 4, content: "其他相关信息", style: "border-bottom"},
+        {id: 4, content: "其它相关信息", style: "border-bottom"},
     ]
     const [defaultActive, setDefaultActive] = useState(0)
     const [activePart, setActivePart] = useState(fundsDict)

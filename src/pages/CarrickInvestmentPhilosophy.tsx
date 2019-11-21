@@ -29,8 +29,8 @@ export default function CarrickInvestmentPhilosophy() {
                                 <h5 className="section-title-sm">Philosophy</h5>
                                 <h2 className="section-title section-title-border-half">投资理念</h2>
                                 <p>
-                                    通常来说，市场价格会受许多因素影响。 Carrick Just Asset Management
-                                    Limited专注于量化投资分析，在对价格分析的基础上，利用安全稳健的量化交易方式，把握市场机会已获得超额收益。通过科学、量化的分析方法进行证券买卖价格的定量分析与风险管理，实现在低风险的投资环境下达到价值最大化的目标。同时，通过完善的量化交易策略，达到尽量消除非系统风险的目的。
+                                    通常来说，市场价格会受许多因素影响。 Carrick Just Asset Management Limited
+                                    专注于量化投资分析，在对价格分析的基础上，利用安全稳健的量化交易方式，把握市场机会以便获得超额收益。通过科学、量化的分析方法进行证券买卖价格的定量分析与风险管理，实现在低风险的投资环境下达到价值最大化的目标。同时，通过完善的量化交易策略，达到尽量消除非系统风险的目的。
                                 </p>
                             </div>
                             <div className="col-lg-4 text-right">

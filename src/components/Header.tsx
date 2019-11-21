@@ -130,7 +130,7 @@ function HeaderComponent() {
                                         </Link>
                                         <div className={dropdownMenuStatus}>
                                             <Link to="/funds/carrick-fund-of-funds" className="dropdown-item">
-                                                Carrick Fund of Funds 系列
+                                                量化投资基金
                                             </Link>
                                             {/* <Link to="/funds/carrick-dividend-yield-fund" className="dropdown-item">
                                                 Carrick NZ&AU Dividend Yield Fund

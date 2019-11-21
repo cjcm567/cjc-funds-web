@@ -39,7 +39,7 @@ function Footer() {
                                 </Link>
                                 <ul className="footer-links text-left">
                                     <li>
-                                        <Link to="/funds/carrick-fund-of-funds">Carrick Fund of Funds 系列</Link>
+                                        <Link to="/funds/carrick-fund-of-funds">量化投资基金</Link>
                                     </li>
                                     {/* <li>
                                         <Link to="/funds/carrick-dividend-yield-fund">

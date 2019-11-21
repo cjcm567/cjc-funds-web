@@ -31,7 +31,7 @@ export default function CarrickResponsibility() {
                                 <p>
                                     Carrick Just Asset Management
                                     Limited认真对待作为企业公民的责任，并制定了许多确保道德和可持续投资的政策。
-                                    社会责任：现如今包括联合国，联合国儿童基金会和许多其他组织在内的全球组织都正在使用区块链技术来提高投资透明度，以此更好地分配资金并为全球近20亿“无银行账户”带来经济自由。Carrick
+                                    社会责任：现如今包括联合国，联合国儿童基金会和许多其它组织在内的全球组织都正在使用区块链技术来提高投资透明度，以此更好地分配资金并为全球近20亿“无银行账户”带来经济自由。Carrick
                                     Just Asset Management Limited很荣幸能够参与其中。
                                 </p>
                                 <p>
@@ -110,7 +110,7 @@ export default function CarrickResponsibility() {
                                     <p>
                                         Carrick Just Asset Management
                                         Limited与区块链和金融行业内外的各位值得信赖的顾问进行咨询，以确保我们在所有业务实践中保持客观，公正和道德。
-                                        我们还会仔细筛选投资是否存在任何危险信号，例如有可能的诈骗或非法活动，以便排除可能已包含在任何其他投资组合中的资产。
+                                        我们还会仔细筛选投资是否存在任何危险信号，例如有可能的诈骗或非法活动，以便排除可能已包含在任何其它投资组合中的资产。
                                     </p>
                                 </div>
                             </div>
