@@ -175,7 +175,7 @@ function FundsComponent(isShowId: number) {
         return (
             <>
                 <div>
-                    <h4 className="mb-30">其他相关信息</h4>
+                    <h4 className="mb-30">其它相关信息</h4>
                     <p className="font-secondary mb-10">
                         新西兰凯利资产管理有限公司是 Carrick Direct Property
                         Fund发行人，如果您对本基金投资有兴趣，请与我们销售经理联系以获取基金产品投资的详细信息。
@@ -196,7 +196,7 @@ export default function FundProperty() {
         // {id: 2, content: "目标投资组合", style: "border-bottom"},
         {id: 2, content: "预期投资回报", style: "border-bottom"},
         // {id: 4, content: "投资影响因素", style: "border-bottom"},
-        {id: 3, content: "其他相关信息", style: "border-bottom"},
+        {id: 3, content: "其它相关信息", style: "border-bottom"},
     ]
     const [defaultActive, setDefaultActive] = useState(0)
     const [activePart, setActivePart] = useState(fundsDict)

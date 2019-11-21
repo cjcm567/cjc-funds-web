@@ -40,12 +40,12 @@ function FundsComponent(isShowId: number) {
                                 <h4 className="mb-10">经纪商选择</h4>
                                 <p className="mb-20">证券经纪商：国融证券</p>
                                 <h4 className="mb-10">拟募资规模</h4>
-                                <p className="mb-20">1000 万元</p>
+                                <p className="mb-20">1000 万人民币</p>
                                 <h4 className="mb-10">赎回费用</h4>
                                 <p className="mb-20">2% （持有 6 个月后免收赎回费，违约退出费5%）</p>
                                 <h4 className="mb-10">开放日</h4>
                                 <p className="mb-20">成立之日起，每个月 15 日为开放日，遇节假日顺延。</p>
-                                <h4 className="mb-10">最大回撤</h4>
+                                <h4 className="mb-10">拟合业绩最大回撤</h4>
                                 <p className="mb-20">1.37%</p>
                             </div>
                         </div>
@@ -54,10 +54,10 @@ function FundsComponent(isShowId: number) {
                     <div className="col-lg-6 bg-gray p-5 rounded">
                         <h4 className="mb-10">预计收益率</h4>
                         <p className="mb-20">预计年化收益率20%或以上（费后）</p>
-                        <h4 className="mb-10">外包服务费</h4>
-                        <p className="mb-20">0.05%</p>
-                        <h4 className="mb-10">管理费</h4>
-                        <p className="mb-20">0.5%</p>
+                        <h4 className="mb-10">服务费</h4>
+                        <p className="mb-20">0.05%/年</p>
+                        <h4 className="mb-10">固定管理费</h4>
+                        <p className="mb-20">0.5%/年</p>
                         <h4 className="mb-10">托管费率</h4>
                         <p className="mb-20">0.05%/年</p>
                         {/* <h4 className="mb-10">业绩表现费</h4>
@@ -118,7 +118,7 @@ function FundsComponent(isShowId: number) {
                             />
                             <ul className="d-inline-block pl-0 mb-10 ">
                                 <li className="font-secondary mb-50">
-                                    本基金将主要投资于股票，债券、货币市场基金、债券逆回购、证券公司资产管理计划、基金公司（含基金子公司）特定客户资产管理计划、期货公司资产管理计划、保险公司资产管理计划、在基金业协会登记的私募基金管理人发行并由具有相关资质机构托管的契约式私募投资基金、银行理财产品以及中国证监会认可的其他投资品种。其中，投资于固定收益类资产、权益类资产、商品及金融衍生品类资产中任一资产的投资比例均小于80%。
+                                    本基金将主要投资于股票，债券、货币市场基金、债券逆回购、证券公司资产管理计划、基金公司（含基金子公司）特定客户资产管理计划、期货公司资产管理计划、保险公司资产管理计划、在基金业协会登记的私募基金管理人发行并由具有相关资质机构托管的契约式私募投资基金、银行理财产品以及中国证监会认可的其它投资品种。其中，投资于固定收益类资产、权益类资产、商品及金融衍生品类资产中任一资产的投资比例均小于80%。
                                 </li>
                             </ul>
                         </div>
@@ -238,13 +238,12 @@ function FundsComponent(isShowId: number) {
     if (isShowId === 4) {
         return (
             <>
-                <h4 className="mb-30">其他相关信息</h4>
+                <h4 className="mb-30">其它相关信息</h4>
                 <p className="font-secondary mb-10">
-                    凯利资产管理是 Fund of Funds
-                    直接基金的单位发行人。如果您对本基金投资有兴趣，请与我们联系以获取基金产品说明的副本。
+                    如果您对本公司基金产品有投资意向，请与我们联系以获取基金产品信息的详细说明。
                 </p>
                 <p className="font-secondary mb-10">
-                    所有的潜在投资者在投资前请先仔细阅读产品说明，其中应包含财产和投资的详细信息。投资者必须填写并签署申请表，并在付款时提供适用的身份验证（根据反洗钱（AML）法规的要求）。
+                    所有投资者在投资前请先仔细阅读产品说明和认购协议，其中应包含相关投资的详细信息。投资者必须填写并签署认购申请表，并需满足适用的身份验证（根据反洗钱（AML）法规的要求）。
                 </p>
             </>
         )
@@ -256,7 +255,7 @@ export default function FundOfFunds() {
         {id: 1, content: "投资标的", style: "border-bottom"},
         {id: 2, content: "分红收益", style: "border-bottom"},
         {id: 3, content: "投资策略", style: "border-bottom"},
-        {id: 4, content: "其他相关信息", style: "border-bottom"},
+        {id: 4, content: "其它相关信息", style: "border-bottom"},
     ]
     const [defaultActive, setDefaultActive] = useState(0)
     const [activePart, setActivePart] = useState(fundsDict)
@@ -283,7 +282,7 @@ export default function FundOfFunds() {
                 <title>首创凯利安泰 1 号集合资产管理基金 | Carrick Asset</title>
                 <meta
                     name="description"
-                    content="FOF（Fund of Funds，基金中的基金）指投资于基金组合的基金。在欧美市场，FOF类基金因其安全可靠、收益稳定，已发展成为数量规模占比均较大的一类成熟的理财产品。"
+                    content="量化投资基金是指通过数量模型的计算寻找投资机会，以此作为最终投资决策进行资产管理。量化投资在欧美国家的发展已有30多年的历史，其投资业绩稳定，市场规模和份额不断扩大，得到了越来越多的投资者认可。"
                 />
             </Helmet>
             <Layout>
