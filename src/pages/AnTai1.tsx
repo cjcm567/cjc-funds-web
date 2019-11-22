@@ -1,12 +1,11 @@
 /** @format */
 
-import React, {useState, CSSProperties} from "react"
+import React, {useState} from "react"
 import Layout from "../components/layout"
 import {Helmet} from "react-helmet"
 import RequestForm from "../components/RequestForm"
 import imageCrossPlatformTop from "../images/funds/cross-platform-top.jpg"
 import imageCrossPlatformBtm from "../images/funds/cross-platform-btm.jpg"
-import imageFofStrategy from "../images/funds/fof-flow.png"
 import imageAnTai1Target from "../images/funds/an-tai-1-target.jpg"
 import imageAnTai1Reward from "../images/funds/an-tai-1-rewards.jpg"
 import imageBuilding2 from "../images/funds/carrick-building-2.jpg"
@@ -26,13 +25,13 @@ function FundsComponent(isShowId: number) {
                         alt="image of Core Competence top"
                         className="img-fluid w-100 mb-40"
                     />
-                    <div className="col-lg-6 bg-gray p-5 rounded">
+                    <div className="col-lg-6 bg-gray pl-5 pt-5 pr-3 pb-4 rounded">
                         <div className="row">
                             <div className="col-lg-10 col-md-7">
                                 <h4 className="mb-10">基金名称</h4>
-                                <p className="mb-20">首创凯利安泰 1 号集合资产管理基金</p>
+                                <p className="mb-20">首创凯利安泰 1 号集合资产管理基金（中国）</p>
                                 <h4 className="mb-10">基金管理人</h4>
-                                <p className="mb-20">首创期货</p>
+                                <p className="mb-20">首创期货（中国）</p>
                                 <h4 className="mb-10">基金托管人</h4>
                                 <p className="mb-20">招商证券</p>
                                 <h4 className="mb-10">基金类型</h4>
@@ -43,28 +42,32 @@ function FundsComponent(isShowId: number) {
                                 <p className="mb-20">1000 万人民币</p>
                                 <h4 className="mb-10">赎回费用</h4>
                                 <p className="mb-20">2% （持有 6 个月后免收赎回费，违约退出费5%）</p>
+                                <h4 className="mb-10">封闭期</h4>
+                                <p className="mb-20">从投资者加入日起，6个月内</p>
                                 <h4 className="mb-10">开放日</h4>
-                                <p className="mb-20">成立之日起，每个月 15 日为开放日，遇节假日顺延。</p>
+                                <p className="mb-20">
+                                    产品封闭期为六个月，封闭期结束之后，每三个月的 15
+                                    号为开放日（遇节假日顺延），接受基金份额的认购和赎回。
+                                </p>
                                 <h4 className="mb-10">拟合业绩最大回撤</h4>
                                 <p className="mb-20">1.37%</p>
                             </div>
                         </div>
                     </div>
 
-                    <div className="col-lg-6 bg-gray p-5 rounded">
-                        <h4 className="mb-10">预计收益率</h4>
-                        <p className="mb-20">预计年化收益率20%或以上（费后）</p>
+                    <div className="col-lg-6 bg-gray pt-5 px-5 pb-4 rounded">
+                        <h4 className="mb-10">申购起点</h4>
+                        <p className="mb-20">40 万人民币，追加申购起点 1 万人民币</p>
+                        <h4 className="mb-10">申购费</h4>
+                        <p className="mb-20">1.99%/年</p>
+                        <h4 className="mb-10">预期年化收益率(费后)</h4>
+                        <p className="mb-20">20% 以上</p>
                         <h4 className="mb-10">服务费</h4>
                         <p className="mb-20">0.05%/年</p>
                         <h4 className="mb-10">固定管理费</h4>
                         <p className="mb-20">0.5%/年</p>
                         <h4 className="mb-10">托管费率</h4>
                         <p className="mb-20">0.05%/年</p>
-                        {/* <h4 className="mb-10">业绩表现费</h4>
-                        <p className="mb-20">
-                            年化收益率 5% 及以下不收取任何业绩管理费 年化收益率超过 5% 以上部分收取
-                            20%，在分红日、退出日和终止日计提
-                        </p> */}
                         <h4 className="mb-10">预警/清仓</h4>
                         <p className="mb-20">
                             预警线为基金净值 0.95
@@ -72,7 +75,7 @@ function FundsComponent(isShowId: number) {
                             清仓线为基金净值 0.91
                         </p>
                         <h4 className="mb-10">投资限制</h4>
-                        <p className="mb-20">
+                        <p className="mb-10">
                             权益类资产：占资产净值的0—80%（不含80%）；
                             <br />
                             货币市场工具类资产：占资产净值的0—80%（不含80%）；
@@ -84,12 +87,12 @@ function FundsComponent(isShowId: number) {
                             产品总资产不得超过净资产的200%；
                             <br />
                             本基金投资组合在各类资产上的配置比例，将严格遵守相关法律法规的规定
-                            <br />
-                            <br />
-                            如法律法规或监管部门修改或取消上述限制，履行适当程序后，本基金可相应调整投资组合限制的规定，则本基金不受上述限制。
+                        </p>
+                        <p className="mb-20" style={{fontSize: "0.72rem"}}>
+                            （如法律法规或监管部门修改或取消上述限制，履行适当程序后，本基金可相应调整投资组合限制的规定，则本基金不受上述限制。）
                         </p>
                     </div>
-                    <div className="col-lg-12 bg-gray px-5 py-2 rounded mb-30">
+                    <div className="col-lg-12 bg-gray px-5 py-1 rounded mb-20">
                         <p className="mb-20">
                             具体产品细则及费率详情，请参考 Information Memorandum
                             ；或请留下您的联系方式，我们的销售顾问将及时与您联系。
@@ -279,7 +282,7 @@ export default function FundOfFunds() {
     return (
         <>
             <Helmet>
-                <title>首创凯利安泰 1 号集合资产管理基金 | Carrick Asset</title>
+                <title>首创凯利安泰 1 号集合资产管理基金（中国） | Carrick Asset</title>
                 <meta
                     name="description"
                     content="量化投资基金是指通过数量模型的计算寻找投资机会，以此作为最终投资决策进行资产管理。量化投资在欧美国家的发展已有30多年的历史，其投资业绩稳定，市场规模和份额不断扩大，得到了越来越多的投资者认可。"
@@ -291,7 +294,7 @@ export default function FundOfFunds() {
                         <div className="row">
                             <div className="col-lg-12">
                                 <h2 className="section-title section-title-border text-center">
-                                    首创凯利安泰 1 号集合资产管理基金
+                                    首创凯利安泰 1 号集合资产管理基金（中国）
                                 </h2>
                             </div>
                         </div>

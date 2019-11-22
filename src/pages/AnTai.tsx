@@ -4,22 +4,10 @@ import React, {useState} from "react"
 import Layout from "../components/layout"
 import {Helmet} from "react-helmet"
 import RequestForm from "../components/RequestForm"
-import imageCoreCompetence from "../images/funds/core-competence.png"
-import imageStrategy from "../images/funds/strategy.png"
-import imageCalculate from "../images/funds/calculate.jpg"
 import imageCrossPlatform from "../images/funds/cross-platform.jpg"
-import imageFundOfFunds from "../images/funds/carrick-fund-of-funds.jpg"
 import imageFofTo from "../images/funds/fof-to.png"
 import imageFofStrategy from "../images/funds/fof-flow.png"
 import imageFofInvestment from "../images/funds/fof-investment.png"
-import logoHeiyi from "../images/funds/logo/logo-heiyi.jpeg"
-import logoHuanfang from "../images/funds/logo/logo-huanfang.png"
-import logoPingfanghe from "../images/funds/logo/logo-pingfanghe.png"
-import logoQianxiang from "../images/funds/logo/logo-qianxiang.png"
-import logoTaoli from "../images/funds/logo/logo-taoli.png"
-import logoZhiyuan from "../images/funds/logo/logo-zhiyuan.png"
-import imageFofFlow from "../images/funds/fof-strategy.png"
-import imageMobile from "../images/funds/mobile.jpg"
 import "../styles/fof.css"
 
 function FundsComponent(isShowId: number) {
@@ -40,9 +28,9 @@ function FundsComponent(isShowId: number) {
                         <div className="row">
                             <div className="col-lg-10 col-md-7">
                                 <h4 className="mb-10">基金名称</h4>
-                                <p className="mb-20">凯利安泰量化投资基金</p>
+                                <p className="mb-20">凯利安泰量化投资基金（新西兰）</p>
                                 <h4 className="mb-10">基金管理人</h4>
-                                <p className="mb-20">新西兰凯利资产管理有限公司</p>
+                                <p className="mb-20">凯利资产管理有限公司（新西兰）</p>
                                 <h4 className="mb-10">基金托管人</h4>
                                 <p className="mb-20">New Zealand Public Trust Limited</p>
                                 <h4 className="mb-10">基金类型</h4>
@@ -53,10 +41,10 @@ function FundsComponent(isShowId: number) {
                                 <p className="mb-20">以成份股对冲，T+0 策略为主</p>
                                 <h4 className="mb-10">封闭期</h4>
                                 <p className="mb-20">从投资者加入日起，6个月内</p>
-                                <h4 className="mb-10">开放期</h4>
+                                <h4 className="mb-10">开放日</h4>
                                 <p className="mb-20">
-                                    产品封闭期为六个月，封闭期结束之后，每个月的 15
-                                    号为开放日，接受基金份额的认购和赎回。
+                                    产品封闭期为六个月，封闭期结束之后，每三个月的 15
+                                    号为开放日（遇节假日顺延），接受基金份额的认购和赎回。
                                 </p>
                                 <h4 className="mb-10">拟合业绩最大回撤</h4>
                                 <p className="mb-20">1.37%</p>
@@ -411,7 +399,7 @@ export default function AnTai() {
     return (
         <>
             <Helmet>
-                <title>凯利安泰量化投资基金 | Carrick Asset</title>
+                <title>凯利安泰量化投资基金（新西兰） | Carrick Asset</title>
                 <meta
                     name="description"
                     content="量化投资基金是指通过数量模型的计算寻找投资机会，以此作为最终投资决策进行资产管理。量化投资在欧美国家的发展已有30多年的历史，其投资业绩稳定，市场规模和份额不断扩大，得到了越来越多的投资者认可。"
@@ -422,7 +410,9 @@ export default function AnTai() {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
-                                <h2 className="section-title section-title-border text-center">凯利安泰量化投资基金</h2>
+                                <h2 className="section-title section-title-border text-center">
+                                    凯利安泰量化投资基金（新西兰）
+                                </h2>
                             </div>
                         </div>
                         <div className="row">
