@@ -80,6 +80,56 @@ export default function FundOfFundsSeries() {
                                     30 多年的历史，其投资业绩稳定，市场规模和份额不断扩大，得到了越来越多的投资者认可。
                                 </p>
                                 <article className="bg-white rounded mb-40 shadow-sm">
+                                    <Link to="/funds/carrick-fund-of-funds/an-tai-1" className="card">
+                                        <div className="card-img-wrapper">
+                                            <img
+                                                className="card-img-top rounded-top"
+                                                src={imageAnTai1}
+                                                alt="image of an tai fund 1"
+                                            />
+                                        </div>
+                                    </Link>
+                                    <div>
+                                        <div className="d-flex align-items-center border-bottom">
+                                            <div className="px-4">
+                                                <Link
+                                                    to="/funds/carrick-fund-of-funds/an-tai-1"
+                                                    className="h4 d-block mb-10 py-4 text-dark">
+                                                    首创凯利安泰 1 号集合资产管理基金（中国）
+                                                </Link>
+                                            </div>
+                                        </div>
+
+                                        <div className="p-4">
+                                            <div className="row" style={{fontSize: "0.85rem"}}>
+                                                <div className="col-6">
+                                                    <ul className="d-inline-block pl-0 text-color">
+                                                        <li className="font-secondary mb-10">
+                                                            基金管理人: 首创期货（中国）
+                                                        </li>
+                                                        <li className="font-secondary mb-10">基金托管人: 招商证券</li>
+                                                        <li className="font-secondary mb-10">基金类型: 管理型产品</li>
+                                                    </ul>
+                                                </div>
+                                                <div className="col-6">
+                                                    <ul className="d-inline-block pl-0 text-color">
+                                                        <li className="font-secondary mb-10">
+                                                            预期年化收益率 (费后): <strong>20% 以上</strong>
+                                                        </li>
+                                                        <li className="font-secondary mb-10">证券经纪商: 国融证券</li>
+                                                        <li className="font-secondary mb-10">风险等级: 低风险</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <Link
+                                                to="/funds/carrick-fund-of-funds/an-tai-1"
+                                                className="btn btn-xsm btn-primary mt-3">
+                                                点击了解详情
+                                            </Link>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article className="bg-white rounded mb-40 shadow-sm">
                                     <Link to="/funds/carrick-fund-of-funds/an-tai" className="card">
                                         <div className="card-img-wrapper">
                                             <img
@@ -95,7 +145,7 @@ export default function FundOfFundsSeries() {
                                                 <Link
                                                     to="/funds/carrick-fund-of-funds/an-tai"
                                                     className="h4 d-block mb-10 py-4 text-dark">
-                                                    凯利安泰量化投资基金
+                                                    凯利安泰量化投资基金（新西兰）
                                                 </Link>
                                             </div>
                                         </div>
@@ -105,10 +155,10 @@ export default function FundOfFundsSeries() {
                                                 <div className="col-6">
                                                     <ul className="d-inline-block pl-0 text-color">
                                                         <li className="font-secondary mb-10">
-                                                            基金托管人: New Zealand Public Trust Limited
+                                                            基金管理人: 凯利资产管理有限公司（新西兰）
                                                         </li>
                                                         <li className="font-secondary mb-10">
-                                                            基金管理人: 新西兰凯利资产管理有限公司
+                                                            基金托管人: New Zealand Public Trust Limited
                                                         </li>
                                                         <li className="font-secondary mb-10">基金类型: 开放式</li>
                                                     </ul>
@@ -127,55 +177,6 @@ export default function FundOfFundsSeries() {
                                             </div>
                                             <Link
                                                 to="/funds/carrick-fund-of-funds/an-tai"
-                                                className="btn btn-xsm btn-primary mt-3">
-                                                点击了解详情
-                                            </Link>
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <article className="bg-white rounded mb-40 shadow-sm">
-                                    <Link to="/funds/carrick-fund-of-funds/an-tai-1" className="card">
-                                        <div className="card-img-wrapper">
-                                            <img
-                                                className="card-img-top rounded-top"
-                                                src={imageAnTai1}
-                                                alt="image of an tai fund 1"
-                                            />
-                                        </div>
-                                    </Link>
-                                    <div>
-                                        <div className="d-flex align-items-center border-bottom">
-                                            <div className="px-4">
-                                                <Link
-                                                    to="/funds/carrick-fund-of-funds/an-tai-1"
-                                                    className="h4 d-block mb-10 py-4 text-dark">
-                                                    首创凯利安泰 1 号集合资产管理基金
-                                                </Link>
-                                            </div>
-                                        </div>
-
-                                        <div className="p-4">
-                                            <div className="row" style={{fontSize: "0.85rem"}}>
-                                                <div className="col-6">
-                                                    <ul className="d-inline-block pl-0 text-color">
-                                                        <li className="font-secondary mb-10">基金托管人: 招商证券</li>
-                                                        <li className="font-secondary mb-10">基金管理人: 首创期货</li>
-                                                        <li className="font-secondary mb-10">基金类型: 管理型产品</li>
-                                                    </ul>
-                                                </div>
-                                                <div className="col-6">
-                                                    <ul className="d-inline-block pl-0 text-color">
-                                                        <li className="font-secondary mb-10">
-                                                            预期年化收益率 (费后): <strong>20% 以上</strong>
-                                                        </li>
-                                                        <li className="font-secondary mb-10">证券经纪商: 国融证券</li>
-                                                        <li className="font-secondary mb-10">风险等级: 低风险</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <Link
-                                                to="/funds/carrick-fund-of-funds/an-tai-1"
                                                 className="btn btn-xsm btn-primary mt-3">
                                                 点击了解详情
                                             </Link>

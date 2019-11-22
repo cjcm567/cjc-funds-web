@@ -2,7 +2,7 @@
 
 import React, {Suspense, useState} from "react"
 import {Link} from "react-router-dom"
-import logoImage from "../images/logo.png"
+import logoBlackText from "../images/logo-black-text.svg"
 import imagePhoneWhite from "../images/aboutus/phone-white.svg"
 
 function HeaderComponent() {
@@ -40,6 +40,12 @@ function HeaderComponent() {
             setAriaExpanded(true)
         }
     }
+    const bannerBgStyle = {
+        color: "#ffffff",
+        background: "linear-gradient(90deg, rgba(16,31,40,1) 0%, rgba(0,66,136,1) 40%);",
+        filter:
+            "progid:DXImageTransform.Microsoft.gradient(startColorstr='#101f28',endColorstr='#004288',GradientType=1);",
+    }
 
     return (
         <>
@@ -51,7 +57,7 @@ function HeaderComponent() {
                         </div>
                     </div>
                 </div> */}
-                <div className="top-header">
+                <div className="top-header" style={bannerBgStyle}>
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
@@ -76,7 +82,7 @@ function HeaderComponent() {
                     <div className="container">
                         <nav className="navbar navbar-expand-lg navbar-light bg-light">
                             <Link className="navbar-brand" to="/">
-                                <img className="navbar-brand img" src={logoImage} alt="logo" />
+                                <img className="navbar-brand img" src={logoBlackText} alt="logo" />
                             </Link>
                             <button
                                 className="navbar-toggler"

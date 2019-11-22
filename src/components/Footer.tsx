@@ -4,8 +4,7 @@
 
 import React, {Suspense} from "react"
 import {Link} from "react-router-dom"
-import logoImage from "../images/logo.png"
-import logo from "../images/logoicon.png"
+import logoBlackText from "../images/logo-black-text.svg"
 import "../fonts/IconFont/iconfont.css"
 
 function Footer() {
@@ -24,7 +23,7 @@ function Footer() {
                             <div className="col-lg-4 col-md-4">
                                 <div className="mb-5 mb-md-0 text-center text-md-left">
                                     <Link to="/">
-                                        <img src={logoImage} alt="logo" style={{height: "9vh"}} />
+                                        <img src={logoBlackText} alt="logo" style={{height: "9vh"}} />
                                     </Link>
                                     <p className="mb-30 text-left mt-2">
                                         欢迎来到 Carrick Just Asset Management

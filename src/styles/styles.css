@@ -956,7 +956,7 @@ button {
 
 /* 2. Navigation */
 .top-header {
-    background: #131a3b;
+    background: #004C8A;
 }
 
 @media (max-width: 575px) {
@@ -1803,7 +1803,7 @@ img.arrow-bottom {
 }
 
 .service-menu li.active a {
-    background: #131a3b;
+    background: #004C8A;
     color: #fff !important;
 }
 
@@ -1812,7 +1812,7 @@ img.arrow-bottom {
     content: "";
     height: 15px;
     width: 15px;
-    background: #131a3b;
+    background: #004C8A;
     top: 50%;
     right: -7px;
     transform: translateY(-50%) rotate(-45deg);
@@ -1826,7 +1826,7 @@ img.arrow-bottom {
 
 .service-menu li:hover a {
     color: #fff !important;
-    background: #131a3b;
+    background: #004C8A;
 }
 
 /* 14.5 clients */
