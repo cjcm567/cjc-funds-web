@@ -3,6 +3,7 @@
 import React, {Suspense, useState} from "react"
 import {Link} from "react-router-dom"
 import logoBlackText from "../images/logo-black-text.svg"
+import logo from "../images/logo.png"
 import imagePhoneWhite from "../images/aboutus/phone-white.svg"
 
 function HeaderComponent() {
@@ -82,7 +83,7 @@ function HeaderComponent() {
                     <div className="container">
                         <nav className="navbar navbar-expand-lg navbar-light bg-light">
                             <Link className="navbar-brand" to="/">
-                                <img className="navbar-brand img" src={logoBlackText} alt="logo" />
+                                <img className="navbar-brand img" src={logo} alt="logo" />
                             </Link>
                             <button
                                 className="navbar-toggler"
