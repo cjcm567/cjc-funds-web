@@ -3,7 +3,8 @@
 import React, {useState} from "react"
 import {Helmet} from "react-helmet"
 import Layout from "../components/layout"
-import logo from "../images/logo.svg"
+import logoSVG from "../images/logo.svg"
+import logo from "../images/logo-white-text.png"
 import imageSignUpBg from "../images/background/signup-bg.jpg"
 
 export default function LoginOrJoin() {
