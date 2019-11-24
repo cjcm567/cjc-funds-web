@@ -20,11 +20,13 @@ function FundsComponent(isShowId: number) {
             <>
                 <h4 className="mb-30">产品要素</h4>
                 <div className="row">
-                    <img
-                        src={imageCrossPlatformTop}
-                        alt="image of Core Competence top"
-                        className="img-fluid w-100 mb-40"
-                    />
+                    <div className="col-lg-12">
+                        <img
+                            src={imageCrossPlatformTop}
+                            alt="image of Core Competence top"
+                            className="img-fluid w-100 mb-40"
+                        />
+                    </div>
                     <div className="col-lg-6 bg-gray pl-5 pt-5 pr-3 pb-4 rounded">
                         <div className="row">
                             <div className="col-lg-10 col-md-7">
@@ -98,11 +100,13 @@ function FundsComponent(isShowId: number) {
                             ；或请留下您的联系方式，我们的销售顾问将及时与您联系。
                         </p>
                     </div>
-                    <img
-                        src={imageCrossPlatformBtm}
-                        alt="image of Core Competence bottom"
-                        className="img-fluid w-100 mb-40"
-                    />
+                    <div className="col-lg-12">
+                        <img
+                            src={imageCrossPlatformBtm}
+                            alt="image of Core Competence bottom"
+                            className="img-fluid w-100 mb-40"
+                        />
+                    </div>
                 </div>
             </>
         )
@@ -172,12 +176,13 @@ function FundsComponent(isShowId: number) {
                             </div>
                         </div>
                     </div>
-
-                    <img
-                        src={imageAnTai1Reward}
-                        alt="image of an tai fund 1 reward"
-                        className="img-fluid w-100 mb-40"
-                    />
+                    <div className="col-lg-12">
+                        <img
+                            src={imageAnTai1Reward}
+                            alt="image of an tai fund 1 reward"
+                            className="img-fluid w-100 mb-40"
+                        />
+                    </div>
                 </div>
             </>
         )
