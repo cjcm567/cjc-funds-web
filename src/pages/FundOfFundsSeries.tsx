@@ -114,10 +114,9 @@ export default function FundOfFundsSeries() {
                                                 <div className="col-6">
                                                     <ul className="d-inline-block pl-0 text-color">
                                                         <li className="font-secondary mb-10">
-                                                            预期年化收益率 (费后): <strong>20% 以上</strong>
+                                                            拟募资规模: 1000 万人民币
                                                         </li>
                                                         <li className="font-secondary mb-10">证券经纪商: 国融证券</li>
-                                                        <li className="font-secondary mb-10">风险等级: 低风险</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -160,18 +159,14 @@ export default function FundOfFundsSeries() {
                                                         <li className="font-secondary mb-10">
                                                             基金托管人: New Zealand Public Trust Limited
                                                         </li>
-                                                        <li className="font-secondary mb-10">基金类型: 开放式</li>
                                                     </ul>
                                                 </div>
                                                 <div className="col-6">
                                                     <ul className="d-inline-block pl-0 text-color">
                                                         <li className="font-secondary mb-10">
-                                                            预期年化收益率 (费后): <strong>20% 以上</strong>
-                                                        </li>
-                                                        <li className="font-secondary mb-10">
                                                             投资策略: 以成份股对冲，T+0 策略为主
                                                         </li>
-                                                        <li className="font-secondary mb-10">风险等级: 低风险</li>
+                                                        <li className="font-secondary mb-10">基金类型: 开放式</li>
                                                     </ul>
                                                 </div>
                                             </div>
