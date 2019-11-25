@@ -35,8 +35,6 @@ function FundsComponent(isShowId: number) {
                                 <p className="mb-20">New Zealand Public Trust Limited</p>
                                 <h4 className="mb-10">基金类型</h4>
                                 <p className="mb-20">开放式</p>
-                                <h4 className="mb-10">风险等级</h4>
-                                <p className="mb-20">低风险</p>
                                 <h4 className="mb-10">投资策略</h4>
                                 <p className="mb-20">以成份股对冲，T+0 策略为主</p>
                                 <h4 className="mb-10">封闭期</h4>
@@ -59,8 +57,6 @@ function FundsComponent(isShowId: number) {
                     </div>
 
                     <div className="col-lg-6 bg-gray p-5 rounded">
-                        <h4 className="mb-10">预期年化收益率(费后)</h4>
-                        <p className="mb-20">20% 以上</p>
                         <h4 className="mb-10">固定管理费</h4>
                         <p className="mb-20">1.99%/年</p>
                         <h4 className="mb-10">行政服务费</h4>
@@ -309,8 +305,6 @@ function FundsComponent(isShowId: number) {
                         </div>
                     </div>
                     <div className="col-lg-6 bg-gray p-5 rounded mb-60">
-                        <h4 className="mb-10">预期年化收益率(费后)</h4>
-                        <p className="mb-20">20%以上</p>
                         <h4 className="mb-10">拟合业绩最大回撤</h4>
                         <p className="mb-20">1.37%</p>
                         <h4 className="mb-10">可拓展性强</h4>
