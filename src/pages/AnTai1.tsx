@@ -61,7 +61,7 @@ function FundsComponent(isShowId: number) {
                         <h4 className="mb-10">申购起点</h4>
                         <p className="mb-20">40 万人民币，追加申购起点 1 万人民币</p>
                         <h4 className="mb-10">申购费</h4>
-                        <p className="mb-20">1.99%/年</p>
+                        <p className="mb-20">1.99%</p>
                         <h4 className="mb-10">服务费</h4>
                         <p className="mb-20">0.05%/年</p>
                         <h4 className="mb-10">固定管理费</h4>
