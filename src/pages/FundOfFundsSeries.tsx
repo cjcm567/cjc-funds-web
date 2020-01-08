@@ -95,7 +95,7 @@ export default function FundOfFundsSeries() {
                                                 <Link
                                                     to="/funds/carrick-fund-of-funds/an-tai-1"
                                                     className="h4 d-block mb-10 py-4 text-dark">
-                                                    首创凯利安泰 1 号集合资产管理基金（中国）
+                                                    海通期货-凯利安泰FOF1号集合资产管理基金（中国）
                                                 </Link>
                                             </div>
                                         </div>
@@ -105,10 +105,11 @@ export default function FundOfFundsSeries() {
                                                 <div className="col-6">
                                                     <ul className="d-inline-block pl-0 text-color">
                                                         <li className="font-secondary mb-10">
-                                                            基金管理人: 首创期货（中国）
+                                                            基金管理人: 海通期货股份有限公司（中国）
                                                         </li>
-                                                        <li className="font-secondary mb-10">基金托管人: 招商证券</li>
-                                                        <li className="font-secondary mb-10">基金类型: 管理型产品</li>
+                                                        <li className="font-secondary mb-10">
+                                                            基金托管人: 华泰证券股份有限公司（中国）
+                                                        </li>
                                                     </ul>
                                                 </div>
                                                 <div className="col-6">
@@ -116,7 +117,7 @@ export default function FundOfFundsSeries() {
                                                         <li className="font-secondary mb-10">
                                                             拟募资规模: 1000 万人民币
                                                         </li>
-                                                        <li className="font-secondary mb-10">证券经纪商: 国融证券</li>
+                                                        <li className="font-secondary mb-10">基金类型: 管理型产品</li>
                                                     </ul>
                                                 </div>
                                             </div>

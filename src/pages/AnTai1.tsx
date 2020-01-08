@@ -31,60 +31,62 @@ function FundsComponent(isShowId: number) {
                         <div className="row">
                             <div className="col-lg-10 col-md-7">
                                 <h4 className="mb-10">基金名称</h4>
-                                <p className="mb-20">首创凯利安泰 1 号集合资产管理基金（中国）</p>
+                                <p className="mb-20">
+                                    海通期货-凯利安泰FOF1号
+                                    <br />
+                                    集合资产管理基金（中国）
+                                </p>
                                 <h4 className="mb-10">基金管理人</h4>
-                                <p className="mb-20">首创期货（中国）</p>
+                                <p className="mb-20">海通期货股份有限公司（中国）</p>
                                 <h4 className="mb-10">基金托管人</h4>
-                                <p className="mb-20">招商证券</p>
+                                <p className="mb-20">华泰证券股份有限公司（中国）</p>
                                 <h4 className="mb-10">基金类型</h4>
                                 <p className="mb-20">管理型产品 </p>
-                                <h4 className="mb-10">经纪商选择</h4>
-                                <p className="mb-20">证券经纪商：国融证券</p>
                                 <h4 className="mb-10">拟募资规模</h4>
                                 <p className="mb-20">1000 万人民币</p>
-                                <h4 className="mb-10">赎回费用</h4>
-                                <p className="mb-20">2% （持有 6 个月后免收赎回费，违约退出费5%）</p>
-                                <h4 className="mb-10">封闭期</h4>
-                                <p className="mb-20">从投资者加入日起，6个月内</p>
-                                <h4 className="mb-10">开放日</h4>
-                                <p className="mb-20">
-                                    产品封闭期为六个月，封闭期结束之后，每三个月的 15
-                                    号为开放日（遇节假日顺延），接受基金份额的认购和赎回。
-                                </p>
+
                                 <h4 className="mb-10">拟合业绩最大回撤</h4>
                                 <p className="mb-20">1.37%</p>
+                                <h4 className="mb-10">申购起点</h4>
+                                <p className="mb-20">40 万人民币，追加申购起点 1 万人民币</p>
+                                <h4 className="mb-10">申购费</h4>
+                                <p className="mb-20">无</p>
+                                <h4 className="mb-10">赎回费用</h4>
+                                <p className="mb-20">无</p>
+                                <h4 className="mb-10">固定管理费</h4>
+                                <p className="mb-20">0.3%/年</p>
+                                <h4 className="mb-10">托管费率</h4>
+                                <p className="mb-20">0.02%/年</p>
+                                <h4 className="mb-10">投资顾问费率</h4>
+                                <p className="mb-20">2%/年</p>
                             </div>
                         </div>
                     </div>
 
                     <div className="col-lg-6 bg-gray pt-5 px-5 pb-4 rounded">
-                        <h4 className="mb-10">申购起点</h4>
-                        <p className="mb-20">40 万人民币，追加申购起点 1 万人民币</p>
-                        <h4 className="mb-10">申购费</h4>
-                        <p className="mb-20">1.99%</p>
-                        <h4 className="mb-10">服务费</h4>
-                        <p className="mb-20">0.05%/年</p>
-                        <h4 className="mb-10">固定管理费</h4>
-                        <p className="mb-20">0.5%/年</p>
-                        <h4 className="mb-10">托管费率</h4>
-                        <p className="mb-20">0.05%/年</p>
+                        <h4 className="mb-10">封闭期</h4>
+                        <p className="mb-20">从投资者加入日起，180天内</p>
+                        <h4 className="mb-10">开放日</h4>
+                        <p className="mb-20">
+                            产品封闭期为180天，每自然季度最后一个交易日开放，可以接受申购和赎回（遇节假日顺延）。
+                        </p>
                         <h4 className="mb-10">预警/清仓</h4>
                         <p className="mb-20">
                             预警线为基金净值 0.95
                             <br />
                             清仓线为基金净值 0.91
                         </p>
-                        <h4 className="mb-10">投资限制</h4>
+                        <h4 className="mb-10">投资范围</h4>
                         <p className="mb-10">
-                            权益类资产：占资产净值的0—80%（不含80%）；
+                            权益类：A股股票（含线上和线下新股申购）、融资融券、交易所上市基金（含交易所上市的封闭式及开放式证券投资基金、LOF、ETF基金、分级基金等）、港股通、转融通；
                             <br />
-                            货币市场工具类资产：占资产净值的0—80%（不含80%）；
+                            固定收益类：交易所或银行间交易的国债、金融债、央行票据、公司债、企业债、短期融资券、中期票据、可转换债券、债券回购、债券型基金、新债申购；
                             <br />
-                            固定收益类资产：占资产净值的0—80%（不含80%）；
+                            现金类：银行存款（包括银行活期存款、银行定期存款和银行协议存款等各类存款）、货币市场基金、银行现金理财产品、券商现金理财产品、国债逆回购；
                             <br />
-                            金融衍生工具类资产：占资产净值的0—20%；
+                            商品及金融衍生品类：在国内交易所上市交易的金融期货、商品期货、场内期权；
                             <br />
-                            产品总资产不得超过净资产的200%；
+                            其他：证券投资类契约型私募基金（投资者不少于两名）、证券公司及其子公司集合资产管理计划、期货公司及其子公司集合资产管理计划、证券类基金公司及其子公司集合资管计划；
                             <br />
                             本基金投资组合在各类资产上的配置比例，将严格遵守相关法律法规的规定
                         </p>
@@ -285,7 +287,7 @@ export default function FundOfFunds() {
     return (
         <>
             <Helmet>
-                <title>首创凯利安泰 1 号集合资产管理基金（中国） | Carrick Asset</title>
+                <title>海通期货 - 凯利安泰 FOF1 号集合资产管理基金（中国） | Carrick Asset</title>
                 <meta
                     name="description"
                     content="量化投资基金是指通过数量模型的计算寻找投资机会，以此作为最终投资决策进行资产管理。量化投资在欧美国家的发展已有30多年的历史，其投资业绩稳定，市场规模和份额不断扩大，得到了越来越多的投资者认可。"
@@ -297,7 +299,7 @@ export default function FundOfFunds() {
                         <div className="row">
                             <div className="col-lg-12">
                                 <h2 className="section-title section-title-border text-center">
-                                    首创凯利安泰 1 号集合资产管理基金（中国）
+                                    海通期货 - 凯利安泰 FOF1 号集合资产管理基金（中国）
                                 </h2>
                             </div>
                         </div>
