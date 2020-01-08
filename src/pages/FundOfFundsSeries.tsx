@@ -115,7 +115,7 @@ export default function FundOfFundsSeries() {
                                                 <div className="col-6">
                                                     <ul className="d-inline-block pl-0 text-color">
                                                         <li className="font-secondary mb-10">
-                                                            拟募资规模: 1000 万人民币
+                                                            拟最低募资规模: 1000 万人民币
                                                         </li>
                                                         <li className="font-secondary mb-10">基金类型: 管理型产品</li>
                                                     </ul>
@@ -145,7 +145,7 @@ export default function FundOfFundsSeries() {
                                                 <Link
                                                     to="/funds/carrick-fund-of-funds/an-tai"
                                                     className="h4 d-block mb-10 py-4 text-dark">
-                                                    凯利安泰量化投资基金（新西兰）
+                                                    中信凯利安泰量化投资基金（新西兰）- 筹备中
                                                 </Link>
                                             </div>
                                         </div>
