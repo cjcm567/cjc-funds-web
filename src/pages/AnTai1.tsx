@@ -42,13 +42,13 @@ function FundsComponent(isShowId: number) {
                                 <p className="mb-20">华泰证券股份有限公司（中国）</p>
                                 <h4 className="mb-10">基金类型</h4>
                                 <p className="mb-20">管理型产品 </p>
-                                <h4 className="mb-10">拟募资规模</h4>
+                                <h4 className="mb-10">拟最低募资规模</h4>
                                 <p className="mb-20">1000 万人民币</p>
 
                                 <h4 className="mb-10">拟合业绩最大回撤</h4>
                                 <p className="mb-20">1.37%</p>
                                 <h4 className="mb-10">申购起点</h4>
-                                <p className="mb-20">40 万人民币，追加申购起点 1 万人民币</p>
+                                <p className="mb-20">100 万人民币，追加申购起点 1 万人民币</p>
                                 <h4 className="mb-10">申购费</h4>
                                 <p className="mb-20">无</p>
                                 <h4 className="mb-10">赎回费用</h4>
@@ -71,10 +71,10 @@ function FundsComponent(isShowId: number) {
                     <div className="col-lg-6 bg-gray pt-5 px-5 pb-4 rounded">
                         <h4 className="mb-10">收益分配原则</h4>
                         <p className="mb-20">
-                            本基金在每个自然年度最多分配4次；具体分配日期以管理人公告为准；默认方式为现金分红。
+                            本基金分红在每个自然年度最多分配4次；具体分配日期以管理人公告为准；默认方式为现金分红。
                         </p>
                         <h4 className="mb-10">封闭期</h4>
-                        <p className="mb-20">从投资者加入日起，180天内</p>
+                        <p className="mb-20">从投资者加入日起，180天内。</p>
                         <h4 className="mb-10">开放日</h4>
                         <p className="mb-20">
                             产品封闭期为180天，每自然季度最后一个交易日开放，可以接受申购和赎回（遇节假日顺延）。
@@ -94,7 +94,7 @@ function FundsComponent(isShowId: number) {
                             <br />
                             现金类：银行存款（包括银行活期存款、银行定期存款和银行协议存款等各类存款）、货币市场基金、银行现金理财产品、券商现金理财产品、国债逆回购；
                             <br />
-                            商品及金融衍生品类：在国内交易所上市交易的金融期货、商品期货、场内期权；
+                            商品及金融衍生品类：在中国交易所上市交易的金融期货、商品期货、场内期权；
                             <br />
                             其他：证券投资类契约型私募基金（投资者不少于两名）、证券公司及其子公司集合资产管理计划、期货公司及其子公司集合资产管理计划、证券类基金公司及其子公司集合资管计划；
                             <br />

@@ -28,7 +28,7 @@ function FundsComponent(isShowId: number) {
                         <div className="row">
                             <div className="col-lg-10 col-md-7">
                                 <h4 className="mb-10">基金名称</h4>
-                                <p className="mb-20">凯利安泰量化投资基金（新西兰）</p>
+                                <p className="mb-20">中信凯利安泰量化投资基金（新西兰）</p>
                                 <h4 className="mb-10">基金管理人</h4>
                                 <p className="mb-20">凯利资产管理有限公司（新西兰）</p>
                                 <h4 className="mb-10">基金托管人</h4>
@@ -393,7 +393,7 @@ export default function AnTai() {
     return (
         <>
             <Helmet>
-                <title>凯利安泰量化投资基金（新西兰） | Carrick Asset</title>
+                <title>中信凯利安泰量化投资基金（新西兰）- 筹备中 | Carrick Asset</title>
                 <meta
                     name="description"
                     content="量化投资基金是指通过数量模型的计算寻找投资机会，以此作为最终投资决策进行资产管理。量化投资在欧美国家的发展已有30多年的历史，其投资业绩稳定，市场规模和份额不断扩大，得到了越来越多的投资者认可。"
@@ -405,7 +405,7 @@ export default function AnTai() {
                         <div className="row">
                             <div className="col-lg-12">
                                 <h2 className="section-title section-title-border text-center">
-                                    凯利安泰量化投资基金（新西兰）
+                                    中信凯利安泰量化投资基金（新西兰）- 筹备中
                                 </h2>
                             </div>
                         </div>
