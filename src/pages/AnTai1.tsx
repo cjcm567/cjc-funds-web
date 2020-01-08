@@ -59,11 +59,20 @@ function FundsComponent(isShowId: number) {
                                 <p className="mb-20">0.02%/年</p>
                                 <h4 className="mb-10">投资顾问费率</h4>
                                 <p className="mb-20">2%/年</p>
+                                <h4 className="mb-10">业绩管理费</h4>
+                                <p className="mb-20">
+                                    单位净值年化收益率R小于或等于5%部分，管理人不提取业绩报酬；
+                                    单位净值年化收益率R>5%部分，管理人按单人单笔高水位法提取20%；业绩报酬提取频率不得超过每6个月一次。
+                                </p>
                             </div>
                         </div>
                     </div>
 
                     <div className="col-lg-6 bg-gray pt-5 px-5 pb-4 rounded">
+                        <h4 className="mb-10">收益分配原则</h4>
+                        <p className="mb-20">
+                            本基金在每个自然年度最多分配4次；具体分配日期以管理人公告为准；默认方式为现金分红。
+                        </p>
                         <h4 className="mb-10">封闭期</h4>
                         <p className="mb-20">从投资者加入日起，180天内</p>
                         <h4 className="mb-10">开放日</h4>
@@ -76,6 +85,7 @@ function FundsComponent(isShowId: number) {
                             <br />
                             清仓线为基金净值 0.91
                         </p>
+
                         <h4 className="mb-10">投资范围</h4>
                         <p className="mb-10">
                             权益类：A股股票（含线上和线下新股申购）、融资融券、交易所上市基金（含交易所上市的封闭式及开放式证券投资基金、LOF、ETF基金、分级基金等）、港股通、转融通；
@@ -88,7 +98,7 @@ function FundsComponent(isShowId: number) {
                             <br />
                             其他：证券投资类契约型私募基金（投资者不少于两名）、证券公司及其子公司集合资产管理计划、期货公司及其子公司集合资产管理计划、证券类基金公司及其子公司集合资管计划；
                             <br />
-                            本基金投资组合在各类资产上的配置比例，将严格遵守相关法律法规的规定
+                            本基金投资组合在各类资产上的配置比例，将严格遵守相关法律法规的规定。
                         </p>
                         <p className="mb-20" style={{fontSize: "0.72rem"}}>
                             （如法律法规或监管部门修改或取消上述限制，履行适当程序后，本基金可相应调整投资组合限制的规定，则本基金不受上述限制。）
