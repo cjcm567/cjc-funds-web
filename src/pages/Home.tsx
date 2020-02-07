@@ -24,7 +24,7 @@ export default function Home() {
                 <p className="mb-2">{newsObjectItem.date.split(" ").pop()}</p>
             </div>
             <div className="p-3">
-                <Link to="/news/celebrating-new-zealand-shares" className="h4 font-primary text-dark">
+                <Link to={`/News/${newsObjectItem.props}`} className="h4 font-primary text-dark">
                     {newsObjectItem.title}
                 </Link>
                 <p>{newsObjectItem.author}</p>
