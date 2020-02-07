@@ -36,7 +36,7 @@ export default function News() {
                             <Link to={`/news/${newsObjectItem.props}`} className="h4 font-primary text-dark">
                                 {newsObjectItem.title}
                             </Link>
-                            <p>by {newsObjectItem.author}</p>
+                            {/* <p>by {newsObjectItem.author}</p> */}
                         </div>
                     </div>
                 </div>
