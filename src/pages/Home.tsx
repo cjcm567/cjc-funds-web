@@ -75,7 +75,7 @@ export default function Home() {
                     <div className="card-body p-0">
                         <div className="d-flex">
                             <div className="py-3 px-4 border-right text-center">
-                                <h3 className="text-primary mb-0" style={{width: 32}}>
+                                <h3 className="text-primary mb-0" style={{width: "32"}}>
                                     {newsExampleObjectItem.date.substr(0, 2).trim()}
                                 </h3>
                                 <p className="mb-0">{newsExampleObjectItem.date.split(" ").pop()}</p>
