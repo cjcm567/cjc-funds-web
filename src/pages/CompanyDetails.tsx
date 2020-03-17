@@ -19,13 +19,7 @@ const Partners = () => {
     )
 }
 export default function CompanyDetails() {
-    const [activeState, setActiveState] = useState()
-    // const toggleAccordion = (id: number) => {
-    //     setActiveState(activeState === "collapse" ? "collapse show" : "collapse")
-    // }
-    const toggleAccordion = () => {
-        setActiveState(activeState === "collapse" ? "collapse show" : "collapse")
-    }
+
     return (
         <>
             <Helmet>
